@@ -162,7 +162,7 @@ module.exports = {
                         }
                     }
                 } catch (e) {
-                    console.error(`Equip attributes parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}`);
+                    console.error(`Equip attributes parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}, Type=${rawEquip.SubType}`);
                 }
             });
         return result;

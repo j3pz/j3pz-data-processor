@@ -63,7 +63,7 @@ function parseEquip(rawEquip) {
 
 function parseTab(tab, key) {
     const newTab = tab.filter((rawEquip) => {
-        if (rawEquip.SubType > 10 || rawEquip.Quality < 4) return false;
+        if (rawEquip.SubType > 10 || rawEquip.Quality < 4 || rawEquip.Magic1Type === '') return false;
         return true;
     }).map(parseEquip);
     // console.table([newTab[42116], newTab[43258], newTab[43004]]);
