@@ -1,7 +1,9 @@
 const { parse } = require('csv');
 const fs = require('fs');
 const iconv = require('iconv-lite');
-const { getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getAttribute } = require('./util');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+
+const { getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getAttribute, getEmbed } = require('./util');
 
 console.log('init');
 
@@ -55,23 +57,70 @@ function parseEquip(rawEquip) {
     equip.basicMagicShield = basicInfo.magicShield;
     const attributes = getAttribute(rawEquip, tabs.attrib);
     Object.assign(equip, attributes);
+    equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
     return equip;
 }
 
 function parseTab(tab, key) {
-    const newTab = tab.map(parseEquip);
-    console.log(newTab[43258]);
-    console.log(newTab[42116]);
-    console.log(newTab[42117]);
+    const newTab = tab.filter((rawEquip) => {
+        if (rawEquip.SubType > 10 || rawEquip.Quality < 4) return false;
+        return true;
+    }).map(parseEquip);
+    // console.table([newTab[42116], newTab[43258], newTab[43004]]);
+    const csvWriter = createCsvWriter({
+        path: `./output/${key}.csv`,
+        header: [
+            { id: 'uiId', title: 'uiId'}, 
+            { id: 'iconID', title: 'iconID'}, 
+            { id: 'name', title: 'name'}, 
+            { id: 'menpai', title: 'menpai'}, 
+            { id: 'xinfatype', title: 'xinfatype'}, 
+            { id: 'type', title: 'type'}, 
+            { id: 'quality', title: 'quality'}, 
+            { id: 'score', title: 'score'}, 
+            { id: 'body', title: 'body'}, 
+            { id: 'spirit', title: 'spirit'}, 
+            { id: 'strength', title: 'strength'}, 
+            { id: 'agility', title: 'agility'}, 
+            { id: 'spunk', title: 'spunk'}, 
+            { id: 'basicPhysicsShield', title: 'basicPhysicsShield'}, 
+            { id: 'basicMagicShield', title: 'basicMagicShield'}, 
+            { id: 'physicsShield', title: 'physicsShield'}, 
+            { id: 'magicShield', title: 'magicShield'}, 
+            { id: 'dodge', title: 'dodge'}, 
+            { id: 'parryBase', title: 'parryBase'}, 
+            { id: 'parryValue', title: 'parryValue'}, 
+            { id: 'toughness', title: 'toughness'}, 
+            { id: 'attack', title: 'attack'}, 
+            { id: 'heal', title: 'heal'}, 
+            { id: 'crit', title: 'crit'}, 
+            { id: 'critEffect', title: 'critEffect'}, 
+            { id: 'overcome', title: 'overcome'}, 
+            { id: 'acce', title: 'acce'}, 
+            { id: 'hit', title: 'hit'}, 
+            { id: 'strain', title: 'strain'}, 
+            { id: 'huajing', title: 'huajing'}, 
+            { id: 'threat', title: 'threat'}, 
+            { id: 'texiao', title: 'texiao'}, 
+            { id: 'xiangqian', title: 'xiangqian'}, 
+            { id: 'strengthen', title: 'strengthen'}, 
+            // { id: 'dropSource', title: 'dropSource'}, 
+            // { id: 'set', title: 'set'}, 
+            { id: 'originalId', title: 'originalId'}, 
+        ]
+    });
+    csvWriter.writeRecords(newTab).then(() => {
+        console.log(`output ${key} done`);
+    });
 }
 
 function readCallback(key) {
     flags[key] += 1;
     const sum = Object.values(flags).reduce((acc, cur) => acc + cur, 0);
-    if (sum === 6) {
+    if (sum === 10) {
         // 全部读取完成后，启动解析器
         console.log('init finished');
-        const equipTabs = ['armor'];
+        const equipTabs = ['armor', 'trinket', 'weapon'];
         equipTabs.forEach(key => {
             const tab = tabs[key];
             parseTab(tab, key);
@@ -80,8 +129,8 @@ function readCallback(key) {
 }
 
 readCsvFile('./raw/Custom_Armor.tab', 'armor', false, readCallback);
-// readCsvFile('./raw/Custom_Trinket.tab', 'trinket', false, readCallback);
-// readCsvFile('./raw/Custom_Weapon.tab', 'weapon', false, readCallback);
+readCsvFile('./raw/Custom_Trinket.tab', 'trinket', false, readCallback);
+readCsvFile('./raw/Custom_Weapon.tab', 'weapon', false, readCallback);
 readCsvFile('./raw/Attrib.tab', 'attrib', true, readCallback);
 readCsvFile('./raw/Set.tab', 'set', true, readCallback);
 

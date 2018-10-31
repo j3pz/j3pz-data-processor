@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "csv": "^4.0.0",
+    "csv-writer": "^1.2.0",
     "iconv-lite": "^0.4.24"
   }
 }

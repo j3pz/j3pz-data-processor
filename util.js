@@ -22,62 +22,66 @@ const typeMap = {
 // atSetEquipmentRecipe	event	
 // atSkillEventHandler	texiao	特效
 const attributeKeyMap = {
-    'atActiveThreatCoefficient': 'threat', // 威胁
-    'atAgilityBase': 'agility', // 身法
-    'atAllTypeCriticalDamagePowerBase': 'critEffect', // 会效
-    'atAllTypeCriticalStrike': 'crit', // 会心
-    'atAllTypeHitValue': 'hit', // 命中
-    'atDecriticalDamagePowerBase': 'huajing', // 化劲
-    'atDodge': 'dodge', // 闪避
-    'atHasteBase': 'acce', // 加速
-    'atLunarAttackPowerBase': 'attack', // 阴性攻击
-    'atLunarCriticalDamagePowerBase': 'critEffect', // 会效
-    'atLunarCriticalStrike': 'crit', // 会心
-    'atLunarHitValue': 'hit', // 阴性命中
-    'atLunarOvercomeBase': 'overcome', // 阴性破防
-    'atMagicAttackPowerBase': 'attack', // 内功攻击
-    'atMagicCriticalDamagePowerBase': 'critEffect', // 会效
-    'atMagicCriticalStrike': 'crit', // 会心
-    'atMagicHitValue': 'hit', // 内功命中
-    'atMagicOvercome': 'overcome', // 内功破防
-    'atMagicShield': 'magicShield', // 内防
-    'atNeutralAttackPowerBase': 'attack', // 混元攻击
-    'atNeutralCriticalDamagePowerBase': 'critEffect', // 会效
-    'atNeutralCriticalStrike': 'crit', // 会心
-    'atNeutralHitValue': 'hit', // 混元命中
-    'atNeutralOvercomeBase': 'overcome', // 混元破防
-    'atParryBase': 'parryBase', // 招架
-    'atParryValueBase': 'parryValue', // 拆招
-    'atPhysicsAttackPowerBase': 'attack', // 外功攻击
-    'atPhysicsCriticalDamagePowerBase': 'critEffect', // 会效
-    'atPhysicsCriticalStrike': 'crit', // 会心
-    'atPhysicsHitValue': 'hit', // 外功命中
-    'atPhysicsOvercomeBase': 'overcome', // 外功破防
-    'atPhysicsShieldAdditional': 'physicsShield', // 外防
-    'atPhysicsShieldBase': 'physicsShield', // 外防
-    'atPoisonAttackPowerBase': 'attack', // 毒性攻击
-    'atPoisonCriticalDamagePowerBase': 'critEffect', // 会效
-    'atPoisonCriticalStrike': 'crit', // 会心
-    'atPoisonHitValue': 'hit', // 毒性命中
-    'atPoisonOvercomeBase': 'overcome', // 毒性破防
-    'atSolarAndLunarAttackPowerBase': 'attack', // 阴阳攻击
-    'atSolarAndLunarCriticalDamagePowerBase': 'critEffect', // 会效
-    'atSolarAndLunarCriticalStrike': 'crit', // 会心
-    'atSolarAndLunarHitValue': 'hit', // 阴阳命中
-    'atSolarAndLunarOvercomeBase': 'overcome', // 阴阳破防
-    'atSolarAttackPowerBase': 'attack', // 阳性攻击
-    'atSolarCriticalDamagePowerBase': 'critEffect', // 会效
-    'atSolarCriticalStrike': 'crit', // 会心
-    'atSolarHitValue': 'hit', // 阳性命中
-    'atSolarOvercomeBase': 'overcome', // 阳性破防
-    'atSpiritBase': 'spirit', // 根骨
-    'atSpunkBase': 'spunk', // 元气
-    'atStrainBase': 'strain', // 无双
-    'atStrengthBase': 'strength', // 力道
-    'atTherapyPowerBase': 'heal', // 治疗
-    'atToughnessBase': 'toughness', // 御劲
-    'atVitalityBase': 'body', // 体质
-}
+    atActiveThreatCoefficient: ['threat', '47'], // 威胁
+    atAgilityBase: ['agility', '04'], // 身法
+    atAllTypeCriticalDamagePowerBase: ['critEffect', '38'], // 会效
+    atAllTypeCriticalStrike: ['crit', '37'], // 会心
+    atAllTypeHitValue: ['hit', '36'], // 命中
+    atDecriticalDamagePowerBase: ['huajing', '52'], // 化劲
+    atDodge: ['dodge', '45'], // 闪避
+    atHasteBase: ['acce', '51'], // 加速
+    atLifeReplenishExt: [null, '05'], // 回血
+    atLunarAttackPowerBase: ['attack', '15'], // 阴性攻击
+    atLunarCriticalDamagePowerBase: ['critEffect', '25'], // 会效
+    atLunarCriticalStrike: ['crit', '07'], // 会心
+    atLunarHitValue: ['hit', '54'], // 阴性命中
+    atLunarOvercomeBase: ['overcome', '14'], // 阴性破防
+    atMagicAttackPowerBase: ['attack', '40'], // 内功攻击
+    atMagicCriticalDamagePowerBase: ['critEffect', '31'], // 会效
+    atMagicCriticalStrike: ['crit', '10'], // 会心
+    atMagicHitValue: ['hit', '20'], // 内功命中
+    atMagicOvercome: ['overcome', '27'], // 内功破防
+    atMagicShield: ['magicShield', '43'], // 内防
+    atManaReplenishExt: [null, '48'], // 回蓝
+    atMaxLifeAdditional: [null, '39'], // 气血
+    atMaxManaAdditional: [null, '49'], // 内力
+    atNeutralAttackPowerBase: ['attack', '16'], // 混元攻击
+    atNeutralCriticalDamagePowerBase: ['critEffect', '24'], // 会效
+    atNeutralCriticalStrike: ['crit', '23'], // 会心
+    atNeutralHitValue: ['hit', '50'], // 混元命中
+    atNeutralOvercomeBase: ['overcome', '13'], // 混元破防
+    atParryBase: ['parryBase', '46'], // 招架
+    atParryValueBase: ['parryValue', '44'], // 拆招
+    atPhysicsAttackPowerBase: ['attack', '08'], // 外功攻击
+    atPhysicsCriticalDamagePowerBase: ['critEffect', '21'], // 会效
+    atPhysicsCriticalStrike: ['crit', '06'], // 会心
+    atPhysicsHitValue: ['hit', '09'], // 外功命中
+    atPhysicsOvercomeBase: ['overcome', '18'], // 外功破防
+    atPhysicsShieldAdditional: ['physicsShield', '42'], // 外防
+    atPhysicsShieldBase: ['physicsShield', '42'], // 外防
+    atPoisonAttackPowerBase: ['attack', '22'], // 毒性攻击
+    atPoisonCriticalDamagePowerBase: ['critEffect', '30'], // 会效
+    atPoisonCriticalStrike: ['crit', '29'], // 会心
+    atPoisonHitValue: ['hit', '57'], // 毒性命中
+    atPoisonOvercomeBase: ['overcome', '28'], // 毒性破防
+    atSolarAndLunarAttackPowerBase: ['attack', '33'], // 阴阳攻击
+    atSolarAndLunarCriticalDamagePowerBase: ['critEffect', '34'], // 会效
+    atSolarAndLunarCriticalStrike: ['crit', '35'], // 会心
+    atSolarAndLunarHitValue: ['hit', '56'], // 阴阳命中
+    atSolarAndLunarOvercomeBase: ['overcome', '32'], // 阴阳破防
+    atSolarAttackPowerBase: ['attack', '19'], // 阳性攻击
+    atSolarCriticalDamagePowerBase: ['critEffect', '26'], // 会效
+    atSolarCriticalStrike: ['crit', '17'], // 会心
+    atSolarHitValue: ['hit', '53'], // 阳性命中
+    atSolarOvercomeBase: ['overcome', '12'], // 阳性破防
+    atSpiritBase: ['spirit', '00'], // 根骨
+    atSpunkBase: ['spunk', '01'], // 元气
+    atStrainBase: ['strain', '11'], // 无双
+    atStrengthBase: ['strength', '02'], // 力道
+    atTherapyPowerBase: ['heal', '41'], // 治疗
+    atToughnessBase: ['toughness', '55'], // 御劲
+    atVitalityBase: ['body', '03'], // 体质
+};
 
 module.exports = {
     getMenpai(rawText) {
@@ -106,20 +110,26 @@ module.exports = {
     },
 
     getEquipType(subType, detailType) {
-        const type = typeMap[subType][0];
-        if (type === 0 && detailType == '9') {
-            // 重剑
-            return 12;
+        if (typeMap[subType]) {
+            const type = typeMap[subType][0];
+            if (type === 0 && detailType == '9') {
+                // 重剑
+                return 12;
+            }
+            return type;
         }
-        return type;
+        return -1;
     },
 
     getEquipScore(quality, subType, sthengthen) {
-        let cof = 1.8;
-        if (sthengthen > 6) {
-            cof = 2.5;
+        if (typeMap[subType]) {
+            let cof = 1.8;
+            if (sthengthen > 6) {
+                cof = 2.5;
+            }
+            return Math.floor(quality * cof * typeMap[subType][1]);
         }
-        return Math.floor(quality * cof * typeMap[subType][1]);
+        return 0;
     },
 
     getBasicInfo(rawEquip) {
@@ -139,16 +149,44 @@ module.exports = {
     getAttribute(rawEquip, attriTab) {
         const attributes = ['body','spirit','strength','agility','spunk','physicsShield','magicShield','dodge','parryBase','parryValue','toughness','attack','heal','crit','critEffect','overcome','acce','hit','strain','huajing','threat'];
         const result = attributes.reduce((acc, cur) => {acc[cur] = 0; return acc;}, {});
-        Array.from({length: 12}).map((key, i) => rawEquip[`Magic${i + 1}Type`])
+        Array.from({ length: 12 }).map((key, i) => rawEquip[`Magic${i + 1}Type`])
             .forEach((id) => {
                 const attribute = attriTab[id];
-                if (attribute) {
+                try {
                     const key = attribute.ModifyType;
-                    if (attributeKeyMap[key]) {
-                        result[attributeKeyMap[key]] += +attribute.Param1Min;
+                    if (attributeKeyMap[key] && attributeKeyMap[key][0]) {
+                        if (key === 'atActiveThreatCoefficient') {
+                            result[attributeKeyMap[key][0]] += +attribute.Param2Min;
+                        } else {
+                            result[attributeKeyMap[key][0]] += +attribute.Param1Min;
+                        }
                     }
+                } catch (e) {
+                    console.error(`Equip attributes parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}`);
                 }
             });
         return result;
+    },
+
+    getEmbed(rawEquip, attriTab) {
+        const result = {
+            count: 0,
+            attrib: [],
+        }
+        Array.from({ length: 3 }).map((key, i) => [rawEquip[`DiamondTypeMask${i + 1}`], rawEquip[`DiamondAttributeID${i + 1}`]])
+            .forEach(([mask, id]) => {
+                if (mask > 0 && id > 0) {
+                    const attribute = attriTab[id];
+                    try {
+                        const key = attribute.ModifyType;
+                        result.count += 1;
+                        result.attrib.push(attributeKeyMap[key][1])
+                    } catch (e) {
+                        console.error(`Equip embed info parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}`);
+                    }
+                }
+            });
+        if (result.count === 0) return '';
+        return `${result.count}D${result.attrib.join('D')}`;
     }
 };
