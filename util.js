@@ -112,7 +112,7 @@ module.exports = {
     getEquipType(subType, detailType) {
         if (typeMap[subType]) {
             const type = typeMap[subType][0];
-            if (type === 0 && detailType == '9') {
+            if (type == 11 && detailType == '9') {
                 // 重剑
                 return 12;
             }

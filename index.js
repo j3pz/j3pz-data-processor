@@ -50,7 +50,7 @@ function parseEquip(rawEquip) {
         // 治疗或防御装备
         equip.menpai =  0;
     }
-    equip.type = getEquipType(rawEquip.SubType);
+    equip.type = getEquipType(rawEquip.SubType, rawEquip.DetailType);
     equip.score = getEquipScore(Level, rawEquip.SubType, MaxStrengthLevel);
     const basicInfo = getBasicInfo(rawEquip);
     equip.basicPhysicsShield = basicInfo.physicsShield;
