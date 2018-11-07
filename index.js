@@ -6,6 +6,45 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const { getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getAttribute, getEmbed } = require('./util');
 
 console.log('init');
+const headers = [
+    { id: 'uiId', title: 'uiId'}, 
+    { id: 'iconID', title: 'iconID'}, 
+    { id: 'name', title: 'name'}, 
+    { id: 'menpai', title: 'menpai'}, 
+    { id: 'xinfatype', title: 'xinfatype'}, 
+    { id: 'type', title: 'type'}, 
+    { id: 'quality', title: 'quality'}, 
+    { id: 'score', title: 'score'}, 
+    { id: 'body', title: 'body'}, 
+    { id: 'spirit', title: 'spirit'}, 
+    { id: 'strength', title: 'strength'}, 
+    { id: 'agility', title: 'agility'}, 
+    { id: 'spunk', title: 'spunk'}, 
+    { id: 'basicPhysicsShield', title: 'basicPhysicsShield'}, 
+    { id: 'basicMagicShield', title: 'basicMagicShield'}, 
+    { id: 'physicsShield', title: 'physicsShield'}, 
+    { id: 'magicShield', title: 'magicShield'}, 
+    { id: 'dodge', title: 'dodge'}, 
+    { id: 'parryBase', title: 'parryBase'}, 
+    { id: 'parryValue', title: 'parryValue'}, 
+    { id: 'toughness', title: 'toughness'}, 
+    { id: 'attack', title: 'attack'}, 
+    { id: 'heal', title: 'heal'}, 
+    { id: 'crit', title: 'crit'}, 
+    { id: 'critEffect', title: 'critEffect'}, 
+    { id: 'overcome', title: 'overcome'}, 
+    { id: 'acce', title: 'acce'}, 
+    { id: 'hit', title: 'hit'}, 
+    { id: 'strain', title: 'strain'}, 
+    { id: 'huajing', title: 'huajing'}, 
+    { id: 'threat', title: 'threat'}, 
+    { id: 'texiao', title: 'texiao'}, 
+    { id: 'xiangqian', title: 'xiangqian'}, 
+    { id: 'strengthen', title: 'strengthen'}, 
+    // { id: 'dropSource', title: 'dropSource'}, 
+    // { id: 'set', title: 'set'}, 
+    { id: 'originalId', title: 'originalId'}, 
+];
 
 const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0 };
 const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [] };
@@ -61,56 +100,23 @@ function parseEquip(rawEquip) {
     return equip;
 }
 
-function parseTab(tab, key) {
+function parseTab(tab, key, callback) {
     const newTab = tab.filter((rawEquip) => {
-        if (rawEquip.SubType > 10 || rawEquip.Quality < 4 || rawEquip.Magic1Type === '') return false;
+        if (rawEquip.SubType > 10 || rawEquip.Quality < 4 || rawEquip.Magic1Type === '' || rawEquip.Level < 1000) return false;
+        if (rawEquip.Require1Value < 95) return false;
+        if (key === 'armor' && rawEquip.ID < 41042) return false;
+        if (key === 'trinket' && rawEquip.ID < 23441) return false;
+        if (key === 'weapon' && rawEquip.ID < 18631) return false;
         return true;
     }).map(parseEquip);
     // console.table([newTab[42116], newTab[43258], newTab[43004]]);
     const csvWriter = createCsvWriter({
         path: `./output/${key}.csv`,
-        header: [
-            { id: 'uiId', title: 'uiId'}, 
-            { id: 'iconID', title: 'iconID'}, 
-            { id: 'name', title: 'name'}, 
-            { id: 'menpai', title: 'menpai'}, 
-            { id: 'xinfatype', title: 'xinfatype'}, 
-            { id: 'type', title: 'type'}, 
-            { id: 'quality', title: 'quality'}, 
-            { id: 'score', title: 'score'}, 
-            { id: 'body', title: 'body'}, 
-            { id: 'spirit', title: 'spirit'}, 
-            { id: 'strength', title: 'strength'}, 
-            { id: 'agility', title: 'agility'}, 
-            { id: 'spunk', title: 'spunk'}, 
-            { id: 'basicPhysicsShield', title: 'basicPhysicsShield'}, 
-            { id: 'basicMagicShield', title: 'basicMagicShield'}, 
-            { id: 'physicsShield', title: 'physicsShield'}, 
-            { id: 'magicShield', title: 'magicShield'}, 
-            { id: 'dodge', title: 'dodge'}, 
-            { id: 'parryBase', title: 'parryBase'}, 
-            { id: 'parryValue', title: 'parryValue'}, 
-            { id: 'toughness', title: 'toughness'}, 
-            { id: 'attack', title: 'attack'}, 
-            { id: 'heal', title: 'heal'}, 
-            { id: 'crit', title: 'crit'}, 
-            { id: 'critEffect', title: 'critEffect'}, 
-            { id: 'overcome', title: 'overcome'}, 
-            { id: 'acce', title: 'acce'}, 
-            { id: 'hit', title: 'hit'}, 
-            { id: 'strain', title: 'strain'}, 
-            { id: 'huajing', title: 'huajing'}, 
-            { id: 'threat', title: 'threat'}, 
-            { id: 'texiao', title: 'texiao'}, 
-            { id: 'xiangqian', title: 'xiangqian'}, 
-            { id: 'strengthen', title: 'strengthen'}, 
-            // { id: 'dropSource', title: 'dropSource'}, 
-            // { id: 'set', title: 'set'}, 
-            { id: 'originalId', title: 'originalId'}, 
-        ]
+        header: headers,
     });
     csvWriter.writeRecords(newTab).then(() => {
         console.log(`output ${key} done`);
+        callback(newTab);
     });
 }
 
@@ -120,10 +126,26 @@ function readCallback(key) {
     if (sum === 10) {
         // 全部读取完成后，启动解析器
         console.log('init finished');
+        let count = 0;
+        let result = [];
         const equipTabs = ['armor', 'trinket', 'weapon'];
+
+        function generateUpdatePack(newTab) {
+            result = result.concat(newTab);
+            count += 1;
+            if (count === equipTabs.length) {
+                const csvWriter = createCsvWriter({
+                    path: './output/equips.csv',
+                    header: headers,
+                });
+                csvWriter.writeRecords(result).then(() => {
+                    console.log(`output all result done`);
+                });
+            }
+        }
         equipTabs.forEach(key => {
             const tab = tabs[key];
-            parseTab(tab, key);
+            parseTab(tab, key, generateUpdatePack);
         });
     }
 }
