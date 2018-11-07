@@ -11,7 +11,7 @@ const headers = [
     { id: 'iconID', title: 'iconID'}, 
     { id: 'name', title: 'name'}, 
     { id: 'menpai', title: 'menpai'}, 
-    { id: 'xinfatype', title: 'xinfatype'}, 
+    { id: 'xinfa', title: 'xinfa'}, 
     { id: 'type', title: 'type'}, 
     { id: 'quality', title: 'quality'}, 
     { id: 'score', title: 'score'}, 
@@ -41,9 +41,9 @@ const headers = [
     { id: 'texiao', title: 'texiao'}, 
     { id: 'xiangqian', title: 'xiangqian'}, 
     { id: 'strengthen', title: 'strengthen'}, 
-    // { id: 'dropSource', title: 'dropSource'}, 
+    { id: 'dropSource', title: 'dropSource'}, 
     // { id: 'set', title: 'set'}, 
-    { id: 'originalId', title: 'originalId'}, 
+    // { id: 'originalId', title: 'originalId'}, 
 ];
 
 const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0 };
@@ -82,10 +82,10 @@ function readCsvFile(file, key, isObj, callback) {
 
 function parseEquip(rawEquip) {
     const { UiID, Name, ID, Level, MaxStrengthLevel } = rawEquip;
-    const equip = { uiId: UiID, name: Name, originalId: ID, quality: +Level, strengthen: +MaxStrengthLevel };
+    const equip = { uiId: UiID, name: Name, originalId: ID, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
     equip.menpai = getMenpai(rawEquip.BelongSchool);
-    equip.xinfatype = getXinfaType(rawEquip.MagicKind, equip.menpai);
-    if (equip.xinfatype > 5 && equip.menpai === 1) {
+    equip.xinfa = getXinfaType(rawEquip.MagicKind, equip.menpai);
+    if (equip.xinfa > 5 && equip.menpai === 1) {
         // 治疗或防御装备
         equip.menpai =  0;
     }
@@ -97,6 +97,7 @@ function parseEquip(rawEquip) {
     const attributes = getAttribute(rawEquip, tabs.attrib);
     Object.assign(equip, attributes);
     equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
+    equip.dropSource = rawEquip.GetType;
     return equip;
 }
 
@@ -112,7 +113,7 @@ function parseTab(tab, key, callback) {
     // console.table([newTab[42116], newTab[43258], newTab[43004]]);
     const csvWriter = createCsvWriter({
         path: `./output/${key}.csv`,
-        header: headers,
+        header: [ ...headers, /* { id: 'set', title: 'set'}, */ { id: 'originalId', title: 'originalId'} ],
     });
     csvWriter.writeRecords(newTab).then(() => {
         console.log(`output ${key} done`);
@@ -134,11 +135,13 @@ function readCallback(key) {
             result = result.concat(newTab);
             count += 1;
             if (count === equipTabs.length) {
+                const startAt = 32277;
+                const pack = result.map((equip, i) => ({...equip, id: startAt + i}));
                 const csvWriter = createCsvWriter({
                     path: './output/equips.csv',
-                    header: headers,
+                    header: [{ id: 'id', title: 'P_ID'}, ...headers],
                 });
-                csvWriter.writeRecords(result).then(() => {
+                csvWriter.writeRecords(pack).then(() => {
                     console.log(`output all result done`);
                 });
             }
