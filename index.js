@@ -46,9 +46,11 @@ const headers = [
     // { id: 'originalId', title: 'originalId'}, 
 ];
 
-const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0 };
-const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [] };
-const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {} };
+const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0 };
+const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [] };
+const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {} };
+
+let maxId = 32276;
 
 function readCsvFile(file, key, isObj, callback) {
     console.time(`reading ${key}`);
@@ -69,6 +71,9 @@ function readCsvFile(file, key, isObj, callback) {
                 }, {});
                 if (isObj) {
                     tabs[key][item.ID] = item;
+                    if (key === 'id' && item > maxId) {
+                        maxId = item;
+                    }
                 } else {
                     tabs[key].push(item);
                 }
@@ -80,9 +85,9 @@ function readCsvFile(file, key, isObj, callback) {
         });
 }
 
-function parseEquip(rawEquip) {
+function parseEquip(rawEquip, key) {
     const { UiID, Name, ID, Level, MaxStrengthLevel } = rawEquip;
-    const equip = { uiId: UiID, name: Name, originalId: ID, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
+    const equip = { uiId: UiID, name: Name, originalId: `${key}-${ID}`, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
     equip.menpai = getMenpai(rawEquip.BelongSchool);
     equip.xinfa = getXinfaType(rawEquip.MagicKind, equip.menpai);
     if (equip.xinfa > 5 && equip.menpai === 1) {
@@ -109,7 +114,7 @@ function parseTab(tab, key, callback) {
         if (key === 'trinket' && rawEquip.ID < 23441) return false;
         if (key === 'weapon' && rawEquip.ID < 18631) return false;
         return true;
-    }).map(parseEquip);
+    }).map((rawEquip) => parseEquip(rawEquip, key));
     // console.table([newTab[42116], newTab[43258], newTab[43004]]);
     const csvWriter = createCsvWriter({
         path: `./output/${key}.csv`,
@@ -124,7 +129,7 @@ function parseTab(tab, key, callback) {
 function readCallback(key) {
     flags[key] += 1;
     const sum = Object.values(flags).reduce((acc, cur) => acc + cur, 0);
-    if (sum === 10) {
+    if (sum === 12) {
         // 全部读取完成后，启动解析器
         console.log('init finished');
         let count = 0;
@@ -135,13 +140,28 @@ function readCallback(key) {
             result = result.concat(newTab);
             count += 1;
             if (count === equipTabs.length) {
-                const startAt = 32277;
-                const pack = result.map((equip, i) => ({...equip, id: startAt + i}));
+                const idMap = [];
+                let countNew = 0;
+                const pack = result.map((equip, i) => {
+                    let id = tabs.id[equip.originalId];
+                    if (!id) {
+                        countNew += 1;
+                        id = maxId + countNew;
+                    }
+                    idMap.push({ ID: equip.originalId, databaseId: id });
+                    return { ...equip, id };
+                });
                 const csvWriter = createCsvWriter({
                     path: './output/equips.csv',
                     header: [{ id: 'id', title: 'P_ID'}, ...headers],
                 });
+                const idMapWriter = createCsvWriter({
+                    path: './output/originalId.tab',
+                    header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }]
+                });
                 csvWriter.writeRecords(pack).then(() => {
+                    return idMapWriter.writeRecords(idMap);
+                }).then(() => {
                     console.log(`output all result done`);
                 });
             }
@@ -158,4 +178,4 @@ readCsvFile('./raw/Custom_Trinket.tab', 'trinket', false, readCallback);
 readCsvFile('./raw/Custom_Weapon.tab', 'weapon', false, readCallback);
 readCsvFile('./raw/Attrib.tab', 'attrib', true, readCallback);
 readCsvFile('./raw/Set.tab', 'set', true, readCallback);
-
+readCsvFile('./output/originalId.tab', 'id', true, readCallback);
