@@ -57,7 +57,7 @@ function readCsvFile(file, key, isObj, callback) {
     fs.createReadStream(file)
         .pipe(iconv.decodeStream('gb2312'))
         .pipe(iconv.encodeStream('utf8'))
-        .pipe(parse({ delimiter: '\t' }))
+        .pipe(parse({ delimiter: key === 'id' ? ',' : '\t' }))
         .on('data', function(row) {
             if (flags[key] === 0) {
                 // 读取第一行
@@ -71,7 +71,7 @@ function readCsvFile(file, key, isObj, callback) {
                 }, {});
                 if (isObj) {
                     tabs[key][item.ID] = item;
-                    if (key === 'id' && item > maxId) {
+                    if (key === 'id' && item.databaseId > maxId) {
                         maxId = item;
                     }
                 } else {
@@ -157,7 +157,7 @@ function readCallback(key) {
                 });
                 const idMapWriter = createCsvWriter({
                     path: './output/originalId.tab',
-                    header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }]
+                    header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
                 });
                 csvWriter.writeRecords(pack).then(() => {
                     return idMapWriter.writeRecords(idMap);
