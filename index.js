@@ -72,7 +72,7 @@ function readCsvFile(file, key, isObj, callback) {
                 if (isObj) {
                     tabs[key][item.ID] = item;
                     if (key === 'id' && item.databaseId > maxId) {
-                        maxId = item;
+                        maxId = +item.databaseId;
                     }
                 } else {
                     tabs[key].push(item);
@@ -143,8 +143,10 @@ function readCallback(key) {
                 const idMap = [];
                 let countNew = 0;
                 const pack = result.map((equip, i) => {
-                    let id = tabs.id[equip.originalId];
-                    if (!id) {
+                    let id;
+                    if (tabs.id[equip.originalId] && tabs.id[equip.originalId].databaseId) {
+                        id = tabs.id[equip.originalId].databaseId;
+                    } else {
                         countNew += 1;
                         id = maxId + countNew;
                     }
@@ -159,8 +161,8 @@ function readCallback(key) {
                     path: './output/originalId.tab',
                     header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
                 });
-                csvWriter.writeRecords(pack).then(() => {
-                    return idMapWriter.writeRecords(idMap);
+                csvWriter.writeRecords(pack.sort((a,b) => a.id - b.id)).then(() => {
+                    return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId));
                 }).then(() => {
                     console.log(`output all result done`);
                 });
