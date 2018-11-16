@@ -33730,3 +33730,5 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 33728	0	atSkillEventHandler	1556	1556	0	0	0	0	0	0	0	0	0	0	0	0
 33729	0	atSkillEventHandler	1557	1557	0	0	0	0	0	0	0	0	0	0	0	0
 33730	0	atPhysicsCriticalStrike	414	414	0	0	0	0	0	0	0	0	0	0	0	0
+33731	0	atPhysicsAttackPowerBase	833	833	0	0	0	0	0	0	0	0	0	0	0	0
+33732	0	atMagicAttackPowerBase	1000	1000	0	0	0	0	0	0	0	0	0	0	0	0
