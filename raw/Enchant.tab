@@ -6826,3 +6826,22 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10453	仙踪·腰·染（招架）	腰带	招架提升36点	atParryBase	36	36																										6				0	0
 10454	仙踪·腰·染（化劲）	腰带	化劲提升36点	atDecriticalDamagePowerBase	36	36																										6				0	0
 10455	仙踪·腰·染（御劲）	腰带	御劲提升36点	atToughnessBase	36	36																										6				0	0
+10456	烨阳晶石·项链（体质）	项链	体质提升53点	atVitalityBase	53	53																										4					
+10457	烨阳晶石·项链（御劲）	项链	御劲提升72点	atToughnessBase	72	72																										4					
+10458	烨阳晶石·腰坠（体质）	腰坠	体质提升53点	atVitalityBase	53	53																										7					
+10459	烨阳晶石·腰坠（化劲）	腰坠	化劲提升72点	atDecriticalDamagePowerBase	72	72																										7					
+10460	烨阳晶石·戒指（根骨）	戒指	根骨提升32点	atSpiritBase	32	32																										5					
+10461	烨阳晶石·戒指（力道）	戒指	力道提升32点	atStrengthBase	32	32																										5					
+10462	烨阳晶石·戒指（元气）	戒指	元气提升32点	atSpunkBase	32	32																										5					
+10463	烨阳晶石·戒指（身法）	戒指	身法提升32点	atAgilityBase	32	32																										5					
+10464	烨阳晶石·戒指（外伤）	戒指	外功攻击提升65点	atPhysicsAttackPowerBase	65	65																										5					
+10465	烨阳晶石·戒指（内伤）	戒指	内功攻击提升78点	atMagicAttackPowerBase	78	78																										5					
+10466	烨阳晶石·戒指（外命）	戒指	外功命中等级提升144点	atPhysicsHitValue	144	144																										5					
+10467	烨阳晶石·戒指（内命）	戒指	内功命中等级提升144点	atMagicHitValue	144	144																										5					
+10468	烨阳晶石·暗器（根骨）	暗器	根骨提升32点	atSpiritBase	32	32																										1					
+10469	烨阳晶石·暗器（力道）	暗器	力道提升32点	atStrengthBase	32	32																										1					
+10470	烨阳晶石·暗器（元气）	暗器	元气提升32点	atSpunkBase	32	32																										1					
+10471	烨阳晶石·暗器（身法）	暗器	身法提升32点	atAgilityBase	32	32																										1					
+10472	烨阳晶石·暗器（外破）	暗器	外功破防等级提升144点	atPhysicsOvercomeBase	144	144																										1					
+10473	烨阳晶石·暗器（内破）	暗器	内功破防等级提升144点	atMagicOvercome	144	144																										1					
+10474	烨阳晶石·暗器（加速）	暗器	加速提升144点	atHasteBase	144	144																										1					
