@@ -112,7 +112,7 @@ module.exports = {
     getEquipType(subType, detailType) {
         if (typeMap[subType]) {
             const type = typeMap[subType][global.options.readable ? 2 : 0];
-            if (type == global.options.readable ? '武器' : 11 && detailType == '9') {
+            if (type == (global.options.readable ? '武器' : 11) && detailType == '9') {
                 return global.options.readable ? '重剑' : 12;
             }
             return type;
