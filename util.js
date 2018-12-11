@@ -7,17 +7,17 @@ const strengthXinfa = ['唐门', '天策', '丐帮', '霸刀'];
 const agilityXinfa = ['纯阳', '藏剑', '苍云', '蓬莱'];
 
 const typeMap = {
-    0: [11, 1.2], // 武器
-    1: [4, 0.6], // 暗器
-    4: [0, 0.5], // 项链
-    5: [2, 0.5], // 戒指
-    7: [1, 0.5], // 腰坠
-    2: [8, 1], // 上衣
-    3: [9, 0.9], // 帽子
-    6: [10, 0.7], // 腰带
-    8: [7, 1], // 下装
-    9: [5, 0.7], // 鞋子
-    10: [6, 0.7], // 护腕
+    0: [11, 1.2, '武器'],
+    1: [4, 0.6, '暗器'],
+    4: [0, 0.5, '项链'],
+    5: [2, 0.5, '戒指'],
+    7: [1, 0.5, '腰坠'],
+    2: [8, 1, '上衣'],
+    3: [9, 0.9, '帽子'],
+    6: [10, 0.7, '腰带'],
+    8: [7, 1, '下装'],
+    9: [5, 0.7, '鞋子'],
+    10: [6, 0.7, '护腕'],
 }
 // atSetEquipmentRecipe	event	
 // atSkillEventHandler	texiao	特效
@@ -85,36 +85,35 @@ const attributeKeyMap = {
 
 module.exports = {
     getMenpai(rawText) {
-        return menpaiList.indexOf(rawText);
+        return global.options.readable ? rawText : menpaiList.indexOf(rawText);
     },
 
     getXinfaType(rawText, menpai) {
         const xinfa = xinfaType.indexOf(rawText);
         if (xinfa === 0 && menpai > 1) {
             if (spunkXinfa.indexOf(menpaiList[menpai]) >= 0) {
-                return 2;
+                return global.options.readable ? '元气' : 2;
             }
             if (spiritXinfa.indexOf(menpaiList[menpai]) >= 0) {
-                return 3;
+                return global.options.readable ? '根骨' : 3;
             }
         }
         if (xinfa === 1 && menpai > 1) {
             if (strengthXinfa.indexOf(menpaiList[menpai]) >= 0) {
-                return 4;
+                return global.options.readable ? '力道' : 4;
             }
             if (agilityXinfa.indexOf(menpaiList[menpai]) >= 0) {
-                return 5;
+                return global.options.readable ? '身法' : 5;
             }
         }
-        return xinfa;
+        return global.options.readable ? rawText : xinfa;
     },
 
     getEquipType(subType, detailType) {
         if (typeMap[subType]) {
-            const type = typeMap[subType][0];
-            if (type == 11 && detailType == '9') {
-                // 重剑
-                return 12;
+            const type = typeMap[subType][global.options.readable ? 2 : 0];
+            if (type == global.options.readable ? '武器' : 11 && detailType == '9') {
+                return global.options.readable ? '重剑' : 12;
             }
             return type;
         }

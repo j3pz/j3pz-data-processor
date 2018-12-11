@@ -5,43 +5,67 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const { getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getAttribute, getEmbed } = require('./util');
 
+global.options = {
+    readable: false, // --readable
+    'allow-lagacy': false, // --allow-lagacy
+}
+
+function processArguments() {
+    const args = process.argv;
+    const optionsArray = args.slice(2); // remove node index
+    optionsArray.forEach(v => {
+        if (v.indexOf('--') === 0) {
+            // option
+            const optionString = v.slice(2);
+            const optionValue = optionString.split('=')
+            const key = optionValue[0];
+            const value = optionValue[1] || true;
+            options[key] = value;
+        } else {
+            // command
+        }
+    });
+    console.log(options);
+}
+processArguments();
+
 console.log('init');
 const headers = [
     { id: 'uiId', title: 'uiId'}, 
-    { id: 'iconID', title: 'iconID'}, 
-    { id: 'name', title: 'name'}, 
-    { id: 'menpai', title: 'menpai'}, 
-    { id: 'xinfa', title: 'xinfa'}, 
-    { id: 'type', title: 'type'}, 
-    { id: 'quality', title: 'quality'}, 
-    { id: 'score', title: 'score'}, 
-    { id: 'body', title: 'body'}, 
-    { id: 'spirit', title: 'spirit'}, 
-    { id: 'strength', title: 'strength'}, 
-    { id: 'agility', title: 'agility'}, 
-    { id: 'spunk', title: 'spunk'}, 
-    { id: 'basicPhysicsShield', title: 'basicPhysicsShield'}, 
-    { id: 'basicMagicShield', title: 'basicMagicShield'}, 
-    { id: 'physicsShield', title: 'physicsShield'}, 
-    { id: 'magicShield', title: 'magicShield'}, 
-    { id: 'dodge', title: 'dodge'}, 
-    { id: 'parryBase', title: 'parryBase'}, 
-    { id: 'parryValue', title: 'parryValue'}, 
-    { id: 'toughness', title: 'toughness'}, 
-    { id: 'attack', title: 'attack'}, 
-    { id: 'heal', title: 'heal'}, 
-    { id: 'crit', title: 'crit'}, 
-    { id: 'critEffect', title: 'critEffect'}, 
-    { id: 'overcome', title: 'overcome'}, 
-    { id: 'acce', title: 'acce'}, 
-    { id: 'hit', title: 'hit'}, 
-    { id: 'strain', title: 'strain'}, 
-    { id: 'huajing', title: 'huajing'}, 
-    { id: 'threat', title: 'threat'}, 
-    { id: 'texiao', title: 'texiao'}, 
-    { id: 'xiangqian', title: 'xiangqian'}, 
-    { id: 'strengthen', title: 'strengthen'}, 
-    { id: 'dropSource', title: 'dropSource'}, 
+    { id: 'iconID', title: global.options.readable ? '图标' : 'iconID'}, 
+    { id: 'name', title: global.options.readable ? '名称' : 'name'}, 
+    { id: 'menpai', title: global.options.readable ? '门派' : 'menpai'}, 
+    { id: 'xinfa', title: global.options.readable ? '心法类型' : 'xinfa'}, 
+    { id: 'type', title: global.options.readable ? '装备类型' : 'type'}, 
+    { id: 'quality', title: global.options.readable ? '品质' : 'quality'}, 
+    { id: 'score', title: global.options.readable ? '分数' : 'score'}, 
+    { id: 'body', title: global.options.readable ? '体质' : 'body'}, 
+    { id: 'spirit', title: global.options.readable ? '根骨' : 'spirit'}, 
+    { id: 'strength', title: global.options.readable ? '力道' : 'strength'}, 
+    { id: 'agility', title: global.options.readable ? '身法' : 'agility'}, 
+    { id: 'spunk', title: global.options.readable ? '元气' : 'spunk'}, 
+    { id: 'basicPhysicsShield', title: global.options.readable ? '基础外防' : 'basicPhysicsShield'}, 
+    { id: 'basicMagicShield', title: global.options.readable ? '基础内防' : 'basicMagicShield'}, 
+    { id: 'physicsShield', title: global.options.readable ? '外防' : 'physicsShield'}, 
+    { id: 'magicShield', title: global.options.readable ? '内防' : 'magicShield'}, 
+    { id: 'dodge', title: global.options.readable ? '闪避' : 'dodge'}, 
+    { id: 'parryBase', title: global.options.readable ? '招架' : 'parryBase'}, 
+    { id: 'parryValue', title: global.options.readable ? '拆招' : 'parryValue'}, 
+    { id: 'toughness', title: global.options.readable ? '御劲' : 'toughness'}, 
+    { id: 'attack', title: global.options.readable ? '攻击' : 'attack'}, 
+    { id: 'heal', title: global.options.readable ? '治疗' : 'heal'}, 
+    { id: 'crit', title: global.options.readable ? '会心' : 'crit'}, 
+    { id: 'critEffect', title: global.options.readable ? '会效' : 'critEffect'}, 
+    { id: 'overcome', title: global.options.readable ? '破防' : 'overcome'}, 
+    { id: 'acce', title: global.options.readable ? '加速' : 'acce'}, 
+    { id: 'hit', title: global.options.readable ? '命中' : 'hit'}, 
+    { id: 'strain', title: global.options.readable ? '无双' : 'strain'}, 
+    { id: 'huajing', title: global.options.readable ? '化劲' : 'huajing'}, 
+    { id: 'threat', title: global.options.readable ? '威胁' : 'threat'}, 
+    { id: 'texiao', title: global.options.readable ? '特效' : 'texiao'}, 
+    { id: 'xiangqian', title: global.options.readable ? '镶嵌' : 'xiangqian'}, 
+    { id: 'strengthen', title: global.options.readable ? '可精炼等级' : 'strengthen'}, 
+    { id: 'dropSource', title: global.options.readable ? '掉落来源' : 'dropSource'}, 
     // { id: 'set', title: 'set'}, 
     // { id: 'originalId', title: 'originalId'}, 
 ];
@@ -110,9 +134,9 @@ function parseTab(tab, key, callback) {
     const newTab = tab.filter((rawEquip) => {
         if (rawEquip.SubType > 10 || rawEquip.Quality < 4 || rawEquip.Magic1Type === '' || rawEquip.Level < 1000) return false;
         if (rawEquip.Require1Value < 95) return false;
-        if (key === 'armor' && rawEquip.ID < 41042) return false;
-        if (key === 'trinket' && rawEquip.ID < 23441) return false;
-        if (key === 'weapon' && rawEquip.ID < 18631) return false;
+        if (!options["allow-lagacy"] && key === 'armor' && rawEquip.ID < 41042) return false;
+        if (!options["allow-lagacy"] && key === 'trinket' && rawEquip.ID < 23441) return false;
+        if (!options["allow-lagacy"] && key === 'weapon' && rawEquip.ID < 18631) return false;
         return true;
     }).map((rawEquip) => parseEquip(rawEquip, key));
     // console.table([newTab[42116], newTab[43258], newTab[43004]]);
