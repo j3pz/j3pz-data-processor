@@ -210,6 +210,41 @@ if (global.command === 'equip') {
 } else if (global.command === 'enchant') {
     console.log('====parse enchants====');
     console.log('=========init=========');
+    console.time(`reading enchant`);
+    let firstLineLoaded = false;
+    let keys = [];
+    const tabs = [];
+
+    function parseEnchant() {
+        console.log(tabs.length);
+    }
+
+
+    fs.createReadStream('./raw/Enchant.tab')
+        .pipe(iconv.decodeStream('gb2312'))
+        .pipe(iconv.encodeStream('utf8'))
+        .pipe(parse({ delimiter: '\t' }))
+        .on('data', function(row) {
+            if (!firstLineLoaded) {
+                // 读取第一行
+                firstLineLoaded = true;
+                keys = row;
+            } else {
+                const item = row.reduce((acc, cur, i) => {
+                    const keyName = keys[i];
+                    acc[keyName] = cur;
+                    return acc;
+                }, {});
+                if (isNaN(item.UIID)) {
+                    tabs.push(item);
+                }
+            }
+        })
+        .on('end',function() {
+            console.timeEnd(`reading enchant`);
+            parseEnchant();
+        });
+
 } else {
     console.log('Wrong command');
 }
