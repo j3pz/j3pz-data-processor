@@ -19,10 +19,28 @@ const typeMap = {
     9: [5, 0.7, '鞋子'],
     10: [6, 0.7, '护腕'],
 }
+const enchantTypeMap = {
+    上装: 8,
+    上衣: 8,
+    腰带: 10,
+    下装: 7,
+    项链: 0,
+    武器: 11,
+    手: 6,
+    护手: 6,
+    护腕: 6,
+    头部: 9,
+    帽子: 9,
+    戒指: 2,
+    暗器: 4,
+    鞋子: 5,
+    腰坠: 1,
+}
 // atSetEquipmentRecipe	event	
-// atSkillEventHandler	texiao	特效
+// atSkillEventHandler	texiao	特效			
 const attributeKeyMap = {
     atActiveThreatCoefficient: ['threat', '47'], // 威胁
+    atAddSprintPowerMax: ['sprint', '999'], // 气力值上限
     atAgilityBase: ['agility', '04'], // 身法
     atAllTypeCriticalDamagePowerBase: ['critEffect', '38'], // 会效
     atAllTypeCriticalStrike: ['crit', '37'], // 会心
@@ -30,7 +48,7 @@ const attributeKeyMap = {
     atDecriticalDamagePowerBase: ['huajing', '52'], // 化劲
     atDodge: ['dodge', '45'], // 闪避
     atHasteBase: ['acce', '51'], // 加速
-    atLifeReplenishExt: [null, '05'], // 回血
+    atLifeReplenishExt: ['xuehui', '05'], // 回血
     atLunarAttackPowerBase: ['attack', '15'], // 阴性攻击
     atLunarCriticalDamagePowerBase: ['critEffect', '25'], // 会效
     atLunarCriticalStrike: ['crit', '07'], // 会心
@@ -42,9 +60,13 @@ const attributeKeyMap = {
     atMagicHitValue: ['hit', '20'], // 内功命中
     atMagicOvercome: ['overcome', '27'], // 内功破防
     atMagicShield: ['magicShield', '43'], // 内防
-    atManaReplenishExt: [null, '48'], // 回蓝
-    atMaxLifeAdditional: [null, '39'], // 气血
-    atMaxManaAdditional: [null, '49'], // 内力
+    atManaReplenishExt: ['neihui', '48'], // 回蓝
+    atMaxLifeAdditional: ['qixue', '39'], // 气血
+    atMaxLifeBase: ['qixue', '39'], // 气血
+    atMaxManaAdditional: ['neili', '49'], // 内力
+    atMaxManaBase: ['neili', '49'], // 内力
+    atMeleeWeaponDamageBase: [null, '999'], // 武器伤害
+    atMoveSpeedPercent: [null, '999'], // 移动速度
     atNeutralAttackPowerBase: ['attack', '16'], // 混元攻击
     atNeutralCriticalDamagePowerBase: ['critEffect', '24'], // 会效
     atNeutralCriticalStrike: ['crit', '23'], // 会心
@@ -187,5 +209,22 @@ module.exports = {
             });
         if (result.count === 0) return '';
         return `${result.count}D${result.attrib.join('D')}`;
+    },
+
+    getEnchantType(type) {
+        return enchantTypeMap[type] || 999;
+    },
+
+    getEnchantAttributes(rawEnchant) {
+        const key = rawEnchant.Attribute1ID;
+        let value;
+        if (attributeKeyMap[key] && attributeKeyMap[key][0]) {
+            if (key === 'atActiveThreatCoefficient') {
+                value += +rawEnchant.Attribute1Value2;
+            } else {
+                value += +rawEnchant.Attribute1Value1;
+            }
+        }
+        return { [key]: value };
     }
 };

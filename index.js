@@ -3,7 +3,10 @@ const fs = require('fs');
 const iconv = require('iconv-lite');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-const { getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getAttribute, getEmbed } = require('./util');
+const { 
+    getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo,
+    getAttribute, getEmbed, getEnchantType, getEnchantAttributes,
+} = require('./util');
 
 global.options = {
     readable: false, // --readable
@@ -97,7 +100,7 @@ if (global.command === 'equip') {
                     }, {});
                     if (isObj) {
                         tabs[key][item.ID] = item;
-                        if (key === 'id' && item.databaseId > maxId) {
+                        if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.databaseId > maxId) {
                             maxId = +item.databaseId;
                         }
                     } else {
@@ -210,41 +213,144 @@ if (global.command === 'equip') {
 } else if (global.command === 'enchant') {
     console.log('====parse enchants====');
     console.log('=========init=========');
-    console.time(`reading enchant`);
     let firstLineLoaded = false;
     let keys = [];
     const tabs = [];
+    const ids = {};
+    let maxId = 0;
 
-    function parseEnchant() {
-        console.log(tabs.length);
+    function parseEnchant(rawEnchant) {
+        const { ID, Name, UIID, AttriName } = rawEnchant;
+        const enchant = { desc: AttriName, name: Name, originalId: `enchant-${ID}` };
+        enchant.type = getEnchantType(UIID);
+        Object.assign(enchant, getEnchantAttributes(rawEnchant));
+        return enchant;
     }
 
-
-    fs.createReadStream('./raw/Enchant.tab')
-        .pipe(iconv.decodeStream('gb2312'))
-        .pipe(iconv.encodeStream('utf8'))
-        .pipe(parse({ delimiter: '\t' }))
-        .on('data', function(row) {
-            if (!firstLineLoaded) {
-                // 读取第一行
-                firstLineLoaded = true;
-                keys = row;
+    function parseEnchantTab() {
+        const newTab = tabs.filter((rawEnchant) => {
+            if (rawEnchant.UIID.indexOf('限时') >= 0) return false;
+            return true;
+        }).map(parseEnchant);
+        const idMap = [];
+        let countNew = 0;
+        const pack = newTab.map((enchant, i) => {
+            let id;
+            if (ids[enchant.originalId] && ids[enchant.originalId].databaseId) {
+                id = ids[enchant.originalId].databaseId;
             } else {
-                const item = row.reduce((acc, cur, i) => {
-                    const keyName = keys[i];
-                    acc[keyName] = cur;
-                    return acc;
-                }, {});
-                if (isNaN(item.UIID)) {
-                    tabs.push(item);
-                }
+                countNew += 1;
+                id = maxId + countNew;
             }
-        })
-        .on('end',function() {
-            console.timeEnd(`reading enchant`);
-            parseEnchant();
+            idMap.push({ ID: enchant.originalId, databaseId: id });
+            return { ...enchant, id };
+        }).filter(_ => _.id != null);
+        const idMapWriter = createCsvWriter({
+            path: './output/enchantId.tab',
+            header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
         });
+        const csvWriter = createCsvWriter({
+            path: `./output/enhance.csv`,
+            header: [ 
+                { id: 'P_ID', title: 'P_ID' },
+                { id: 'name', title: 'name' },
+                { id: 'desc', title: 'desc' },
+                { id: 'type', title: 'type' },
+                { id: 'xinfatype', title: 'xinfatype' },
+                { id: 'body', title: 'body' },
+                { id: 'spirit', title: 'spirit' },
+                { id: 'strength', title: 'strength' },
+                { id: 'agility', title: 'agility' },
+                { id: 'spunk', title: 'spunk' },
+                { id: 'physicsShield', title: 'physicsShield' },
+                { id: 'magicShield', title: 'magicShield' },
+                { id: 'dodge', title: 'dodge' },
+                { id: 'parryBase', title: 'parryBase' },
+                { id: 'parryValue', title: 'parryValue' },
+                { id: 'toughness', title: 'toughness' },
+                { id: 'attack', title: 'attack' },
+                { id: 'heal', title: 'heal' },
+                { id: 'crit', title: 'crit' },
+                { id: 'critEffect', title: 'critEffect' },
+                { id: 'overcome', title: 'overcome' },
+                { id: 'acce', title: 'acce' },
+                { id: 'hit', title: 'hit' },
+                { id: 'strain', title: 'strain' },
+                { id: 'huajing', title: 'huajing' },
+                { id: 'threat', title: 'threat' },
+                { id: 'neihui', title: 'neihui' },
+                { id: 'neili', title: 'neili' },
+                { id: 'xuehui', title: 'xuehui' },
+                { id: 'qixue', title: 'qixue' },
+            ],
+        });
+        csvWriter.writeRecords(pack.sort((a,b) => a.id - b.id)).then(() => {
+            return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId));
+        }).then(() => {
+            console.log(`output enhance done`);
+        });
+    }
 
+    function readId() {
+        console.time(`reading ids`);
+        firstLineLoaded = false;
+        fs.createReadStream('./output/enchantId.tab')
+            .pipe(iconv.decodeStream('gb2312'))
+            .pipe(iconv.encodeStream('utf8'))
+            .pipe(parse({ delimiter: ',' }))
+            .on('data', function(row) {
+                if (!firstLineLoaded) {
+                    // 读取第一行
+                    firstLineLoaded = true;
+                    keys = row;
+                } else {
+                    const item = row.reduce((acc, cur, i) => {
+                        const keyName = keys[i];
+                        acc[keyName] = cur;
+                        return acc;
+                    }, {});
+                    if (item.ID.indexOf('enchant') >= 0) {
+                        ids[item.ID] = item;
+                        if (item.databaseId > maxId) {
+                            maxId = +item.databaseId;
+                        }
+                    }
+                }
+            })
+            .on('end',function() {
+                console.timeEnd(`reading ids`);
+                parseEnchantTab();
+            });
+    }
+
+    function readTab() {
+        console.time(`reading enchant`);
+        fs.createReadStream('./raw/Enchant.tab')
+            .pipe(iconv.decodeStream('gb2312'))
+            .pipe(iconv.encodeStream('utf8'))
+            .pipe(parse({ delimiter: '\t' }))
+            .on('data', function(row) {
+                if (!firstLineLoaded) {
+                    // 读取第一行
+                    firstLineLoaded = true;
+                    keys = row;
+                } else {
+                    const item = row.reduce((acc, cur, i) => {
+                        const keyName = keys[i];
+                        acc[keyName] = cur;
+                        return acc;
+                    }, {});
+                    if (isNaN(item.UIID)) {
+                        tabs.push(item);
+                    }
+                }
+            })
+            .on('end',function() {
+                console.timeEnd(`reading enchant`);
+                readId();
+            });
+    }
+    readTab();
 } else {
     console.log('Wrong command');
 }
