@@ -212,7 +212,9 @@ module.exports = {
     },
 
     getEnchantType(type) {
-        return enchantTypeMap[type] || 999;
+        const value = enchantTypeMap[type];
+        if (value !== undefined) return value;
+        return 999;
     },
 
     getEnchantAttributes(rawEnchant) {
