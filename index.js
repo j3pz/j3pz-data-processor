@@ -5,7 +5,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const { 
     getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo,
-    getAttribute, getEmbed, getEnchantType, getEnchantAttributes,
+    getAttribute, getEmbed, getEnchantType, getEnchantAttributes, getEnchantXinfaType
 } = require('./util');
 
 global.options = {
@@ -219,11 +219,40 @@ if (global.command === 'equip') {
     const ids = {};
     let maxId = 0;
 
+    const defaultAttributes = {
+        body: 0,
+        spirit: 0,
+        strength: 0,
+        agility: 0,
+        spunk: 0,
+        physicsShield: 0,
+        magicShield: 0,
+        dodge: 0,
+        parryBase: 0,
+        parryValue: 0,
+        toughness: 0,
+        attack: 0,
+        heal: 0,
+        crit: 0,
+        critEffect: 0,
+        overcome: 0,
+        acce: 0,
+        hit: 0,
+        strain: 0,
+        huajing: 0,
+        threat: 0,
+        neihui: 0,
+        neili: 0,
+        xuehui: 0,
+        qixue: 0,
+    }
+
     function parseEnchant(rawEnchant) {
         const { ID, Name, UIID, AttriName } = rawEnchant;
         const enchant = { desc: AttriName, name: Name, originalId: `enchant-${ID}` };
         enchant.type = getEnchantType(UIID);
-        Object.assign(enchant, getEnchantAttributes(rawEnchant));
+        enchant.xinfatype = getEnchantXinfaType(AttriName);
+        Object.assign(enchant, defaultAttributes, getEnchantAttributes(rawEnchant));
         return enchant;
     }
 

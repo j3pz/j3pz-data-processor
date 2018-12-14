@@ -227,5 +227,49 @@ module.exports = {
             return { [attributeKeyMap[key][0]]: value };
         }
         return {};
+    },
+
+    getEnchantXinfaType(desc) {
+        if (desc.indexOf('内功会心') >= 0 || desc.indexOf('内功命中') >= 0) {
+            // 通用内功
+            return 0;
+        }
+        if (desc.indexOf('外功攻击') >= 0 || desc.indexOf('外功破防') >= 0) {
+            // 通用外功
+            return 1;
+        }
+        if (desc.indexOf('元气') >= 0) {
+            // 元气
+            return 2;
+        }
+        if (desc.indexOf('根骨') >= 0) {
+            // 根骨
+            return 3;
+        }
+        if (desc.indexOf('力道') >= 0) {
+            // 力道
+            return 4;
+        }
+        if (desc.indexOf('身法') >= 0) {
+            // 身法
+            return 5;
+        }
+        if (desc.indexOf('疗') >= 0) {
+            // 治疗
+            return 6;
+        }
+        if (desc.indexOf('防御') >= 0 || desc.indexOf('招架') >= 0 || desc.indexOf('闪避') >= 0 || desc.indexOf('拆招') >= 0 || desc.indexOf('仇恨') >= 0 || desc.indexOf('威胁提高') >= 0) {
+            // 防御
+            return 7;
+        }
+        if (desc.indexOf('内功攻击') >= 0 || desc.indexOf('内功破防') >= 0) {
+            // 田螺
+            return 8;
+        }
+        if (desc.indexOf('外功会心') >= 0 || desc.indexOf('外功命中') >= 0) {
+            // 田螺
+            return 9;
+        }
+        return 10;
     }
 };
