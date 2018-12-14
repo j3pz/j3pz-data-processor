@@ -220,11 +220,12 @@ module.exports = {
         let value;
         if (attributeKeyMap[key] && attributeKeyMap[key][0]) {
             if (key === 'atActiveThreatCoefficient') {
-                value += +rawEnchant.Attribute1Value2;
+                value = +rawEnchant.Attribute1Value2;
             } else {
-                value += +rawEnchant.Attribute1Value1;
+                value = +rawEnchant.Attribute1Value1;
             }
+            return { [attributeKeyMap[key][0]]: value };
         }
-        return { [key]: value };
+        return {};
     }
 };

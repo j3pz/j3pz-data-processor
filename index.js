@@ -244,7 +244,7 @@ if (global.command === 'equip') {
             }
             idMap.push({ ID: enchant.originalId, databaseId: id });
             return { ...enchant, id };
-        }).filter(_ => _.id != null);
+        }).filter(_ => _.id != 'null');
         const idMapWriter = createCsvWriter({
             path: './output/enchantId.tab',
             header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
@@ -252,7 +252,7 @@ if (global.command === 'equip') {
         const csvWriter = createCsvWriter({
             path: `./output/enhance.csv`,
             header: [ 
-                { id: 'P_ID', title: 'P_ID' },
+                { id: 'id', title: 'P_ID' },
                 { id: 'name', title: 'name' },
                 { id: 'desc', title: 'desc' },
                 { id: 'type', title: 'type' },
