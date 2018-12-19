@@ -139,6 +139,7 @@ if (global.command === 'equip') {
         const newTab = tab.filter((rawEquip) => {
             if (rawEquip.SubType > 10 || rawEquip.Quality < 4 || rawEquip.Magic1Type === '' || rawEquip.Level < 1000) return false;
             if (rawEquip.Require1Value < 95) return false;
+            if (rawEquip.MagicKind === '通用') return false;
             if (!options["allow-lagacy"] && key === 'armor' && rawEquip.ID < 41042) return false;
             if (!options["allow-lagacy"] && key === 'trinket' && rawEquip.ID < 23441) return false;
             if (!options["allow-lagacy"] && key === 'weapon' && rawEquip.ID < 18631) return false;
