@@ -110,7 +110,7 @@ if (global.command === 'equip') {
                         } else {
                             tabs[key][item.ID] = item;
                         }
-                        
+
                         if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.ID.indexOf('event') < 0 && item.databaseId > maxId) {
                             maxId = +item.databaseId;
                         }
@@ -187,11 +187,12 @@ if (global.command === 'equip') {
                         setRow[`desc${v}`] = '';
                         setRow[`index${v}`] = '';
                         const descKeys = [];
+                        const descValues = [];
                         const effectKeys = [];
                         const effectValues = [];
                         effects.forEach(([key, value, fullName]) => {
-                            if (key === 'atSetEquipmentRecipe'){
-                                setRow[`desc${v}`] += value;
+                            if (key === 'atSetEquipmentRecipe' || key === 'atSkillEventHandler') {
+                                descValues.push(value);
                             } else {
                                 effectKeys.push(fullName);
                                 descKeys.push(key);
@@ -199,6 +200,7 @@ if (global.command === 'equip') {
                             }
                         });
                         setRow[`index${v}`] += `${effectKeys.join('/')}|${effectValues.join('/')}`;
+                        setRow[`desc${v}`] += descValues.join(', ');
                         if (setRow[`desc${v}`] === '') {
                             setRow[`desc${v}`] = descKeys.join('/')
                         }
