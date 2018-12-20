@@ -150,10 +150,10 @@ if (global.command === 'equip') {
                 equip.texiao = eventsIds[eventId].databaseId;
             } else {
                 const databaseId = ++maxSkillEventId;
-                eventsIds[eventId] = { ID: eventId, databaseId };
                 equip.texiao = databaseId;
             }
             events[equip.texiao] = { id: equip.texiao, name: equip.name, desc: result.event.desc.join(';') };
+            eventsIds[eventId] = { ID: eventId, databaseId: equip.texiao };
         }
         equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
         equip.dropSource = rawEquip.GetType;
@@ -221,7 +221,6 @@ if (global.command === 'equip') {
                         path: './output/texiao.csv',
                         header: [{ id: 'id', title: 'id' }, { id: 'name', title: 'name' }, { id: 'desc', title: 'desc' }],
                     });
-                    console.log(eventsIds);
                     csvWriter.writeRecords(pack.sort((a,b) => a.id - b.id)).then(() => {
                         return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId).concat(Object.values(eventsIds)));
                     }).then(() => {
