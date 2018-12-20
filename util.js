@@ -197,7 +197,7 @@ module.exports = {
                             }
                         }
                     } else if (key === 'atSetEquipmentRecipe') {
-                        const event = recipeTab[attribute.Param1Min];
+                        const event = recipeTab[`${attribute.Param1Min}-${attribute.Param2Min}`];
                         if (event) {
                             eventId.push(attribute.Param1Min);
                             const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
@@ -236,14 +236,23 @@ module.exports = {
                                 }
                                 setObj.effects[i].push([key, value, attributeKeyMap[key][0]]);
                                 hasSet = true;
-                            } else if (key === 'atSetEquipmentRecipe') {
-                                const event = recipeTab[attribute.Param1Min];
+                            } else if (key === 'atSkillEventHandler') {
+                                const event = eventTab[attribute.Param1Min];
                                 if (event) {
                                     const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
                                     if (regarr) {
                                         value = regarr[1].replace(/\\/g, '');
                                         setObj.effects[i].push([key, value]);
-                                        hasSet = true;
+                                    }
+                                }
+                            } else if (key === 'atSetEquipmentRecipe') {
+                                const event = recipeTab[`${attribute.Param1Min}-${attribute.Param2Min}`];
+                                hasSet = true;
+                                if (event) {
+                                    const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
+                                    if (regarr) {
+                                        value = regarr[1].replace(/\\/g, '');
+                                        setObj.effects[i].push([key, value]);
                                     }
                                 }
                             }

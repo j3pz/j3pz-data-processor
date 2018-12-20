@@ -105,14 +105,19 @@ if (global.command === 'equip') {
                         return acc;
                     }, {});
                     if (isObj) {
-                        tabs[key][item.ID] = item;
+                        if (key === 'recipe') {
+                            tabs[key][`${item.ID}-${item.Level}`] = item;
+                        } else {
+                            tabs[key][item.ID] = item;
+                        }
+                        
                         if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.ID.indexOf('event') < 0 && item.databaseId > maxId) {
                             maxId = +item.databaseId;
                         }
                         if (key === 'id' && item.ID.indexOf('event') === 0 && item.databaseId > maxSkillEventId) {
                             maxSkillEventId = +item.databaseId;
                         }
-                        if (key === 'id' && item.ID.indexOf('set') === 0 && item.databaseId > maxSkillEventId) {
+                        if (key === 'id' && item.ID.indexOf('set') === 0 && item.databaseId > maxSetId) {
                             maxSetId = +item.databaseId;
                         }
                     } else {
