@@ -132,8 +132,8 @@ if (global.command === 'equip') {
     }
     
     function parseEquip(rawEquip, key) {
-        const { UiID, Name, ID, Level, MaxStrengthLevel } = rawEquip;
-        const equip = { uiId: UiID, name: Name, originalId: `${key}-${ID}`, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
+        const { Name, ID, Level, MaxStrengthLevel, GetType } = rawEquip;
+        const equip = { uiId: GetType, name: Name, originalId: `${key}-${ID}`, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
         equip.menpai = getMenpai(rawEquip.BelongSchool);
         equip.xinfa = getXinfaType(rawEquip.MagicKind, equip.menpai);
         if (equip.xinfa > 5 && equip.menpai === 1) {
