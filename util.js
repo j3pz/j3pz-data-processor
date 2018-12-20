@@ -167,9 +167,11 @@ module.exports = {
         return result;
     },
 
-    getAttribute(rawEquip, attriTab) {
+    getAttribute(rawEquip, attriTab, recipeTab, eventTab) {
         const attributes = ['body','spirit','strength','agility','spunk','physicsShield','magicShield','dodge','parryBase','parryValue','toughness','attack','heal','crit','critEffect','overcome','acce','hit','strain','huajing','threat'];
         const result = attributes.reduce((acc, cur) => {acc[cur] = 0; return acc;}, {});
+        let texiao = [];
+        let eventId = [];
         Array.from({ length: 12 }).map((key, i) => rawEquip[`Magic${i + 1}Type`])
             .forEach((id) => {
                 const attribute = attriTab[id];
@@ -181,12 +183,40 @@ module.exports = {
                         } else {
                             result[attributeKeyMap[key][0]] += +attribute.Param1Min;
                         }
+                    } else if (key === 'atSkillEventHandler') {
+                        // console.log(`Unknown equip attribute ${key}=${attribute.Param1Min} at ID=${rawEquip.ID}, Name=${rawEquip.Name}`);
+                        // result.texiao = attribute.Param1Min;
+                        const event = eventTab[attribute.Param1Min];
+                        if (event) {
+                            eventId.push(attribute.Param1Min);
+                            const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
+                            if (regarr) {
+                                texiao.push(regarr[1].replace(/\\/g, ''));
+                            }
+                        }
+                    } else if (key === 'atSetEquipmentRecipe') {
+                        const event = recipeTab[attribute.Param1Min];
+                        if (event) {
+                            eventId.push(attribute.Param1Min);
+                            const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
+                            if (regarr) {
+                                texiao.push(regarr[1].replace(/\\/g, ''));
+                            }
+                        }
                     }
                 } catch (e) {
                     console.error(`Equip attributes parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}, Type=${rawEquip.SubType}`);
                 }
             });
-        return result;
+        if (rawEquip.SetID > 0) {
+            // result.texiao = -1 * rawEquip.SetID;
+            // console.log(`Set detected ${rawEquip.SetID} at ID=${rawEquip.ID}, Name=${rawEquip.Name}`)
+        }
+        const ret = { attributes: result };
+        if (eventId.length > 0) {
+            ret.event = { desc: texiao, id: eventId };
+        }
+        return ret;
     },
 
     getEmbed(rawEquip, attriTab) {

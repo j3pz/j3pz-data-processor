@@ -75,18 +75,24 @@ if (global.command === 'equip') {
         // { id: 'originalId', title: 'originalId'}, 
     ];
     
-    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0 };
-    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [] };
-    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {} };
+    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0, recipe: 0, event: 0 };
+    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [], recipe: [], event: [] };
+    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {}, recipe: {}, event: {} };
+
+    const setsIds = [];
+    const sets = {};
+    const eventsIds = {};
+    const events = {};
     
     let maxId = 32276;
-    
+    let maxSkillEventId = 216;
+    let maxSetId = 1666;
     function readCsvFile(file, key, isObj, callback) {
         console.time(`reading ${key}`);
         fs.createReadStream(file)
             .pipe(iconv.decodeStream('gb2312'))
             .pipe(iconv.encodeStream('utf8'))
-            .pipe(parse({ delimiter: key === 'id' ? ',' : '\t' }))
+            .pipe(parse({ delimiter: key === 'id' ? ',' : '\t', quote: null }))
             .on('data', function(row) {
                 if (flags[key] === 0) {
                     // 读取第一行
@@ -100,8 +106,14 @@ if (global.command === 'equip') {
                     }, {});
                     if (isObj) {
                         tabs[key][item.ID] = item;
-                        if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.databaseId > maxId) {
+                        if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.ID.indexOf('event') < 0 && item.databaseId > maxId) {
                             maxId = +item.databaseId;
+                        }
+                        if (key === 'id' && item.ID.indexOf('event') === 0 && item.databaseId > maxSkillEventId) {
+                            maxSkillEventId = +item.databaseId;
+                        }
+                        if (key === 'id' && item.ID.indexOf('set') === 0 && item.databaseId > maxSkillEventId) {
+                            maxSetId = +item.databaseId;
                         }
                     } else {
                         tabs[key].push(item);
@@ -128,8 +140,21 @@ if (global.command === 'equip') {
         const basicInfo = getBasicInfo(rawEquip);
         equip.basicPhysicsShield = basicInfo.physicsShield;
         equip.basicMagicShield = basicInfo.magicShield;
-        const attributes = getAttribute(rawEquip, tabs.attrib);
-        Object.assign(equip, attributes);
+        const result = getAttribute(rawEquip, tabs.attrib, tabs.recipe, tabs.event);
+        Object.assign(equip, result.attributes);
+        if (result.event) {
+            const eventId = 'event-' + result.event.id.join('-');
+            if (tabs.id[eventId]) {
+                equip.texiao = tabs.id[eventId].databaseId;
+            } else if (eventsIds[eventId]) {
+                equip.texiao = eventsIds[eventId].databaseId;
+            } else {
+                const databaseId = ++maxSkillEventId;
+                eventsIds[eventId] = { ID: eventId, databaseId };
+                equip.texiao = databaseId;
+            }
+            events[equip.texiao] = { id: equip.texiao, name: equip.name, desc: result.event.desc.join(';') };
+        }
         equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
         equip.dropSource = rawEquip.GetType;
         return equip;
@@ -159,7 +184,7 @@ if (global.command === 'equip') {
     function readCallback(key) {
         flags[key] += 1;
         const sum = Object.values(flags).reduce((acc, cur) => acc + cur, 0);
-        if (sum === 12) {
+        if (sum === 16) {
             // 全部读取完成后，启动解析器
             console.log('init finished');
             let count = 0;
@@ -183,6 +208,7 @@ if (global.command === 'equip') {
                         idMap.push({ ID: equip.originalId, databaseId: id });
                         return { ...equip, id };
                     });
+                    // console.log(events);
                     const csvWriter = createCsvWriter({
                         path: './output/equips.csv',
                         header: [{ id: 'id', title: 'P_ID'}, ...headers],
@@ -191,8 +217,15 @@ if (global.command === 'equip') {
                         path: './output/originalId.tab',
                         header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
                     });
+                    const eventWriter = createCsvWriter({
+                        path: './output/texiao.csv',
+                        header: [{ id: 'id', title: 'id' }, { id: 'name', title: 'name' }, { id: 'desc', title: 'desc' }],
+                    });
+                    console.log(eventsIds);
                     csvWriter.writeRecords(pack.sort((a,b) => a.id - b.id)).then(() => {
-                        return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId));
+                        return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId).concat(Object.values(eventsIds)));
+                    }).then(() => {
+                        return eventWriter.writeRecords(Object.values(events));
                     }).then(() => {
                         console.log(`output all result done`);
                     });
@@ -211,6 +244,8 @@ if (global.command === 'equip') {
     readCsvFile('./raw/Attrib.tab', 'attrib', true, readCallback);
     readCsvFile('./raw/Set.tab', 'set', true, readCallback);
     readCsvFile('./output/originalId.tab', 'id', true, readCallback);
+    readCsvFile('./raw/equipmentrecipe.txt', 'recipe', true, readCallback);
+    readCsvFile('./raw/skillevent.txt', 'event', true, readCallback);
 } else if (global.command === 'enchant') {
     console.log('====parse enchants====');
     console.log('=========init=========');
