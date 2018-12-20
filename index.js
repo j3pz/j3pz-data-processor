@@ -140,7 +140,7 @@ if (global.command === 'equip') {
         const basicInfo = getBasicInfo(rawEquip);
         equip.basicPhysicsShield = basicInfo.physicsShield;
         equip.basicMagicShield = basicInfo.magicShield;
-        const result = getAttribute(rawEquip, tabs.attrib, tabs.recipe, tabs.event);
+        const result = getAttribute(rawEquip, tabs.attrib, tabs.recipe, tabs.event, tabs.set);
         Object.assign(equip, result.attributes);
         if (result.event) {
             const eventId = 'event-' + result.event.id.join('-');
@@ -154,6 +154,59 @@ if (global.command === 'equip') {
             }
             events[equip.texiao] = { id: equip.texiao, name: equip.name, desc: result.event.desc.join(';') };
             eventsIds[eventId] = { ID: eventId, databaseId: equip.texiao };
+        }
+        if (result.set) {
+            const setId = 'set-' + result.set.id;
+            if (tabs.id[setId]) {
+                equip.texiao = tabs.id[setId].databaseId;
+            } else if (setsIds[setId]) {
+                equip.texiao = setsIds[setId].databaseId;
+            } else {
+                const databaseId = ++maxSetId;
+                equip.texiao = databaseId;
+            }
+            if (sets[equip.texiao]) {
+                // 增加组件
+                sets[equip.texiao][`pos${equip.type}`] = equip.name;
+                if (equip.type === 2) {
+                    sets[equip.texiao].pos3 = equip.name;
+                }
+            } else {
+                const setRow = {
+                    id: equip.texiao,
+                    name: result.set.name,
+                };
+                ['2', '3', '4'].forEach(v => {
+                    if (result.set.effects[v]) {
+                        const effects = result.set.effects[v];
+                        setRow[`desc${v}`] = '';
+                        setRow[`index${v}`] = '';
+                        const descKeys = [];
+                        const effectKeys = [];
+                        const effectValues = [];
+                        effects.forEach(([key, value, fullName]) => {
+                            if (key === 'atSetEquipmentRecipe'){
+                                setRow[`desc${v}`] += value;
+                            } else {
+                                effectKeys.push(fullName);
+                                descKeys.push(key);
+                                effectValues.push(value);
+                            }
+                        });
+                        setRow[`index${v}`] += `${effectKeys.join('/')}|${effectValues.join('/')}`;
+                        if (setRow[`desc${v}`] === '') {
+                            setRow[`desc${v}`] = descKeys.join('/')
+                        }
+                    }
+                });
+                sets[equip.texiao] = setRow;
+                sets[equip.texiao][`pos${equip.type}`] = equip.name;
+                if (equip.type === 2) {
+                    sets[equip.texiao].pos3 = equip.name;
+                }
+            }
+            setsIds[setId] = { ID: setId, databaseId: equip.texiao };
+            equip.texiao = '-' + equip.texiao;
         }
         equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
         equip.dropSource = rawEquip.GetType;
@@ -221,10 +274,41 @@ if (global.command === 'equip') {
                         path: './output/texiao.csv',
                         header: [{ id: 'id', title: 'id' }, { id: 'name', title: 'name' }, { id: 'desc', title: 'desc' }],
                     });
+                    const setWriter = createCsvWriter({
+                        path: './output/equipset.csv',
+                        header: [
+                            { id: 'id', title: 'setID' },
+                            { id: 'name', title: 'name' },
+                            { id: 'pos0', title: 'pos0' },
+                            { id: 'pos1', title: 'pos1' },
+                            { id: 'pos2', title: 'pos2' },
+                            { id: 'pos3', title: 'pos3' },
+                            { id: 'pos4', title: 'pos4' },
+                            { id: 'pos5', title: 'pos5' },
+                            { id: 'pos6', title: 'pos6' },
+                            { id: 'pos7', title: 'pos7' },
+                            { id: 'pos8', title: 'pos8' },
+                            { id: 'pos9', title: 'pos9' },
+                            { id: 'pos10', title: 'pos10' },
+                            { id: 'pos11', title: 'pos11' },
+                            { id: 'desc2', title: 'desc2' },
+                            { id: 'index2', title: 'index2' },
+                            { id: 'desc3', title: 'desc3' },
+                            { id: 'index3', title: 'index3' },
+                            { id: 'desc4', title: 'desc4' },
+                            { id: 'index4', title: 'index4' },
+                        ],
+                    });
                     csvWriter.writeRecords(pack.sort((a,b) => a.id - b.id)).then(() => {
-                        return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId).concat(Object.values(eventsIds)));
+                        return idMapWriter.writeRecords(
+                            idMap.sort((a, b) => a.databaseId - b.databaseId)
+                                .concat(Object.values(eventsIds).sort((a, b) => a.databaseId - b.databaseId))
+                                .concat(Object.values(setsIds).sort((a, b) => a.databaseId - b.databaseId))
+                            );
                     }).then(() => {
                         return eventWriter.writeRecords(Object.values(events));
+                    }).then(() => {
+                        return setWriter.writeRecords(Object.values(sets));
                     }).then(() => {
                         console.log(`output all result done`);
                     });

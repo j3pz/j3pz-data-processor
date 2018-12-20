@@ -167,11 +167,13 @@ module.exports = {
         return result;
     },
 
-    getAttribute(rawEquip, attriTab, recipeTab, eventTab) {
+    getAttribute(rawEquip, attriTab, recipeTab, eventTab, setTab) {
         const attributes = ['body','spirit','strength','agility','spunk','physicsShield','magicShield','dodge','parryBase','parryValue','toughness','attack','heal','crit','critEffect','overcome','acce','hit','strain','huajing','threat'];
         const result = attributes.reduce((acc, cur) => {acc[cur] = 0; return acc;}, {});
         let texiao = [];
         let eventId = [];
+        let hasSet = false;
+        const setObj = { effects: {} };
         Array.from({ length: 12 }).map((key, i) => rawEquip[`Magic${i + 1}Type`])
             .forEach((id) => {
                 const attribute = attriTab[id];
@@ -209,12 +211,55 @@ module.exports = {
                 }
             });
         if (rawEquip.SetID > 0) {
-            // result.texiao = -1 * rawEquip.SetID;
-            // console.log(`Set detected ${rawEquip.SetID} at ID=${rawEquip.ID}, Name=${rawEquip.Name}`)
+            const setInfo = setTab[rawEquip.SetID];
+            if (setInfo) {
+                setObj.id = setInfo.ID;
+                setObj.name = setInfo.Name;
+                Array.from({ length: 3 }).map((key, i) => ({
+                    i: i + 2, 
+                    ids: [setInfo[`${i + 2}_1`], setInfo[`${i + 2}_2`]],
+                })).forEach(({i, ids}) => {
+                    setObj.effects[i] = [];
+                    ids.forEach(id => {
+                        const attribute = attriTab[id];
+                        if (!id) {
+                            return;
+                        }
+                        try {
+                            const key = attribute.ModifyType;
+                            let value;
+                            if (attributeKeyMap[key] && attributeKeyMap[key][0]) {
+                                if (key === 'atActiveThreatCoefficient') {
+                                    value = +attribute.Param2Min;
+                                } else {
+                                    value = +attribute.Param1Min;
+                                }
+                                setObj.effects[i].push([key, value, attributeKeyMap[key][0]]);
+                                hasSet = true;
+                            } else if (key === 'atSetEquipmentRecipe') {
+                                const event = recipeTab[attribute.Param1Min];
+                                if (event) {
+                                    const regarr = /"(.*)"/.exec(event.Desc.replace('\n', ''));
+                                    if (regarr) {
+                                        value = regarr[1].replace(/\\/g, '');
+                                        setObj.effects[i].push([key, value]);
+                                        hasSet = true;
+                                    }
+                                }
+                            }
+                        } catch (e) {
+                            console.error(`Set attributes parse error at ID=${rawEquip.ID}, Name=${rawEquip.Name}, id=${id}`);
+                        }
+                    })
+                });
+            }
         }
         const ret = { attributes: result };
         if (eventId.length > 0) {
             ret.event = { desc: texiao, id: eventId };
+        }
+        if (hasSet) {
+            ret.set = setObj;
         }
         return ret;
     },
