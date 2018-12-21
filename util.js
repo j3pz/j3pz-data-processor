@@ -315,7 +315,7 @@ module.exports = {
                     });
                 } else if (type === '掉落' || type === '地图掉落') {
                     dropInfo.type = '掉落';
-                    dropInfo.desc = `/掉落: ${desc}`;
+                    dropInfo.desc = `/掉落: ${desc}`.replace(/[\[\]]/g, '');
                 } else if (type === '声望') {
                     dropInfo.type = type;
                     dropInfo.desc = `/声望:${info.Get_Force}(${info.PrestigeRequire})`;
