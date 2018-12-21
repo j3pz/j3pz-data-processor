@@ -295,6 +295,42 @@ module.exports = {
         return `${result.count}D${result.attrib.join('D')}`;
     },
 
+    getDropSource(equipId, db, mapList) {
+        const info = db[equipId];
+        const ret = [];
+        if (info.GetType) {
+            const types = info.GetType.split(',');
+            const desc = info.Get_Desc.split('},{').map(v => v.replace(/[{}]/g, ''));
+            types.forEach((type, i) => {
+                const dropInfo = {};
+                if (type === '副本') {
+                    const mapBossArray = desc[i].split('],[').map(v => v.replace(/[\[\]]/g, '').split(','));
+                    const mapArray = info.BelongMapID.split(',');
+                    dropInfo.type = type;
+                    dropInfo.desc = '';
+                    mapArray.forEach((mapId, j) => {
+                        const mapName = mapList[mapId] ? mapList[mapId].DisplayName : '未知';
+                        const bosses = mapBossArray[j] ? mapBossArray[j].join(', ') : mapBossArray[j - 1].join(', ');
+                        dropInfo.desc += `/${type}·${mapName}: ${bosses}`;
+                    });
+                } else if (type === '掉落' || type === '地图掉落') {
+                    dropInfo.type = '掉落';
+                    dropInfo.desc = `/掉落: ${desc}`;
+                } else if (type === '声望') {
+                    dropInfo.type = type;
+                    dropInfo.desc = `/声望:${info.Get_Force}(${info.PrestigeRequire})`;
+                }
+                if (dropInfo.desc && dropInfo.desc.startsWith('/')) {
+                    dropInfo.desc = dropInfo.desc.substr(1);
+                }
+                if (dropInfo.type) {
+                    ret.push(dropInfo);
+                }
+            });
+        }
+        return ret.map(v => `/${v.desc}`).join('/');
+    },
+
     getEnchantType(type) {
         const value = enchantTypeMap[type];
         if (value !== undefined) return value;

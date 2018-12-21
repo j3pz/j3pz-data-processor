@@ -4,8 +4,8 @@ const iconv = require('iconv-lite');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const { 
-    getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo,
-    getAttribute, getEmbed, getEnchantType, getEnchantAttributes, getEnchantXinfaType
+    getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getDropSource,
+    getAttribute, getEmbed, getEnchantType, getEnchantAttributes, getEnchantXinfaType,
 } = require('./util');
 
 global.options = {
@@ -75,14 +75,20 @@ if (global.command === 'equip') {
         // { id: 'originalId', title: 'originalId'}, 
     ];
     
-    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0, recipe: 0, event: 0, item: 0 };
-    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [], recipe: [], event: [], item: [] };
-    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {}, recipe: {}, event: {}, item: {} };
+    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0, recipe: 0, event: 0, item: 0, db: 0, map: 0 };
+    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [], recipe: [], event: [], item: [], db: [], map: [] };
+    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {}, recipe: {}, event: {}, item: {}, db: {}, map: {} };
 
     const setsIds = [];
     const sets = {};
     const eventsIds = {};
     const events = {};
+
+    const tabId = {
+        6: 'weapon',
+        7: 'armor',
+        8: 'trinket',
+    };
     
     let maxId = 32276;
     let maxSkillEventId = 216;
@@ -109,6 +115,9 @@ if (global.command === 'equip') {
                             tabs[key][`${item.ID}-${item.Level}`] = item;
                         } else if (key === 'item') {
                             tabs[key][item.ItemID] = item;
+                        } else if (key === 'db') {
+                            const type = tabId[item.TabType];
+                            tabs[key][`${type}-${item.ID}`] = item;
                         } else {
                             tabs[key][item.ID] = item;
                         }
@@ -219,7 +228,7 @@ if (global.command === 'equip') {
             equip.texiao = '-' + equip.texiao;
         }
         equip.xiangqian = getEmbed(rawEquip, tabs.attrib);
-        equip.dropSource = rawEquip.GetType;
+        equip.dropSource = getDropSource(equip.originalId, tabs.db, tabs.map) || GetType;
         return equip;
     }
     
@@ -247,7 +256,7 @@ if (global.command === 'equip') {
     function readCallback(key) {
         flags[key] += 1;
         const sum = Object.values(flags).reduce((acc, cur) => acc + cur, 0);
-        if (sum === 18) {
+        if (sum === 22) {
             // 全部读取完成后，启动解析器
             console.log('init finished');
             let count = 0;
@@ -340,6 +349,8 @@ if (global.command === 'equip') {
     readCsvFile('./raw/equipmentrecipe.txt', 'recipe', true, readCallback);
     readCsvFile('./raw/skillevent.txt', 'event', true, readCallback);
     readCsvFile('./raw/item.txt', 'item', true, readCallback);
+    readCsvFile('./raw/equipdb.txt', 'db', true, readCallback);
+    readCsvFile('./raw/MapList.tab', 'map', true, readCallback);
 } else if (global.command === 'enchant') {
     console.log('====parse enchants====');
     console.log('=========init=========');
