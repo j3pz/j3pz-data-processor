@@ -75,9 +75,9 @@ if (global.command === 'equip') {
         // { id: 'originalId', title: 'originalId'}, 
     ];
     
-    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0, recipe: 0, event: 0 };
-    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [], recipe: [], event: [] };
-    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {}, recipe: {}, event: {} };
+    const flags = { armor: 0, trinket: 0, weapon: 0, attrib: 0, set: 0, id: 0, recipe: 0, event: 0, item: 0 };
+    const keys = { armor: [], trinket: [], weapon: [], attrib: [], set: [], id: [], recipe: [], event: [], item: [] };
+    const tabs = { armor: [], trinket: [], weapon: [], attrib: {}, set: {}, id: {}, recipe: {}, event: {}, item: {} };
 
     const setsIds = [];
     const sets = {};
@@ -107,6 +107,8 @@ if (global.command === 'equip') {
                     if (isObj) {
                         if (key === 'recipe') {
                             tabs[key][`${item.ID}-${item.Level}`] = item;
+                        } else if (key === 'item') {
+                            tabs[key][item.ItemID] = item;
                         } else {
                             tabs[key][item.ID] = item;
                         }
@@ -132,8 +134,9 @@ if (global.command === 'equip') {
     }
     
     function parseEquip(rawEquip, key) {
-        const { Name, ID, Level, MaxStrengthLevel, GetType } = rawEquip;
-        const equip = { uiId: GetType, name: Name, originalId: `${key}-${ID}`, quality: +Level, strengthen: +MaxStrengthLevel, iconID: 99999 };
+        const { UiID, Name, ID, Level, MaxStrengthLevel, GetType } = rawEquip;
+        const equip = { uiId: GetType, name: Name, originalId: `${key}-${ID}`, quality: +Level, strengthen: +MaxStrengthLevel };
+        equip.iconID = tabs.item[UiID].IconID;
         equip.menpai = getMenpai(rawEquip.BelongSchool);
         equip.xinfa = getXinfaType(rawEquip.MagicKind, equip.menpai);
         if (equip.xinfa > 5 && equip.menpai === 1) {
@@ -244,7 +247,7 @@ if (global.command === 'equip') {
     function readCallback(key) {
         flags[key] += 1;
         const sum = Object.values(flags).reduce((acc, cur) => acc + cur, 0);
-        if (sum === 16) {
+        if (sum === 18) {
             // 全部读取完成后，启动解析器
             console.log('init finished');
             let count = 0;
@@ -336,6 +339,7 @@ if (global.command === 'equip') {
     readCsvFile('./output/originalId.tab', 'id', true, readCallback);
     readCsvFile('./raw/equipmentrecipe.txt', 'recipe', true, readCallback);
     readCsvFile('./raw/skillevent.txt', 'event', true, readCallback);
+    readCsvFile('./raw/item.txt', 'item', true, readCallback);
 } else if (global.command === 'enchant') {
     console.log('====parse enchants====');
     console.log('=========init=========');
