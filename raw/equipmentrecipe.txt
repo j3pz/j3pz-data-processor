@@ -149,3 +149,11 @@ ID	Level	Desc
 4297	1	<text>text="“醉斩白蛇”会心提高5%" font=101 </text>
 4347	1	<text>text="“听雷”伤害提高10%" font=101 </text>
 4678	1	<text>text="“蛇影”伤害提高10%" font=101 </text>
+4814	1	<text>text="疾电叱羽调息时间降低10秒" font=101 </text>
+4815	1	<text>text="浮游天地调息时间降低2秒" font=101 </text>
+4816	1	<text>text="木落雁归”伤害提高10%" font=101 </text>
+4817	1	<text>text="“翼绝云天”伤害提高10%" font=101 </text>
+4818	1	<text>text="“木落雁归”伤害提高5%" font=101 </text>
+4819	1	<text>text="“翼绝云天”伤害提高5%" font=101 </text>
+4820	1	<text>text="“木落雁归”会心提高5%" font=101 </text>
+4821	1	<text>text="“海运南冥”会心提高5%" font=101 </text>
