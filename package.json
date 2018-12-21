@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "csv": "^4.0.0",
     "csv-writer": "^1.2.0",
     "iconv-lite": "^0.4.24"
