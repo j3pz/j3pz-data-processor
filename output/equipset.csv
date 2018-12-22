@@ -294,3 +294,29 @@ setID,name,pos0,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,desc2,i
 1959,2300恶人威望饰品,醉解敌颅·卷河链,醉解敌颅·卷河坠,醉解敌颅·卷河戒,醉解敌颅·卷河戒,,,,,,,,,atDecriticalDamagePowerBase,huajing|73,atToughnessBase,toughness|73,,|
 1960,蓬莱低级装备25137,万里长风·未料链,万里长风·未料坠,万里长风·未料戒,万里长风·未料戒,,,,,,,,,atDecriticalDamagePowerBase,huajing|47,atToughnessBase,toughness|47,,|
 1961,蓬莱低级装备25146,剑鸣八荒·解作链,剑鸣八荒·解作坠,剑鸣八荒·解作戒,剑鸣八荒·解作戒,,,,,,,,,atDecriticalDamagePowerBase,huajing|47,atToughnessBase,toughness|47,,|
+1962,蓬莱低级装备20333,,,,,,,,,沧波御厨上衣·刀功,,沧波御厨腰带·刀功 ,沧波渔网架·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|30,,|,,|
+1963,蓬莱低级装备20392,,,,,,,,,沧波御厨上衣·刀功,,沧波御厨腰带·刀功 ,沧波渔网架·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|30,,|,,|
+1964,1850品御厨套装,,,,,,,,,菩提御厨上衣·火候,,菩提御厨腰带·火候,菩提擀面杖·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1965,1850品御厨套装,,,,,,,,,菩提御厨上衣·清蒸,,菩提御厨腰带·清蒸,菩提擀面杖·清蒸,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1966,1850品御厨套装,,,,,,,,,翡翠御厨上衣·火候,,翡翠御厨腰带·火候,翡翠玲珑筷·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1967,1850品御厨套装,,,,,,,,,翡翠御厨上衣·水煮,,翡翠御厨腰带·水煮,翡翠玲珑筷·水煮,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1968,1850品御厨套装,,,,,,,,,御赐御厨上衣·刀功,,御赐御厨腰带·刀功,御赐大锅铲·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1969,1850品御厨套装,,,,,,,,,御赐御厨上衣·生煎,,御赐御厨腰带·生煎,御赐大锅铲·生煎,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1970,1850品御厨套装,,,,,,,,,灵虚御厨上衣·火候,,灵虚御厨腰带·火候,灵虚大菜刀·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1971,1850品御厨套装,,,,,,,,,灵虚御厨上衣·刀功,,灵虚御厨腰带·刀功,灵虚大菜刀·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1972,1850品御厨套装,,,,,,,,,霓裳御厨上衣·火候,,霓裳御厨腰带·火候,霓裳玉女勺·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1973,1850品御厨套装,,,,,,,,,霓裳御厨上衣·水煮,,霓裳御厨腰带·水煮,霓裳玉女勺·水煮,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1974,1850品御厨套装,,,,,,,,,瑶星御厨上衣·火候,,瑶星御厨腰带·火候,瑶星青玉葱·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1975,1850品御厨套装,,,,,,,,,瑶星御厨上衣·水煮,,瑶星御厨腰带·水煮,瑶星青玉葱·水煮,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1976,1850品御厨套装,,,,,,,,,蜀月御厨上衣·火候,,蜀月御厨腰带·火候,蜀月竹筒饭·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1977,1850品御厨套装,,,,,,,,,蜀月御厨上衣·刀功,,蜀月御厨腰带·刀功,蜀月竹筒饭·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1978,1850品御厨套装,,,,,,,,,至尊御厨上衣·刀功,,至尊御厨腰带·刀功,至尊剔骨刀·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1979,1850品御厨套装,,,,,,,,,醉梦逍遥上衣·刀功,,醉梦逍遥腰带·刀功,醉梦逍遥棒·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1980,1850品御厨套装,,,,,,,,,妙火御厨上衣·火候,,妙火御厨腰带·火候,妙火天香串·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1981,1850品御厨套装,,,,,,,,,妙火御厨上衣·清蒸,,妙火御厨腰带·清蒸,妙火天香串·清蒸,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1982,1850品御厨套装,,,,,,,,,塞雪御厨上衣·刀工,,塞雪御厨腰带·刀工,塞雪蒸鱼屉·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1983,1850品御厨套装,,,,,,,,,塞雪御厨上衣·清蒸,,塞雪御厨腰带·清蒸,塞雪蒸鱼屉·清蒸,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1984,1850品御厨套装,,,,,,,,,古意御厨上衣·火候,,古意御厨腰带·火候,古意调味匣·火候,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1985,1850品御厨套装,,,,,,,,,古意御厨上衣·水煮,,古意御厨腰带·水煮,古意调味匣·水煮,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1986,1850品御厨套装,,,,,,,,,傲寒御厨上衣·刀功,,傲寒御厨腰带·刀功 ,傲寒绛腊厨装·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|
+1987,1850品御厨套装,,,,,,,,,沧波御厨上衣·刀功,,沧波御厨腰带·刀功 ,沧波渔网架·刀功,atBasePotentialAdd,body/spirit/strength/agility/spunk|46,,|,,|

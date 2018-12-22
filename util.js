@@ -45,6 +45,7 @@ const attributeKeyMap = {
     atAllTypeCriticalDamagePowerBase: ['critEffect', '38'], // 会效
     atAllTypeCriticalStrike: ['crit', '37'], // 会心
     atAllTypeHitValue: ['hit', '36'], // 命中
+    atBasePotentialAdd: ['body/spirit/strength/agility/spunk', '999'], // 全属性
     atDecriticalDamagePowerBase: ['huajing', '52'], // 化劲
     atDodge: ['dodge', '45'], // 闪避
     atHasteBase: ['acce', '51'], // 加速
