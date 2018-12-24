@@ -309,10 +309,12 @@ module.exports = {
                     const mapArray = info.BelongMapID.split(',');
                     dropInfo.type = type;
                     dropInfo.desc = '';
-                    mapArray.forEach((mapId, j) => {
+                    mapArray.map((mapId, j) => {
                         const mapName = mapList[mapId] ? mapList[mapId].DisplayName : '未知';
                         const bosses = mapBossArray[j] ? mapBossArray[j].join(', ') : mapBossArray[j - 1].join(', ');
-                        dropInfo.desc += `/${type}·${mapName}: ${bosses}`;
+                        return `/${type}·${mapName}: ${bosses}`;
+                    }).reverse().forEach(desc => {
+                        dropInfo.desc += desc;
                     });
                 } else if (type === '掉落' || type === '地图掉落') {
                     dropInfo.type = '掉落';
