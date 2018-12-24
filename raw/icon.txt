@@ -11255,3 +11255,4 @@ ID	FileName	Frame	Kind	SubKind	Tag1	Tag2
 11378	daoj_18_11_29_411.UITex	0	技能	通用		
 11379	daoj_18_11_29_412.UITex	0	技能	通用		
 11380	daoj_18_11_29_413.UITex	0	技能	通用		
+11381	daoj_18_11_29_414.UITex	0	任务特殊	活动相关		

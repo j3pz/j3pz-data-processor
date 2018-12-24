@@ -312,10 +312,10 @@ module.exports = {
                     mapArray.map((mapId, j) => {
                         const mapName = mapList[mapId] ? mapList[mapId].DisplayName : '未知';
                         const bosses = mapBossArray[j] ? mapBossArray[j].join(', ') : mapBossArray[j - 1].join(', ');
-                        return `/${type}·${mapName}: ${bosses}`;
-                    }).reverse().forEach(desc => {
+                        return  [mapId, `/${type}·${mapName.replace('_', '·')}: ${bosses}`];
+                    }).sort((a, b) => b[0] - a[0]).forEach(([mapId, desc]) => {
                         dropInfo.desc += desc;
-                    });
+                    })
                 } else if (type === '掉落' || type === '地图掉落') {
                     dropInfo.type = '掉落';
                     dropInfo.desc = `/掉落: ${desc}`.replace(/[\[\]]/g, '');
