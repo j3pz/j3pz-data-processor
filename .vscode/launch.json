@@ -17,6 +17,12 @@
             "name": "Enchant",
             "program": "${workspaceFolder}/index.js",
             "args": ["enchant"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Qixue",
+            "program": "${workspaceFolder}/qixue.js",
         }
     ]
 }
