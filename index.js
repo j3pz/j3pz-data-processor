@@ -158,8 +158,7 @@ if (global.command === 'equip') {
         equip.type = getEquipType(rawEquip.SubType, rawEquip.DetailType);
         equip.score = getEquipScore(Level, rawEquip.SubType, MaxStrengthLevel);
         const basicInfo = getBasicInfo(rawEquip);
-        equip.basicPhysicsShield = basicInfo.physicsShield;
-        equip.basicMagicShield = basicInfo.magicShield;
+        Object.assign(equip, basicInfo);
         const result = getAttribute(rawEquip, tabs.attrib, tabs.recipe, tabs.event, tabs.set);
         Object.assign(equip, result.attributes);
         if (result.event) {
