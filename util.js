@@ -155,7 +155,7 @@ module.exports = {
     },
 
     getBasicInfo(rawEquip) {
-        const result = { physicsShield: 0, magicShield: 0 };
+        const result = { physicsShield: 0, magicShield: 0, damageBase: 0, damageRange: 0, attackSpeed: 0 };
         [1, 2, 3, 4, 5, 6].map(key => [rawEquip[`Base${key}Type`], rawEquip[`Base${key}Min`], rawEquip[`Base${key}Max`]])
             .forEach(([key, min, max]) => {
                 if (key === 'atPhysicsShieldBase') {
@@ -163,6 +163,15 @@ module.exports = {
                 }
                 if (key === 'atMagicShield') {
                     result.magicShield = +min;
+                }
+                if (key === 'atMeleeWeaponDamageBase') {
+                    result.damageBase = +min;
+                }
+                if (key === 'atMeleeWeaponDamageRand') {
+                    result.damageRange = +min;
+                }
+                if (key === 'atMeleeWeaponAttackSpeedBase') {
+                    result.attackSpeed = +min;
                 }
             });
         return result;
