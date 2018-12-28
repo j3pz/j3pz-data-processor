@@ -6715,8 +6715,8 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10342	仙踪·腰·铸（外防）	腰带	外功防御提升76点	atPhysicsShieldAdditional	76	76																										6					
 10343	仙踪·腰·铸（内防）	腰带	内功防御提升76点	atMagicShield	76	76																										6				0	0
 10344	仙踪·腰·铸（招架）	腰带	招架提升76点	atParryBase	76	76																										6				0	0
-10345	仙踪·腰·铸（御劲）	腰带	化劲提升76点	atDecriticalDamagePowerBase	76	76																										6				0	0
-10346	仙踪·腰·铸（化劲）	腰带	御劲提升76点	atToughnessBase	76	76																										6				0	0
+10345	仙踪·腰·铸（化劲）	腰带	化劲提升76点	atDecriticalDamagePowerBase	76	76																										6				0	0
+10346	仙踪·腰·铸（御劲）	腰带	御劲提升76点	atToughnessBase	76	76																										6				0	0
 10347	仙踪·裤·甲（身法）	下装	身法提升17点	atAgilityBase	17	17																										8				0	0
 10348	仙踪·裤·甲（元气）	下装	元气提升17点	atSpunkBase	17	17																										8				0	0
 10349	仙踪·裤·甲（力道）	下装	力道提升17点	atStrengthBase	17	17																										8				0	0
@@ -6738,8 +6738,8 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10365	仙踪·腰·甲（外防）	腰带	外功防御提升38点	atPhysicsShieldAdditional	38	38																										6				0	0
 10366	仙踪·腰·甲（内防）	腰带	内功防御提升38点	atMagicShield	38	38																										6				0	0
 10367	仙踪·腰·甲（招架）	腰带	招架提升38点	atParryBase	38	38																										6				0	0
-10368	仙踪·腰·甲（御劲）	腰带	化劲提升38点	atDecriticalDamagePowerBase	38	38																										6				0	0
-10369	仙踪·腰·甲（化劲）	腰带	御劲提升38点	atToughnessBase	38	38																										6				0	0
+10368	仙踪·腰·甲（化劲）	腰带	化劲提升38点	atDecriticalDamagePowerBase	38	38																										6				0	0
+10369	仙踪·腰·甲（御劲）	腰带	御劲提升38点	atToughnessBase	38	38																										6				0	0
 10370	仙踪·兵·熔（仇恨）	武器	仇恨百分比提升40%	atActiveThreatCoefficient	0	409																									1800	0				0	0
 10371	废弃附魔ID	下装	[无效附魔]御劲提升36点	atToughnessBase	36	36																										8				0	0
 10372	废弃附魔ID	帽子	[无效附魔]仇恨百分比提升12%	atActiveThreatCoefficient	0	128																										3					
@@ -6785,8 +6785,8 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10412	仙踪·衣·绣（外防）	上装	外功防御提升76点	atPhysicsShieldAdditional	76	76																										2					
 10413	仙踪·衣·绣（内防）	上装	内功防御提升76点	atMagicShield	76	76																										2				0	0
 10414	仙踪·衣·绣（招架）	上装	招架提升76点	atParryBase	76	76																										2				0	0
-10415	仙踪·衣·绣（御劲）	上装	化劲提升76点	atDecriticalDamagePowerBase	76	76																										2				0	0
-10416	仙踪·衣·绣（化劲）	上装	御劲提升76点	atToughnessBase	76	76																										2				0	0
+10415	仙踪·衣·绣（化劲）	上装	化劲提升76点	atDecriticalDamagePowerBase	76	76																										2				0	0
+10416	仙踪·衣·绣（御劲）	上装	御劲提升76点	atToughnessBase	76	76																										2				0	0
 10417	仙踪·腕·染（身法）	护手	身法提升17点	atAgilityBase	17	17																										10				0	0
 10418	仙踪·腕·染（元气）	护手	元气提升17点	atSpunkBase	17	17																										10				0	0
 10419	仙踪·腕·染（力道）	护手	力道提升17点	atStrengthBase	17	17																										10				0	0
@@ -6808,8 +6808,8 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10435	仙踪·衣·染（外防）	上装	外功防御提升38点	atPhysicsShieldAdditional	38	38																										2					
 10436	仙踪·衣·染（内防）	上装	内功防御提升38点	atMagicShield	38	38																										2					
 10437	仙踪·衣·染（招架）	上装	招架提升38点	atParryBase	38	38																										2					
-10438	仙踪·衣·染（御劲）	上装	化劲提升38点	atDecriticalDamagePowerBase	38	38																										2					
-10439	仙踪·衣·染（化劲）	上装	御劲提升38点	atToughnessBase	38	38																										2					
+10438	仙踪·衣·染（化劲）	上装	化劲提升38点	atDecriticalDamagePowerBase	38	38																										2					
+10439	仙踪·衣·染（御劲）	上装	御劲提升38点	atToughnessBase	38	38																										2					
 10440	仙踪·鞋·染（跑速）	下装	跑步速度提升5%（鞋子）	atMoveSpeedPercent	56	56																										9				0	0
 10441	废弃附魔ID	护手	[无效附魔]闪避提升36点	atDodge	36	36																										10					
 10442	废弃附魔ID	护手	[无效附魔]外功防御提升36点	atPhysicsShieldAdditional	36	36																										10					
