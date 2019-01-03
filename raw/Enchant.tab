@@ -6741,11 +6741,11 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10368	仙踪·腰·甲（化劲）	腰带	化劲提升38点	atDecriticalDamagePowerBase	38	38																										6				0	0
 10369	仙踪·腰·甲（御劲）	腰带	御劲提升38点	atToughnessBase	38	38																										6				0	0
 10370	仙踪·兵·熔（仇恨）	武器	仇恨百分比提升40%	atActiveThreatCoefficient	0	409																									1800	0				0	0
-10371	废弃附魔ID	下装	[无效附魔]御劲提升36点	atToughnessBase	36	36																										8				0	0
-10372	废弃附魔ID	帽子	[无效附魔]仇恨百分比提升12%	atActiveThreatCoefficient	0	128																										3					
-10373	废弃附魔ID	帽子	[无效附魔]拆招提升440	atParryValueBase	440	440																										3					
-10374	废弃附魔ID	帽子	[无效附魔]外功破防等级提升72点	atPhysicsOvercomeBase	72	72																										3					
-10375	废弃附魔ID	帽子	[无效附魔]内功破防等级提升72点	atMagicOvercome	72	72																										3					
+10371	仙踪·兵·铸（外伤）	武器	外功攻击提升34点	atPhysicsAttackPowerBase	34	34																										0				0	0
+10372	仙踪·兵·铸（内伤）	武器	内功攻击提升41点	atMagicAttackPowerBase	41	41																										0				0	0
+10373	仙踪·兵·铸（疗伤）	武器	疗伤成效提升37点	atTherapyPowerBase	37	37																										0				0	0
+10374	仙踪·兵·铸（武伤）	武器	武器伤害提升51点	atMeleeWeaponDamageBase	51	51																										0				0	0
+10375	仙踪·兵·熔（仇恨）	武器	仇恨百分比提升20%	atActiveThreatCoefficient	0	204																										0				0	0
 10376	废弃附魔ID	帽子	[无效附魔]全命中提升72点	atAllTypeHitValue	72	72																										3					
 10377	废弃附魔ID	帽子	[无效附魔]全会心提升72点	atAllTypeCriticalStrike	72	72																										3					
 10378	废弃附魔ID	帽子	[无效附魔]无双等级提升72点	atStrainBase	72	72																										3					
