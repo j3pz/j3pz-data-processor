@@ -11264,4 +11264,5 @@ ID	FileName	Frame	Kind	SubKind	Tag1	Tag2
 11387	daoj_18_12_28_6.UITex	0	防具	马匹相关		
 11388	daoj_18_12_28_7.UITex	0	防具	腰部挂件		
 11389	daoj_18_12_28_8.UITex	0	防具	发型		
-11390	daoj_18_12_28_9.UITex	0	表情动作	交互表情		
+11390	daoj_19_1_2_1.UITex	0	表情动作	交互表情		
+11391	daoj_19_1_2_2.UITex	0	防具	背部挂件		
