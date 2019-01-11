@@ -9,14 +9,12 @@
             "request": "launch",
             "name": "Equip",
             "program": "${workspaceFolder}/index.js",
-            "args": ["equip"]
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Enchant",
-            "program": "${workspaceFolder}/index.js",
-            "args": ["enchant"]
+            "program": "${workspaceFolder}/enchant.js",
         },
         {
             "type": "node",
