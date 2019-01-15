@@ -174,6 +174,19 @@ if (global.command === 'equip') {
             events[equip.texiao] = { id: equip.texiao, name: equip.name, desc: result.event.desc.join(';') };
             eventsIds[eventId] = { ID: eventId, databaseId: equip.texiao };
         }
+        if (result.skill) {
+            const eventId = 'skill-' + result.skill.id;
+            if (tabs.id[eventId]) {
+                equip.texiao = tabs.id[eventId].databaseId;
+            } else if (eventsIds[eventId]) {
+                equip.texiao = eventsIds[eventId].databaseId;
+            } else {
+                const databaseId = ++maxSkillEventId;
+                equip.texiao = databaseId;
+            }
+            events[equip.texiao] = { id: equip.texiao, name: equip.name, desc: result.skill.desc };
+            eventsIds[eventId] = { ID: eventId, databaseId: equip.texiao };
+        }
         if (result.set) {
             const setId = 'set-' + result.set.id;
             if (tabs.id[setId]) {

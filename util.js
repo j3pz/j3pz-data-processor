@@ -280,6 +280,12 @@ module.exports = {
         if (hasSet) {
             ret.set = setObj;
         }
+        if (rawEquip.SkillID && rawEquip.SkillLevel) {
+            ret.skill = {
+                id: `${rawEquip.SkillID}-${rawEquip.SkillLevel}`,
+                desc: '使用：获得风特效',
+            };
+        }
         return ret;
     },
 
