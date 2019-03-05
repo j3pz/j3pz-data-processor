@@ -128,7 +128,7 @@ if (global.command === 'equip') {
                         if (key === 'id' && item.ID.indexOf('enchant') < 0 && item.ID.indexOf('event') < 0 && item.databaseId > maxId) {
                             maxId = +item.databaseId;
                         }
-                        if (key === 'id' && item.ID.indexOf('event') === 0 && item.databaseId > maxSkillEventId) {
+                        if (key === 'id' && (item.ID.indexOf('event') === 0 || item.ID.indexOf('skill') === 0) && item.databaseId > maxSkillEventId) {
                             maxSkillEventId = +item.databaseId;
                         }
                         if (key === 'id' && item.ID.indexOf('set') === 0 && item.databaseId > maxSetId) {

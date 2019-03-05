@@ -30033,7 +30033,7 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 30031	0	atSkillEventHandler	1507	1507												
 30032	0	atSkillEventHandler	1508	1508												
 30033	0	atDamageToLifeForSelf	102	102												
-30034	0	atLifeReplenishExt	100	100												
+30034	0	atLifeReplenishExt	160	160												
 30035	0	atDecriticalDamagePowerBase	766	766	0	0	0	0	0	0	0	0	0	0	0	0
 30036	0	atPhysicsAttackPowerBase	1035	1035	0	0	0	0	0	0	0	0	0	0	0	0
 30037	0	atAllTypeCriticalStrike	1072	1072	0	0	0	0	0	0	0	0	0	0	0	0
@@ -34357,30 +34357,30 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 34355	0	atNeutralOvercomeBase	646	646	0	0	0	0	0	0	0	0	0	0	0	0
 34356	0	atLunarOvercomeBase	646	646	0	0	0	0	0	0	0	0	0	0	0	0
 34357	0	atParryBase	419	419	0	0	0	0	0	0	0	0	0	0	0	0
-34358	0	atSkillEventHandler	1379	1379	0	0	0	0	0	0	0	0	0	0	0	0
-34359	0	atSkillEventHandler	1380	1380	0	0	0	0	0	0	0	0	0	0	0	0
-34360	0	atSkillEventHandler	1381	1381	0	0	0	0	0	0	0	0	0	0	0	0
-34361	0	atSkillEventHandler	1382	1382	0	0	0	0	0	0	0	0	0	0	0	0
-34362	0	atSkillEventHandler	1377	1377	0	0	0	0	0	0	0	0	0	0	0	0
-34363	0	atSkillEventHandler	1378	1378	0	0	0	0	0	0	0	0	0	0	0	0
-34364	0	atSkillEventHandler	1383	1383	0	0	0	0	0	0	0	0	0	0	0	0
-34365	0	atSkillEventHandler	1384	1384	0	0	0	0	0	0	0	0	0	0	0	0
-34366	0	atSkillEventHandler	1385	1385	0	0	0	0	0	0	0	0	0	0	0	0
-34367	0	atSkillEventHandler	1386	1386	0	0	0	0	0	0	0	0	0	0	0	0
-34368	0	atSkillEventHandler	1387	1387	0	0	0	0	0	0	0	0	0	0	0	0
-34369	0	atSkillEventHandler	1388	1388	0	0	0	0	0	0	0	0	0	0	0	0
-34370	0	atSkillEventHandler	1389	1389	0	0	0	0	0	0	0	0	0	0	0	0
-34371	0	atSkillEventHandler	1390	1390	0	0	0	0	0	0	0	0	0	0	0	0
-34372	0	atSkillEventHandler	1391	1391	0	0	0	0	0	0	0	0	0	0	0	0
-34373	0	atSkillEventHandler	1392	1392	0	0	0	0	0	0	0	0	0	0	0	0
-34374	0	atSkillEventHandler	1393	1393	0	0	0	0	0	0	0	0	0	0	0	0
-34375	0	atSkillEventHandler	1394	1394	0	0	0	0	0	0	0	0	0	0	0	0
-34376	0	atSkillEventHandler	1395	1395	0	0	0	0	0	0	0	0	0	0	0	0
-34377	0	atSkillEventHandler	1396	1396	0	0	0	0	0	0	0	0	0	0	0	0
-34378	0	atSkillEventHandler	1397	1397	0	0	0	0	0	0	0	0	0	0	0	0
-34379	0	atSkillEventHandler	1398	1398	0	0	0	0	0	0	0	0	0	0	0	0
-34380	0	atSkillEventHandler	1399	1399	0	0	0	0	0	0	0	0	0	0	0	0
-34381	0	atSkillEventHandler	1399	1399	0	0	0	0	0	0	0	0	0	0	0	0
+34358	0	atSkillEventHandler	1599	1599	0	0	0	0	0	0	0	0	0	0	0	0
+34359	0	atSkillEventHandler	1600	1600	0	0	0	0	0	0	0	0	0	0	0	0
+34360	0	atSkillEventHandler	1609	1609	0	0	0	0	0	0	0	0	0	0	0	0
+34361	0	atSkillEventHandler	1610	1610	0	0	0	0	0	0	0	0	0	0	0	0
+34362	0	atSkillEventHandler	1601	1601	0	0	0	0	0	0	0	0	0	0	0	0
+34363	0	atSkillEventHandler	1602	1602	0	0	0	0	0	0	0	0	0	0	0	0
+34364	0	atSkillEventHandler	1597	1597	0	0	0	0	0	0	0	0	0	0	0	0
+34365	0	atSkillEventHandler	1598	1598	0	0	0	0	0	0	0	0	0	0	0	0
+34366	0	atSkillEventHandler	1603	1603	0	0	0	0	0	0	0	0	0	0	0	0
+34367	0	atSkillEventHandler	1604	1604	0	0	0	0	0	0	0	0	0	0	0	0
+34368	0	atSkillEventHandler	1617	1617	0	0	0	0	0	0	0	0	0	0	0	0
+34369	0	atSkillEventHandler	1618	1618	0	0	0	0	0	0	0	0	0	0	0	0
+34370	0	atSkillEventHandler	1615	1615	0	0	0	0	0	0	0	0	0	0	0	0
+34371	0	atSkillEventHandler	1616	1616	0	0	0	0	0	0	0	0	0	0	0	0
+34372	0	atSkillEventHandler	1611	1611	0	0	0	0	0	0	0	0	0	0	0	0
+34373	0	atSkillEventHandler	1612	1612	0	0	0	0	0	0	0	0	0	0	0	0
+34374	0	atSkillEventHandler	1619	1619	0	0	0	0	0	0	0	0	0	0	0	0
+34375	0	atSkillEventHandler	1613	1613	0	0	0	0	0	0	0	0	0	0	0	0
+34376	0	atSkillEventHandler	1614	1614	0	0	0	0	0	0	0	0	0	0	0	0
+34377	0	atSkillEventHandler	1605	1605	0	0	0	0	0	0	0	0	0	0	0	0
+34378	0	atSkillEventHandler	1606	1606	0	0	0	0	0	0	0	0	0	0	0	0
+34379	0	atSkillEventHandler	1607	1607	0	0	0	0	0	0	0	0	0	0	0	0
+34380	0	atSkillEventHandler	1608	1608	0	0	0	0	0	0	0	0	0	0	0	0
+34381	0	atSkillEventHandler	1620	1620	0	0	0	0	0	0	0	0	0	0	0	0
 34382	0	atSkillEventHandler	1588	1588	0	0	0	0	0	0	0	0	0	0	0	0
 34383	0	atSkillEventHandler	1584	1584	0	0	0	0	0	0	0	0	0	0	0	0
 34384	0	atSkillEventHandler	1585	1585	0	0	0	0	0	0	0	0	0	0	0	0
