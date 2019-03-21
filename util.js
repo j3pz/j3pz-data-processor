@@ -314,7 +314,7 @@ module.exports = {
     getDropSource(equipId, db, mapList) {
         const info = db[equipId];
         const ret = [];
-        if (info.GetType) {
+        if (info && info.GetType) {
             const types = info.GetType.split(',');
             const desc = info.Get_Desc.split('},{').map(v => v.replace(/[{}]/g, ''));
             types.forEach((type, i) => {

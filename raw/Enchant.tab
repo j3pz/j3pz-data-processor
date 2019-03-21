@@ -6845,3 +6845,15 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10472	烨阳晶石·暗器（外破）	暗器	外功破防等级提升152点	atPhysicsOvercomeBase	152	152																										1					
 10473	烨阳晶石·暗器（内破）	暗器	内功破防等级提升152点	atMagicOvercome	152	152																										1					
 10474	烨阳晶石·暗器（加速）	暗器	加速提升152点	atHasteBase	152	152																										1					
+10475	霁月·裤·甲（会心）	下装	全会心提升66点	atAllTypeCriticalStrike	66	66																										8				0	0
+10476	霁月·腕·染（会心）	护手	全会心提升66点	atAllTypeCriticalStrike	66	66																										10				0	0
+10477	霁月·头·甲（急速）	帽子	加速提升66点	atHasteBase	66	66																										3				3	0
+10478	霁月·裤·甲（外破）	下装	外功破防等级提升66点	atPhysicsOvercomeBase	66	66																										8				0	0
+10479	霁月·裤·甲（内破）	下装	内功破防等级提升66点	atMagicOvercome	66	66																										8				0	0
+10480	霁月·裤·甲（无双）	下装	无双等级提升66点	atStrainBase	66	66																										8				0	0
+10481	霁月·头·甲（外攻）	帽子	外功攻击提升29点	atPhysicsAttackPowerBase	29	29																										3				0	0
+10482	霁月·头·甲（内功）	帽子	内功攻击提升35点	atMagicAttackPowerBase	35	35																										3				0	0
+10483	霁月·头·甲（治疗）	帽子	疗伤成效提升32点	atTherapyPowerBase	32	32																										3				0	0
+10484	霁月·腕·染（外破）	护手	外功破防等级提升66点	atPhysicsOvercomeBase	66	66																										10				0	0
+10485	霁月·腕·染（内破）	护手	内功破防等级提升66点	atMagicOvercome	66	66																										10				0	0
+10486	霁月·腕·染（无双）	护手	无双等级提升66点	atStrainBase	66	66																										10				0	0

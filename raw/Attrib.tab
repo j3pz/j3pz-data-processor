@@ -34390,3 +34390,4 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 34388	0	atSetEquipmentRecipe	4819	4819	1	1	0	0	0	0	0	0	0	0	0	0
 34389	0	atSetEquipmentRecipe	4820	4820	1	1	0	0	0	0	0	0	0	0	0	0
 34390	0	atSetEquipmentRecipe	4821	4821	1	1	0	0	0	0	0	0	0	0	0	0
+34391		atMagicOvercome	387	387												
