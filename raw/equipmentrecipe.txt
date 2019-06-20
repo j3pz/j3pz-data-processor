@@ -60,7 +60,7 @@ ID	Level	Desc
 1510	1	<text>text="装备：“穿云”招式的威胁值提高20%" font=101 </text>
 1511	1	<text>text="装备：“龙吟”招式的威胁值提高20%" font=101 </text>
 1512	1	<text>text="装备：“普渡四方”伤害提高5%" font=101 </text>
-1513	1	<text>text="装备：“横扫六合”伤害提高5%" font=101 </text>
+1513	1	<text>text="装备：“守缺式”伤害提高5%" font=101 </text>
 1514	1	<text>text="装备：“普渡四方”招式的威胁值提高20%" font=101 </text>
 1515	1	<text>text="装备：“横扫六合”招式的威胁值提高20%" font=101 </text>
 1516	1	<text>text="装备：“阳明指”伤害提高5%" font=101 </text>
@@ -70,7 +70,7 @@ ID	Level	Desc
 1520	1	<text>text="装备：“四象轮回”伤害提高5%" font=101 </text>
 1521	1	<text>text="装备：“太极无极”伤害提高5%" font=101 </text>
 1522	1	<text>text="装备：“三环套月”伤害提高5%" font=101 </text>
-1523	1	<text>text="装备：“万剑归宗”伤害提高5%" font=101 </text>
+1523	1	<text>text="装备：“八荒归元”伤害提高5%" font=101 </text>
 1524	1	<text>text="装备：“玳弦急曲”伤害提高5%" font=101 </text>
 1525	1	<text>text="装备：“江海凝光”伤害提高5%" font=101 </text>
 1526	1	<text>text="装备：“回雪飘摇”招式的疗伤成效提高5%" font=101 </text>
@@ -82,7 +82,7 @@ ID	Level	Desc
 1532	1	<text>text="装备：“蚀肌弹”伤害提高5%" font=101 </text>
 1533	1	<text>text="装备：“天绝地灭”伤害提高5%" font=101 </text>
 1534	1	<text>text="装备：“夺魄箭”伤害提高5%" font=101 </text>
-1535	1	<text>text="装备：“逐星箭”伤害提高5%" font=101 </text>
+1535	1	<text>text="装备：“暴雨梨花针”伤害提高5%" font=101 </text>
 1536	1	<text>text="装备：“听雷”伤害提高5%" font=101 </text>
 1537	1	<text>text="装备：“梦泉虎跑”伤害提高5%" font=101 </text>
 1538	1	<text>text="装备：“听雷”伤害提高5%" font=101 </text>
