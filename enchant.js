@@ -99,34 +99,49 @@ async function init() {
     enchant.type = getEnchantType(UIID);
     enchant.originalId = `enchant-${ID}`;
     enchant.xinfatype = getEnchantXinfaType(AttriName);
-    Object.assign(enchant, defaultAttributes, getEnchantAttributes(rawEnchant));
+    Object.assign(enchant, defaultAttributes, getEnchantAttributes(data));
     return enchant;
   }).filter(e => e.originalId !== 0);
 
-//   const pack = newTab.map((enchant, i) => {
-//     let id;
-//     if (ids[enchant.originalId] && ids[enchant.originalId].databaseId) {
-//         id = ids[enchant.originalId].databaseId;
-//     } else {
-//         countNew += 1;
-//         id = maxId + countNew;
-//     }
-//     idMap.push({ ID: enchant.originalId, databaseId: id });
-//     return { ...enchant, id };
-// }).filter(_ => _.id != 'null');
-// const idMapWriter = createCsvWriter({
-//   path: './output/enchantId.tab',
-//   header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
-// });
+  let countNew = 0;
+  const idMap = new Map(Object.values(ids).map(entry => [entry.ID, entry.databaseId]));
+
+  const pack = Object.values(result.map((enchant, i) => {
+    let id;
+    if (idMap.has(enchant.originalId) && idMap.get(enchant.originalId)) {
+      id = idMap.get(enchant.originalId);
+    } else {
+      countNew += 1;
+      id = maxId + countNew;
+    }
+    idMap.set(enchant.originalId, id);//add({ ID: enchant.originalId, databaseId: id });
+    return { ...enchant, id };
+  }).filter(_ => _.id != 'null').reduce((arr, cur) => {
+    if (cur.id.indexOf('|') >= 0) {
+      const ids = cur.id.split('|');
+      const clone = {...cur, id: ids[0]};
+      cur.id = ids[1];
+      arr[ids[0]] = clone;
+      arr[ids[1]] = cur;
+    } else {
+      arr[cur.id] = cur;
+    }
+    return arr;
+  }, {})).sort((a, b) => a.id - b.id);
+  const idMapWriter = createCsvWriter({
+    path: './output/enchantId.tab',
+    header: [{ id: 'ID', title: 'ID' }, { id: 'databaseId', title: 'databaseId' }],
+  });
 
   const csvWriter = createCsvWriter({
-    path: `./output/newenhance.csv`,
-    header: [ 
-      { id: 'originalId', title: 'P_ID' },
+    path: `./output/enhance.csv`,
+    header: [
+      { id: 'id', title: 'P_ID' },
+      // { id: 'originalId', title: 'oid' },
       { id: 'name', title: 'name' },
       { id: 'desc', title: 'desc' },
       { id: 'type', title: 'type' },
-      { id: 'realType', title: 'realType' },
+      // { id: 'realType', title: 'realType' },
       { id: 'xinfatype', title: 'xinfatype' },
       { id: 'body', title: 'body' },
       { id: 'spirit', title: 'spirit' },
@@ -155,11 +170,17 @@ async function init() {
       { id: 'qixue', title: 'qixue' },
     ],
   });
-  csvWriter.writeRecords(result).then(() => {
-  //     return idMapWriter.writeRecords(idMap.sort((a, b) => a.databaseId - b.databaseId));
-  // }).then(() => {
+  const idMapArr = [...idMap.entries()];
+  csvWriter.writeRecords(pack).then(() => {
+      return idMapWriter.writeRecords(idMapArr
+        .sort((a, b) => parseInt(a[0].replace('enchant-', '')) - parseInt(b[0].replace('enchant-', '')))
+        .map(([ID, databaseId]) => ({
+          ID, databaseId,
+        })
+      ));
+  }).then(() => {
       console.log(`output enhance done`);
   });
 }
-  
+
 init();
