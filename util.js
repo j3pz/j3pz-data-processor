@@ -39,71 +39,71 @@ const enchantTypeMap = {
 // atSetEquipmentRecipe	event	
 // atSkillEventHandler	texiao	特效			
 const attributeKeyMap = {
-    atActiveThreatCoefficient: ['threat', '47'], // 威胁
-    atAddSprintPowerMax: ['sprint', '999'], // 气力值上限
-    atAgilityBase: ['agility', '04'], // 身法
-    atAllTypeCriticalDamagePowerBase: ['critEffect', '38'], // 会效
-    atAllTypeCriticalStrike: ['crit', '37'], // 会心
-    atAllTypeHitValue: ['hit', '36'], // 命中
-    atBasePotentialAdd: ['body/spirit/strength/agility/spunk', '999'], // 全属性
-    atDecriticalDamagePowerBase: ['huajing', '52'], // 化劲
-    atDodge: ['dodge', '45'], // 闪避
-    atHasteBase: ['acce', '51'], // 加速
-    atLifeReplenishExt: ['xuehui', '05'], // 回血
-    atLunarAttackPowerBase: ['attack', '15'], // 阴性攻击
-    atLunarCriticalDamagePowerBase: ['critEffect', '25'], // 会效
-    atLunarCriticalStrike: ['crit', '07'], // 会心
-    atLunarHitValue: ['hit', '54'], // 阴性命中
-    atLunarOvercomeBase: ['overcome', '14'], // 阴性破防
-    atMagicAttackPowerBase: ['attack', '40'], // 内功攻击
-    atMagicCriticalDamagePowerBase: ['critEffect', '31'], // 会效
-    atMagicCriticalStrike: ['crit', '10'], // 会心
-    atMagicHitValue: ['hit', '20'], // 内功命中
-    atMagicOvercome: ['overcome', '27'], // 内功破防
-    atMagicShield: ['magicShield', '43'], // 内防
-    atManaReplenishExt: ['neihui', '48'], // 回蓝
-    atMaxLifeAdditional: ['qixue', '39'], // 气血
-    atMaxLifeBase: ['qixue', '39'], // 气血
-    atMaxManaAdditional: ['neili', '49'], // 内力
-    atMaxManaBase: ['neili', '49'], // 内力
-    atMeleeWeaponDamageBase: [null, '999'], // 武器伤害
-    atMoveSpeedPercent: [null, '999'], // 移动速度
-    atNeutralAttackPowerBase: ['attack', '16'], // 混元攻击
-    atNeutralCriticalDamagePowerBase: ['critEffect', '24'], // 会效
-    atNeutralCriticalStrike: ['crit', '23'], // 会心
-    atNeutralHitValue: ['hit', '50'], // 混元命中
-    atNeutralOvercomeBase: ['overcome', '13'], // 混元破防
-    atParryBase: ['parryBase', '46'], // 招架
-    atParryValueBase: ['parryValue', '44'], // 拆招
-    atPhysicsAttackPowerBase: ['attack', '08'], // 外功攻击
-    atPhysicsCriticalDamagePowerBase: ['critEffect', '21'], // 会效
-    atPhysicsCriticalStrike: ['crit', '06'], // 会心
-    atPhysicsHitValue: ['hit', '09'], // 外功命中
-    atPhysicsOvercomeBase: ['overcome', '18'], // 外功破防
-    atPhysicsShieldAdditional: ['physicsShield', '42'], // 外防
-    atPhysicsShieldBase: ['physicsShield', '42'], // 外防
-    atPoisonAttackPowerBase: ['attack', '22'], // 毒性攻击
-    atPoisonCriticalDamagePowerBase: ['critEffect', '30'], // 会效
-    atPoisonCriticalStrike: ['crit', '29'], // 会心
-    atPoisonHitValue: ['hit', '57'], // 毒性命中
-    atPoisonOvercomeBase: ['overcome', '28'], // 毒性破防
-    atSolarAndLunarAttackPowerBase: ['attack', '33'], // 阴阳攻击
-    atSolarAndLunarCriticalDamagePowerBase: ['critEffect', '34'], // 会效
-    atSolarAndLunarCriticalStrike: ['crit', '35'], // 会心
-    atSolarAndLunarHitValue: ['hit', '56'], // 阴阳命中
-    atSolarAndLunarOvercomeBase: ['overcome', '32'], // 阴阳破防
-    atSolarAttackPowerBase: ['attack', '19'], // 阳性攻击
-    atSolarCriticalDamagePowerBase: ['critEffect', '26'], // 会效
-    atSolarCriticalStrike: ['crit', '17'], // 会心
-    atSolarHitValue: ['hit', '53'], // 阳性命中
-    atSolarOvercomeBase: ['overcome', '12'], // 阳性破防
-    atSpiritBase: ['spirit', '00'], // 根骨
-    atSpunkBase: ['spunk', '01'], // 元气
-    atStrainBase: ['strain', '11'], // 无双
-    atStrengthBase: ['strength', '02'], // 力道
-    atTherapyPowerBase: ['heal', '41'], // 治疗
-    atToughnessBase: ['toughness', '55'], // 御劲
-    atVitalityBase: ['body', '03'], // 体质
+    atActiveThreatCoefficient: ['threat', '47', '技能威胁提高', 1], // 威胁
+    atAddSprintPowerMax: ['sprint', '999', '气力值上限提高', 100], // 气力值上限
+    atAgilityBase: ['agility', '04', '身法提高', 1], // 身法
+    atAllTypeCriticalDamagePowerBase: ['critEffect', '38', '全会心效果等级提高', 1], // 会效
+    atAllTypeCriticalStrike: ['crit', '37', '全会心等级提高', 1], // 会心
+    atAllTypeHitValue: ['hit', '36', '全命中等级提高', 1], // 命中
+    atBasePotentialAdd: ['body/spirit/strength/agility/spunk', '999', '全属性提高', 1], // 全属性
+    atDecriticalDamagePowerBase: ['huajing', '52', '化劲等级提高', 1], // 化劲
+    atDodge: ['dodge', '45', '闪避等级提高', 1], // 闪避
+    atHasteBase: ['acce', '51', '加速等级提高', 1], // 加速
+    atLifeReplenishExt: ['xuehui', '05', '每秒气血回复提高', 1], // 回血
+    atLunarAttackPowerBase: ['attack', '15', '阴性攻击提高', 1], // 阴性攻击
+    atLunarCriticalDamagePowerBase: ['critEffect', '25', '阴性会心效果等级提高', 1], // 会效
+    atLunarCriticalStrike: ['crit', '07', '阴性会心等级提高', 1], // 会心
+    atLunarHitValue: ['hit', '54', '阴性命中等级提高', 1], // 阴性命中
+    atLunarOvercomeBase: ['overcome', '14', '阴性破防等级提高', 1], // 阴性破防
+    atMagicAttackPowerBase: ['attack', '40', '内功攻击提高', 1], // 内功攻击
+    atMagicCriticalDamagePowerBase: ['critEffect', '31', '内功会心效果等级提高', 1], // 会效
+    atMagicCriticalStrike: ['crit', '10', '内功会心等级提高', 1], // 会心
+    atMagicHitValue: ['hit', '20', '内功命中等级提高', 1], // 内功命中
+    atMagicOvercome: ['overcome', '27', '内功破防等级提高', 1], // 内功破防
+    atMagicShield: ['magicShield', '43', '内功防御等级提高', 1], // 内防
+    atManaReplenishExt: ['neihui', '48', '每秒内力回复提高', 1], // 回蓝
+    atMaxLifeAdditional: ['qixue', '39', '最大气血提高', 1], // 气血
+    atMaxLifeBase: ['qixue', '39', '最大气血提高', 1], // 气血
+    atMaxManaAdditional: ['neili', '49', '最大内力提高', 1], // 内力
+    atMaxManaBase: ['neili', '49', '最大内力提高', 1], // 内力
+    atMeleeWeaponDamageBase: [null, '999', '武器伤害提高', 1], // 武器伤害
+    atMoveSpeedPercent: [null, '999', '移动速度提高', 1], // 移动速度
+    atNeutralAttackPowerBase: ['attack', '16', '混元攻击提高', 1], // 混元攻击
+    atNeutralCriticalDamagePowerBase: ['critEffect', '24', '混元会心效果等级提高', 1], // 会效
+    atNeutralCriticalStrike: ['crit', '23', '混元会心等级提高', 1], // 会心
+    atNeutralHitValue: ['hit', '50', '混元命中等级提高', 1], // 混元命中
+    atNeutralOvercomeBase: ['overcome', '13', '混元破防等级提高', 1], // 混元破防
+    atParryBase: ['parryBase', '46', '招架等级提高', 1], // 招架
+    atParryValueBase: ['parryValue', '44', '拆招等级提高', 1], // 拆招
+    atPhysicsAttackPowerBase: ['attack', '08', '外功攻击提高', 1], // 外功攻击
+    atPhysicsCriticalDamagePowerBase: ['critEffect', '21', '外功会心效果等级提高', 1], // 会效
+    atPhysicsCriticalStrike: ['crit', '06', '外功会心等级提高', 1], // 会心
+    atPhysicsHitValue: ['hit', '09', '外功命中等级提高', 1], // 外功命中
+    atPhysicsOvercomeBase: ['overcome', '18', '外功破防等级提高', 1], // 外功破防
+    atPhysicsShieldAdditional: ['physicsShield', '42', '外功防御等级提高', 1], // 外防
+    atPhysicsShieldBase: ['physicsShield', '42', '外功防御等级提高', 1], // 外防
+    atPoisonAttackPowerBase: ['attack', '22', '毒性攻击提高', 1], // 毒性攻击
+    atPoisonCriticalDamagePowerBase: ['critEffect', '30', '毒性会心效果等级提高', 1], // 会效
+    atPoisonCriticalStrike: ['crit', '29', '毒性会心等级提高', 1], // 会心
+    atPoisonHitValue: ['hit', '57', '毒性命中等级提高', 1], // 毒性命中
+    atPoisonOvercomeBase: ['overcome', '28', '毒性破防等级提高', 1], // 毒性破防
+    atSolarAndLunarAttackPowerBase: ['attack', '33', '阴阳攻击提高', 1], // 阴阳攻击
+    atSolarAndLunarCriticalDamagePowerBase: ['critEffect', '34', '阴阳会心效果等级提高', 1], // 会效
+    atSolarAndLunarCriticalStrike: ['crit', '35', '阴阳会心等级提高', 1], // 会心
+    atSolarAndLunarHitValue: ['hit', '56', '阴阳命中等级提高', 1], // 阴阳命中
+    atSolarAndLunarOvercomeBase: ['overcome', '32', '阴阳破防等级提高', 1], // 阴阳破防
+    atSolarAttackPowerBase: ['attack', '19', '阳性攻击提高', 1], // 阳性攻击
+    atSolarCriticalDamagePowerBase: ['critEffect', '26', '阳性会心效果等级提高', 1], // 会效
+    atSolarCriticalStrike: ['crit', '17', '阳性会心等级提高', 1], // 会心
+    atSolarHitValue: ['hit', '53', '阳性命中等级提高', 1], // 阳性命中
+    atSolarOvercomeBase: ['overcome', '12', '阳性破防等级提高', 1], // 阳性破防
+    atSpiritBase: ['spirit', '00', '根骨提高', 1], // 根骨
+    atSpunkBase: ['spunk', '01', '元气提高', 1], // 元气
+    atStrainBase: ['strain', '11', '无双等级提高', 1], // 无双
+    atStrengthBase: ['strength', '02', '力道提高', 1], // 力道
+    atTherapyPowerBase: ['heal', '41', '治疗量提高', 1], // 治疗
+    atToughnessBase: ['toughness', '55', '御劲等级提高', 1], // 御劲
+    atVitalityBase: ['body', '03', '体质提高', 1], // 体质
 };
 
 module.exports = {
@@ -244,7 +244,8 @@ module.exports = {
                                 } else {
                                     value = +attribute.Param1Min;
                                 }
-                                setObj.effects[i].push([key, value, attributeKeyMap[key][0]]);
+                                value /=  attributeKeyMap[key][3];
+                                setObj.effects[i].push([key, value, attributeKeyMap[key][0], attributeKeyMap[key][2]]);
                                 hasSet = true;
                             } else if (key === 'atSkillEventHandler') {
                                 const event = eventTab[attribute.Param1Min];
@@ -411,5 +412,30 @@ module.exports = {
             return 9;
         }
         return 10;
+    },
+
+    getCommonName(names) {
+        let longestSubstring = '';
+        let isSame = true;
+        const processingNames = names.map(name => [...name]);
+        while(isSame) {
+            let pre = '';
+            processingNames.forEach((name, i) => {
+                const c = name.shift();
+                if (i === 0) {
+                    pre = c;
+                } else if (c !== pre) {
+                    isSame = false;
+                }
+            });
+            if (isSame) {
+                longestSubstring += pre;
+            }
+            if (pre === undefined) {
+                break;
+            }
+        }
+    
+        return longestSubstring;
     }
 };
