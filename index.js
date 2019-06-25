@@ -6,6 +6,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const { 
     getMenpai, getXinfaType, getEquipType, getEquipScore, getBasicInfo, getDropSource,
     getAttribute, getEmbed, getEnchantType, getEnchantAttributes, getEnchantXinfaType,
+    getCommonName,
 } = require('./util');
 
 global.options = {
@@ -217,10 +218,13 @@ if (global.command === 'equip') {
                         const descValues = [];
                         const effectKeys = [];
                         const effectValues = [];
-                        effects.forEach(([key, value, fullName]) => {
+                        effects.forEach(([key, value, fullName, desc]) => {
                             if (key === 'atSetEquipmentRecipe' || key === 'atSkillEventHandler') {
                                 descValues.push(value);
                             } else {
+                                if (desc) {
+                                    descValues.push(`${desc}${value}`);
+                                }
                                 effectKeys.push(fullName);
                                 descKeys.push(key);
                                 effectValues.push(value);
@@ -342,7 +346,17 @@ if (global.command === 'equip') {
                     }).then(() => {
                         return eventWriter.writeRecords(Object.values(events));
                     }).then(() => {
-                        return setWriter.writeRecords(Object.values(sets));
+                        const setsValues = Object.values(sets).map((set) => {
+                            const names = Array.from({length: 12})
+                                .map((_, i) => set[`pos${i}`])
+                                .filter(_ => !!_);
+                            const name = getCommonName(names);
+                            return {
+                                ...set,
+                                name,
+                            };
+                        });
+                        return setWriter.writeRecords(setsValues);
                     }).then(() => {
                         console.log(`output all result done`);
                     });
