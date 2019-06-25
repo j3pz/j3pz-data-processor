@@ -117,7 +117,7 @@ async function init() {
     idMap.set(enchant.originalId, id);//add({ ID: enchant.originalId, databaseId: id });
     return { ...enchant, id };
   }).filter(_ => _.id != 'null').reduce((arr, cur) => {
-    if (cur.id.indexOf('|') >= 0) {
+    if (`${cur.id}`.indexOf('|') >= 0) {
       const ids = cur.id.split('|');
       const clone = {...cur, id: ids[0]};
       cur.id = ids[1];
