@@ -6845,34 +6845,34 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10472	烨阳晶石·暗器（外破）	暗器	外功破防等级提升152点	atPhysicsOvercomeBase	152	152																										1					
 10473	烨阳晶石·暗器（内破）	暗器	内功破防等级提升152点	atMagicOvercome	152	152																										1					
 10474	烨阳晶石·暗器（加速）	暗器	加速提升152点	atHasteBase	152	152																										1					
-10475	霁月·裤·甲（会心）	下装	全会心提升66点	atAllTypeCriticalStrike	66	66																										8				0	0
-10476	霁月·腕·染（会心）	护手	全会心提升66点	atAllTypeCriticalStrike	66	66																										10				0	0
-10477	霁月·头·甲（急速）	帽子	加速提升66点	atHasteBase	66	66																										3				3	0
-10478	霁月·裤·甲（外破）	下装	外功破防等级提升66点	atPhysicsOvercomeBase	66	66																										8				0	0
-10479	霁月·裤·甲（内破）	下装	内功破防等级提升66点	atMagicOvercome	66	66																										8				0	0
-10480	霁月·裤·甲（无双）	下装	无双等级提升66点	atStrainBase	66	66																										8				0	0
-10481	霁月·头·甲（外攻）	帽子	外功攻击提升29点	atPhysicsAttackPowerBase	29	29																										3				0	0
-10482	霁月·头·甲（内功）	帽子	内功攻击提升35点	atMagicAttackPowerBase	35	35																										3				0	0
-10483	霁月·头·甲（治疗）	帽子	疗伤成效提升32点	atTherapyPowerBase	32	32																										3				0	0
-10484	霁月·腕·染（外破）	护手	外功破防等级提升66点	atPhysicsOvercomeBase	66	66																										10				0	0
-10485	霁月·腕·染（内破）	护手	内功破防等级提升66点	atMagicOvercome	66	66																										10				0	0
-10486	霁月·腕·染（无双）	护手	无双等级提升66点	atStrainBase	66	66																										10				0	0
-10487	霁月·衣·染（化劲）	上装	化劲提升32点	atDecriticalDamagePowerBase	32	32																										2					
-10488	霁月·衣·染（御劲）	上装	御劲提升32点	atToughnessBase	32	32																										2					
-10489	霁月·衣·染（外防）	上装	外功防御提升32点	atPhysicsShieldAdditional	32	32																										2					
-10490	霁月·衣·染（内防）	上装	内功防御提升32点	atMagicShield	32	32																										2					
-10491	霁月·腰·甲（化劲）	腰带	化劲提升32点	atDecriticalDamagePowerBase	32	32																										6				0	0
-10492	霁月·腰·甲（御劲）	腰带	御劲提升32点	atToughnessBase	32	32																										6				0	0
-10493	霁月·腰·甲（外防）	腰带	外功防御提升32点	atPhysicsShieldAdditional	32	32																										6				0	0
-10494	霁月·腰·甲（内防）	腰带	内功防御提升32点	atMagicShield	32	32																										6				0	0
-10495	霁月·鞋·染（急速）	鞋子	加速提升66点	atHasteBase	66	66																										9				0	0
-10496	霁月·鞋·染（命中）	鞋子	全命中提升66点	atAllTypeHitValue	66	66																										9				0	0
-10497	霁月·鞋·染（外攻）	鞋子	外功攻击提升29点	atPhysicsAttackPowerBase	29	29																										9				0	0
-10498	霁月·鞋·染（内功）	鞋子	内功攻击提升35点	atMagicAttackPowerBase	35	35																										9				0	0
-10499	霁月·衣·染（无双）	上装	无双等级提升50点	atStrainBase	50	50																										2					
-10500	霁月·衣·染（减仇）	上装	招式仇恨降低3%	atActiveThreatCoefficient	0	-30																										2					
-10501	霁月·腰·甲（无双）	腰带	无双等级提升50点	atStrainBase	50	50																										6				0	0
-10502	霁月·腰·甲（减仇）	腰带	招式仇恨降低3%	atActiveThreatCoefficient	0	-30																										6				0	0
+10475	霁月·裤·甲（会心）	下装	全会心提升72点	atAllTypeCriticalStrike	72	72																										8				0	0
+10476	霁月·腕·染（会心）	护手	全会心提升72点	atAllTypeCriticalStrike	72	72																										10				0	0
+10477	霁月·头·甲（急速）	帽子	加速提升72点	atHasteBase	72	72																										3				3	0
+10478	霁月·裤·甲（外破）	下装	外功破防等级提升72点	atPhysicsOvercomeBase	72	72																										8				0	0
+10479	霁月·裤·甲（内破）	下装	内功破防等级提升72点	atMagicOvercome	72	72																										8				0	0
+10480	霁月·裤·甲（无双）	下装	无双等级提升72点	atStrainBase	72	72																										8				0	0
+10481	霁月·头·甲（外攻）	帽子	外功攻击提升32点	atPhysicsAttackPowerBase	32	32																										3				0	0
+10482	霁月·头·甲（内功）	帽子	内功攻击提升38点	atMagicAttackPowerBase	38	38																										3				0	0
+10483	霁月·头·甲（治疗）	帽子	疗伤成效提升36点	atTherapyPowerBase	36	36																										3				0	0
+10484	霁月·腕·染（外破）	护手	外功破防等级提升72点	atPhysicsOvercomeBase	72	72																										10				0	0
+10485	霁月·腕·染（内破）	护手	内功破防等级提升72点	atMagicOvercome	72	72																										10				0	0
+10486	霁月·腕·染（无双）	护手	无双等级提升72点	atStrainBase	72	72																										10				0	0
+10487	霁月·衣·染（化劲）	上装	化劲提升36点	atDecriticalDamagePowerBase	36	36																										2					
+10488	霁月·衣·染（御劲）	上装	御劲提升36点	atToughnessBase	36	36																										2					
+10489	霁月·衣·染（外防）	上装	外功防御提升36点	atPhysicsShieldAdditional	36	36																										2					
+10490	霁月·衣·染（内防）	上装	内功防御提升36点	atMagicShield	36	36																										2					
+10491	霁月·腰·甲（化劲）	腰带	化劲提升36点	atDecriticalDamagePowerBase	36	36																										6				0	0
+10492	霁月·腰·甲（御劲）	腰带	御劲提升36点	atToughnessBase	36	36																										6				0	0
+10493	霁月·腰·甲（外防）	腰带	外功防御提升36点	atPhysicsShieldAdditional	36	36																										6				0	0
+10494	霁月·腰·甲（内防）	腰带	内功防御提升36点	atMagicShield	36	36																										6				0	0
+10495	霁月·鞋·染（急速）	鞋子	加速提升72点	atHasteBase	72	72																										9				0	0
+10496	霁月·鞋·染（命中）	鞋子	全命中提升72点	atAllTypeHitValue	72	72																										9				0	0
+10497	霁月·鞋·染（外攻）	鞋子	外功攻击提升32点	atPhysicsAttackPowerBase	32	32																										9				0	0
+10498	霁月·鞋·染（内功）	鞋子	内功攻击提升38点	atMagicAttackPowerBase	38	38																										9				0	0
+10499	霁月·衣·染（无双）	上装	无双等级提升55点	atStrainBase	55	55																										2					
+10500	霁月·衣·染（减仇）	上装	招式仇恨降低3.3%	atActiveThreatCoefficient	0	-33																										2					
+10501	霁月·腰·甲（无双）	腰带	无双等级提升55点	atStrainBase	55	55																										6				0	0
+10502	霁月·腰·甲（减仇）	腰带	招式仇恨降低3.3%	atActiveThreatCoefficient	0	-33																										6				0	0
 10503	烨阳晶石·项链（体质）	项链	体质提升62点	atVitalityBase	62	62																										4					
 10504	烨阳晶石·项链（御劲）	项链	御劲提升83点	atToughnessBase	83	83																										4					
 10505	烨阳晶石·腰坠（体质）	腰坠	体质提升62点	atVitalityBase	62	62																										7					
@@ -7002,3 +7002,33 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10629	仙踪·兵·坠（内伤）	武器限时	内功攻击提升67点	atMagicAttackPowerBase	67	67																									1800	0				3	0
 10630	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升60点	atTherapyPowerBase	60	60																									1800	0				3	0
 10631	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升20%	atActiveThreatCoefficient	0	205																									1800	0				0	0
+10632	昆吾焰晶·御·腰	腰带限时		atSkillEventHandler	1702																										60	6				3	0
+10633	昆吾焰晶·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子.lua																										60	9				3	0
+10634	昆吾焰晶·御·腕	护手限时		atSkillEventHandler	1703																										60	10				3	0
+10635	昆吾焰晶·御·衣	上装限时		atSkillEventHandler	1701																										60	2				3	0
+10636	昆吾焰晶·御·头	帽子限时		atSkillEventHandler	1700																										60	3				3	0
+10637	昆吾焰晶·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
+10638	昆吾焰晶·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效.lua																										60	9				3	0
+10639	昆吾焰晶·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
+10640	昆吾焰晶·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
+10641	昆吾焰晶·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
+10642	昆吾焰晶·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
+10643	昆吾焰晶·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子.lua																										60	9				3	0
+10644	昆吾焰晶·伤·腕	护手限时		atSkillEventHandler	1704																										60	10				3	0
+10645	昆吾焰晶·伤·衣	上装限时		atExecuteScript	skill/装备/输出衣服附魔.lua																										60	2				3	0
+10646	昆吾焰晶·伤·头	帽子限时		atExecuteScript	skill/装备/输出帽子附魔.lua																										60	3				3	0
+10647	昆吾焰砂·御·腰	腰带限时		atSkillEventHandler	1702																										60	6				3	0
+10648	昆吾焰砂·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子.lua																										60	9				3	0
+10649	昆吾焰砂·御·腕	护手限时		atSkillEventHandler	1703																										60	10				3	0
+10650	昆吾焰砂·御·衣	上装限时		atSkillEventHandler	1701																										60	2				3	0
+10651	昆吾焰砂·御·头	帽子限时		atSkillEventHandler	1700																										60	3				3	0
+10652	昆吾焰砂·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
+10653	昆吾焰砂·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效.lua																										60	9				3	0
+10654	昆吾焰砂·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
+10655	昆吾焰砂·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
+10656	昆吾焰砂·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
+10657	昆吾焰砂·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
+10658	昆吾焰砂·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子.lua																										60	9				3	0
+10659	昆吾焰砂·伤·腕	护手限时		atSkillEventHandler	1704																										60	10				3	0
+10660	昆吾焰砂·伤·衣	上装限时		atExecuteScript	skill/装备/输出衣服附魔.lua																										60	2				3	0
+10661	昆吾焰砂·伤·头	帽子限时		atExecuteScript	skill/装备/输出帽子附魔.lua																										60	3				3	0
