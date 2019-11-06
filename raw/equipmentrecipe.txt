@@ -151,9 +151,14 @@ ID	Level	Desc
 4678	1	<text>text="“蛇影”伤害提高10%" font=101 </text>
 4814	1	<text>text="疾电叱羽调息时间降低10秒" font=101 </text>
 4815	1	<text>text="浮游天地调息时间降低2秒" font=101 </text>
-4816	1	<text>text="木落雁归”伤害提高10%" font=101 </text>
+4816	1	<text>text="“木落雁归”伤害提高10%" font=101 </text>
 4817	1	<text>text="“翼绝云天”伤害提高10%" font=101 </text>
 4818	1	<text>text="“木落雁归”伤害提高5%" font=101 </text>
 4819	1	<text>text="“翼绝云天”伤害提高5%" font=101 </text>
 4820	1	<text>text="“木落雁归”会心提高5%" font=101 </text>
 4821	1	<text>text="“海运南冥”会心提高5%" font=101 </text>
+5037	1	<text>text="“寂洪荒”伤害提高10%" font=101 </text>
+5038	1	<text>text="“金戈回澜”伤害提高10%" font=101 </text>
+5039	1	<text>text="骤雨寒江调息时间降低2秒" font=101 </text>
+5040	1	<text>text="十方玄机调息时间降低5秒" font=101 </text>
+5043	1	<text>text="“繁音急节”招式调息时间减少10秒" font=101 </text>
