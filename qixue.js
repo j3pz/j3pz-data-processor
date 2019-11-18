@@ -105,8 +105,15 @@ async function init() {
     //   position: (point.PointID - 1) % 12 + 1,
     // };
     [1, 2, 3, 4, 5].map(v => [`SkillID${v}`, `SkillLevel${v}`]).forEach(([id, level]) => {
-      const skillId = `${point[id]}-${point[level]}`;
-      const skill = skills[skillId];
+
+      let skillId = `${point[id]}-${point[level]}`;
+      let _skillId = `${point[id]}-0`;    //取level为0
+      let skill = skills[skillId];
+      if(!skill) skill = skills[_skillId]   //特殊主动技能不存在level为1时，技能取level为0的项
+
+      /* if(!skills[skillId]){
+        skill = skills[`${point[id]}-0}`];
+      } */
 
       if (skill) {
         // info.skills.push({
