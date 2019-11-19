@@ -19,6 +19,7 @@ const schoolMap = {
   22: '长歌',
   23: '霸刀',
   24: '蓬莱',
+  25: '凌雪'
 };
 
 const kungfuMap = {
@@ -47,6 +48,7 @@ const kungfuMap = {
   23: '相知',
   24: '北傲诀',
   25: '凌海诀',
+  26: '隐龙诀',
 };
 
 function readCsvFile(file, isObj) {
@@ -103,8 +105,16 @@ async function init() {
     //   position: (point.PointID - 1) % 12 + 1,
     // };
     [1, 2, 3, 4, 5].map(v => [`SkillID${v}`, `SkillLevel${v}`]).forEach(([id, level]) => {
-      const skillId = `${point[id]}-${point[level]}`;
-      const skill = skills[skillId];
+
+      let skillId = `${point[id]}-${point[level]}`;
+      let _skillId = `${point[id]}-0`;    //取level为0
+      let skill = skills[skillId];
+      if(!skill) skill = skills[_skillId]   //特殊主动技能不存在level为1时，技能取level为0的项
+
+      /* if(!skills[skillId]){
+        skill = skills[`${point[id]}-0}`];
+      } */
+
       if (skill) {
         // info.skills.push({
         //   name: skill.Name,
@@ -116,6 +126,7 @@ async function init() {
           position: (point.PointID - 1) % 12 + 1,
           school,
           kungfu,
+          skillID : point[id]
         });
       }
     });
@@ -133,6 +144,7 @@ async function init() {
         { id: 'position', title: '奇穴位置' },
         { id: 'name', title: '奇穴名' },
         { id: 'desc', title: '描述' },
+        { id: 'skillID', title: '技能ID' }
     ],
   });
   csvWriter.writeRecords(result).then(() => {
