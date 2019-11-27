@@ -73,7 +73,7 @@ function readCsvFile(file, isObj) {
             return acc;
           }, {});
           if (isObj) {
-            tab[`${item.SkillID}-${item.Level}`] = item;
+            tab[`${item.SkillID || item.BuffID || item.ID}-${item.Level}`] = item;
           } else {
             tab.push(item);
           }
@@ -89,6 +89,8 @@ function readCsvFile(file, isObj) {
 async function init() {
   const skills = await readCsvFile('./raw/skill.txt', true);
   const points = await readCsvFile('./raw/TenExtraPoint.tab');
+  const buffUi = await readCsvFile('./raw/buff.txt', true);
+  const buffSetting = await readCsvFile('./raw/Buff.tab', true);
   // const result = {};
   const result = [];
   for (const point of points) {
@@ -116,17 +118,61 @@ async function init() {
       } */
 
       if (skill) {
+        let desc = skill.Desc;
+        if (desc.indexOf('<') >= 0) {
+          desc = desc.replace(/<SUB[\s\w]+>/g, '');
+          desc = desc.replace(/<SKILL[\s\w\u4e00-\u9fa5%_{;}\[\]+,\-.>\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]+\(\+<SKILLEx[%_{;\[\]}+,\-.\s\w\u4e00-\u9fa5\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]+>\)/g, '');
+          desc = desc.replace(/<SKILLEx[\s\w\u4e00-\u9fa5%_.{;}\[\],+\-\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]+>/g, '');
+          desc = desc.replace(/<EnchantID[\s\w\u4e00-\u9fa5%_.{;},\[\]+\-\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]+>/g, '');
+          desc = desc.replace(/<TALENT[\s\w\u4e00-\u9fa5"%_.{;},\[\]+\-\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]+>/g, '');
+          desc = desc.replace(/<PARRY (\d+)>%的/g, '');
+
+          while (/<BUFF (\d+) (\d) desc>/.test(desc)) {
+            const match = desc.match(/<BUFF (\d+) (\d) desc>/);
+            const buffId = match[1];
+            const buffLevel = match[2];
+            const desiredBuff = buffUi[`${buffId}-${buffLevel}`];
+            const fallbackBuff0 = buffUi[`${buffId}-0`];
+            const fallbackBuff1 = buffUi[`${buffId}-1`];
+            const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
+            if (buff) {
+              desc = desc.replace(/<BUFF (\d+) (\d) desc>/, buff.Desc);
+            } else {
+              console.log(desc);
+              console.log(`failed to read: ${buffId}-${buffLevel}`);
+            }
+          }
+          while (/<BUFF (\d+) (\d) time>/.test(desc)) {
+            const match = desc.match(/<BUFF (\d+) (\d) time>/);
+            const buffId = match[1];
+            const buffLevel = match[2];
+            const desiredBuff = buffSetting[`${buffId}-${buffLevel}`];
+            const fallbackBuff0 = buffSetting[`${buffId}-0`];
+            const fallbackBuff1 = buffSetting[`${buffId}-1`];
+            const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
+            if (buff) {
+              desc = desc.replace(/<BUFF (\d+) (\d) time>/, buff.Interval / 16 + '秒');
+            } else {
+              console.log(desc);
+              console.log(`failed to read: ${buffId}-${buffLevel}`);
+            }
+          }
+        }
+        if (desc.indexOf('<') >= 0) {
+          console.log(desc);
+        }
         // info.skills.push({
         //   name: skill.Name,
         //   desc: skill.Desc,
         // });
         result.push({
           name: skill.Name,
-          desc: skill.Desc,
+          desc: desc,
           position: (point.PointID - 1) % 12 + 1,
           school,
           kungfu,
-          skillID : point[id]
+          skillID : point[id],
+          icon: skill.IconID,
         });
       }
     });
@@ -144,7 +190,8 @@ async function init() {
         { id: 'position', title: '奇穴位置' },
         { id: 'name', title: '奇穴名' },
         { id: 'desc', title: '描述' },
-        { id: 'skillID', title: '技能ID' }
+        { id: 'skillID', title: '技能ID' },
+        { id: 'icon', title: '图标ID' },
     ],
   });
   csvWriter.writeRecords(result).then(() => {
