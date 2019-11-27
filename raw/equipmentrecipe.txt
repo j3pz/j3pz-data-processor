@@ -162,3 +162,6 @@ ID	Level	Desc
 5039	1	<text>text="骤雨寒江调息时间降低2秒" font=101 </text>
 5040	1	<text>text="十方玄机调息时间降低5秒" font=101 </text>
 5043	1	<text>text="“繁音急节”招式调息时间减少10秒" font=101 </text>
+5091	1	<text>text="“星垂平野”伤害提高5%" font=101 </text>
+5092	1	<text>text="“寂洪荒”伤害提高5%" font=101 </text>
+5093	1	<text>text="“寂洪荒”会心提高5%" font=101 </text>
