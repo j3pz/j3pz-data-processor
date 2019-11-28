@@ -7157,22 +7157,22 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10784	仙踪·兵·坠（内伤）	武器限时	内功攻击提升152点	atMagicAttackPowerBase	152	152																									1800	0				3	0
 10785	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升136点	atTherapyPowerBase	136	136																									1800	0				3	0
 10786	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升40%	atActiveThreatCoefficient	0	409																									1800	0				0	0
-10787	仙踪·兵·坠（外伤）	武器限时	外功攻击提升64点	atPhysicsAttackPowerBase	64	64																															
-10788	仙踪·兵·坠（内伤）	武器限时	内功攻击提升76点	atMagicAttackPowerBase	76	76																															
-10789	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升68点	atTherapyPowerBase	68	68																															
-10790	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升20%	atActiveThreatCoefficient	0	205																															
-10791	昆吾焰琼·御·腰	腰带限时		atSkillEventHandler	1702																										60	6				3	0
-10792	昆吾焰琼·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子.lua																										60	9				3	0
-10793	昆吾焰琼·御·腕	护手限时		atSkillEventHandler	1703																										60	10				3	0
-10794	昆吾焰琼·御·衣	上装限时		atSkillEventHandler	1701																										60	2				3	0
-10795	昆吾焰琼·御·头	帽子限时		atSkillEventHandler	1700																										60	3				3	0
-10796	昆吾焰琼·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
-10797	昆吾焰琼·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效.lua																										60	9				3	0
-10798	昆吾焰琼·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
-10799	昆吾焰琼·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
-10800	昆吾焰琼·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
-10801	昆吾焰琼·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
-10802	昆吾焰琼·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子.lua																										60	9				3	0
-10803	昆吾焰琼·伤·腕	护手限时		atSkillEventHandler	1704																										60	10				3	0
-10804	昆吾焰琼·伤·衣	上装限时		atExecuteScript	skill/装备/输出衣服附魔.lua																										60	2				3	0
-10805	昆吾焰琼·伤·头	帽子限时		atExecuteScript	skill/装备/输出帽子附魔.lua																										60	3				3	0
+10787	仙踪·兵·坠（外伤）	武器限时	外功攻击提升64点	atPhysicsAttackPowerBase	64	64																									1800	0				3	0
+10788	仙踪·兵·坠（内伤）	武器限时	内功攻击提升76点	atMagicAttackPowerBase	76	76																									1800	0				3	0
+10789	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升68点	atTherapyPowerBase	68	68																									1800	0				3	0
+10790	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升20%	atActiveThreatCoefficient	0	205																									1800	0				0	0
+10791	昆吾焰珀·御·腰	腰带限时		atSkillEventHandler	1792																										60	6				3	0
+10792	昆吾焰珀·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子凌雪藏锋.lua																										60	9				3	0
+10793	昆吾焰珀·御·腕	护手限时		atSkillEventHandler	1793																										60	10				3	0
+10794	昆吾焰珀·御·衣	上装限时		atSkillEventHandler	1791																										60	2				3	0
+10795	昆吾焰珀·御·头	帽子限时		atSkillEventHandler	1790																										60	3				3	0
+10796	昆吾焰珀·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
+10797	昆吾焰珀·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效.lua																										60	9				3	0
+10798	昆吾焰珀·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
+10799	昆吾焰珀·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
+10800	昆吾焰珀·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
+10801	昆吾焰珀·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
+10802	昆吾焰珀·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子.lua																										60	9				3	0
+10803	昆吾焰珀·伤·腕	护手限时		atSkillEventHandler	1704																										60	10				3	0
+10804	昆吾焰珀·伤·衣	上装限时		atExecuteScript	skill/装备/凌雪藏风输出衣服附魔.lua																										60	2				3	0
+10805	昆吾焰珀·伤·头	帽子限时		atExecuteScript	skill/装备/凌雪藏风输出帽子附魔.lua																										60	3				3	0

@@ -36258,3 +36258,53 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 36256		atVitalityBase	1385	1385												
 36257		atSkillEventHandler	1795	1795												
 36258		atSkillEventHandler	1796	1796												
+36259		atToughnessBase	269	269												
+36260	0	atSkillEventHandler	1800	1800	0	0	0	0	0	0	0	0	0	0	0	0
+36261	0	atSkillEventHandler	1801	1801	0	0	0	0	0	0	0	0	0	0	0	0
+36262	0	atSkillEventHandler	1802	1802	0	0	0	0	0	0	0	0	0	0	0	0
+36263	0	atSkillEventHandler	1803	1803	0	0	0	0	0	0	0	0	0	0	0	0
+36264	0	atSkillEventHandler	1804	1804	0	0	0	0	0	0	0	0	0	0	0	0
+36265	0	atSkillEventHandler	1805	1805	0	0	0	0	0	0	0	0	0	0	0	0
+36266	0	atSkillEventHandler	1806	1806	0	0	0	0	0	0	0	0	0	0	0	0
+36267	0	atSkillEventHandler	1807	1807	0	0	0	0	0	0	0	0	0	0	0	0
+36268		atPhysicsOvercomeBase	897	897												
+36269		atMagicOvercome	897	897												
+36270		atMagicAttackPowerBase	1290	1290												
+36271		atMagicShield	2618	2618												
+36272		atPhysicsShieldBase	5386	5386												
+36273		atMagicShield	5386	5386												
+36274		atAllTypeHitValue	479	479												
+36275		atPhysicsHitValue	479	479												
+36276		atAllTypeHitValue	643	643												
+36277		atAllTypeHitValue	562	562												
+36278		atAllTypeCriticalStrike	984	984												
+36279		atPhysicsCriticalStrike	984	984												
+36280		atAllTypeCriticalStrike	518	518												
+36281		atAllTypeCriticalStrike	656	656												
+36282		atAllTypeHitValue	423	423												
+36283		atAllTypeCriticalStrike	740	740												
+36284		atPhysicsHitValue	423	423												
+36285		atPhysicsCriticalStrike	740	740												
+36286		atMagicHitValue	261	261												
+36287		atAllTypeHitValue	261	261												
+36288		atHasteBase	470	470												
+36289		atParryBase	326	326												
+36290		atParryValueBase	1887	1887												
+36291		atMagicOvercome	548	548												
+36292		atDodge	326	326												
+36293		atMagicOvercome	705	705												
+36294		atHasteBase	604	604												
+36295		atMagicCriticalStrike	567	567												
+36296		atMagicHitValue	270	270												
+36297		atParryValueBase	1953	1953												
+36298		atHasteBase	625	625												
+36299		atHasteBase	503	503												
+36300		atParryValueBase	2018	2018												
+36301		atVitalityBase	700	700												
+36302		atPhysicsShieldBase	538	538												
+36303		atAllTypeHitValue	359	359												
+36304		atParryBase	241	241												
+36305		atParryValueBase	1395	1395												
+36306		atAllTypeCriticalStrike	470	470												
+36307		atAllTypeHitValue	232	232												
+36308		atAllTypeCriticalStrike	503	503												
