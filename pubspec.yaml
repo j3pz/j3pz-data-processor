@@ -1,0 +1,14 @@
+name: j3pz_data_preprocessor
+description: A command-line application to parse JX3 data to j3pz database.
+# version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+  fast_gbk: 0.1.1+1
+
+dev_dependencies:
+  pedantic: ^1.8.0
+  test: ^1.6.0
