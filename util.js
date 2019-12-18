@@ -36,8 +36,8 @@ const enchantTypeMap = {
     鞋子: 5,
     腰坠: 1,
 }
-// atSetEquipmentRecipe	event	
-// atSkillEventHandler	texiao	特效			
+// atSetEquipmentRecipe	event
+// atSkillEventHandler	texiao	特效
 const attributeKeyMap = {
     atActiveThreatCoefficient: ['threat', '47', '技能威胁提高', 1], // 威胁
     atAddSprintPowerMax: ['sprint', '999', '气力值上限提高', 100], // 气力值上限
@@ -226,7 +226,7 @@ module.exports = {
                 setObj.id = setInfo.ID;
                 setObj.name = setInfo.Name;
                 Array.from({ length: 3 }).map((key, i) => ({
-                    i: i + 2, 
+                    i: i + 2,
                     ids: [setInfo[`${i + 2}_1`], setInfo[`${i + 2}_2`]],
                 })).forEach(({i, ids}) => {
                     setObj.effects[i] = [];
@@ -435,7 +435,7 @@ module.exports = {
                 break;
             }
         }
-    
+
         return longestSubstring;
     }
 };
