@@ -7176,3 +7176,15 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10803	昆吾焰珀·伤·腕	护手限时		atSkillEventHandler	1704																										60	10				3	0
 10804	昆吾焰珀·伤·衣	上装限时		atExecuteScript	skill/装备/凌雪藏风输出衣服附魔.lua																										60	2				3	0
 10805	昆吾焰珀·伤·头	帽子限时		atExecuteScript	skill/装备/凌雪藏风输出帽子附魔.lua																										60	3				3	0
+10806	霁月·裤·甲（会心）	下装	全会心提升80点	atAllTypeCriticalStrike	80	80																										8				0	0
+10807	霁月·腕·染（会心）	护手	全会心提升80点	atAllTypeCriticalStrike	80	80																										10				0	0
+10808	霁月·头·甲（急速）	帽子	加速提升80点	atHasteBase	80	80																										3				3	0
+10809	霁月·裤·甲（外破）	下装	外功破防等级提升80点	atPhysicsOvercomeBase	80	80																										8				0	0
+10810	霁月·裤·甲（内破）	下装	内功破防等级提升80点	atMagicOvercome	80	80																										8				0	0
+10811	霁月·裤·甲（无双）	下装	无双等级提升80点	atStrainBase	80	80																										8				0	0
+10812	霁月·头·甲（外攻）	帽子	外功攻击提升36点	atPhysicsAttackPowerBase	36	36																										3				0	0
+10813	霁月·头·甲（内功）	帽子	内功攻击提升43点	atMagicAttackPowerBase	43	43																										3				0	0
+10814	霁月·头·甲（治疗）	帽子	疗伤成效提升39点	atTherapyPowerBase	39	39																										3				0	0
+10815	霁月·腕·染（外破）	护手	外功破防等级提升80点	atPhysicsOvercomeBase	80	80																										10				0	0
+10816	霁月·腕·染（内破）	护手	内功破防等级提升80点	atMagicOvercome	80	80																										10				0	0
+10817	霁月·腕·染（无双）	护手	无双等级提升80点	atStrainBase	80	80																										10				0	0
