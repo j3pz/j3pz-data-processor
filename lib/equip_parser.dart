@@ -1,5 +1,8 @@
+import 'dart:io';
+import 'package:csv/csv.dart';
 import 'package:j3pz_data_preprocessor/attrib.dart';
 import 'package:j3pz_data_preprocessor/equip.dart';
+import 'package:j3pz_data_preprocessor/item.dart';
 
 const spunkKungfu = ['万花', '少林', '唐门', '明教'];
 const spiritKungfu = ['七秀', '五毒', '纯阳', '长歌'];
@@ -20,45 +23,98 @@ const typeMap = {
     10: [0.7, 'wrist'],
 };
 
-class EquipParser {
-    Map<String, Equip> armors;
-    Map<String, Equip> trinkets;
-    Map<String, Equip> weapons;
-    Map<String, Attribute> attributes;
+const equipTitle = [
+    'id',
+    'name',
+    'icon',
+    'category',
+    'quality',
+    'school',
+    'primaryAttribute',
+    'score',
+    'vitality',
+    'spirit',
+    'strength',
+    'agility',
+    'spunk',
+    'basicPhysicsShield',
+    'basicMagicShield',
+    'damageBase',
+    'damageRange',
+    'attackSpeed',
+    'physicsShield',
+    'magicShield',
+    'dodge',
+    'parryBase',
+    'parryValue',
+    'toughness',
+    'attack',
+    'heal',
+    'crit',
+    'critEffect',
+    'overcome',
+    'haste',
+    'hit',
+    'strain',
+    'huajing',
+    'threat',
+    'embed',
+    'strengthen',
+    'deprecated',
+];
 
-    EquipParser({ Map armor, Map trinket, Map weapon, Map attribute }) {
+class EquipParser {
+    List<List<String>> armors;
+    List<List<String>> trinkets;
+    List<List<String>> weapons;
+    Map<String, Attribute> attributes;
+    Map<String, RawItem> items;
+
+    EquipParser({ Map armor, Map trinket, Map weapon, Map attribute, Map item }) {
         attributes = {};
         attribute.forEach((key, value) {
             var attrib = Attribute.fromJson(value);
             attributes[key] = attrib;
         });
 
-        armors = {};
+        items = {};
+        item.forEach((key, value) {
+            var itemInfo = RawItem.fromJson(value);
+            items[key] = itemInfo;
+        });
+
+        armors = [];
         armor.forEach((key, value) {
             var equip = RawEquip.fromJson(value);
             if (shouldTruncate(equip, 41042)) {
                 return;
             }
-            armors[key] = parse(equip);
+            armors.add(parse(equip).toList());
         });
-        trinkets = {};
+        trinkets = [];
         trinket.forEach((key, value) {
             var equip = RawEquip.fromJson(value);
             if (shouldTruncate(equip, 23441)) {
                 return;
             }
-            trinkets[key] = parse(equip);
+            trinkets.add(parse(equip).toList());
         });
-        weapons = {};
+        weapons = [];
         weapon.forEach((key, value) {
             var equip = RawEquip.fromJson(value);
             if (shouldTruncate(equip, 18631)) {
                 return;
             }
-            weapons[key] = parse(equip);
+            weapons.add(parse(equip).toList());
         });
 
         print('${armors.length} ${trinkets.length} ${weapons.length}');
+    }
+
+    void export(String path) {
+        armors.insert(0, equipTitle);
+        var csv = const ListToCsvConverter().convert(armors);
+        File(path).writeAsString(csv);
     }
 
     bool shouldTruncate(RawEquip raw, int minId) {
@@ -80,6 +136,12 @@ class EquipParser {
         equip.school = raw.belongSchool;
         equip.primaryAttribute = parsePrimaryAttrib(raw);
         equip.category = parseEquipCategory(raw);
+        equip.score = parseScore(raw);
+        equip = parseBasic(raw, equip);
+        equip = parseAttribute(raw, equip);
+        equip = parseEmbed(raw, equip);
+        equip.icon = items[raw.uiID].icon;
+        return equip;
     }
 
     String parsePrimaryAttrib(RawEquip raw) {
@@ -127,5 +189,169 @@ class EquipParser {
         }
         print('该装备的类型解析异常: name=${raw.name}, subType=${raw.subType}, detailType=${raw.detailType}');
         return '';
+    }
+
+    int parseScore(RawEquip raw) {
+        if (typeMap[raw.subType] != null) {
+            var cof = 1.8;
+            if (int.tryParse(raw.maxStrengthLevel) > 6) cof = 2.5;
+            return (raw.level * cof * typeMap[raw.subType][0]).floor();
+        }
+        return 0;
+    }
+
+    Equip parseBasic(RawEquip raw, Equip equip) {
+        [
+            [raw.base1Type, raw.base1Min],
+            [raw.base2Type, raw.base2Min],
+            [raw.base3Type, raw.base3Min],
+            [raw.base4Type, raw.base4Min],
+            [raw.base5Type, raw.base5Min],
+            [raw.base6Type, raw.base6Min],
+        ].forEach((entry) {
+            var key = entry[0];
+            var min = entry[1];
+            if (key == 'atPhysicsShieldBase') {
+                equip.basicPhysicsShield = int.parse(min) ?? 0;
+            }
+            if (key == 'atMagicShield') {
+                equip.basicMagicShield = int.parse(min) ?? 0;
+            }
+            if (key == 'atMeleeWeaponDamageBase') {
+                equip.damageBase = int.parse(min) ?? 0;
+            }
+            if (key == 'atMeleeWeaponDamageRand') {
+                equip.damageRange = int.parse(min) ?? 0;
+            }
+            if (key == 'atMeleeWeaponAttackSpeedBase') {
+                equip.attackSpeed = int.parse(min) ?? 0;
+            }
+        });
+        return equip;
+    }
+
+    Equip parseAttribute(RawEquip raw, Equip equip) {
+        [
+            raw.magic1Type,
+            raw.magic2Type,
+            raw.magic3Type,
+            raw.magic4Type,
+            raw.magic5Type,
+            raw.magic6Type,
+            raw.magic7Type,
+            raw.magic8Type,
+            raw.magic9Type,
+            raw.magic10Type,
+            raw.magic11Type,
+            raw.magic12Type,
+        ].forEach((String attributeId) {
+            var attribute = attributes[attributeId];
+            var key = attribute.modifyType;
+            switch (key) {
+                // 基础属性
+                case 'atVitalityBase': // 体质
+                    equip.vitality = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atSpunkBase': // 元气
+                    equip.spunk = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atSpiritBase': // 根骨
+                    equip.spirit = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atStrengthBase': // 力道
+                    equip.strength = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atAgilityBase': // 身法
+                    equip.agility = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atMagicAttackPowerBase': // 内功攻击
+                case 'atPhysicsAttackPowerBase': // 外功攻击
+                case 'atLunarAttackPowerBase': // 阴性攻击
+                case 'atNeutralAttackPowerBase': // 混元攻击
+                case 'atPoisonAttackPowerBase': // 毒性攻击
+                case 'atSolarAttackPowerBase': // 阳性攻击
+                case 'atSolarAndLunarAttackPowerBase': // 阴阳攻击
+                    equip.attack = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atTherapyPowerBase': // 治疗
+                    equip.heal = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atAllTypeCriticalStrike': // 会心
+                case 'atLunarCriticalStrike': // 会心
+                case 'atMagicCriticalStrike': // 会心
+                case 'atNeutralCriticalStrike': // 会心
+                case 'atPhysicsCriticalStrike': // 会心
+                case 'atPoisonCriticalStrike': // 会心
+                case 'atSolarAndLunarCriticalStrike': // 会心
+                case 'atSolarCriticalStrike': // 会心
+                    equip.crit = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atAllTypeCriticalDamagePowerBase': // 会效
+                case 'atLunarCriticalDamagePowerBase': // 会效
+                case 'atMagicCriticalDamagePowerBase': // 会效
+                case 'atNeutralCriticalDamagePowerBase': // 会效
+                case 'atPhysicsCriticalDamagePowerBase': // 会效
+                case 'atPoisonCriticalDamagePowerBase': // 会效
+                case 'atSolarAndLunarCriticalDamagePowerBase': // 会效
+                case 'atSolarCriticalDamagePowerBase': // 会效
+                    equip.critEffect = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atAllTypeHitValue': // 命中
+                case 'atLunarHitValue': // 阴性命中
+                case 'atMagicHitValue': // 内功命中
+                case 'atNeutralHitValue': // 混元命中
+                case 'atPhysicsHitValue': // 外功命中
+                case 'atPoisonHitValue': // 毒性命中
+                case 'atSolarAndLunarHitValue': // 阴阳命中
+                case 'atSolarHitValue': // 阳性命中
+                    equip.hit = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atLunarOvercomeBase': // 阴性破防
+                case 'atMagicOvercome': // 内功破防
+                case 'atNeutralOvercomeBase': // 混元破防
+                case 'atPhysicsOvercomeBase': // 外功破防
+                case 'atPoisonOvercomeBase': // 毒性破防
+                case 'atSolarAndLunarOvercomeBase': // 阴阳破防
+                case 'atSolarOvercomeBase': // 阳性破防
+                    equip.overcome = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atDodge': // 闪避
+                    equip.dodge = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atStrainBase': // 无双
+                    equip.strain = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atHasteBase': // 加速
+                    equip.haste = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atParryBase': // 招架
+                    equip.parryBase = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atParryValueBase': // 拆招
+                    equip.parryValue = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atMagicShield': // 内防
+                    equip.magicShield = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atPhysicsShieldAdditional': // 外防
+                case 'atPhysicsShieldBase': // 外防
+                    equip.physicsShield = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atDecriticalDamagePowerBase': // 化劲
+                    equip.huajing = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atActiveThreatCoefficient': // 威胁
+                    equip.threat = int.tryParse(attribute.param2Min) ?? 0; break;
+                case 'atToughnessBase': // 御劲
+                    equip.toughness = int.tryParse(attribute.param1Min) ?? 0; break;
+            }
+        });
+        return equip;
+    }
+
+    Equip parseEmbed(RawEquip raw, Equip equip) {
+        var count = 0;
+        var attrib = <String>[];
+        [
+            [raw.diamondTypeMask1, raw.diamondAttributeID1],
+            [raw.diamondTypeMask2, raw.diamondAttributeID2],
+            [raw.diamondTypeMask3, raw.diamondAttributeID3],
+        ].forEach((entry) {
+            var mask = int.tryParse(entry[0]) ?? 0;
+            var id = entry[1];
+            var attribute = attributes[id];
+            if (mask > 0 && attribute != null) {
+                var key = attribute.modifyType;
+                count += 1;
+                attrib.add(attributeKeyMap[key][1]);
+            }
+        });
+        if (count == 0) {
+            equip.embed = '';
+        } else {
+            equip.embed = '${count}D${attrib.join('D')}'; 
+        }
+        return equip;
     }
 }

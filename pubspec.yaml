@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   fast_gbk: 0.1.1+1
+  csv: ^4.0.0
 
 dev_dependencies:
   pedantic: ^1.8.0

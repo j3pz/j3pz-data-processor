@@ -7,5 +7,7 @@ void equips() async {
     var trinket = await readFile(path: './raw/Custom_Trinket.tab');
     var weapon = await readFile(path: './raw/Custom_Weapon.tab');
     var attribute = await readFile(path: './raw/Attrib.tab');
-    var parser = EquipParser(armor: armor, trinket: trinket, weapon: weapon, attribute: attribute);
+    var item = await readFile(path: './raw/item.txt', id: 'ItemID');
+    var parser = EquipParser(armor: armor, trinket: trinket, weapon: weapon, attribute: attribute, item: item);
+    parser.export('./output/equip.csv');
 }

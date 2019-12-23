@@ -246,37 +246,79 @@ class Equip {
     int quality;
     String school;
     String primaryAttribute;
-    int score;
-    int vitality;
-    int spirit;
-    int strength;
-    int agility;
-    int spunk;
-    int basicPhysicsShield;
-    int basicMagicShield;
-    int damageBase;
-    int damageRange;
-    int attackSpeed;
-    int physicsShield;
-    int magicShield;
-    int dodge;
-    int parryBase;
-    int parryValue;
-    int toughness;
-    int attack;
-    int heal;
-    int crit;
-    int critEffect;
-    int overcome;
-    int haste;
-    int hit;
-    int strain;
-    int huajing;
-    int threat;
+    int score = 0;
+    int vitality = 0;
+    int spirit = 0;
+    int strength = 0;
+    int agility = 0;
+    int spunk = 0;
+    int basicPhysicsShield = 0;
+    int basicMagicShield = 0;
+    int damageBase = 0;
+    int damageRange = 0;
+    int attackSpeed = 0;
+    int physicsShield = 0;
+    int magicShield = 0;
+    int dodge = 0;
+    int parryBase = 0;
+    int parryValue = 0;
+    int toughness = 0;
+    int attack = 0;
+    int heal = 0;
+    int crit = 0;
+    int critEffect = 0;
+    int overcome = 0;
+    int haste = 0;
+    int hit = 0;
+    int strain = 0;
+    int huajing = 0;
+    int threat = 0;
     // int effect;
     // int set;
     String embed;
     int strengthen;
     // int source;
     bool deprecated;
+
+    List<String> toList() {
+        return [
+            '$id',
+            name,
+            '$icon',
+            category,
+            '$quality',
+            school,
+            primaryAttribute,
+            '$score',
+            '$vitality',
+            '$spirit',
+            '$strength',
+            '$agility',
+            '$spunk',
+            '$basicPhysicsShield',
+            '$basicMagicShield',
+            '$damageBase',
+            '$damageRange',
+            '$attackSpeed',
+            '$physicsShield',
+            '$magicShield',
+            '$dodge',
+            '$parryBase',
+            '$parryValue',
+            '$toughness',
+            '$attack',
+            '$heal',
+            '$crit',
+            '$critEffect',
+            '$overcome',
+            '$haste',
+            '$hit',
+            '$strain',
+            '$huajing',
+            '$threat',
+            embed,
+            '$strengthen',
+            (deprecated ?? false) ? '1' : '0',
+        ];
+    }
 }
