@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 import 'package:csv/csv.dart';
 import 'package:j3pz_data_preprocessor/attrib.dart';
 import 'package:j3pz_data_preprocessor/equip.dart';
@@ -69,12 +70,24 @@ class EquipParser {
     List<List<String>> weapons;
     Map<String, Attribute> attributes;
     Map<String, RawItem> items;
+    Map<String, int> equipIds;
+    int next = 0;
 
-    EquipParser({ Map armor, Map trinket, Map weapon, Map attribute, Map item }) {
+    EquipParser({ Map armor, Map trinket, Map weapon, Map attribute, Map item, Map savedId }) {
         attributes = {};
         attribute.forEach((key, value) {
             var attrib = Attribute.fromJson(value);
             attributes[key] = attrib;
+        });
+
+        equipIds = {};
+        savedId.forEach((key, value) {
+            String originalId = value['ID'];
+            if (originalId.contains('armor') || originalId.contains('weapon') || originalId.contains('trinket')) {
+                var databaseId = int.tryParse(value['databaseId']) ?? 0;
+                equipIds[originalId] = databaseId;
+                next = max(next, databaseId);
+            }
         });
 
         items = {};
@@ -89,7 +102,7 @@ class EquipParser {
             if (shouldTruncate(equip, 41042)) {
                 return;
             }
-            armors.add(parse(equip).toList());
+            armors.add(parse(equip, 'armor').toList());
         });
         trinkets = [];
         trinket.forEach((key, value) {
@@ -97,7 +110,7 @@ class EquipParser {
             if (shouldTruncate(equip, 23441)) {
                 return;
             }
-            trinkets.add(parse(equip).toList());
+            trinkets.add(parse(equip, 'trinket').toList());
         });
         weapons = [];
         weapon.forEach((key, value) {
@@ -105,15 +118,14 @@ class EquipParser {
             if (shouldTruncate(equip, 18631)) {
                 return;
             }
-            weapons.add(parse(equip).toList());
+            weapons.add(parse(equip, 'weapon').toList());
         });
-
-        print('${armors.length} ${trinkets.length} ${weapons.length}');
     }
 
     void export(String path) {
-        armors.insert(0, equipTitle);
-        var csv = const ListToCsvConverter().convert(armors);
+        var equips = armors + trinkets + weapons;
+        equips.insert(0, equipTitle);
+        var csv = const ListToCsvConverter().convert(equips);
         File(path).writeAsString(csv);
     }
 
@@ -128,8 +140,9 @@ class EquipParser {
         );
     }
 
-    Equip parse(RawEquip raw) {
+    Equip parse(RawEquip raw, String type) {
         var equip = Equip();
+        equip.id = equipIds['$type-${raw.id}'] ?? ++next;
         equip.name = raw.name;
         equip.quality = raw.level;
         equip.strengthen = int.tryParse(raw.maxStrengthLevel) ?? 0;
@@ -350,7 +363,7 @@ class EquipParser {
         if (count == 0) {
             equip.embed = '';
         } else {
-            equip.embed = '${count}D${attrib.join('D')}'; 
+            equip.embed = '${count}D${attrib.join('D')}';
         }
         return equip;
     }
