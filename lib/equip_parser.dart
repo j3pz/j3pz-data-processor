@@ -125,8 +125,16 @@ class EquipParser {
     void export(String path) {
         var equips = (armors + trinkets + weapons)..sort((a, b) => int.parse(a[0]) - int.parse(b[0]));
         equips.insert(0, equipTitle);
-        var csv = const ListToCsvConverter().convert(equips);
-        File(path).writeAsString(csv);
+        var equipCsv = const ListToCsvConverter().convert(equips);
+        File('$path/equip.csv').writeAsString(equipCsv);
+
+        var equipIdList = <List<String>>[];
+        equipIds.forEach((key, databaseId) {
+            equipIdList.add([key, '$databaseId']);
+        });
+        equips.insert(0, ['ID', 'databaseId']);
+        var equipIdCsv = const ListToCsvConverter().convert(equipIdList);
+        File('$path/equipId.tab').writeAsString(equipIdCsv);
     }
 
     bool shouldTruncate(RawEquip raw, int minId) {
@@ -140,9 +148,14 @@ class EquipParser {
         );
     }
 
+    int getNewId(RawEquip raw, String type) {
+        equipIds['$type-${raw.id}'] = ++next;
+        return next;
+    }
+
     Equip parse(RawEquip raw, String type) {
         var equip = Equip();
-        equip.id = equipIds['$type-${raw.id}'] ?? ++next;
+        equip.id = equipIds['$type-${raw.id}'] ?? getNewId(raw, type);
         equip.name = raw.name;
         equip.quality = raw.level;
         equip.strengthen = int.tryParse(raw.maxStrengthLevel) ?? 0;

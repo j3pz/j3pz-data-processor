@@ -20,5 +20,5 @@ void equips() async {
         savedId: savedId,
     );
     print('generating');
-    parser.export('./output/equip.csv');
+    parser.export('./output');
 }
