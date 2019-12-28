@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:math';
 import 'package:csv/csv.dart';
 import 'package:j3pz_data_preprocessor/attrib.dart';
+import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/equip.dart';
 import 'package:j3pz_data_preprocessor/item.dart';
 
@@ -59,6 +60,7 @@ const equipTitle = [
     'strain',
     'huajing',
     'threat',
+    'effectId',
     'embed',
     'strengthen',
     'deprecated',
@@ -68,10 +70,14 @@ class EquipParser {
     List<List<String>> armors;
     List<List<String>> trinkets;
     List<List<String>> weapons;
-    Map<String, Attribute> attributes;
-    Map<String, RawItem> items;
-    Map<String, int> equipIds;
-    int next = 0;
+
+    Map<String, Attribute> attributes; // { id: Attribute }
+    Map<String, RawItem> items; // { id: RawItem }
+    Map<String, int> equipIds; // { type-id: databaseId }
+
+    int equipNext = 0;
+
+    EffectParser effectParser;
 
     EquipParser({
         Map armor,
@@ -80,6 +86,7 @@ class EquipParser {
         Map attribute,
         Map item,
         Map equipId,
+        this.effectParser,
     }) {
         attributes = {};
         attribute.forEach((key, value) {
@@ -93,7 +100,7 @@ class EquipParser {
             if (originalId.contains('armor') || originalId.contains('weapon') || originalId.contains('trinket')) {
                 var databaseId = int.tryParse(value['databaseId']) ?? 0;
                 equipIds[originalId] = databaseId;
-                next = max(next, databaseId);
+                equipNext = max(equipNext, databaseId);
             }
         });
 
@@ -156,8 +163,8 @@ class EquipParser {
     }
 
     int getNewId(RawEquip raw, String type) {
-        equipIds['$type-${raw.id}'] = ++next;
-        return next;
+        equipIds['$type-${raw.id}'] = ++equipNext;
+        return equipNext;
     }
 
     Equip parse(RawEquip raw, String type) {
@@ -264,6 +271,7 @@ class EquipParser {
     }
 
     Equip parseAttribute(RawEquip raw, Equip equip) {
+        var skillIds = <List<String>>[];
         [
             raw.magic1Type,
             raw.magic2Type,
@@ -358,8 +366,15 @@ class EquipParser {
                     equip.threat = int.tryParse(attribute.param2Min) ?? 0; break;
                 case 'atToughnessBase': // 御劲
                     equip.toughness = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atSkillEventHandler': // 被动特效1
+                    skillIds.add(['event', attribute.param1Min, '0']); break;
+                case 'atSetEquipmentRecipe': // 被动特效2
+                    skillIds.add(['recipe', attribute.param1Min, attribute.param2Min]); break;
             }
         });
+        if (skillIds.isNotEmpty) {
+            equip.effect = effectParser.getEffect(skillIds);
+        }
         return equip;
     }
 
