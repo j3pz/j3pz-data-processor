@@ -73,7 +73,14 @@ class EquipParser {
     Map<String, int> equipIds;
     int next = 0;
 
-    EquipParser({ Map armor, Map trinket, Map weapon, Map attribute, Map item, Map savedId }) {
+    EquipParser({
+        Map armor,
+        Map trinket,
+        Map weapon,
+        Map attribute,
+        Map item,
+        Map equipId,
+    }) {
         attributes = {};
         attribute.forEach((key, value) {
             var attrib = Attribute.fromJson(value);
@@ -81,7 +88,7 @@ class EquipParser {
         });
 
         equipIds = {};
-        savedId.forEach((key, value) {
+        equipId.forEach((key, value) {
             String originalId = value['ID'];
             if (originalId.contains('armor') || originalId.contains('weapon') || originalId.contains('trinket')) {
                 var databaseId = int.tryParse(value['databaseId']) ?? 0;
@@ -132,7 +139,7 @@ class EquipParser {
         equipIds.forEach((key, databaseId) {
             equipIdList.add([key, '$databaseId']);
         });
-        equips.insert(0, ['ID', 'databaseId']);
+        equipIdList.insert(0, ['ID', 'databaseId']);
         var equipIdCsv = const ListToCsvConverter().convert(equipIdList);
         File('$path/equipId.tab').writeAsString(equipIdCsv);
     }

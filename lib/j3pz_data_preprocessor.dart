@@ -9,7 +9,7 @@ void equips() async {
     var weapon = await readFile(path: './raw/Custom_Weapon.tab');
     var attribute = await readFile(path: './raw/Attrib.tab');
     var item = await readFile(path: './raw/item.txt', id: 'ItemID');
-    var savedId = await readFile(path: './output/originalId.tab', delimiter: ',');
+    var savedEquipId = await readFile(path: './output/equipId.tab', delimiter: ',');
     print('parsing');
     var parser = EquipParser(
         armor: armor,
@@ -17,7 +17,7 @@ void equips() async {
         weapon: weapon,
         attribute: attribute,
         item: item,
-        savedId: savedId,
+        equipId: savedEquipId,
     );
     print('generating');
     parser.export('./output');
