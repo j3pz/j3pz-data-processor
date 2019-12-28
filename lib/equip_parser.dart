@@ -123,7 +123,7 @@ class EquipParser {
     }
 
     void export(String path) {
-        var equips = armors + trinkets + weapons;
+        var equips = (armors + trinkets + weapons)..sort((a, b) => int.parse(a[0]) - int.parse(b[0]));
         equips.insert(0, equipTitle);
         var csv = const ListToCsvConverter().convert(equips);
         File(path).writeAsString(csv);
