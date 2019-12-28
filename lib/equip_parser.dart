@@ -5,6 +5,7 @@ import 'package:j3pz_data_preprocessor/attrib.dart';
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/equip.dart';
 import 'package:j3pz_data_preprocessor/item.dart';
+import 'package:j3pz_data_preprocessor/set_parser.dart';
 
 const spunkKungfu = ['万花', '少林', '唐门', '明教'];
 const spiritKungfu = ['七秀', '五毒', '纯阳', '长歌'];
@@ -63,6 +64,7 @@ const equipTitle = [
     'effectId',
     'embed',
     'strengthen',
+    'setId',
     'deprecated',
 ];
 
@@ -78,6 +80,7 @@ class EquipParser {
     int equipNext = 0;
 
     EffectParser effectParser;
+    SetParser setParser;
 
     EquipParser({
         Map armor,
@@ -87,6 +90,7 @@ class EquipParser {
         Map item,
         Map equipId,
         this.effectParser,
+        this.setParser,
     }) {
         attributes = {};
         attribute.forEach((key, value) {
@@ -181,6 +185,9 @@ class EquipParser {
         equip = parseAttribute(raw, equip);
         equip = parseEmbed(raw, equip);
         equip.icon = items[raw.uiID].icon;
+        if (raw.setID != null) {
+            equip.equipSet = setParser.getEquipSet(raw);
+        }
         return equip;
     }
 

@@ -1,4 +1,5 @@
 import 'package:j3pz_data_preprocessor/effect.dart';
+import 'package:j3pz_data_preprocessor/set.dart';
 
 class RawEquip {
     int id;
@@ -276,7 +277,7 @@ class Equip {
     int huajing = 0;
     int threat = 0;
     Effect effect;
-    // int set;
+    EquipSet equipSet;
     String embed;
     int strengthen;
     // int source;
@@ -321,6 +322,7 @@ class Equip {
             effect != null ? '${effect.id}' : '',
             embed,
             '$strengthen',
+            equipSet != null ? '${equipSet.id}' : '',
             (deprecated ?? false) ? '1' : '0',
         ];
     }
