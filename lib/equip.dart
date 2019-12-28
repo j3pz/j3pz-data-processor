@@ -65,8 +65,8 @@ class RawEquip {
     String magic10Type;
     String magic11Type;
     String magic12Type;
-    String skillID;
-    String skillLevel;
+    int skillID;
+    int skillLevel;
     String belongSchool;
     String magicKind;
     String magicType;
@@ -184,8 +184,8 @@ class RawEquip {
         magic10Type = json['Magic10Type'];
         magic11Type = json['Magic11Type'];
         magic12Type = json['Magic12Type'];
-        skillID = json['SkillID'];
-        skillLevel = json['SkillLevel'];
+        skillID = int.tryParse(json['SkillID']);
+        skillLevel = int.tryParse(json['SkillLevel']);
         belongSchool = json['BelongSchool'];
         magicKind = json['MagicKind'];
         magicType = json['MagicType'];

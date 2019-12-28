@@ -373,7 +373,10 @@ class EquipParser {
             }
         });
         if (skillIds.isNotEmpty) {
-            equip.effect = effectParser.getEffect(skillIds);
+            equip.effect = effectParser.getPassiveEffect(skillIds);
+        }
+        if (raw.skillID != null) {
+            equip.effect = effectParser.getUsageEffect(raw.skillID, raw.skillLevel, raw.name);
         }
         return equip;
     }

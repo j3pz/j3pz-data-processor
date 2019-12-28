@@ -15,6 +15,7 @@ void equips() async {
     var savedEquipId = await readFile(path: './output/equipId.tab', delimiter: ',');
     var savedEffectId = await readFile(path: './output/effectId.tab', delimiter: ',');
     var savedSetId = await readFile(path: './output/setId.tab', delimiter: ',');
+    var skill = await readFile(path: './raw/skill.txt');
 
     print('parsing');
 
