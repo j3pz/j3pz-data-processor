@@ -12607,3 +12607,4 @@ ID	FileName	Frame	Kind	SubKind	Tag1	Tag2
 12736	emo_19_12_5_2.UITex	0	表情动作	交互表情		
 12737	item_19_12_19_1.UITex	0	防具	背部挂件		
 12738	emo_19_12_19_1.UITex	0	表情动作	表情动作1		
+12739	item_19_12_30_1.UITex	0	防具	腰部挂件		

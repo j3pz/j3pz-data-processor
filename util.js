@@ -106,6 +106,30 @@ const attributeKeyMap = {
     atVitalityBase: ['body', '03', '体质提高', 1], // 体质
 };
 
+const usageEffects = {
+    '6800': '获得风特效',
+    '22009-1': '大幅度提升自身外功攻击(630点)，同时降低受到的治疗成效(75%)。',
+    '22009-2': '大幅度提升自身内功攻击(756点)，同时降低受到的治疗成效(75%)。',
+    '22009-3': '大幅度提升自身外功攻击(820点)，同时降低受到的治疗成效(75%)。',
+    '22009-4': '大幅度提升自身内功攻击(984点)，同时降低受到的治疗成效(75%)。',
+    '22035': '青帝太皡，威御五行；惟尘身在，仪象万方。',
+    '22096': '威德普渡，万法皈依',
+    '21308': '吹奏凛冬踏雪曲',
+    '5216': '红莲出业火，铁胆荡英魂。',
+    '23106': '获得腾空效果',
+    '23318': '起舞！血雨中的公主……',
+    '23570': '剑过不留痕，残月分断魂。',
+    '22851': '断肠忘情，引魂唤灵。',
+    '22438': '置地后待千机匣变形立起，亲自操控之。',
+    '22395': '瞄准目标扔出十字刃。',
+    '22288': '用力挥舞手上的巨剑。若双剑合璧，可使用金蛇剑法。',
+    '22961': '绿林掠影，九龙升景。',
+    '5210': '风起月圆夜，沙掩大漠心。',
+    '23291': '此盾似乎并非真正御敌所用，可放出被控制后的怪异苍炎般斗气……',
+    '23232': '声色可悠扬动听，可沉稳厚重，若奏出风雨招雷，可引其最佳特质。',
+    '23588': '获得随时间增长的风沙护盾效果，5秒后达到最大吸收量。护盾结束后或再次使用武器将对前方矩形范围内目标造成伤害（伤害值取决于风沙护盾吸收的伤害），同时击飞范围内的非玩家目标。',
+};
+
 module.exports = {
     getMenpai(rawText) {
         return global.options.readable ? rawText : menpaiList.indexOf(rawText);
@@ -282,9 +306,18 @@ module.exports = {
             ret.set = setObj;
         }
         if (rawEquip.SkillID && rawEquip.SkillLevel) {
+            let skilldesc = '';
+            if (usageEffects[`${rawEquip.SkillID}-${rawEquip.SkillLevel}`]) {
+                skilldesc = usageEffects[`${rawEquip.SkillID}-${rawEquip.SkillLevel}`];
+            } else if (usageEffects[`${rawEquip.SkillID}`]) {
+                skilldesc = usageEffects[`${rawEquip.SkillID}`];
+            } else {
+                skilldesc = `${rawEquip.Name} 装备特效`;
+                console.log(`该装备的主动特效技能解析异常: name=${rawEquip.Name}, skillId=${rawEquip.SkillID}, skillLevel=${rawEquip.SkillLevel}`);
+            }
             ret.skill = {
                 id: `${rawEquip.SkillID}-${rawEquip.SkillLevel}`,
-                desc: '使用：获得风特效',
+                desc: `使用：${skilldesc}`,
             };
         }
         return ret;
