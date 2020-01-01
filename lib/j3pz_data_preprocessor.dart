@@ -30,6 +30,7 @@ void equips() async {
     var setParser = SetParser(
         equipSet: equipSet,
         effectParser: effectParser,
+        attribute: attribute,
         setId: savedSetId,
     );
 

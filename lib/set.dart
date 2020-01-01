@@ -1,3 +1,5 @@
+import 'package:j3pz_data_preprocessor/effect.dart';
+
 class EquipSet {
     int id;
     String name;
@@ -110,4 +112,10 @@ class RawSet {
         require6Effect1 = int.tryParse(json['6_1']);
         require6Effect2 = int.tryParse(json['6_2']);
     }
+}
+
+class SetEffectMap {
+    int requirement;
+    EquipSet equipSet;
+    Effect effect;
 }

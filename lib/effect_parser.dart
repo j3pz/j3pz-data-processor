@@ -152,4 +152,18 @@ class EffectParser {
         }
         return effect;
     }
+
+    Effect getAttributeEffect({ String id, List<String>keys, List<num> values, List<String> decorators, List<String> description }) {
+        var identifier = 'attribute-$id';
+        var databaseId = effectIds[identifier] ?? getNewId(identifier);
+        var effect = Effect(
+            id: databaseId,
+            trigger: 'Passive',
+            description: description.join(';'),
+        );
+        effect.attribute = keys;
+        effect.value = values;
+        effect.decorator = decorators;
+        return effect;
+    }
 }
