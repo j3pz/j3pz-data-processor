@@ -21,7 +21,7 @@ class RawEquip {
     String maxExistAmount;
     String canTrade;
     String canDestroy;
-    String setID;
+    int setID;
     String scriptName;
     int quality;
     String base1Type;
@@ -140,7 +140,7 @@ class RawEquip {
         maxExistAmount = json['MaxExistAmount'];
         canTrade = json['CanTrade'];
         canDestroy = json['CanDestroy'];
-        setID = json['SetID'];
+        setID = int.tryParse(json['SetID']) ?? 0;
         scriptName = json['ScriptName'];
         quality = int.tryParse(json['Quality']) ?? 0;
         base1Type = json['Base1Type'];

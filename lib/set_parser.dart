@@ -33,9 +33,16 @@ class SetParser {
         });
     }
 
+    int getNewId(RawSet setInfo) {
+        setIds['set-${setInfo.id}'] = ++setNext;
+        return setNext;
+    }
+
     EquipSet getEquipSet(RawEquip raw) {
+        var setInfo = sets['${raw.setID}'];
+        var databaseId = setIds['set-${setInfo.id}'] ?? getNewId(setInfo);
         var equipSet = EquipSet(
-            id: 0,
+            id: databaseId,
             name: '',
         );
         return equipSet;

@@ -185,7 +185,7 @@ class EquipParser {
         equip = parseAttribute(raw, equip);
         equip = parseEmbed(raw, equip);
         equip.icon = items[raw.uiID].icon;
-        if (raw.setID != null) {
+        if (raw.setID != 0) {
             equip.equipSet = setParser.getEquipSet(raw);
         }
         return equip;
