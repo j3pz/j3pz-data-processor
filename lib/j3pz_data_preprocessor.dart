@@ -47,5 +47,6 @@ void equips() async {
     print('generating');
     equipParser.export('./output');
     effectParser.export('./output');
+    setParser.export('./output');
     print('done');
 }

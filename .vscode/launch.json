@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Dart equip",
+            "type": "dart",
+            "request": "launch",
+            "program": "bin/main.dart",
+            "args": ["equip"]
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Equip",
