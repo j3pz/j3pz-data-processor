@@ -100,23 +100,29 @@ class EffectParser {
     Effect getPassiveEffect(List<List<String>> ids) {
         var skillIds = <String>[];
         var skillDescs = <String>[];
+        var exception = false;
         ids.forEach((entry) {
             var type = entry[0];
             var id = entry[1];
             var level = entry[2];
             var reg = RegExp('"(.*)"');
-            if (type == 'event') {
+            if (type == 'event' && events[id] != null) {
                 var desc = reg.stringMatch(events[id].replaceAll('\n', ''))
                     .replaceAll('\\', '').replaceAll('"', '');
                 skillIds.add(id);
                 skillDescs.add(desc);
-            } else if (type == 'recipe') {
+            } else if (type == 'recipe' && recipes['$id-$level'] != null) {
                 var desc = reg.stringMatch(recipes['$id-$level'].replaceAll('\n', ''))
                     .replaceAll('\\', '').replaceAll('"', '');
                 skillIds.add(id);
                 skillDescs.add(desc);
+            } else {
+                exception = true;
             }
         });
+        if (exception) {
+            return null;
+        }
         var identifier = 'event-${skillIds.join('-')}';
         var databaseId = effectIds[identifier] ?? getNewId(identifier);
         var effect = Effect(
@@ -164,6 +170,9 @@ class EffectParser {
         effect.attribute = keys;
         effect.value = values;
         effect.decorator = decorators;
+        if (effects['${effect.id}'] == null) {
+            effects['${effect.id}'] = effect;
+        }
         return effect;
     }
 }

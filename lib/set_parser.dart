@@ -9,11 +9,13 @@ import 'package:j3pz_data_preprocessor/set.dart';
 
 class SetParser {
     int setNext = 0;
+    int idNext = 0;
 
     Map<String, RawSet> sets;
     Map<String, int> setIds; // { type-id: databaseId }
     Map<int, EquipSet> generatedSets; // { databaseId: EquipSet }
     Map<String, Attribute> attributes; // { id: Attribute }
+    Map<String, int> idMap = {}; // { requirement-effectId-setId: databaseId }
 
     EffectParser effectParser;
 
@@ -56,6 +58,14 @@ class SetParser {
         sets..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))..insert(0, ['id', 'name']);
         var setCsv = const ListToCsvConverter().convert(sets);
         File('$path/equip_set.csv').writeAsString(setCsv);
+
+        var setEffectMap = <List<String>>[];
+        idMap.forEach((key, databaseId) {
+            setEffectMap.add(['$databaseId'] + key.split('-'));
+        });
+        setEffectMap..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))..insert(0, ['id', 'requirement', 'effectId', 'setId']);
+        var setEffectCsv = const ListToCsvConverter().convert(setEffectMap);
+        File('$path/set_effect.csv').writeAsStringSync(setEffectCsv);
     }
 
     int getNewId(RawSet setInfo) {
@@ -97,6 +107,7 @@ class SetParser {
             int requirement = entry[0];
             List<int> attributeIds = entry[1];
             var attributeKeys = <String>[];
+            var skillIds = <List<String>>[];
             var attributeValues = <num>[];
             var attributeDecorators = <String>[];
             var descriptions = <String>[];
@@ -237,10 +248,10 @@ class SetParser {
                         case 'atToughnessBase': // 御劲
                             addAttribute('toughness', int.tryParse(attribute.param1Min) ?? 0, 'NONE', '御劲等级'); break;
                         case 'atSkillEventHandler': // 被动特效1
-                            // skillIds.add(['event', attribute.param1Min, '0']);
+                            skillIds.add(['event', attribute.param1Min, '0']);
                             break;
                         case 'atSetEquipmentRecipe': // 被动特效2
-                            // skillIds.add(['recipe', attribute.param1Min, attribute.param2Min]);
+                            skillIds.add(['recipe', attribute.param1Min, attribute.param2Min]);
                             break;
                         case 'atAddSprintPowerMax': // 气力上限
                             addAttribute('sprint', int.tryParse(attribute.param1Min) ?? 0, 'NONE', '气力值上限'); break;
@@ -251,13 +262,26 @@ class SetParser {
                     }
                 }
             });
-            var setEffect = effectParser.getAttributeEffect(
-                id: attributeIds.join('-'),
-                keys: attributeKeys,
-                values: attributeValues,
-                decorators: attributeDecorators,
-                description: descriptions,
-            );
+            Effect effect;
+            if (attributeKeys.isNotEmpty) {
+                effect = effectParser.getAttributeEffect(
+                    id: (attributeIds..remove(null)).join('-'),
+                    keys: attributeKeys,
+                    values: attributeValues,
+                    decorators: attributeDecorators,
+                    description: descriptions,
+                );
+
+            }
+            if (skillIds.isNotEmpty) {
+                effect = effectParser.getPassiveEffect(skillIds);
+            }
+            if (effect != null && idMap['$requirement-${effect.id}-${equipSet.id}'] == null) {
+                idMap['$requirement-${effect.id}-${equipSet.id}'] = ++idNext;
+            }
+            if (skillIds.isNotEmpty && attributeKeys.isNotEmpty) {
+                print('存在技能+属性特效，setId=${raw.id}, name=${raw.name}');
+            }
         });
     }
 }

@@ -113,9 +113,3 @@ class RawSet {
         require6Effect2 = int.tryParse(json['6_2']);
     }
 }
-
-class SetEffectMap {
-    int requirement;
-    EquipSet equipSet;
-    Effect effect;
-}

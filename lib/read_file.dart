@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:fast_gbk/fast_gbk.dart';
 
-Future readFile({ String path, bool isFirstColumnId = false, String delimiter = '\t' , String id = 'ID'}) {
+Future readFile({ String path, String delimiter = '\t' , String id = 'ID', List<String> ids}) {
     var map = <String, dynamic>{};
     var titleRead = false;
     var titles = <String>[];
@@ -18,7 +18,12 @@ Future readFile({ String path, bool isFirstColumnId = false, String delimiter = 
                     var key  = titles[index];
                     item[key] = value;
                 });
-                map[item[id]] = item;
+                if (ids != null) {
+                    var key = ids.map((k) => item[k]).join('-');
+                    map[key] = item;
+                } else {
+                    map[item[id]] = item;
+                }
             }
         }).asFuture(map);
     return file;

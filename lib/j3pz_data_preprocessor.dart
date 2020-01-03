@@ -12,7 +12,7 @@ void equips() async {
     var attribute = await readFile(path: './raw/Attrib.tab');
     var item = await readFile(path: './raw/item.txt', id: 'ItemID');
     var event = await readFile(path: './raw/skillevent.txt');
-    var recipe = await readFile(path: './raw/equipmentrecipe.txt');
+    var recipe = await readFile(path: './raw/equipmentrecipe.txt', ids: ['ID', 'Level']);
     var savedEquipId = await readFile(path: './output/equipId.tab', delimiter: ',');
     var savedEffectId = await readFile(path: './output/effectId.tab', delimiter: ',');
     var equipSet = await readFile(path: './raw/Set.tab');
