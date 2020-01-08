@@ -20,9 +20,8 @@ void equips() async {
     var savedSetId = await readFile(path: './output/setId.tab', delimiter: ',');
     // var skill = await readFile(path: './raw/skill.txt', ids: ['SkillID', 'Level']);
 
-    var representToExterior = await readFile(path: './raw/ExteriorBuy.tab', ids: ['SubType', 'RepresentID', 'ColorID']);
-    var exteriorToSet = await readFile(path: './raw/ExteriorInfo.tab');
-    var exteriorSet = await readFile(path: './raw/exteriorbox.txt', id: 'Set');
+    var representToExterior = await readFile(path: './raw/ExteriorInfo.tab', ids: ['SubType', 'RepresentID', 'ColorID', 'ForceID']);
+    var exteriorToSet = await readFile(path: './raw/exteriorbox.txt', id: 'Set');
 
     print('parsing');
 
@@ -42,7 +41,6 @@ void equips() async {
     var representParser = RepresentParser(
         representToExterior: representToExterior,
         exteriorToSet: exteriorToSet,
-        exteriorSet: exteriorSet,
     );
 
     var equipParser = EquipParser(
@@ -61,5 +59,6 @@ void equips() async {
     equipParser.export('./output');
     effectParser.export('./output');
     setParser.export('./output');
+    representParser.export('./output');
     print('done');
 }

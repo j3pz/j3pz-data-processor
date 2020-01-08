@@ -1,4 +1,5 @@
 import 'package:j3pz_data_preprocessor/effect.dart';
+import 'package:j3pz_data_preprocessor/represent.dart';
 import 'package:j3pz_data_preprocessor/set.dart';
 
 class RawEquip {
@@ -282,6 +283,7 @@ class Equip {
     int strengthen;
     // int source;
     bool deprecated;
+    Represent represent;
 
     List<String> toList() {
         return [
@@ -323,6 +325,7 @@ class Equip {
             embed,
             '$strengthen',
             equipSet != null ? '${equipSet.id}' : '',
+            represent != null ? '${represent.id}' : '',
             (deprecated ?? false) ? '1' : '0',
         ];
     }

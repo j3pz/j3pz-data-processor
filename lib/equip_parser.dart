@@ -5,6 +5,7 @@ import 'package:j3pz_data_preprocessor/attrib.dart';
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/equip.dart';
 import 'package:j3pz_data_preprocessor/item.dart';
+import 'package:j3pz_data_preprocessor/represent.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 
@@ -66,6 +67,7 @@ const equipTitle = [
     'embed',
     'strengthen',
     'setId',
+    'representId',
     'deprecated',
 ];
 
@@ -192,7 +194,7 @@ class EquipParser {
             equip.equipSet = setParser.getEquipSet(raw);
         }
         if (type == 'armor' && raw.representID != null && raw.representID != '0') {
-            // print(raw.representID);
+            equip.represent = parseRepresent(raw);
         }
         return equip;
     }
@@ -419,7 +421,7 @@ class EquipParser {
         return equip;
     }
 
-    Equip parseRepresent() {
-
+    Represent parseRepresent(RawEquip raw) {
+        return representParser.getRepresent(raw);
     }
 }
