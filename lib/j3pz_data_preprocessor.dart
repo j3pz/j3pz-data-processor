@@ -1,5 +1,6 @@
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
+import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 
 import './read_file.dart';
@@ -17,7 +18,11 @@ void equips() async {
     var savedEffectId = await readFile(path: './output/effectId.tab', delimiter: ',');
     var equipSet = await readFile(path: './raw/Set.tab');
     var savedSetId = await readFile(path: './output/setId.tab', delimiter: ',');
-    var skill = await readFile(path: './raw/skill.txt');
+    // var skill = await readFile(path: './raw/skill.txt', ids: ['SkillID', 'Level']);
+
+    var representToExterior = await readFile(path: './raw/ExteriorBuy.tab', ids: ['SubType', 'RepresentID', 'ColorID']);
+    var exteriorToSet = await readFile(path: './raw/ExteriorInfo.tab');
+    var exteriorSet = await readFile(path: './raw/exteriorbox.txt', id: 'Set');
 
     print('parsing');
 
@@ -34,6 +39,12 @@ void equips() async {
         setId: savedSetId,
     );
 
+    var representParser = RepresentParser(
+        representToExterior: representToExterior,
+        exteriorToSet: exteriorToSet,
+        exteriorSet: exteriorSet,
+    );
+
     var equipParser = EquipParser(
         armor: armor,
         trinket: trinket,
@@ -44,6 +55,7 @@ void equips() async {
 
         effectParser: effectParser,
         setParser: setParser,
+        representParser: representParser,
     );
     print('generating');
     equipParser.export('./output');

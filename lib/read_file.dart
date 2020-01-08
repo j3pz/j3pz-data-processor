@@ -20,8 +20,14 @@ Future readFile({ String path, String delimiter = '\t' , String id = 'ID', List<
                 });
                 if (ids != null) {
                     var key = ids.map((k) => item[k]).join('-');
+                    if (map[key] != null) {
+                        print('Warn: $path 的 ID 对：$ids 不唯一, key=$key');
+                    }
                     map[key] = item;
                 } else {
+                    if (map[item[id]] != null) {
+                        print('Warn: $path 的 ID：$id 不唯一, key=${item[id]}');
+                    }
                     map[item[id]] = item;
                 }
             }
