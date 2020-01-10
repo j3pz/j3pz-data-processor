@@ -4,6 +4,7 @@ class Source {
     String description;
     String redeem;
     String activity;
+    bool limitedTime = false;
     Reputation reputation;
     Boss boss;
 
@@ -13,7 +14,9 @@ class Source {
         return [
             '$id',
             type,
-            description,
+            description ?? '',
+            activity ?? '',
+            limitedTime ? '1' : '0',
         ];
     }
 }

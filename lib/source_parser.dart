@@ -23,14 +23,14 @@ const typeMap = {
     '威望': ['redeem', 'prestige'],
     '龙门寻宝商店': ['redeem', 'store'],
     '奇宝之争': ['activity', '奇宝之争'],
-    '活动': ['activity'],
+    '活动': ['activity', ''],
     '阵营拍卖': ['activity', '阵营拍卖'],
     '任务装备': ['other', '任务'],
     '神兵试炼': ['other', '神兵试炼'],
     '神兵试炼_拭剑园': ['other', '神兵试炼-拭剑园'],
 };
 
-const sourceTitle = ['id', 'type', 'description'];
+const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime'];
 
 class SourceParser {
     Map<String, RawSource> rawSources;
@@ -75,10 +75,31 @@ class SourceParser {
         Source source;
         if (getType[0] == 'other') {
             source = parseOtherSource(raw, rawSource);
+        } else if (getType[0] == 'activity') {
+            source = parseActivitySource(raw, rawSource);
         }
         if (source != null && sources[source.id] == null ) {
             sources[source.id] = source;
         }
+        return source;
+    }
+
+    Source parseActivitySource(RawEquip equip, RawSource raw) {
+        var type = typeMap[equip.getType];
+        String activity;
+        var isLimitedTime = false;
+        if (type[1] != '') {
+            activity = type[1];
+        } else if (equip.name.contains('无界')) {
+            activity = '试炼之地';
+        } else {
+            isLimitedTime = true;
+        }
+        var identifier = 'other-$activity';
+        var databaseId = ids[identifier] ?? getNewId(identifier);
+        var source = Source(id: databaseId, type: 'activity');
+        source.activity = activity ?? '限时活动';
+        source.limitedTime = isLimitedTime;
         return source;
     }
 
