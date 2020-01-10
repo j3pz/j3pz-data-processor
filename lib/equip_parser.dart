@@ -8,6 +8,7 @@ import 'package:j3pz_data_preprocessor/item.dart';
 import 'package:j3pz_data_preprocessor/represent.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
+import 'package:j3pz_data_preprocessor/source_parser.dart';
 
 const spunkKungfu = ['万花', '少林', '唐门', '明教'];
 const spiritKungfu = ['七秀', '五毒', '纯阳', '长歌'];
@@ -85,6 +86,7 @@ class EquipParser {
     EffectParser effectParser;
     SetParser setParser;
     RepresentParser representParser;
+    SourceParser sourceParser;
 
     EquipParser({
         Map armor,
@@ -96,6 +98,7 @@ class EquipParser {
         this.effectParser,
         this.setParser,
         this.representParser,
+        this.sourceParser,
     }) {
         attributes = {};
         attribute.forEach((key, value) {
@@ -196,6 +199,7 @@ class EquipParser {
         if (type == 'armor' && raw.representID != null && raw.representID != '0') {
             equip.represent = parseRepresent(raw);
         }
+        parseSource(raw, type);
         return equip;
     }
 
@@ -423,5 +427,9 @@ class EquipParser {
 
     Represent parseRepresent(RawEquip raw) {
         return representParser.getRepresent(raw);
+    }
+
+    void parseSource(RawEquip raw, String type) {
+        sourceParser.getSource(raw, type);
     }
 }
