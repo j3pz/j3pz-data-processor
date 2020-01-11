@@ -17,8 +17,9 @@ const typeMap = {
     '副本': ['raid', ''],
     '帮贡': ['redeem', 'contribution'],
     '生活技能': ['other', '生活技能'],
-    '道具换取': ['redeem', 'contribution'],
-    '野外boss': ['raid', ''],
+    '道具换取': ['redeem', ''],
+    '侠义值': ['redeem', 'chivalry'],
+    '野外boss': ['other', '野外boss'],
     '竞技场': ['redeem', 'arena'],
     '威望': ['redeem', 'prestige'],
     '龙门寻宝商店': ['redeem', 'store'],
@@ -30,14 +31,20 @@ const typeMap = {
     '神兵试炼_拭剑园': ['other', '神兵试炼-拭剑园'],
 };
 
-const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime'];
+const prestigeType = {
+    '2': 'prestige_virtue',
+    '4': 'prestige_fiend',
+};
+
+const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem'];
 
 class SourceParser {
     Map<String, RawSource> rawSources;
     Map<String, int> ids = {};
     Map<int, Source> sources = {};
+    Map<String, int> types = {};
 
-    int sourceNext = 1;
+    int sourceNext = 0;
 
     SourceParser({
         Map equipDb,
@@ -77,10 +84,36 @@ class SourceParser {
             source = parseOtherSource(raw, rawSource);
         } else if (getType[0] == 'activity') {
             source = parseActivitySource(raw, rawSource);
+        } else if (getType[0] == 'redeem') {
+            source = parseRedeemSource(raw, rawSource);
         }
-        if (source != null && sources[source.id] == null ) {
+        if (source != null && sources[source.id] == null) {
             sources[source.id] = source;
         }
+        return source;
+    }
+
+    Source parseRedeemSource(RawEquip equip, RawSource raw) {
+        var type = typeMap[equip.getType];
+        String redeem;
+        var desc = '';
+        if (type[1] != '' && type[1] != 'prestige') {
+            redeem = type[1];
+            if (type[1] == 'store') {
+                desc = equip.getType;
+            }
+        } else if (type[1] == 'prestige') {
+            redeem = prestigeType[equip.requireCamp];
+        } else if (raw.getType.contains('侠义值')) {
+            redeem = 'chivalry';
+        } else if (raw.getDesc.contains('兑换牌')) {
+            redeem = 'set';
+        }
+        var identifier = 'redeem-$redeem-$desc';
+        var databaseId = ids[identifier] ?? getNewId(identifier);
+        var source = Source(id: databaseId, type: 'redeem');
+        source.redeem = redeem ?? 'unknown';
+        source.description = desc;
         return source;
     }
 

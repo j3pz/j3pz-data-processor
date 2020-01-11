@@ -17,6 +17,7 @@ class Source {
             description ?? '',
             activity ?? '',
             limitedTime ? '1' : '0',
+            redeem ?? '',
         ];
     }
 }
