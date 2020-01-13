@@ -139,7 +139,7 @@ ID	Level	Desc
 2407	1	<text>text="“宫”会心几率提高5%" font=101 </text>
 2417	1	<text>text="“杯水留影”招式调息时间减少30秒" font=101 </text>
 4120	1	<text>text="“暴雨梨花针”伤害提高10%" font=105 </text>
-4290	1	<text>text="“醉斩白蛇”伤害提高10%" font=105 </text>
+4290	1	<text>text="“刀啸风吟”伤害提高10%" font=105 </text>
 4291	1	<text>text="“项王击鼎”伤害提高10%" font=105 </text>
 4292	1	<text>text="“散流霞”调息时间降低5秒" font=105 </text>
 4293	1	<text>text="“楚河汉界”调息时间降低5秒" font=105 </text>

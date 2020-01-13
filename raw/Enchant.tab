@@ -7188,3 +7188,19 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10815	霁月·腕·染（外破）	护手	外功破防等级提升80点	atPhysicsOvercomeBase	80	80																										10				0	0
 10816	霁月·腕·染（内破）	护手	内功破防等级提升80点	atMagicOvercome	80	80																										10				0	0
 10817	霁月·腕·染（无双）	护手	无双等级提升80点	atStrainBase	80	80																										10				0	0
+10818	霁月·衣·染（化劲）	上装	化劲提升40点	atDecriticalDamagePowerBase	40	40																										2					
+10819	霁月·衣·染（御劲）	上装	御劲提升40点	atToughnessBase	40	40																										2					
+10820	霁月·衣·染（外防）	上装	外功防御提升40点	atPhysicsShieldAdditional	40	40																										2					
+10821	霁月·衣·染（内防）	上装	内功防御提升40点	atMagicShield	40	40																										2					
+10822	霁月·腰·甲（化劲）	腰带	化劲提升40点	atDecriticalDamagePowerBase	40	40																										6				0	0
+10823	霁月·腰·甲（御劲）	腰带	御劲提升40点	atToughnessBase	40	40																										6				0	0
+10824	霁月·腰·甲（外防）	腰带	外功防御提升40点	atPhysicsShieldAdditional	40	40																										6				0	0
+10825	霁月·腰·甲（内防）	腰带	内功防御提升40点	atMagicShield	40	40																										6				0	0
+10826	霁月·鞋·染（急速）	鞋子	加速提升80点	atHasteBase	80	80																										9				0	0
+10827	霁月·鞋·染（命中）	鞋子	全命中提升80点	atAllTypeHitValue	80	80																										9				0	0
+10828	霁月·鞋·染（外攻）	鞋子	外功攻击提升36点	atPhysicsAttackPowerBase	36	36																										9				0	0
+10829	霁月·鞋·染（内功）	鞋子	内功攻击提升43点	atMagicAttackPowerBase	43	43																										9				0	0
+10830	霁月·衣·染（无双）	上装	无双等级提升61点	atStrainBase	61	61																										2					
+10831	霁月·衣·染（减仇）	上装	招式仇恨降低3.5%	atActiveThreatCoefficient	0	-35																										2					
+10832	霁月·腰·甲（无双）	腰带	无双等级提升61点	atStrainBase	61	61																										6				0	0
+10833	霁月·腰·甲（减仇）	腰带	招式仇恨降低3.5%	atActiveThreatCoefficient	0	-35																										6				0	0
