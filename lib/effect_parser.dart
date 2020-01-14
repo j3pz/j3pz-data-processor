@@ -66,7 +66,7 @@ class EffectParser {
         effectIds = {};
         effectId.forEach((key, value) {
             String originalId = value['ID'];
-            if (originalId.contains('skill') || originalId.contains('event')) {
+            if (originalId.contains('skill') || originalId.contains('event') || originalId.contains('attribute')) {
                 var databaseId = int.tryParse(value['databaseId']) ?? 0;
                 effectIds[originalId] = databaseId;
                 effectNext = max(effectNext, databaseId);
