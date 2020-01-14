@@ -36,15 +36,19 @@ const prestigeType = {
     '4': 'prestige_fiend',
 };
 
-const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem'];
+const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem', 'reputation'];
+const reputationTitle = ['id', 'name', 'level'];
 
 class SourceParser {
     Map<String, RawSource> rawSources;
     Map<String, int> ids = {};
+    Map<String, int> reputationIds = {};
     Map<int, Source> sources = {};
     Map<String, int> types = {};
+    Map<int, Reputation> reputations = {};
 
     int sourceNext = 0;
+    int reputationNext = 0;
 
     SourceParser({
         Map equipDb,
@@ -63,11 +67,24 @@ class SourceParser {
         sources..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))..insert(0, sourceTitle);
         var sourcetCsv = const ListToCsvConverter().convert(sources);
         File('$path/source.csv').writeAsString(sourcetCsv);
+
+        var reputations = <List<String>>[];
+        this.reputations.forEach((id, reputation) {
+            reputations.add(reputation.toList());
+        });
+        reputations..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))..insert(0, reputationTitle);
+        var reputationCsv = const ListToCsvConverter().convert(reputations);
+        File('$path/reputation.csv').writeAsString(reputationCsv);
     }
 
     int getNewId(String identifier) {
         ids[identifier] = ++sourceNext;
         return sourceNext;
+    }
+
+    int getNewReputationId(String identifier) {
+        reputationIds[identifier] = ++reputationNext;
+        return reputationNext;
     }
 
     Source getSource(RawEquip raw, String type) {
@@ -86,10 +103,33 @@ class SourceParser {
             source = parseActivitySource(raw, rawSource);
         } else if (getType[0] == 'redeem') {
             source = parseRedeemSource(raw, rawSource);
+        } else if (getType[0] == 'reputation') {
+            source = parseReputationSource(raw, rawSource);
         }
         if (source != null && sources[source.id] == null) {
             sources[source.id] = source;
         }
+        return source;
+    }
+
+    Source parseReputationSource(RawEquip equip, RawSource raw) {
+        var name = raw.getDesc.replaceAll(RegExp('{|}'), '').replaceAll('·声望商', '').replaceAll('·装备', '');
+        if (name == '') {
+            name = '未知';
+        }
+        var level = raw.prestigeRequire;
+        var reputationIdentifier = 'reputation-$name-$level';
+        var reputationId = reputationIds[reputationIdentifier] ?? getNewReputationId(reputationIdentifier);
+        var reputation = Reputation(id: reputationId);
+        reputation.name = name;
+        reputation.level = level;
+        if (reputations[reputationId] == null) {
+            reputations[reputationId] = reputation;
+        }
+        var identifier = 'reputation-$reputationId';
+        var databaseId = ids[identifier] ?? getNewId(identifier);
+        var source = Source(id: databaseId, type: 'reputation');
+        source.reputation = reputation;
         return source;
     }
 

@@ -18,6 +18,7 @@ class Source {
             activity ?? '',
             limitedTime ? '1' : '0',
             redeem ?? '',
+            reputation != null ? '${reputation.id}' : '',
         ];
     }
 }
@@ -26,6 +27,12 @@ class Reputation {
     int id;
     String name;
     String level;
+
+    Reputation({this.id, this.name, this.level});
+
+    List<String> toList() {
+        return ['$id', name, level];
+    }
 }
 
 class Boss {
