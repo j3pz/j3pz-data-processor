@@ -1,3 +1,5 @@
+import 'package:j3pz_data_preprocessor/gamemap.dart';
+
 class Source {
     int id;
     String type;
@@ -39,11 +41,6 @@ class Boss {
     int id;
     String name;
     GameMap map;
-}
-
-class GameMap {
-    int id;
-    String name;
 }
 
 class RawSource {

@@ -1,5 +1,6 @@
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
+import 'package:j3pz_data_preprocessor/gamemap_parser.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 import 'package:j3pz_data_preprocessor/source_parser.dart';
@@ -22,6 +23,7 @@ void equips() async {
     // var skill = await readFile(path: './raw/skill.txt', ids: ['SkillID', 'Level']);
 
     var equipDb = await readFile(path: './raw/equipdb.txt', ids: ['TabType', 'ID']);
+    var mapList = await readFile(path: './raw/MapList.tab');
 
     var representToExterior = await readFile(path: './raw/ExteriorInfo.tab', ids: ['SubType', 'RepresentID', 'ColorID', 'ForceID']);
     var exteriorToSet = await readFile(path: './raw/exteriorbox.txt', id: 'Set');
@@ -33,6 +35,8 @@ void equips() async {
         event: event,
         recipe: recipe,
     );
+
+    var mapParser = GameMapParser(mapList: mapList);
 
     var setParser = SetParser(
         equipSet: equipSet,
@@ -48,6 +52,7 @@ void equips() async {
 
     var sourceParser = SourceParser(
         equipDb: equipDb,
+        mapParser: mapParser,
     );
 
     var equipParser = EquipParser(
@@ -65,6 +70,7 @@ void equips() async {
     );
     print('generating');
     equipParser.export('./output');
+    mapParser.export('./output');
     effectParser.export('./output');
     setParser.export('./output');
     representParser.export('./output');
