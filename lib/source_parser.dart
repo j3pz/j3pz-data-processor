@@ -13,7 +13,7 @@ const typeToTab = {
 
 const typeMap = {
     '任务': ['other', '任务'],
-    '掉落': ['raid', ''],
+    '掉落': ['other', ''],
     '声望': ['reputation', ''],
     '副本': ['raid', ''],
     '贡献度': ['redeem', 'contribution'],
@@ -52,13 +52,15 @@ const prestigeType = {
     '4': 'prestige_fiend',
 };
 
-const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem', 'reputation'];
+const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem', 'reputation', 'boss'];
 const reputationTitle = ['id', 'name', 'level'];
+const bossTitle = ['id', 'name', 'mapid'];
 
 class SourceParser {
     Map<String, RawSource> rawSources;
     Map<String, int> ids = {};
     Map<String, int> reputationIds = {};
+    Map<String, int> bossIds = {};
     Map<int, Source> sources = {};
     Map<String, int> types = {};
     Map<int, Reputation> reputations = {};
@@ -68,6 +70,7 @@ class SourceParser {
 
     int sourceNext = 0;
     int reputationNext = 0;
+    int bossNext = 0;
 
     SourceParser({
         Map equipDb,
@@ -96,7 +99,13 @@ class SourceParser {
         var reputationCsv = const ListToCsvConverter().convert(reputations);
         File('$path/reputation.csv').writeAsString(reputationCsv);
 
-        print(types);
+        var bosses = <List<String>>[];
+        this.bosses.forEach((id, boss) {
+            bosses.add(boss.toList());
+        });
+        bosses..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))..insert(0, bossTitle);
+        var bossCsv = const ListToCsvConverter().convert(bosses);
+        File('$path/boss.csv').writeAsString(bossCsv);
     }
 
     int getNewId(String identifier) {
@@ -109,6 +118,11 @@ class SourceParser {
         return reputationNext;
     }
 
+    int getNewBossId(String identifier) {
+        bossIds[identifier] = ++bossNext;
+        return bossNext;
+    }
+
     void getSource(RawEquip raw, String type) {
         var tabid = typeToTab[type];
         var rawSource = rawSources['$tabid-${raw.id}'];
@@ -118,10 +132,40 @@ class SourceParser {
             return null;
         }
         var types = (rawSource.getType == '' ? raw.getType : rawSource.getType).split(',');
+        var sources = <RawSource>[];
+        if (types.length > 1) {
+            sources = splitRawSource(rawSource);
+        } else {
+            sources = [rawSource];
+        }
+        var i = 0;
         types.forEach((typeIdentifier) {
-            parseSource(raw, rawSource, typeIdentifier);
+            var source = sources[i];
+            parseSource(raw, source, typeIdentifier);
+            i += 1;
         });
+    }
 
+    List<RawSource> splitRawSource(RawSource raw) {
+        var types = raw.getType.split(',');
+        var descs = raw.getDesc.split('},{');
+        if (types.length != descs.length) {
+            return List.filled(types.length, raw);
+        }
+        var sources = <RawSource>[];
+        var i = 0;
+        types.forEach((type) {
+            var source = RawSource.clone(raw);
+            var desc = descs[i];
+            source.getType = type;
+            source.getDesc = desc;
+            if (source.getType != '副本') {
+                source.belongMapId = '';
+            }
+            sources.add(source);
+            i += 1;
+        });
+        return sources;
     }
 
     void parseSource(RawEquip equip, RawSource raw, String type) {
@@ -129,25 +173,57 @@ class SourceParser {
         Source source;
         if (getType[0] == 'other') {
             source = parseOtherSource(equip, raw, type);
+            recordSource(source);
         } else if (getType[0] == 'activity') {
             source = parseActivitySource(equip, raw, type);
+            recordSource(source);
         } else if (getType[0] == 'redeem') {
             source = parseRedeemSource(equip, raw, type);
+            recordSource(source);
         } else if (getType[0] == 'reputation') {
             source = parseReputationSource(equip, raw, type);
+            recordSource(source);
         } else if (getType[0] == 'raid') {
-            // parseRaidSource(equip, raw);
+            var sourceList = parseRaidSource(equip, raw, type);
+            sourceList.forEach(recordSource);
         }
+    }
+
+    void recordSource(Source source) {
         if (source != null && sources[source.id] == null) {
             sources[source.id] = source;
         }
     }
 
-    Source parseRaidSource(RawEquip equip, RawSource raw, String getType) {
-        // print('${equip.getType} - ${raw.getType} - ${raw.getDesc} - ${raw.belongMapId}');
-        if (raw.getDesc != '' && raw.belongMapId != '' && raw.getType != '') {
-            var types = raw.getType.split(',');
+    List<Source> parseRaidSource(RawEquip equip, RawSource raw, String getType) {
+        var sources = <Source>[];
+        var desc = raw.getDesc.replaceAll(RegExp('{|}'), '');
+        var maps = raw.belongMapId.split(',');
+        var bossGroups = desc.split('],[');
+        while (maps.length < bossGroups.length) {
+            maps.add('0');
         }
+        var i = 0;
+
+        maps.forEach((mapId) {
+            var bosses = bossGroups[i].replaceAll(RegExp(r'\[|\]'), '').split(',');
+            var map = mapParser.gameMaps[mapId];
+            bosses.forEach((name) {
+                var bossIdentifier = '$map-${name.trim()}';
+                var bossId = bossIds[bossIdentifier] ?? getNewBossId(bossIdentifier);
+                var boss = Boss(id: bossId, name: name, map: map);
+                var identifier = 'raid-$bossId';
+                var databaseId = ids[identifier] ?? getNewId(identifier);
+                if (boss != null && this.bosses[boss.id] == null) {
+                    this.bosses[boss.id] = boss;
+                }
+                var source = Source(id: databaseId, type: 'raid');
+                source.boss = boss;
+                sources.add(source);
+            });
+            i += 1;
+        });
+        return sources;
     }
 
     Source parseReputationSource(RawEquip equip, RawSource raw, String getType) {
@@ -217,10 +293,6 @@ class SourceParser {
     Source parseOtherSource(RawEquip equip, RawSource raw, String getType) {
         var type = typeMap[getType];
         String description;
-        // if (raw.getDesc.contains('夜狼山宝箱')) {
-        //     description = '${type[1]}•挖宝';
-        // } else if (raw.getDesc.contains('浑浑噩噩的魂灵')) {
-        //     description = '${type[1]}•方士';
         var details = raw.getDesc.replaceAll(RegExp('{|}'), '');
         if (details != '') {
             description = '${type[1]}•$details';

@@ -21,6 +21,7 @@ class Source {
             limitedTime ? '1' : '0',
             redeem ?? '',
             reputation != null ? '${reputation.id}' : '',
+            boss != null ? '${boss.id}' : '',
         ];
     }
 }
@@ -41,6 +42,12 @@ class Boss {
     int id;
     String name;
     GameMap map;
+
+    Boss({this.id, this.name, this.map});
+
+    List<String> toList() {
+        return ['$id', name, map != null ? '${map.id}' : '0'];
+    }
 }
 
 class RawSource {
@@ -78,5 +85,24 @@ class RawSource {
         getDesc = json['Get_Desc'];
         belongMapId = json['BelongMapID'];
         prestigeRequire = json['PrestigeRequire'];
+    }
+
+    RawSource.clone(RawSource raw) {
+        tabType = raw.tabType;
+        id = raw.id;
+        level = raw.level;
+        aucGenre = raw.aucGenre;
+        aucSubType = raw.aucSubType;
+        name = raw.name;
+        belongSchool = raw.belongSchool;
+        setId = raw.setId;
+        magicKind = raw.magicKind;
+        magicType = raw.magicType;
+        getType = raw.getType;
+        pvePvp = raw.pvePvp;
+        getForce = raw.getForce;
+        getDesc = raw.getDesc;
+        belongMapId = raw.belongMapId;
+        prestigeRequire = raw.prestigeRequire;
     }
 }
