@@ -321,11 +321,11 @@ class Equip {
             '$strain',
             '$huajing',
             '$threat',
-            effect != null ? '${effect.id}' : '',
+            effect != null ? '${effect.id}' : 'NULL',
             embed,
             '$strengthen',
-            equipSet != null ? '${equipSet.id}' : '',
-            represent != null ? '${represent.id}' : '',
+            equipSet != null ? '${equipSet.id}' : 'NULL',
+            represent != null ? '${represent.id}' : 'NULL',
             (deprecated ?? false) ? '1' : '0',
         ];
     }

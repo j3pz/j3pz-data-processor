@@ -20,8 +20,8 @@ class Source {
             activity ?? '',
             limitedTime ? '1' : '0',
             redeem ?? '',
-            reputation != null ? '${reputation.id}' : '',
-            boss != null ? '${boss.id}' : '',
+            reputation != null ? '${reputation.id}' : 'NULL',
+            boss != null ? '${boss.id}' : 'NULL',
         ];
     }
 }
@@ -46,7 +46,7 @@ class Boss {
     Boss({this.id, this.name, this.map});
 
     List<String> toList() {
-        return ['$id', name, map != null ? '${map.id}' : '0'];
+        return ['$id', name, map != null ? '${map.id}' : '4'];
     }
 }
 

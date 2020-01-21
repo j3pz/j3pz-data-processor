@@ -52,7 +52,7 @@ const prestigeType = {
     '4': 'prestige_fiend',
 };
 
-const sourceTitle = ['id', 'type', 'description', 'activity', 'limitedTime', 'redeem', 'reputation', 'boss'];
+const sourceTitle = ['id', 'type', 'comment', 'activity', 'limitedTime', 'redeem', 'reputationId', 'bossId'];
 const reputationTitle = ['id', 'name', 'level'];
 const bossTitle = ['id', 'name', 'mapid'];
 
@@ -123,10 +123,9 @@ class SourceParser {
         return bossNext;
     }
 
-    void getSource(RawEquip raw, String type) {
+    List<Source> getSource(RawEquip raw, String type) {
         var tabid = typeToTab[type];
         var rawSource = rawSources['$tabid-${raw.id}'];
-        // print(rawSource.getDesc);
         if (rawSource == null) {
             // print('解析来源出错, name=${raw.name}, id=${raw.id}, tab=$tabid');
             return null;
@@ -139,11 +138,14 @@ class SourceParser {
             sources = [rawSource];
         }
         var i = 0;
+        var sourceList = <Source>[];
         types.forEach((typeIdentifier) {
             var source = sources[i];
-            parseSource(raw, source, typeIdentifier);
+            var list = parseSource(raw, source, typeIdentifier);
+            sourceList.addAll(list);
             i += 1;
         });
+        return sourceList;
     }
 
     List<RawSource> splitRawSource(RawSource raw) {
@@ -168,25 +170,32 @@ class SourceParser {
         return sources;
     }
 
-    void parseSource(RawEquip equip, RawSource raw, String type) {
+    List<Source> parseSource(RawEquip equip, RawSource raw, String type) {
         var getType = typeMap[type];
         Source source;
+        var sources = <Source>[];
         if (getType[0] == 'other') {
             source = parseOtherSource(equip, raw, type);
             recordSource(source);
+            sources.add(source);
         } else if (getType[0] == 'activity') {
             source = parseActivitySource(equip, raw, type);
             recordSource(source);
+            sources.add(source);
         } else if (getType[0] == 'redeem') {
             source = parseRedeemSource(equip, raw, type);
             recordSource(source);
+            sources.add(source);
         } else if (getType[0] == 'reputation') {
             source = parseReputationSource(equip, raw, type);
             recordSource(source);
+            sources.add(source);
         } else if (getType[0] == 'raid') {
             var sourceList = parseRaidSource(equip, raw, type);
             sourceList.forEach(recordSource);
+            sources = sourceList;
         }
+        return sources;
     }
 
     void recordSource(Source source) {
@@ -201,7 +210,7 @@ class SourceParser {
         var maps = raw.belongMapId.split(',');
         var bossGroups = desc.split('],[');
         while (maps.length < bossGroups.length) {
-            maps.add('0');
+            maps.add('4');
         }
         var i = 0;
 

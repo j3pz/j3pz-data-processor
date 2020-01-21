@@ -19,7 +19,7 @@ class GameMapParser {
             maps.add(map.toList());
         });
         maps..sort((a, b) => int.parse(a[0]) - int.parse(b[0]))
-            ..insert(0, ['0', '未知地图'])
+            ..insert(3, ['4', '未知地图'])
             ..insert(0, ['id', 'name']);
         var mapCsv = const ListToCsvConverter().convert(maps);
         File('$path/map.csv').writeAsString(mapCsv);

@@ -10,6 +10,8 @@ import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 import 'package:j3pz_data_preprocessor/source_parser.dart';
 
+import 'source.dart';
+
 const spunkKungfu = ['万花', '少林', '唐门', '明教'];
 const spiritKungfu = ['七秀', '五毒', '纯阳', '长歌'];
 const strengthKungfu = ['唐门', '天策', '丐帮', '霸刀'];
@@ -76,6 +78,8 @@ class EquipParser {
     List<List<String>> armors;
     List<List<String>> trinkets;
     List<List<String>> weapons;
+   
+    List<List<String>> sourceList = []; // [equipId, sourceId]
 
     Map<String, Attribute> attributes; // { id: Attribute }
     Map<String, RawItem> items; // { id: RawItem }
@@ -161,6 +165,10 @@ class EquipParser {
         equipIdList.insert(0, ['ID', 'databaseId']);
         var equipIdCsv = const ListToCsvConverter().convert(equipIdList);
         File('$path/equipId.tab').writeAsString(equipIdCsv);
+
+        sourceList.insert(0, ['equipId', 'sourceId']);
+        var sourceCsv = const ListToCsvConverter().convert(sourceList);
+        File('$path/equip_source.csv').writeAsString(sourceCsv);
     }
 
     bool shouldTruncate(RawEquip raw, int minId) {
@@ -199,7 +207,7 @@ class EquipParser {
         if (type == 'armor' && raw.representID != null && raw.representID != '0') {
             equip.represent = parseRepresent(raw);
         }
-        parseSource(raw, type);
+        parseSource(raw, type, equip);
         return equip;
     }
 
@@ -429,7 +437,10 @@ class EquipParser {
         return representParser.getRepresent(raw);
     }
 
-    void parseSource(RawEquip raw, String type) {
-        sourceParser.getSource(raw, type);
+    void parseSource(RawEquip raw, String type, Equip equip) {
+        var list = sourceParser.getSource(raw, type) ?? [];
+        list.forEach((Source source) {
+            sourceList.add(['${equip.id}', '${source.id}']);
+        });
     }
 }
