@@ -439,8 +439,12 @@ class EquipParser {
 
     void parseSource(RawEquip raw, String type, Equip equip) {
         var list = sourceParser.getSource(raw, type) ?? [];
+        var ids = [];
         list.forEach((Source source) {
-            sourceList.add(['${equip.id}', '${source.id}']);
+            if (!ids.contains(source.id)) {
+                ids.add(source.id);
+                sourceList.add(['${equip.id}', '${source.id}']);
+            }
         });
     }
 }

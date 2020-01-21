@@ -1,3 +1,4 @@
+id,name,icon,category,quality,school,primaryAttribute,score,vitality,spirit,strength,agility,spunk,basicPhysicsShield,basicMagicShield,damageBase,damageRange,attackSpeed,physicsShield,magicShield,dodge,parryBase,parryValue,toughness,attack,heal,crit,critEffect,overcome,haste,hit,strain,huajing,threat,effectId,embed,strengthen,setId,representId,deprecated
 32277,归宁袖,11357,wrist,1470,通用,spirit,1852,257,94,0,0,0,34,42,0,0,0,0,0,0,0,0,0,204,0,0,0,399,0,190,0,0,0,NULL,,6,NULL,1977,0
 32278,燕音袖,11357,wrist,1470,通用,spunk,1852,257,0,0,0,94,34,42,0,0,0,0,0,0,0,0,0,204,0,0,0,399,0,190,0,0,0,NULL,,6,NULL,1977,0
 32279,赤鲂护手,11357,wrist,1470,通用,strength,1852,257,0,94,0,0,42,34,0,0,0,0,0,0,0,0,0,170,0,0,0,399,0,190,0,0,0,NULL,,6,NULL,1979,0
