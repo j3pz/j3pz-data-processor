@@ -1,4 +1,5 @@
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
+import 'package:j3pz_data_preprocessor/enchant_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
 import 'package:j3pz_data_preprocessor/gamemap_parser.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
@@ -75,5 +76,23 @@ void equips() async {
     setParser.export('./output');
     representParser.export('./output');
     sourceParser.export('./output');
+    print('done');
+}
+
+void enchant() async {
+    print('reading files');
+    var enchants = await readFile(path: './raw/Enchant.tab');
+    var items = await readFile(path: './raw/item.txt', id: 'ItemID');
+    var other = await readFile(path: './raw/Other.tab');
+    var ids = await readFile(path: './output/enchantId.tab', delimiter: ',');
+    print('parsing');
+    var enchantParser = EnchantParser(
+        ids: ids,
+        other: other,
+        item: items,
+        enchant: enchants,
+    );
+    print('generating');
+    enchantParser.export('./output');
     print('done');
 }

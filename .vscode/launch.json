@@ -12,22 +12,11 @@
             "args": ["equip"]
         },
         {
-            "type": "node",
+            "name": "Dart enchant",
+            "type": "dart",
             "request": "launch",
-            "name": "Equip",
-            "program": "${workspaceFolder}/index.js",
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Enchant",
-            "program": "${workspaceFolder}/enchant.js",
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Qixue",
-            "program": "${workspaceFolder}/qixue.js",
+            "program": "bin/main.dart",
+            "args": ["enchant"]
         }
     ]
 }

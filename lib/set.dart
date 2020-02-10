@@ -1,5 +1,3 @@
-import 'package:j3pz_data_preprocessor/effect.dart';
-
 class EquipSet {
     int id;
     String name;
