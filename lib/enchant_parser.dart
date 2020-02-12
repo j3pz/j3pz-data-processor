@@ -29,6 +29,7 @@ class EnchantParser {
     Map<String, RawEnchant> raws; // {id: RawEnchant }
     Map<int, Enchant> enchants = {}; // { id: Enchant }
     Map<String, RawItem> items = {}; // { id: RawItem }
+    Map<int, List<int>> duplicates = {}; // {id: ids }
 
     int enchantNext = 0;
 
@@ -42,9 +43,17 @@ class EnchantParser {
         ids.forEach((key, value) {
             String originalId = value['ID'];
             if (originalId.contains('enchant')) {
-                var databaseId = int.tryParse(value['databaseId']) ?? 0;
-                enchantIds[originalId] = databaseId;
-                enchantNext = max(enchantNext, databaseId);
+                String databaseIds = value['databaseId'];
+                if (databaseIds.contains('|')) {
+                    var ids = databaseIds.split('|').map((id) => int.tryParse(id) ?? 0).toList();
+                    enchantIds[originalId] = ids[0];
+                    duplicates[ids[0]] = ids;
+                    enchantNext = max(enchantNext, ids.reduce(max));
+                } else {
+                    var databaseId = int.tryParse(value['databaseId']) ?? 0;
+                    enchantIds[originalId] = databaseId;
+                    enchantNext = max(enchantNext, databaseId);
+                }
             }
         });
 
@@ -66,6 +75,12 @@ class EnchantParser {
                 var enchant = parse(other);
                 if (enchant != null && enchants[enchant.id] == null) {
                     enchants[enchant.id] = enchant;
+                    if (duplicates[enchant.id] != null) {
+                        duplicates[enchant.id].skip(1).toList().forEach((id) {
+                            var duplicateEnchant = enchant.clone(id);
+                            enchants[id] = duplicateEnchant;
+                        });
+                    }
                 }
             }
         });
@@ -82,11 +97,17 @@ class EnchantParser {
 
         var enchantIdList = <List<String>>[];
         enchantIds.forEach((key, databaseId) {
-            enchantIdList.add([key, '$databaseId']);
+            if (databaseId > 0 && duplicates[databaseId] != null) {
+                enchantIdList.add([key, '${duplicates[databaseId].join('|')}']);
+            } else if (databaseId > 0) {
+                enchantIdList.add([key, '$databaseId']);
+            } else {
+                enchantIdList.add([key, 'null']);
+            }
         });
         enchantIdList.insert(0, ['ID', 'databaseId']);
         var enchantIdCsv = const ListToCsvConverter().convert(enchantIdList);
-        File('$path/enhanceId.tab').writeAsString(enchantIdCsv);
+        File('$path/enchantId.tab').writeAsString(enchantIdCsv);
     }
 
     int getNewId(String identifier) {
@@ -105,7 +126,9 @@ class EnchantParser {
         var data = raws[dataId];
         var identifier = 'enchant-$dataId';
         var databaseId = enchantIds[identifier] ?? getNewId(identifier);
-        print('$identifier, $databaseId');
+        if (databaseId == 0) {
+            return null;
+        }
         var category = getCategory(data);
         if (category == null) {
             return null;

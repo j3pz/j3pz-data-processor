@@ -196,4 +196,14 @@ class Enchant {
     List<String> toList() {
         return ['$id', name, category, description, attribute, '$value', decorator, deprecated ? '1' : '0'];
     }
+
+    Enchant clone(int newId) {
+        var enchant = Enchant(id: newId, name: name, category: category);
+        enchant.description = description;
+        enchant.attribute = attribute;
+        enchant.value = value;
+        enchant.decorator = decorator;
+        enchant.deprecated = deprecated;
+        return enchant;
+    }
 }

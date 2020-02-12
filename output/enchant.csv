@@ -1,5 +1,4 @@
 id,name,category,description,attribute,value,decorator,deprecated
-0,行军·绣（气血）,jacket,气血提升101,health,101,NONE,0
 19,新春·别岁,ring,可强化戒指，使自身每秒回复气血值提高8点,healthRecover,8,NONE,0
 23,新春·压岁,ring,可强化戒指，使自身内功攻击增加6点,attack,6,MAGIC,0
 29,固·安戎·锻（根骨）,hat,根骨提升15,spirit,15,NONE,0
@@ -79,10 +78,14 @@ id,name,category,description,attribute,value,decorator,deprecated
 145,苍·安戎·铸（内伤）,shoes,内功攻击提升22,attack,22,MAGIC,0
 146,苍·安戎·染（内伤）,wrist,内功攻击提升22,attack,22,MAGIC,0
 147,苍·安戎·纹（内伤）,belt,内功攻击提升22,attack,22,MAGIC,0
+148,苍·安戎·锻（外伤）,hat,外功攻击提升18,attack,18,PHYSICS,0
 149,苍·安戎·染（外伤）,wrist,外功攻击提升18,attack,18,PHYSICS,0
 150,苍·安戎·纹（外伤）,belt,外功攻击提升18,attack,18,PHYSICS,0
 151,苍·安戎·锻（内伤）,hat,内功攻击提升22,attack,22,MAGIC,0
 152,苍·安戎·绣（内伤）,jacket,内功攻击提升22,attack,22,MAGIC,0
+153,苍·安戎·印（内伤）,bottoms,内功攻击提升22,attack,22,MAGIC,0
+154,苍·安戎·铸（外伤）,shoes,外功攻击提升18,attack,18,PHYSICS,0
+155,苍·安戎·锻（外伤）,hat,外功攻击提升18,attack,18,PHYSICS,0
 157,固·安戎·铸（根骨）,shoes,根骨提升15,spirit,15,NONE,0
 158,新春·桃符,ring,可强化戒指，使自身外功攻击增加5点,attack,5,PHYSICS,0
 159,剑胆·绣（体质）,jacket,体质提升25点,vitality,25,NONE,0
@@ -347,7 +350,9 @@ id,name,category,description,attribute,value,decorator,deprecated
 420,固·安戎·熔锭（内伤）,primaryWeapon,内功攻击提升37,attack,37,MAGIC,0
 421,固·安戎·熔锭（疗伤）,primaryWeapon,疗伤成效提升32,heal,32,NONE,0
 422,固·安戎·熔锭（武伤）,primaryWeapon,武器伤害提升7,damageBase,7,NONE,0
+423,苍·安戎·印（内伤）,bottoms,内功攻击提升22,attack,22,MAGIC,0
 424,苍·安戎·印（外伤）,bottoms,外功攻击提升18,attack,18,PHYSICS,0
+425,苍·安戎·铸（外伤）,shoes,外功攻击提升18,attack,18,PHYSICS,0
 525,仙踪·鞋·染（跑速）,shoes,跑步速度提升5%（鞋子）,moveSpeed,56,NONE,0
 578,仙踪·兵·铸（外伤）,primaryWeapon,外功攻击提升85点,attack,85,PHYSICS,0
 579,仙踪·兵·铸（内伤）,primaryWeapon,内功攻击提升101点,attack,101,MAGIC,0
