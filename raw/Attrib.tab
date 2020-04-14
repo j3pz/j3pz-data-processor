@@ -37025,3 +37025,15 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 37023		atPhysicsOvercomeBase	2881	2881												
 37024		atMagicOvercome	2881	2881												
 37025		atMagicShield	602	602												
+37026		atPoisonCriticalStrike	388	388												
+37027		atDecriticalDamagePowerBase	332	332												
+37028		atMagicShield	636	636												
+37029		atMagicShield	706	706												
+37030		atMagicShield	494	494												
+37031		atVitalityBase	777	777												
+37032		atVitalityBase	863	863												
+37033		atAllTypeCriticalStrike	1648	1648												
+37034		atPhysicsAttackPowerBase	1265	1265												
+37035		atPhysicsOvercomeBase	2041	2041												
+37036		atMagicOvercome	2041	2041												
+37037		atPhysicsShieldBase	1039	1039												
