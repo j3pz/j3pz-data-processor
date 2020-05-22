@@ -5,7 +5,7 @@ ID	Level	Desc
 642	1	<text>text="“水月无间”招式调息时间减少6秒" font=105 </text>
 644	1	<text>text="“醉月”招式调息时间减少1秒" font=105 </text>
 645	1	<text>text="“人剑合一”招式调息时间减少1秒" font=105 </text>
-646	1	<text>text="“三才化生”招式调息时间减少2秒" font=105 </text>
+646	1	<text>text="“生太极”招式调息时间减少1秒" font=105 </text>
 810	1	<text>text="“蛊虫献祭”招式调息时间减少3秒" font=105 </text>
 817	1	<text>text="“阳明指”伤害提高10%" font=105 </text>
 817	2	<text>text="“龙牙”伤害提高10%" font=105 </text>
@@ -38,8 +38,8 @@ ID	Level	Desc
 1145	1	<text>text="“夺魄箭”会心几率提高5%" font=101 </text>
 1146	1	<text>text="“蚀肌弹”会心几率提高5%" font=101 </text>
 1147	1	<text>text="“拿云式”伤害提高10%" font=105 </text>
-1148	1	<text>text="“幽月轮”会心几率提高5%" font=101 </text>
-1149	1	<text>text="“赤日轮”会心几率提高5%" font=101 </text>
+1148	1	<text>text="“烈日斩”会心几率提高5%" font=101 </text>
+1149	1	<text>text="“银月斩”会心几率提高5%" font=101 </text>
 1150	1	<text>text="“幽月轮”产生的威胁值提高10%" font=101 </text>
 1151	1	<text>text="“赤日轮”产生的威胁值提高10%" font=101 </text>
 1177	1	<text>text="“镇山河”招式调息时间减少25秒" font=105 </text>

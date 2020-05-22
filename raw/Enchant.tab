@@ -7204,3 +7204,175 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10831	霁月·衣·染（减仇）	上装	招式仇恨降低3.5%	atActiveThreatCoefficient	0	-35																										2					
 10832	霁月·腰·甲（无双）	腰带	无双等级提升61点	atStrainBase	61	61																										6				0	0
 10833	霁月·腰·甲（减仇）	腰带	招式仇恨降低3.5%	atActiveThreatCoefficient	0	-35																										6				0	0
+10834	仙踪·腕·绣（身法）	护手	身法提升47点	atAgilityBase	47	47																										10				0	0
+10835	仙踪·腕·绣（元气）	护手	元气提升47点	atSpunkBase	47	47																										10				0	0
+10836	仙踪·腕·绣（力道）	护手	力道提升47点	atStrengthBase	47	47																										10				0	0
+10837	仙踪·腕·绣（根骨）	护手	根骨提升47点	atSpiritBase	47	47																										10				0	0
+10838	仙踪·腕·绣（仇恨）	护手	仇恨百分比提升36%	atActiveThreatCoefficient	0	368																										10				0	0
+10839	仙踪·腕·绣（外破）	护手	外功破防等级提升209点	atPhysicsOvercomeBase	209	209																										10				0	0
+10840	仙踪·腕·绣（内破）	护手	内功破防等级提升209点	atMagicOvercome	209	209																										10				0	0
+10841	仙踪·腕·绣（会心）	护手	全会心提升209点	atAllTypeCriticalStrike	209	209																										10				0	0
+10842	仙踪·腕·绣（无双）	护手	无双等级提升209点	atStrainBase	209	209																										10				0	0
+10843	仙踪·鞋·绣（外攻）	鞋子	外功攻击提升94点	atPhysicsAttackPowerBase	94	94																										9					
+10844	仙踪·鞋·绣（内功）	鞋子	内功攻击提升113点	atMagicAttackPowerBase	113	113																										9					
+10845	仙踪·鞋·绣（治疗）	鞋子	疗伤成效提升102点	atTherapyPowerBase	102	102																										9					
+10846	仙踪·鞋·绣（命中）	鞋子	全命中提升209点	atAllTypeHitValue	209	209																										9					
+10847	仙踪·鞋·绣（急速）	鞋子	加速提升209点	atHasteBase	209	209																										9					
+10848	仙踪·衣·绣（体质）	上装	体质提升78点	atVitalityBase	78	78																										2					
+10849	仙踪·衣·绣（气血）	上装	最大气血值提升1047点	atMaxLifeBase	1047	1047																										2					
+10850	仙踪·衣·绣（格挡）	上装	拆招提升1301点	atParryValueBase	1301	1301																										2					
+10851	仙踪·衣·绣（闪避）	上装	闪避提升105点	atDodge	105	105																										2					
+10852	仙踪·衣·绣（外防）	上装	外功防御提升105点	atPhysicsShieldAdditional	105	105																										2					
+10853	仙踪·衣·绣（内防）	上装	内功防御提升105点	atMagicShield	105	105																										2				0	0
+10854	仙踪·衣·绣（招架）	上装	招架提升105点	atParryBase	105	105																										2				0	0
+10855	仙踪·衣·绣（化劲）	上装	化劲提升105点	atDecriticalDamagePowerBase	105	105																										2				0	0
+10856	仙踪·衣·绣（御劲）	上装	御劲提升105点	atToughnessBase	105	105																										2				0	0
+10857	仙踪·腕·染（身法）	护手	身法提升24点	atAgilityBase	24	24																										10				0	0
+10858	仙踪·腕·染（元气）	护手	元气提升24点	atSpunkBase	24	24																										10				0	0
+10859	仙踪·腕·染（力道）	护手	力道提升24点	atStrengthBase	24	24																										10				0	0
+10860	仙踪·腕·染（根骨）	护手	根骨提升24点	atSpiritBase	24	24																										10				0	0
+10861	仙踪·腕·染（仇恨）	护手	仇恨百分比提升18%	atActiveThreatCoefficient	0	184																										10				0	0
+10862	仙踪·腕·染（外破）	护手	外功破防等级提升105点	atPhysicsOvercomeBase	105	105																										10				0	0
+10863	仙踪·腕·染（内破）	护手	内功破防等级提升105点	atMagicOvercome	105	105																										10				0	0
+10864	仙踪·腕·染（会心）	护手	全会心提升105点	atAllTypeCriticalStrike	105	105																										10				0	0
+10865	仙踪·腕·染（无双）	护手	无双等级提升105点	atStrainBase	105	105																										10				0	0
+10866	仙踪·鞋·染（外攻）	鞋子	外功攻击提升47点	atPhysicsAttackPowerBase	47	47																										9				0	0
+10867	仙踪·鞋·染（内功）	鞋子	内功攻击提升57点	atMagicAttackPowerBase	57	57																										9				0	0
+10868	仙踪·鞋·染（治疗）	鞋子	疗伤成效提升51点	atTherapyPowerBase	51	51																										9				0	0
+10869	仙踪·鞋·染（命中）	鞋子	全命中提升105点	atAllTypeHitValue	105	105																										9				0	0
+10870	仙踪·鞋·染（急速）	鞋子	加速提升105点	atHasteBase	105	105																										9				0	0
+10871	仙踪·衣·染（体质）	上装	体质提升39点	atVitalityBase	39	39																										2				0	0
+10872	仙踪·衣·染（气血）	上装	最大气血值提升524点	atMaxLifeBase	524	524																										2				0	0
+10873	仙踪·衣·染（格挡）	上装	拆招提升651点	atParryValueBase	651	651																										2				0	0
+10874	仙踪·衣·染（闪避）	上装	闪避提升53点	atDodge	53	53																										2					
+10875	仙踪·衣·染（外防）	上装	外功防御提升53点	atPhysicsShieldAdditional	53	53																										2					
+10876	仙踪·衣·染（内防）	上装	内功防御提升53点	atMagicShield	53	53																										2					
+10877	仙踪·衣·染（招架）	上装	招架提升53点	atParryBase	53	53																										2					
+10878	仙踪·衣·染（化劲）	上装	化劲提升53点	atDecriticalDamagePowerBase	53	53																										2					
+10879	仙踪·衣·染（御劲）	上装	御劲提升53点	atToughnessBase	53	53																										2					
+10880	仙踪·兵·铸（外伤）	武器	外功攻击提升94点	atPhysicsAttackPowerBase	94	94																										0				0	0
+10881	仙踪·兵·铸（内伤）	武器	内功攻击提升113点	atMagicAttackPowerBase	113	113																										0				0	0
+10882	仙踪·兵·铸（疗伤）	武器	疗伤成效提升102点	atTherapyPowerBase	102	102																										0				0	0
+10883	仙踪·兵·铸（武伤）	武器	武器伤害提升142点	atMeleeWeaponDamageBase	142	142																										0				0	0
+10884	仙踪·兵·铸（仇恨）	武器	仇恨百分比提升36%	atActiveThreatCoefficient	0	368																										0				0	0
+10885	仙踪·裤·铸（身法）	下装	身法提升47点	atAgilityBase	47	47																										8				0	0
+10886	仙踪·裤·铸（元气）	下装	元气提升47点	atSpunkBase	47	47																										8				0	0
+10887	仙踪·裤·铸（力道）	下装	力道提升47点	atStrengthBase	47	47																										8				0	0
+10888	仙踪·裤·铸（根骨）	下装	根骨提升47点	atSpiritBase	47	47																										8				0	0
+10889	仙踪·裤·铸（仇恨）	下装	仇恨百分比提升36%	atActiveThreatCoefficient	0	368																										8				0	0
+10890	仙踪·裤·铸（外破）	下装	外功破防等级提升209点	atPhysicsOvercomeBase	209	209																										8				0	0
+10891	仙踪·裤·铸（内破）	下装	内功破防等级提升209点	atMagicOvercome	209	209																										8				0	0
+10892	仙踪·裤·铸（会心）	下装	全会心提升209点	atAllTypeCriticalStrike	209	209																										8				0	0
+10893	仙踪·裤·铸（无双）	下装	无双等级提升209点	atStrainBase	209	209																										8				0	0
+10894	仙踪·头·铸（外攻）	帽子	外功攻击提升94点	atPhysicsAttackPowerBase	94	94																										3					
+10895	仙踪·头·铸（内功）	帽子	内功攻击提升113点	atMagicAttackPowerBase	113	113																										3					
+10896	仙踪·头·铸（治疗）	帽子	疗伤成效提升102点	atTherapyPowerBase	102	102																										3					
+10897	仙踪·头·铸（命中）	帽子	全命中提升209点	atAllTypeHitValue	209	209																										3					
+10898	仙踪·头·铸（急速）	帽子	加速提升209点	atHasteBase	209	209																										3					
+10899	仙踪·腰·铸（体质）	腰带	体质提升78点	atVitalityBase	78	78																										6					
+10900	仙踪·腰·铸（气血）	腰带	最大气血值提升1047点	atMaxLifeBase	1047	1047																										6					
+10901	仙踪·腰·铸（格挡）	腰带	拆招提升1301点	atParryValueBase	1301	1301																										6					
+10902	仙踪·腰·铸（闪避）	腰带	闪避提升105点	atDodge	105	105																										6					
+10903	仙踪·腰·铸（外防）	腰带	外功防御提升105点	atPhysicsShieldAdditional	105	105																										6					
+10904	仙踪·腰·铸（内防）	腰带	内功防御提升105点	atMagicShield	105	105																										6				0	0
+10905	仙踪·腰·铸（招架）	腰带	招架提升105点	atParryBase	105	105																										6				0	0
+10906	仙踪·腰·铸（化劲）	腰带	化劲提升105点	atDecriticalDamagePowerBase	105	105																										6				0	0
+10907	仙踪·腰·铸（御劲）	腰带	御劲提升105点	atToughnessBase	105	105																										6				0	0
+10908	仙踪·裤·甲（身法）	下装	身法提升24点	atAgilityBase	24	24																										8				0	0
+10909	仙踪·裤·甲（元气）	下装	元气提升24点	atSpunkBase	24	24																										8				0	0
+10910	仙踪·裤·甲（力道）	下装	力道提升24点	atStrengthBase	24	24																										8				0	0
+10911	仙踪·裤·甲（根骨）	下装	根骨提升24点	atSpiritBase	24	24																										8				0	0
+10912	仙踪·裤·甲（仇恨）	下装	仇恨百分比提升18%	atActiveThreatCoefficient	0	184																										8				0	0
+10913	仙踪·裤·甲（外破）	下装	外功破防等级提升105点	atPhysicsOvercomeBase	105	105																										8				0	0
+10914	仙踪·裤·甲（内破）	下装	内功破防等级提升105点	atMagicOvercome	105	105																										8				0	0
+10915	仙踪·裤·甲（会心）	下装	全会心提升105点	atAllTypeCriticalStrike	105	105																										8				0	0
+10916	仙踪·裤·甲（无双）	下装	无双等级提升105点	atStrainBase	105	105																										8				0	0
+10917	仙踪·头·甲（外攻）	帽子	外功攻击提升47点	atPhysicsAttackPowerBase	47	47																										3				0	0
+10918	仙踪·头·甲（内功）	帽子	内功攻击提升57点	atMagicAttackPowerBase	57	57																										3				0	0
+10919	仙踪·头·甲（治疗）	帽子	疗伤成效提升51点	atTherapyPowerBase	51	51																										3				0	0
+10920	仙踪·头·甲（命中）	帽子	全命中提升105点	atAllTypeHitValue	105	105																										3				3	0
+10921	仙踪·头·甲（急速）	帽子	加速提升105点	atHasteBase	105	105																										3				3	0
+10922	仙踪·腰·甲（体质）	腰带	体质提升39点	atVitalityBase	39	39																										6				3	0
+10923	仙踪·腰·甲（气血）	腰带	最大气血值提升524点	atMaxLifeBase	524	524																										6				0	0
+10924	仙踪·腰·甲（格挡）	腰带	拆招提升651点	atParryValueBase	651	651																										6				0	0
+10925	仙踪·腰·甲（闪避）	腰带	闪避提升53点	atDodge	53	53																										6				0	0
+10926	仙踪·腰·甲（外防）	腰带	外功防御提升53点	atPhysicsShieldAdditional	53	53																										6				0	0
+10927	仙踪·腰·甲（内防）	腰带	内功防御提升53点	atMagicShield	53	53																										6				0	0
+10928	仙踪·腰·甲（招架）	腰带	招架提升53点	atParryBase	53	53																										6				0	0
+10929	仙踪·腰·甲（化劲）	腰带	化劲提升53点	atDecriticalDamagePowerBase	53	53																										6				0	0
+10930	仙踪·腰·甲（御劲）	腰带	御劲提升53点	atToughnessBase	53	53																										6				0	0
+10931	仙踪·兵·铸（外伤）	武器	外功攻击提升47点	atPhysicsAttackPowerBase	47	47																										0				0	0
+10932	仙踪·兵·铸（内伤）	武器	内功攻击提升57点	atMagicAttackPowerBase	57	57																										0				0	0
+10933	仙踪·兵·铸（疗伤）	武器	疗伤成效提升51点	atTherapyPowerBase	51	51																										0				0	0
+10934	仙踪·兵·铸（武伤）	武器	武器伤害提升71点	atMeleeWeaponDamageBase	71	71																										0				0	0
+10935	仙踪·兵·熔（仇恨）	武器	仇恨百分比提升18%	atActiveThreatCoefficient	0	184																										0				0	0
+10936	烨阳晶石·项链（体质）	项链	体质提升78点	atVitalityBase	78	78																										4					
+10937	烨阳晶石·项链（御劲）	项链	御劲提升105点	atToughnessBase	105	105																										4					
+10938	烨阳晶石·腰坠（体质）	腰坠	体质提升78点	atVitalityBase	78	78																										7					
+10939	烨阳晶石·腰坠（化劲）	腰坠	化劲提升105点	atDecriticalDamagePowerBase	105	105																										7					
+10940	烨阳晶石·戒指（根骨）	戒指	根骨提升47点	atSpiritBase	47	47																										5					
+10941	烨阳晶石·戒指（力道）	戒指	力道提升47点	atStrengthBase	47	47																										5					
+10942	烨阳晶石·戒指（元气）	戒指	元气提升47点	atSpunkBase	47	47																										5					
+10943	烨阳晶石·戒指（身法）	戒指	身法提升47点	atAgilityBase	47	47																										5					
+10944	烨阳晶石·戒指（外伤）	戒指	外功攻击提升94点	atPhysicsAttackPowerBase	94	94																										5					
+10945	烨阳晶石·戒指（内伤）	戒指	内功攻击提升113点	atMagicAttackPowerBase	113	113																										5					
+10946	烨阳晶石·戒指（外命）	戒指	外功命中等级提升209点	atPhysicsHitValue	209	209																										5					
+10947	烨阳晶石·戒指（内命）	戒指	内功命中等级提升209点	atMagicHitValue	209	209																										5					
+10948	烨阳晶石·暗器（根骨）	暗器	根骨提升47点	atSpiritBase	47	47																										1					
+10949	烨阳晶石·暗器（力道）	暗器	力道提升47点	atStrengthBase	47	47																										1					
+10950	烨阳晶石·暗器（元气）	暗器	元气提升47点	atSpunkBase	47	47																										1					
+10951	烨阳晶石·暗器（身法）	暗器	身法提升47点	atAgilityBase	47	47																										1					
+10952	烨阳晶石·暗器（外破）	暗器	外功破防等级提升209点	atPhysicsOvercomeBase	209	209																										1					
+10953	烨阳晶石·暗器（内破）	暗器	内功破防等级提升209点	atMagicOvercome	209	209																										1					
+10954	烨阳晶石·暗器（加速）	暗器	加速提升209点	atHasteBase	209	209																										1					
+10955	仙踪·兵·坠（外伤）	武器限时	外功攻击提升142点	atPhysicsAttackPowerBase	142	142																									1800	0				3	0
+10956	仙踪·兵·坠（内伤）	武器限时	内功攻击提升169点	atMagicAttackPowerBase	169	169																									1800	0				3	0
+10957	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升153点	atTherapyPowerBase	153	153																									1800	0				3	0
+10958	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升55%	atActiveThreatCoefficient	0	563																									1800	0				0	0
+10959	仙踪·兵·坠（外伤）	武器限时	外功攻击提升71点	atPhysicsAttackPowerBase	71	71																									1800	0				3	0
+10960	仙踪·兵·坠（内伤）	武器限时	内功攻击提升85点	atMagicAttackPowerBase	85	85																									1800	0				3	0
+10961	仙踪·兵·坠（疗伤）	武器限时	疗伤成效提升77点	atTherapyPowerBase	77	77																									1800	0				3	0
+10962	仙踪·兵·坠（仇恨）	武器限时	仇恨百分比提升27%	atActiveThreatCoefficient	0	282																									1800	0				0	0
+10963	昆吾焰珩·御·腰	腰带限时		atSkillEventHandler	1840																										60	6				3	0
+10964	昆吾焰珩·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子结庐在江湖.lua																										60	9				3	0
+10965	昆吾焰珩·御·腕	护手限时		atSkillEventHandler	1841																										60	10				3	0
+10966	昆吾焰珩·御·衣	上装限时		atSkillEventHandler	1839																										60	2				3	0
+10967	昆吾焰珩·御·头	帽子限时		atSkillEventHandler	1838																										60	3				3	0
+10968	昆吾焰珩·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
+10969	昆吾焰珩·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效_结庐在江湖.lua																										60	9				3	0
+10970	昆吾焰珩·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
+10971	昆吾焰珩·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
+10972	昆吾焰珩·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
+10973	昆吾焰珩·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
+10974	昆吾焰珩·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子结庐在江湖.lua																										60	9				3	0
+10975	昆吾焰珩·伤·腕	护手限时		atSkillEventHandler	1843																										60	10				3	0
+10976	昆吾焰珩·伤·衣	上装限时		atExecuteScript	skill/装备/结庐版本输出衣服附魔.lua																										60	2				3	0
+10977	昆吾焰珩·伤·头	帽子限时		atExecuteScript	skill/装备/结庐版本输出帽子附魔.lua																										60	3				3	0
+10978	霁月·裤·甲（会心）	下装	全会心提升94点	atAllTypeCriticalStrike	94	94																										8				0	0
+10979	霁月·腕·染（会心）	护手	全会心提升94点	atAllTypeCriticalStrike	94	94																										10				0	0
+10980	霁月·头·甲（急速）	帽子	加速提升94点	atHasteBase	94	94																										3				3	0
+10981	霁月·裤·甲（外破）	下装	外功破防等级提升94点	atPhysicsOvercomeBase	94	94																										8				0	0
+10982	霁月·裤·甲（内破）	下装	内功破防等级提升94点	atMagicOvercome	94	94																										8				0	0
+10983	霁月·裤·甲（无双）	下装	无双等级提升94点	atStrainBase	94	94																										8				0	0
+10984	霁月·头·甲（外攻）	帽子	外功攻击提升42点	atPhysicsAttackPowerBase	42	42																										3				0	0
+10985	霁月·头·甲（内功）	帽子	内功攻击提升50点	atMagicAttackPowerBase	50	50																										3				0	0
+10986	霁月·头·甲（治疗）	帽子	疗伤成效提升45点	atTherapyPowerBase	45	45																										3				0	0
+10987	霁月·腕·染（外破）	护手	外功破防等级提升94点	atPhysicsOvercomeBase	94	94																										10				0	0
+10988	霁月·腕·染（内破）	护手	内功破防等级提升94点	atMagicOvercome	94	94																										10				0	0
+10989	霁月·腕·染（无双）	护手	无双等级提升94点	atStrainBase	94	94																										10				0	0
+10990	霁月·衣·染（化劲）	上装	化劲提升47点	atDecriticalDamagePowerBase	47	47																										2					
+10991	霁月·衣·染（御劲）	上装	御劲提升47点	atToughnessBase	47	47																										2					
+10992	霁月·衣·染（外防）	上装	外功防御提升47点	atPhysicsShieldAdditional	47	47																										2					
+10993	霁月·衣·染（内防）	上装	内功防御提升47点	atMagicShield	47	47																										2					
+10994	霁月·腰·甲（化劲）	腰带	化劲提升47点	atDecriticalDamagePowerBase	47	47																										6				0	0
+10995	霁月·腰·甲（御劲）	腰带	御劲提升47点	atToughnessBase	47	47																										6				0	0
+10996	霁月·腰·甲（外防）	腰带	外功防御提升47点	atPhysicsShieldAdditional	47	47																										6				0	0
+10997	霁月·腰·甲（内防）	腰带	内功防御提升47点	atMagicShield	47	47																										6				0	0
+10998	霁月·鞋·染（急速）	鞋子	加速提升94点	atHasteBase	94	94																										9				0	0
+10999	霁月·鞋·染（命中）	鞋子	全命中提升94点	atAllTypeHitValue	94	94																										9				0	0
+11000	霁月·鞋·染（外攻）	鞋子	外功攻击提升42点	atPhysicsAttackPowerBase	42	42																										9				0	0
+11001	霁月·鞋·染（内功）	鞋子	内功攻击提升50点	atMagicAttackPowerBase	50	50																										9				0	0
+11002	霁月·衣·染（无双）	上装	无双等级提升71点	atStrainBase	71	71																										2					
+11003	霁月·衣·染（减仇）	上装	招式仇恨降低4%	atActiveThreatCoefficient	0	-42																										2					
+11004	霁月·腰·甲（无双）	腰带	无双等级提升71点	atStrainBase	71	71																										6				0	0
+11005	霁月·腰·甲（减仇）	腰带	招式仇恨降低4%	atActiveThreatCoefficient	0	-42																										6				0	0
