@@ -5,5 +5,7 @@ void main(List<String> arguments) {
         equips();
     } else if (arguments[0] == 'enchant') {
         enchant();
+    } else if (arguments[0] == 'furniture') {
+        furniture();
     }
 }

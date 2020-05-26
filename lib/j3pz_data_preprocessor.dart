@@ -1,12 +1,16 @@
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/enchant_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
+import 'package:j3pz_data_preprocessor/furniture_parser.dart';
 import 'package:j3pz_data_preprocessor/gamemap_parser.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 import 'package:j3pz_data_preprocessor/source_parser.dart';
 
 import './read_file.dart';
+import 'read_file.dart';
+import 'read_file.dart';
+import 'read_file.dart';
 
 void equips() async {
     print('reading files');
@@ -94,5 +98,21 @@ void enchant() async {
     );
     print('generating');
     enchantParser.export('./output');
+    print('done');
+}
+
+void furniture() async {
+    print('reading files');
+    var furniture = await readFile(path: './raw/furniture.tab');
+    var ui = await readFile(path: './raw/furnitureaddinfo.tab', id: 'dwID');
+    var item = await readFile(path: './raw/homeland_furnitureinfo.tab', ids: ['nFurnitureType', 'dwFurnitureID', 'nBrushModeCnt']);
+    print('parsing');
+    var furnitureParser = FurnitureParser(
+        furnitures: furniture,
+        uis: ui,
+        items: item,
+    );
+    print('generating');
+    furnitureParser.export('./output');
     print('done');
 }

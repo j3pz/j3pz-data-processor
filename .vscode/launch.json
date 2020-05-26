@@ -18,5 +18,12 @@
             "program": "bin/main.dart",
             "args": ["enchant"]
         }
+        {
+            "name": "Dart furniture",
+            "type": "dart",
+            "request": "launch",
+            "program": "bin/main.dart",
+            "args": ["furniture"]
+        }
     ]
 }
