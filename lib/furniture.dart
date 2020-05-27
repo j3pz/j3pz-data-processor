@@ -26,7 +26,7 @@ class Furniture {
             name,
             '$quality',
             '$level',
-            interact != null ? '1' : '0',
+            interact? '1' : '0',
             scaleRange.replaceAll(';', ','),
             source,
             img,
