@@ -74,7 +74,10 @@ class FurnitureParser {
     }
 
     String getImagePath(String rawPath) {
-        return rawPath.toLowerCase().replaceFirst('ui\\image\\homeland\\data\\source\\', '').replaceFirst('.tga', '.png');
+        return rawPath.toLowerCase()
+            .replaceFirst('ui\\image\\homeland\\data\\source\\', '')
+            .replaceAll('\\', '/')
+            .replaceFirst('.tga', '.png');
     }
 
     String getSource(String source) {
