@@ -26,7 +26,7 @@ class Furniture {
             name,
             '$quality',
             '$level',
-            interact? '1' : '0',
+            interact ? '1' : '0',
             scaleRange.replaceAll(';', ','),
             source,
             img,
@@ -109,9 +109,11 @@ class RawFurnitureInfo {
 class RawFurnitureUi {
     String source;
     String img;
+    String desc;
 
     RawFurnitureUi.fromJson(Map<String, dynamic> json) {
         source = json['szSource'];
         img = json['Path'];
+        desc = json['szTip'];
     }
 }
