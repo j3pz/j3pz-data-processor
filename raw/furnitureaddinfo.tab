@@ -193,7 +193,7 @@ dwID	Path	Frame	szTip	szSource
 100000192	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1006.mesh.tga	0	未知	隐藏
 100000193	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1007.mesh.tga	0	花梨木栅足长凳一抬，形如夹膝。夹膝，即凭几，器型狭长，可供凭靠，栅足微曲，以便凭倚时舒适。海外诸国呼曰“挟轼”，盖以音讹也。世又有“隐膝”、“隐几”，与夹膝相类。	小区5级
 100000194	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1009.mesh.tga	0	素髹桑木长凳一抬。素髹，一名单漆，虽只一二颜色，却需经麻灰反复刮抹，数度上漆、打磨。设若刮涂稍有不慎，抑或漆笔沾污丝毫，则功归一篑也。素髹成器，以髹面平整、光采润泽者为上。	园宅币
-100000195	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1007.mesh.tga	0	未知	隐藏
+100000195	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1007.mesh.tga	0		资源点
 100000196	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1008.mesh.tga	0	一方带扶手榧木绳床。本朝绳床，坐面宽阔，多有围栏，初多由僧人用，后僧俗皆习用。	园宅币
 100000197	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1009.mesh.tga	0	团花铜平脱桑木扶手倚子一座，通体素髹。本朝倚子，可指木椅，可指倚子式绳床。此倚搭脑呈弓形，低于人肩，此国朝习用制也。	生活技能
 100000198	ui\Image\Homeland\data\source\Home\furniture\chair\Chair4_1_1001.mesh.tga	0	江湖自翻涌，洗我身上尘。\n此盆铜饰以江湖侠客的旧兵刃铸成。	园宅币
@@ -446,13 +446,13 @@ dwID	Path	Frame	szTip	szSource
 100000568	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1001_P_e.prefab.tga	0	秦王一统天下以后，在国土之内布下了三十六处疑冢。此椁便是疑冢之一所出。\n后来，秦历二世而亡。横扫六合，竟像只为盖这三十六处疑冢罢了。	秦皇陵
 100000569	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1002_P_e.prefab.tga	0	嬴政征服中国，更法制，一统度量衡。合三皇五帝之名，称自己为始皇帝。\n后来，秦法度传世。而那些三皇五帝都未能企及的功业，传言俱在此棺的头厢之中。	秦皇陵
 100000570	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1001_P.prefab.tga	0	乱中，火拔归仁采枫华谷上品枫材，为安军与史军置。	战宝军械库
-100000571	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1002_P.prefab.tga	0	河中之水向东流，洛阳女儿名莫愁。\n莫愁十三能织绮，十四采桑南陌头。\n十五嫁为卢家妇，十六生儿字阿侯。\n卢家兰室桂为梁，中有郁金苏合香。\n头上金钗十二行，足下丝履五文章。\n珊瑚挂镜烂生光，平头奴子擎履箱。\n人生富贵何所望，恨不嫁与东家王。	洛阳声望尊敬
+100000571	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1002_P.prefab.tga	0	河中之水向东流，洛阳女儿名莫愁。\n莫愁十三能织绮，十四采桑南陌头。\n十五嫁为卢家妇，十六生儿字阿侯。\n卢家兰室桂为梁，中有郁金苏合香。\n头上金钗十二行，足下丝履五文章。\n珊瑚挂镜烂生光，平头奴子擎履箱。\n人生富贵何所望，恨不嫁与东家王。	洛阳声望钦佩
 100000572	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1003_P.prefab.tga	0	以胡粉与色料涂为绿地，棱髹赤漆，可堪为舞鼓，为本朝四方侠客所常用。	江湖贡献值
 100000573	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1004_P.prefab.tga	0	野火原上连营动，三军六族听鼓声。	园宅币
 100000574	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1005_P.prefab.tga	0	飞将马蹄今凌乱，阴山南北画角声。	园宅币
 100000575	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1018_P_L.prefab.tga	0	鎏金马座九枝灯檠，原为金帐狼王营内所常用。	园宅币
 100000576	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1006_P.prefab.tga	0	昔年太宗伐高句丽，车驾至辽泽，泥淖二百余里，人马不可通。时任将作大匠阎立德以绝技布土作桥，军不留行。\n阎立德随太宗北伐前，曾监制五百战舰，此鼓便为舰上所用战鼓。后太宗北征不成，便于大明宫重修之际，再取此鼓，命阎家匠另绘装饰，作舞鼓陈设。阎立本奉命督造，涂髹之时，仍用了最致密的防水桐油。	大明宫
-100000577	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1007_P.prefab.tga	0	永徽五年，高宗巡幸万年宫，阎立德留守京师，领徒四万治京城，此批旧登闻鼓便是当时阎家匠人所制。	长安内城声望尊敬
+100000577	ui\Image\Homeland\data\source\Home\furniture\music\Music1_1_1007_P.prefab.tga	0	永徽五年，高宗巡幸万年宫，阎立德留守京师，领徒四万治京城，此批旧登闻鼓便是当时阎家匠人所制。	靖世军·忠声望钦佩
 100000578	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1003_P.prefab.tga	0	此图以李氏舆地图为底图绘成。初，封常清为战时需，托节度判官李栖筠遍游北境，以《十道四蕃志》为蓝本重制河北、河东两道舆地图。封常清奉诏回京之时，上《兵败遗表》自请死罪，并上表请李栖筠暂摄监察御史兼行军司马，将李栖筠与舆地图护留在安西。\n后肃宗于灵武即位，调安西军入关平叛。李栖筠闻诏，即刻亲选精兵七千，携图统军，奔马回朝。	血战天策
 100000579	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1001_P.prefab.tga	0	每一个心系家国的江湖人，书房里都该当有这样一张地图。	太原声望钦佩
 100000580	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1002_P.prefab.tga	0		园宅币
@@ -1273,7 +1273,7 @@ dwID	Path	Frame	szTip	szSource
 100001416	ui\Image\Homeland\data\source\Home\furniture\petbed\petbed1_1_1004.mesh.tga	0		园宅币
 100001417	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_house_M_house01_L_03_16_24_02_HD.Group.tga	0		园宅币
 100001422	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1019.mesh.tga	0	与君为伴，在旁试探。\n狗狗祟祟，排排站。	活动
-100001423	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu3_1_1002.mesh.tga	0	从前洛阳城中有个姑娘叫桃子，桃子七岁时失去了祖父，跟在祖母身边，生来不爱红妆。慈恩寺有个僧人，僧人名唤百乐，从天竺远游而来。桃子无事便去为祖父敬香祝祷。百乐跟桃子的祖父一样，喜欢与人辩经。百乐是个有慧根的小和尚，辩经常常胜于他人，桃子敬香的时候，便也会驻足一阵子。\n后来，百乐与人辩经的时候喜欢发呆。\n再后来，百乐还俗，做了洛阳市的小木匠。坐在这屏下，还是常跟人辩经。	未知
+100001423	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu3_1_1002.mesh.tga	0	从前洛阳城中有个姑娘叫桃子，桃子七岁时失去了祖父，跟在祖母身边，生来不爱红妆。慈恩寺有一在牒僧人，名唤百乐，自天竺远道而来，彼时正造访白马。桃子无事便去为祖父敬香祝祷。百乐跟桃子的祖父一样，喜欢与人辩经。百乐是个有慧根的小和尚，辩经常常胜于他人，桃子敬香的时候，便也会驻足一阵子。\n后来，百乐与人辩经的时候喜欢发呆。\n再后来，百乐还俗，做了洛阳市的小木匠。坐在这屏下，还是常跟人辩经。	未知
 100001424	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1008.mesh.tga	0	家中高坐，威震一方。	江湖贡献值
 100001425	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1009.mesh.tga	0		隐藏
 100001426	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2001.mesh.tga	0	阎家匠阎规少时，同幼弟共观坊间旗亭赌酒者。弟阎矩见酒胡子摆动，意态悠悠然，便自言若能坐在酒胡之上，日歇夜息，不知该有多快活。五年后，阎规学艺成，独辟形制，造出这方素帔竹制酒胡椅。世间木作，多了一项酒胡椅。\n梓匠学徒阎矩随哥哥入阎门学艺，性疏懒，七年无所成，终为阎大匠遣出。	园宅币
@@ -1720,7 +1720,7 @@ dwID	Path	Frame	szTip	szSource
 100001874	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_Wall_M_courtyardwall01_gate_01_50_1000_400_HD.Mesh.tga	0		园宅币
 100001875	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1013.mesh.tga	0	俗事勿扰，且速遁去。	未知
 100001876	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1011_P.prefab.tga	0	雪雪亲手缝制的布娃娃。\n“是你教我的呀，行走江湖，很重要的一条，就是不能怂。”	活动
-100001877	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1010.mesh.tga	0	此时倾倒，不过做戏。众人皆醉，我自海量。	隐藏
+100001877	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1010.mesh.tga	0	此时倾倒，不过做戏。众人皆醉，我自海量。	儿童节活动
 100001878	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1012.mesh.tga	0	两眼不见世间事，一心只念瓜洲鱼。	未知
 100001879	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1018.mesh.tga	0	好读书而不求甚解，每有会意，大食一斤。	未知
 100001880	ui\Image\Homeland\data\source\Home\vegetation\Brush\B_H_Herb01_01_200_A_HD.srt.tga	0		园宅币
@@ -1776,6 +1776,10 @@ dwID	Path	Frame	szTip	szSource
 100001934	ui\Image\Homeland\data\source\Home\prefab\effect\双花斑_Trim.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001935	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_group_001.prefab.tga	0		
 100001936	ui\Image\Homeland\data\source\Home\prefab\effect\一群鱼.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
+100001937	ui\Image\Homeland\data\source\Home\vegetation\Grass\G_H_Dandelion01_01_HD.srt.tga	0	花罢成絮，因风飞扬，落湿地即生。	儿童节活动
+100001938	ui\Image\Homeland\data\source\Home\vegetation\Grass\G_H_Dandelion01_02_HD.srt.tga	0	花罢成絮，因风飞扬，落湿地即生。	儿童节活动
+100001939	ui\Image\Homeland\data\source\Home\vegetation\Grass\G_H_Dandelion01_03_HD.srt.tga	0	花罢成絮，因风飞扬，落湿地即生。	儿童节活动
+100001940	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2002.mesh.tga	0	小兔杀恶狼，狼无兔兔摇。	奇遇
 200000001	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小邪子的福娃娃.prefab.tga	0		收集
 200000002	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小悟空.prefab.tga	0		收集
 200000003	ui\Image\Homeland\data\source\Home\prefab\BackPendent\破损不堪的装备.prefab.tga	0		收集
@@ -3195,3 +3199,6 @@ dwID	Path	Frame	szTip	szSource
 200001436	ui\Image\Homeland\default\default.tga	0		收集
 200001437	ui\Image\Homeland\default\default.tga	0		收集
 200001438	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\西山宝库·罗曼琴.prefab.tga	0		收集
+200001439	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1006.mesh.tga	0	长安第一花匠白范之女为情所困，华年早逝，白范深以为憾。后其孙女白六娘长成，玉立亭亭。白六娘离家行走江湖之际，白范将裴家花枕所特制的独行侠枕改制，令六娘负于背后，名为“天涯独行”	收集
+200001440	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1004.mesh.tga	0	迷仙枕仙游梦仙，如梦非梦黄粱梦。\n游梦仙是裴家花枕传人裴草给你的奖励，此人颇为神棍，口中所说‘那位’一直令你疑惑。但大梦已醒，再也无处问询。只有这个奇特的游梦仙，还能让你依稀想起，曾经去过的那个奇妙世界。	收集
+200001441	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\大唐食神.prefab.tga	0		收集
