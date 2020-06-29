@@ -282,7 +282,7 @@ dwID	Path	Frame	szTip	szSource
 100000296	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2006.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。	园宅币
 100000300	ui\Image\Homeland\data\source\Home\furniture\bonsai\Bonsai1_1_1001.mesh.tga	0		园宅币
 100000301	ui\Image\Homeland\data\source\Home\furniture\bonsai\Bonsai4_4_1002.mesh.tga	0	“采花大盗”景曾将自己采来的一批鲜花交与长安白氏，定制此斗，赠与代施。	园宅币
-100000302	ui\Image\Homeland\data\source\Home\furniture\chair\Chair4_1_1003.mesh.tga	0		园宅币
+100000302	ui\Image\Homeland\data\source\Home\furniture\chair\Chair4_1_1003.mesh.tga	0	阎清怀昔年曾为王摩诘于辋川置别业，此方池苑布置样式便是彼时创制，为斤竹岭远近池苑所用。	园宅币
 100000303	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1001_L.prefab.tga	0	黄铜宝相花灯檠一架。宝相花，成于齐时，是对本朝所常用一类织锦、装饰花样的统称，多为六出、八出莲花形，饰样多含忍冬叶、花心或勾卷云纹，以色彩浓艳、梵意深重为美。	园宅币
 100000304	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1002_L.prefab.tga	0	此三叠灯檠通体素髹，灯笼布选用单色臈缬布，上染幽兰纹样。	园宅会赛
 100000305	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1003_L.prefab.tga	0	灰缬山水文柏木灯一架。笼布以灰药饰山水纹样，投入染液，去除灰药，漏缬而成。	园宅币
@@ -437,7 +437,7 @@ dwID	Path	Frame	szTip	szSource
 100000559	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1010_P.prefab.tga	0	皮罗阁曾于开元二十六年受唐封，玄宗赐皮罗阁“蒙归义”之名，大唐所赐封赏中便有这一形制的三牒立屏。阁罗凤即南诏王位以后，因喜好归义屏风的形态，下令仿制一批，推及南诏四境，却名之为“阳剑坐障”。	南诏皇宫
 100000560	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1011_P.prefab.tga	0	此物本是主持龙渊泽擂台的高级星宿女弟子向聚贤庄庄主王照南索要而来。那主持擂台的星宿女弟子，甫至龙渊泽，便高居台上，神气非常。传言，无论她向王照南索要什么，王照南都会给她，不管她想调动庄中哪一批人马，王照南从不会说一个不字。\n旁人皆不敢招惹星宿弟子，自然也不会问她此中缘由。而王照南给出的解释，便只是为了擂台布置足够华丽，能够为庄中招揽贤才罢了。	龙渊泽
 100000561	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1012_P.prefab.tga	0	玄宗重修华清宫池时，曾敕颜真卿题三牒立屏。时画圣亲为研墨，颜真卿不采颜体，却用篆字，题此坐障，献于华清宫中。后为宫嫔观摩临写所常用。	华清宫
-100000562	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1013_P_e.prefab.tga	0	薛金桃是个爱吃粽子的小姑娘，金桃的父亲是个木工。每年端午节到，金桃吃多了粽子，惹得自己肚痛，惹来父亲埋怨时，便总躲在家中正制的黍香坐障背后。小小的金桃，整个人都被坐障遮住，唯有绿衣的影子朦胧透出。\n后来，金桃远嫁洛阳，薛家爹爹思念她，便在黍香坐障的屏牒下，置了几枚大大的粽子为饰。从屏后看去，朦胧的绿影仿佛犹在。	隐藏
+100000562	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1013_P_e.prefab.tga	0	长安城中薛姓木工，生有一女名唤金桃，每年端午节到，金桃多吃了粽子，惹爹爹埋怨，便总穿行于家中正制了一半的坐障背后，躲躲闪闪。金桃喜着绿衣，小小的身影被扇形坐障遮住，唯有绿衣的影子朦胧透出，宛如三只粽子。\n薛匠资质普通，然善制端午饰屏，所制“黍香潇雨”为节时各大主城所常用。	端午节活动
 100000563	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1014A.mesh.tga	0	端阳节所常用的装饰屏风。	隐藏
 100000564	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1015A.mesh.tga	0	五色丝线系菖艾，弄潮儿与江上风。	隐藏
 100000565	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1016A.mesh.tga	0	五色丝线系菖艾，弄潮儿与江上风。	隐藏
@@ -1273,7 +1273,7 @@ dwID	Path	Frame	szTip	szSource
 100001416	ui\Image\Homeland\data\source\Home\furniture\petbed\petbed1_1_1004.mesh.tga	0		园宅币
 100001417	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_house_M_house01_L_03_16_24_02_HD.Group.tga	0		园宅币
 100001422	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1019.mesh.tga	0	与君为伴，在旁试探。\n狗狗祟祟，排排站。	活动
-100001423	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu3_1_1002.mesh.tga	0	从前洛阳城中有个姑娘叫桃子，桃子七岁时失去了祖父，跟在祖母身边，生来不爱红妆。慈恩寺有一在牒僧人，名唤百乐，自天竺远道而来，彼时正造访白马。桃子无事便去为祖父敬香祝祷。百乐跟桃子的祖父一样，喜欢与人辩经。百乐是个有慧根的小和尚，辩经常常胜于他人，桃子敬香的时候，便也会驻足一阵子。\n后来，百乐与人辩经的时候喜欢发呆。\n再后来，百乐还俗，做了洛阳市的小木匠。坐在这屏下，还是常跟人辩经。	未知
+100001423	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu3_1_1002.mesh.tga	0	从前洛阳城中有个姑娘叫桃子，桃子七岁时失去了祖父，跟在祖母身边，生来不爱红妆。慈恩寺有一在牒僧人，名唤百乐，自天竺远道而来，彼时正造访白马。桃子无事便去为祖父敬香祝祷。百乐跟桃子的祖父一样，喜欢与人辩经。百乐是个有慧根的小和尚，辩经常常胜于他人，桃子敬香的时候，便也会驻足一阵子。\n后来，百乐与人辩经的时候喜欢发呆。\n再后来，百乐还俗，做了洛阳市的小木匠。坐在这屏下，还是常跟人辩经。	商城
 100001424	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1008.mesh.tga	0	家中高坐，威震一方。	江湖贡献值
 100001425	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1009.mesh.tga	0		隐藏
 100001426	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2001.mesh.tga	0	阎家匠阎规少时，同幼弟共观坊间旗亭赌酒者。弟阎矩见酒胡子摆动，意态悠悠然，便自言若能坐在酒胡之上，日歇夜息，不知该有多快活。五年后，阎规学艺成，独辟形制，造出这方素帔竹制酒胡椅。世间木作，多了一项酒胡椅。\n梓匠学徒阎矩随哥哥入阎门学艺，性疏懒，七年无所成，终为阎大匠遣出。	园宅币
@@ -1557,7 +1557,7 @@ dwID	Path	Frame	szTip	szSource
 100001706	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001707	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001708	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	宠物游历
-100001709	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	飞沙令
+100001709	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	飞沙令、宠物游历
 100001710	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_005.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001711	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001712	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
@@ -1780,6 +1780,17 @@ dwID	Path	Frame	szTip	szSource
 100001938	ui\Image\Homeland\data\source\Home\vegetation\Grass\G_H_Dandelion01_02_HD.srt.tga	0	花罢成絮，因风飞扬，落湿地即生。	儿童节活动
 100001939	ui\Image\Homeland\data\source\Home\vegetation\Grass\G_H_Dandelion01_03_HD.srt.tga	0	花罢成絮，因风飞扬，落湿地即生。	儿童节活动
 100001940	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2002.mesh.tga	0	小兔杀恶狼，狼无兔兔摇。	奇遇
+100001941	ui\Image\Homeland\default\default.tga	0		测试
+100001942	ui\Image\Homeland\default\default.tga	0		测试
+100001943	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1022.mesh.tga	0		测试
+100001944	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1023.mesh.tga	0		测试
+100001945	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1024.mesh.tga	0		测试
+100001946	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1025.mesh.tga	0		测试
+100001947	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1026.mesh.tga	0		测试
+100001948	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1027.mesh.tga	0		测试
+100001949	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1028.mesh.tga	0		测试
+100001954	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1010.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中之椅。	商城
+100001956	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1017.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中几案。	商城
 100001985	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_50_200_12_HD.tga	0		未知
 100001986	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_hang_01_25_400_25_HD.tga	0		商城
 100001987	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_100_25_HD.tga	0		未知
@@ -1831,6 +1842,9 @@ dwID	Path	Frame	szTip	szSource
 100002036	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_triangle02_normal_01_100_140_70_HD.tga	0		商城
 100002037	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_triangle02_normal_01_100_400_200_HD.tga	0		商城
 100002038	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall02_normal_01_25_100_200_HD.tga	0		商城
+100002039	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1005_P.prefab.tga	0	纷纷浮沉客，萋萋岸上芦。	端午节活动
+100002041	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_double_004.pss.tga	0	两章对秋月，一字偕华星。	斗鱼杯活动
+100002042	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth1_1_1028.Mesh.tga	0	长安西市水果商陈颜给高嫁的一智备下的嫁妆。陈颜从年少时便喜着粉红，每日总是一袭粉衣站在慈幼坊前，从少女站成了老妪。她膝下有三子，内心常盼再添个女儿，却一直未能遂愿。	商城
 200000001	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小邪子的福娃娃.prefab.tga	0		收集
 200000002	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小悟空.prefab.tga	0		收集
 200000003	ui\Image\Homeland\data\source\Home\prefab\BackPendent\破损不堪的装备.prefab.tga	0		收集
@@ -3253,3 +3267,61 @@ dwID	Path	Frame	szTip	szSource
 200001439	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1006.mesh.tga	0	长安第一花匠白范之女为情所困，华年早逝，白范深以为憾。后其孙女白六娘长成，玉立亭亭。白六娘离家行走江湖之际，白范将裴家花枕所特制的独行侠枕改制，令六娘负于背后，名为“天涯独行”	收集
 200001440	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1004.mesh.tga	0	迷仙枕仙游梦仙，如梦非梦黄粱梦。\n游梦仙是裴家花枕传人裴草给你的奖励，此人颇为神棍，口中所说‘那位’一直令你疑惑。但大梦已醒，再也无处问询。只有这个奇特的游梦仙，还能让你依稀想起，曾经去过的那个奇妙世界。	收集
 200001441	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\大唐食神.prefab.tga	0		收集
+200001442	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\惜落羽.prefab.tga	0		收集
+200001443	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\莺逐锦.prefab.tga	0		收集
+200001444	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\识妆.prefab.tga	0		收集
+200001445	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\锦花沐.prefab.tga	0		收集
+200001446	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\雀羽仙.prefab.tga	0		收集
+200001447	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\雪娃娃.prefab.tga	0		收集
+200001448	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\七宝五味瓶·红豆.prefab.tga	0		收集
+200001449	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\盼蝶生.prefab.tga	0		收集
+200001450	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\糯团团.prefab.tga	0		收集
+200001451	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\贺遥归.prefab.tga	0		收集
+200001452	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\醉挑帘.prefab.tga	0		收集
+200001453	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\银月弯.prefab.tga	0		收集
+200001454	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\鼠崽崽.prefab.tga	0		收集
+200001455	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\春山绘樱扇.prefab.tga	0		收集
+200001456	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\幽篁凝玉.prefab.tga	0		收集
+200001457	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\烟水寻芳.prefab.tga	0		收集
+200001458	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\素灯别枝.prefab.tga	0		收集
+200001459	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\应春镜.prefab.tga	0		收集
+200001460	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\鼎运万年.prefab.tga	0		收集
+200001461	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\春风度我.prefab.tga	0		收集
+200001462	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\虎虎生威.prefab.tga	0		收集
+200001463	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\青云不坠.prefab.tga	0		收集
+200001464	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\琅枝琼华.prefab.tga	0		收集
+200001465	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\曜晶飞云纹香囊.prefab.tga	0		收集
+200001466	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\昆玉闲章.prefab.tga	0		收集
+200001467	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\岚山绘卷.prefab.tga	0		收集
+200001468	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\凰舞凤歌·沉夜.prefab.tga	0		收集
+200001469	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\凰舞凤歌·曦光.prefab.tga	0		收集
+200001470	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\鸣禽曲柳·祭地.prefab.tga	0		收集
+200001471	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\白玉青璃灯.prefab.tga	0		收集
+200001472	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\御龙·隐刃.prefab.tga	0		收集
+200001473	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\醉饮光风.prefab.tga	0		收集
+200001474	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\鸿雁云.prefab.tga	0		收集
+200001475	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\明月何灼.prefab.tga	0		收集
+200001476	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\有限光.prefab.tga	0		收集
+200001477	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\簪花空竹.prefab.tga	0		收集
+200001478	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\弃身·肆.prefab.tga	0		收集
+200001479	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\聆音.prefab.tga	0		收集
+200001480	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\龙游四海·断情游魂剪.prefab.tga	0		收集
+200001481	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\龙游四海·隐心问情匕.prefab.tga	0		收集
+200001482	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\剑斩春风.prefab.tga	0		收集
+200001483	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\天命奉节·长空.prefab.tga	0		收集
+200001484	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\疾影涂恨·死战.prefab.tga	0		收集
+200001485	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\天命奉节·峥嵘.prefab.tga	0		收集
+200001486	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\疾影涂恨·不辩.prefab.tga	0		收集
+200001487	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\天下桃李.prefab.tga	0		收集
+200001488	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\长夜鼓.prefab.tga	0		收集
+200001489	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\放浪山河印.prefab.tga	0		收集
+200001490	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\天下桃李·春风.prefab.tga	0		收集
+200001491	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\天下桃李·化雨.prefab.tga	0		收集
+200001492	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\兔兔摇.prefab.tga	0		收集
+200001493	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\青瓜碧蔓.prefab.tga	0		收集
+200001494	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\蜜桃剪枝.prefab.tga	0		收集
+200001495	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\霜鼓震天.prefab.tga	0		收集
+200001496	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\寻林.prefab.tga	0		收集
+200001497	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\小尾.prefab.tga	0		收集
+200001498	ui\Image\Homeland\data\source\Home\Prefab\WaistPendent\花梢.prefab.tga	0		收集
+200001499	ui\Image\Homeland\data\source\Home\Prefab\BackPendent\夏风飘絮.prefab.tga	0		收集

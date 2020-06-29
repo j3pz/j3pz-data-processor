@@ -62,9 +62,13 @@ class FurnitureParser {
         furniture.interact = info.interact;
         furniture.limit = raw.levelLimit;
         furniture.price = raw.architecture;
-        furniture.desc = uiMap['${raw.id + 100000000}'].desc;
-        furniture.source = getSource(uiMap['${raw.id + 100000000}'].source);
-        furniture.img = getImagePath(uiMap['${raw.id + 100000000}'].img);
+        try {
+            furniture.desc = uiMap['${raw.id + 100000000}'].desc;
+            furniture.source = getSource(uiMap['${raw.id + 100000000}'].source);
+            furniture.img = getImagePath(uiMap['${raw.id + 100000000}'].img);
+        } catch (e) {
+            print('error on ${raw.id}');
+        }
         furniture.beauty = raw.attribute1;
         furniture.practicality = raw.attribute2;
         furniture.robustness = raw.attribute3;
