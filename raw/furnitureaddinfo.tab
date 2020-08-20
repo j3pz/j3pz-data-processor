@@ -162,7 +162,7 @@ dwID	Path	Frame	szTip	szSource
 100000160	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf2_1_1002.mesh.tga	0	此物将帨架、盆架合二为一，较之本朝习用帨架多置一架高面，是河北道产物。	园宅币
 100000161	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf5_2_1001.mesh.tga	0	铜平脱团花圆材榻足几一方。本朝榻足几，多用枋材，添横枨，以利承重，多作承托衣箱之用，此几虽以圆材为足，亦可足资使用。	园宅币
 100000162	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf5_2_1002.mesh.tga	0	独眠愁已惯，秋来只自愁。火笼恒暖脚，行障镇床头。	园宅币
-100000163	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf5_2_1003.mesh.tga	0		宠物游历
+100000163	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf5_2_1003.mesh.tga	0	产出地图：洛阳	宠物游历
 100000164	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf6_1_1003.mesh.tga	0		园宅币
 100000165	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf7_1_1001.mesh.tga	0	云石桑木台案一方。此台案以枋材作壸门，接四条横枨，通体素髹，桌面嵌云石，平脱铜饰。	生活技能
 100000167	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu1_1_1021.mesh.tga	0	独眠愁已惯，秋来只自愁。火笼恒暖脚，行障镇床头。	园宅会赛
@@ -193,7 +193,7 @@ dwID	Path	Frame	szTip	szSource
 100000192	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1006.mesh.tga	0	未知	隐藏
 100000193	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1007.mesh.tga	0	花梨木栅足长凳一抬，形如夹膝。夹膝，即凭几，器型狭长，可供凭靠，栅足微曲，以便凭倚时舒适。海外诸国呼曰“挟轼”，盖以音讹也。世又有“隐膝”、“隐几”，与夹膝相类。	小区5级
 100000194	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1009.mesh.tga	0	素髹桑木长凳一抬。素髹，一名单漆，虽只一二颜色，却需经麻灰反复刮抹，数度上漆、打磨。设若刮涂稍有不慎，抑或漆笔沾污丝毫，则功归一篑也。素髹成器，以髹面平整、光采润泽者为上。	园宅币
-100000195	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1007.mesh.tga	0		资源点
+100000195	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1007.mesh.tga	0		园宅币
 100000196	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1008.mesh.tga	0	一方带扶手榧木绳床。本朝绳床，坐面宽阔，多有围栏，初多由僧人用，后僧俗皆习用。	园宅币
 100000197	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1009.mesh.tga	0	团花铜平脱桑木扶手倚子一座，通体素髹。本朝倚子，可指木椅，可指倚子式绳床。此倚搭脑呈弓形，低于人肩，此国朝习用制也。	生活技能
 100000198	ui\Image\Homeland\data\source\Home\furniture\chair\Chair4_1_1001.mesh.tga	0	江湖自翻涌，洗我身上尘。\n此盆铜饰以江湖侠客的旧兵刃铸成。	园宅币
@@ -227,7 +227,7 @@ dwID	Path	Frame	szTip	szSource
 100000229	ui\Image\Homeland\data\source\Home\furniture\paint\Paint2_2_1005.mesh.tga	0		园宅币
 100000230	ui\Image\Homeland\data\source\Home\furniture\paint\Paint2_2_1006.mesh.tga	0		园宅币
 100000232	ui\Image\Homeland\data\source\Home\furniture\paint\Paint3_2_1002.mesh.tga	0		生活技能
-100000237	ui\Image\Homeland\data\source\Home\furniture\paint\Paint8_2_1001.mesh.tga	0	纸上不着点墨，心中了无挂碍。	宠物游历
+100000237	ui\Image\Homeland\data\source\Home\furniture\paint\Paint8_2_1001.mesh.tga	0	纸上不着点墨，心中了无挂碍。\n产出地图：经首道源岛	宠物游历
 100000239	ui\Image\Homeland\data\source\Home\furniture\tea\Tea1_2_1001.mesh.tga	0		园宅币
 100000240	ui\Image\Homeland\data\source\Home\furniture\tea\Tea1_2_1002.mesh.tga	0		园宅币
 100000241	ui\Image\Homeland\data\source\Home\furniture\tea\Tea1_2_1003.mesh.tga	0	越瓷类玉，邢瓷类冰。罗合，或曰茶罗子，多以竹节为之，此器特采白瓷。	生活技能
@@ -277,8 +277,8 @@ dwID	Path	Frame	szTip	szSource
 100000287	ui\Image\Homeland\data\source\Home\furniture\table\Table3_1_1002.mesh.tga	0	红泥绿蚁时令菜，人间烟火滋味长。	园宅币
 100000292	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1001.mesh.tga	0		园宅币
 100000293	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_1001.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。	园宅币
-100000294	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2002.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。	宠物游历
-100000295	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2003.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。	宠物游历
+100000294	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2002.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。\n产出地图：巴陵县	宠物游历
+100000295	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2003.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。\n产出地图：洛阳·战乱	宠物游历
 100000296	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2006.mesh.tga	0	越州窑，借上林湖水温润，瓷称秘色。	园宅币
 100000300	ui\Image\Homeland\data\source\Home\furniture\bonsai\Bonsai1_1_1001.mesh.tga	0		园宅币
 100000301	ui\Image\Homeland\data\source\Home\furniture\bonsai\Bonsai4_4_1002.mesh.tga	0	“采花大盗”景曾将自己采来的一批鲜花交与长安白氏，定制此斗，赠与代施。	园宅币
@@ -328,11 +328,11 @@ dwID	Path	Frame	szTip	szSource
 100000385	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1006.mesh.tga	0	此倚选用赤漆涂髹，平脱花鸟、螺钿，扶手、背靠连为一体，包围倚靠之人的手臂。此制兴于本朝宫廷仕女之用，概滥觞自月牙杌子。	战阶5阶
 100000386	ui\Image\Homeland\data\source\Home\furniture\chair\Chair3_1_1010.mesh.tga	0	一方黄梨木倚，通体素髹，扶手、背靠连为一体，包围倚靠之人的手臂。此制兴于本朝宫廷仕女之用，概滥觞自月牙杌子。	园宅币
 100000387	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth4_3_1003.mesh.tga	0	孔雀罗，初见于隋时，河北道恒州特产，以色华贵类孔雀得名。淮南道亦有土贡“孔雀布”，非罗纹织物也。	园宅会赛
-100000388	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth5_3_1001.mesh.tga	0	随风飘拂时，梦见方化外。青绿一千重，山海听铃音。	隐藏
+100000388	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth5_3_1001.mesh.tga	0	随风飘拂时，梦见方化外。青绿一千重，山海听铃音。	仲夏风月活动
 100000389	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1007_L.prefab.tga	0	开元年间，左金吾仓曹参军安平崔氏府中所出之物。人言崔令钦已复《箫韶九成》之曲，中夜雅奏，双鹤来仪，化为此灯。	隐藏
 100000390	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1004_L.prefab.tga	0		隐藏
-100000391	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1007_L.prefab.tga	0		雀神点数
-100000392	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1010_L.prefab.tga	0	浮香绕曲岸，圆影覆华池。常恐秋风早，飘零君不知。	雀神点数
+100000391	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1007_L.prefab.tga	0		成就
+100000392	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1010_L.prefab.tga	0	浮香绕曲岸，圆影覆华池。常恐秋风早，飘零君不知。	成就
 100000393	ui\Image\Homeland\data\source\Home\furniture\light\Light3_3_1003_L.prefab.tga	0	并肩立，错落思。江湖漂泊舟上悬，人间别离掌中执。	园宅会赛
 100000394	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf2_1_1003.mesh.tga	0	此架由榧木制成，通体素髹，较本之本朝习盆架多一高面，是河北道特有之物。	园宅币
 100000395	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf6_1_1001.mesh.tga	0	苏芳染，本朝较之前代所特有的木作涂染技法，不涂胡粉为底，而以苏方木汁染在素木地上，不另饰髹漆。苏芳染器，多选用乌木，染后成色，与紫檀颇为相类。	园宅币
@@ -358,7 +358,7 @@ dwID	Path	Frame	szTip	szSource
 100000416	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1021_P.prefab.tga	0	平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	园宅币
 100000417	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1003_P.prefab.tga	0		生活技能
 100000418	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1004_P.prefab.tga	0		园宅币
-100000419	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2007_P.prefab.tga	0		宠物游历
+100000419	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2007_P.prefab.tga	0	产出地图：鲲鹏岛	宠物游历
 100000420	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_2_2008_P_e.prefab.tga	0	绛帻鸡人抱晓筹，尚衣方进翠云裘。日色才临仙掌动，香烟欲傍衮龙浮。\n此物常年置于大明宫中，昔年唐玄宗赏赐香药与张九龄时，同赐此炉。后九龄公特上《谢赐香药面脂表》。	大明宫
 100000421	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1004_P.prefab.tga	0		园宅币
 100000422	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1005_P.prefab.tga	0		生活技能
@@ -388,7 +388,7 @@ dwID	Path	Frame	szTip	szSource
 100000450	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1013_P_L.prefab.tga	0	平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	园宅币
 100000451	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1014_P_L.prefab.tga	0		生活技能
 100000452	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1015_P_L.prefab.tga	0	虽惭丹雘施，未谓玄素睽。徒遭良时诐，王道奄昏霾。\n传言此物乃万岁通天年间所制。	园宅币
-100000455	ui\Image\Homeland\data\source\Home\furniture\paint\Paint1_1_1002_P.prefab.tga	0	此经瓶釉色奇绝，世所未见。乃由九州港市集的行商输入。	宠物游历
+100000455	ui\Image\Homeland\data\source\Home\furniture\paint\Paint1_1_1002_P.prefab.tga	0	此经瓶釉色奇绝，世所未见。乃由九州港市集的行商输入。\n产出地图：扬州	宠物游历
 100000456	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1011_P.prefab.tga	0	素髹回字铜平脱桑木案一抬。平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	生活技能
 100000457	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1012_P.prefab.tga	0	素髹栱形铜平脱桑木案一抬。平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	园宅币
 100000458	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1013_P.prefab.tga	0	赤漆涂。或曰罩朱单漆。素木地以苏木汁染，罩涂揩清漆一层，尔后揩清、推光，成器则木纹与漆色相映。	生活技能
@@ -459,59 +459,59 @@ dwID	Path	Frame	szTip	szSource
 100000581	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1003_P.prefab.tga	0		园宅币
 100000582	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1004_P.prefab.tga	0		园宅币
 100000583	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1005_P.prefab.tga	0		园宅币
-100000584	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1010_P_e.prefab.tga	0		宠物游历
-100000585	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1004_P_e.prefab.tga	0		宠物游历
-100000586	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1011_P.prefab.tga	0		宠物游历
-100000587	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1005_P.prefab.tga	0		宠物游历
-100000588	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1001_P_e.prefab.tga	0		宠物游历
-100000589	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1002_P_e.prefab.tga	0		宠物游历
-100000590	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1008_P.prefab.tga	0		宠物游历
-100000591	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1012_P.prefab.tga	0		宠物游历
-100000592	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1010_P_e.prefab.tga	0		宠物游历
-100000593	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1013_P_e.tga	0	与昆吾焰晶仅一字之差，来历成谜。	宠物游历
-100000594	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1014_P_e.prefab.tga	0		宠物游历
-100000595	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1015_P_e.prefab.tga	0		宠物游历
-100000596	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1016_P_e.prefab.tga	0		宠物游历
+100000584	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1010_P_e.prefab.tga	0	产出地图：寇岛	宠物游历
+100000585	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1004_P_e.prefab.tga	0	产出地图：长安	宠物游历
+100000586	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1011_P.prefab.tga	0	产出地图：成都	宠物游历
+100000587	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1005_P.prefab.tga	0	产出地图：少林	宠物游历
+100000588	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1001_P_e.prefab.tga	0	产出地图：天策·战乱	宠物游历
+100000589	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1002_P_e.prefab.tga	0	产出地图：明教	宠物游历
+100000590	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1008_P.prefab.tga	0	产出地图：万花	宠物游历
+100000591	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1012_P.prefab.tga	0	产出地图：苍山洱海	宠物游历
+100000592	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1010_P_e.prefab.tga	0	产出地图：白龙口	宠物游历
+100000593	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1013_P_e.tga	0	与昆吾焰晶仅一字之差，来历成谜。\n产出地图：昆仑	宠物游历
+100000594	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1014_P_e.prefab.tga	0	产出地图：五毒	宠物游历
+100000595	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1015_P_e.prefab.tga	0	产出地图：苍云	宠物游历
+100000596	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1016_P_e.prefab.tga	0	产出地图：侠客岛	宠物游历
 100000597	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1006_P.prefab.tga	0	阿萨辛早年得到的石刻圣女图，后被陈设于荻花圣殿献祭之室。牡丹身性变化后，所成之态竟与图上的圣女身形极为相似。	荻花圣殿
 100000598	ui\Image\Homeland\data\source\Home\furniture\vase\Vase1_2_1009_P.prefab.tga	0	此翡翠石形态古怪，雕有一截萝卜，一提葡萄，一枝开花的藤蔓，本是大唐随处可见的物件，也是在外历练的杨逸飞收到的十八岁生日礼物。杨尹安便在商会的诸多商品中选中此盆，名其为“万象包罗”，乃是要杨逸飞明了执掌一门，便得与世俗为伴，切不可忘尘绝俗。	微山书院
 100000600	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1005_P_e.prefab.tga	0	绛帻鸡人抱晓筹，尚衣方进翠云裘。日色才临仙掌动，香烟欲傍衮龙浮。\n此物常年置于大明宫中，昔年唐玄宗赏赐香药与张九龄时，同赐此炉。后九龄公特上《谢赐香药面脂表》。	大明宫
 100000601	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1006_P_e.prefab.tga	0	此物仿中原铜敦制成，梵韵浓重，是南诏宫中常用。	南诏皇宫
 100000602	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1007_P_e.prefab.tga	0	一只琉璃顶鎏金香浮屠。此类器物本为江南富贵人家所常用，这一件大概是十二连环坞劫掠而来。	稻香秘事
-100000603	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1008_P_e.prefab.tga	0		宠物游历
-100000604	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1007_P.prefab.tga	0		宠物游历
-100000605	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1017_P.prefab.tga	0		宠物游历
-100000606	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1018_P.prefab.tga	0		宠物游历
-100000607	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1019_P.prefab.tga	0		宠物游历
+100000603	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1008_P_e.prefab.tga	0	产出地图：五台山	宠物游历
+100000604	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1007_P.prefab.tga	0	产出地图：融天岭	宠物游历
+100000605	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1017_P.prefab.tga	0	产出地图：瞿塘峡	宠物游历
+100000606	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1018_P.prefab.tga	0	产出地图：龙门荒漠	宠物游历
+100000607	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1019_P.prefab.tga	0	产出地图：唐门	宠物游历
 100000609	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1019_P_L.prefab.tga	0	此灯原名“亦问鼎”，灯上铜铸饰件亦是真龙。夔龙问鼎，是李白的小书童取的名字。	永王行宫·花月别院
 100000610	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1020_P_L.prefab.tga	0	光明顶密道中所陈设的圣灯。它见到吉吉飞的次数，比见到人的次数要多些。	光明顶密道
 100000611	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1011_P_L.prefab.tga	0	夜中独跪坐，长信清怨深。	墨家秘殿
 100000612	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1018_P_L.prefab.tga	0	《天文训》曰：斗指乙，则清明风至，音比仲吕。	园宅币
-100000613	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1019_P_L.prefab.tga	0	永为东都少年客，不学朱衣葬北邙。	宠物游历
-100000614	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1020_P_L.prefab.tga	0	此灯笼采臈缬幽兰纹布制成，灯座呈宝相花形。	宠物游历
+100000613	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1019_P_L.prefab.tga	0	永为东都少年客，不学朱衣葬北邙。\n产出地图：天策	宠物游历
+100000614	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1020_P_L.prefab.tga	0	此灯笼采臈缬幽兰纹布制成，灯座呈宝相花形。\n产出地图：千岛湖	宠物游历
 100000615	ui\Image\Homeland\data\source\Home\furniture\light\Light3_3_1007_P_L.prefab.tga	0	危堑存隐秘，影下藏凶蛮。	辉天堑声望钦佩
 100000616	ui\Image\Homeland\data\source\Home\furniture\light\Light3_3_1008_P_L.prefab.tga	0	相传烛龙殿中有灵灯，蛇形挂壁，吐露寒信，白日时挂在殿内作照明用，夜半则不知所踪。江湖人士有想一鉴真假之人，前往探秘，皆无音信。	烛龙殿
-100000617	ui\Image\Homeland\data\source\Home\furniture\light\Light3_3_1009_P_L.prefab.tga	0		宠物游历
+100000617	ui\Image\Homeland\data\source\Home\furniture\light\Light3_3_1009_P_L.prefab.tga	0	产出地图：洛阳城	宠物游历
 100000619	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf3_1_1001_P.prefab.tga	0	阎立本亲为大明宫营建所设计的宫灯，产于龙首原的阎家木作。	大明宫
-100000620	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1002_P_e.prefab.tga	0		宠物游历
+100000620	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1002_P_e.prefab.tga	0	产出地图：黑龙沼	宠物游历
 100000621	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf3_1_1002_P.prefab.tga	0	阎立本亲为温泉宫营建所设计的宫灯，产于龙首原的阎家木作。开元年间重修华清宫时，犹未过时。	华清宫
 100000622	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1003_P_e.prefab.tga	0	菩提会中原信众为天竺迦兰僧所特制的石灯。	战宝迦兰
-100000623	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1028_P_L.prefab.tga	0	采国朝木作所常见的下脚料——黄杨木根鏨刻而成。	宠物游历
+100000623	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1028_P_L.prefab.tga	0	采国朝木作所常见的下脚料——黄杨木根鏨刻而成。\n产出地图：蓬莱	宠物游历
 100000624	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1029_P_L.prefab.tga	0	菩提木，取之于菩提神树，颇含灵性，十分罕见。	园宅币
-100000625	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1030_P_L.prefab.tga	0	檠者，古时正弓之器。今者借为灯架具。	宠物游历
+100000625	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1030_P_L.prefab.tga	0	檠者，古时正弓之器。今者借为灯架具。\n产出地图：蔷薇列岛	宠物游历
 100000626	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1021_P_L.prefab.tga	0	此物通体饰错金流云纹，穹隆状灯罩，上接圆管，联通牛首与灯火，烟灰由此通入牛腹，牛身、灯座、灯罩三部分可以拆卸。后世之东汉广陵王刘荆极爱此形制。	秦皇陵
 100000627	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1022_P_L.prefab.tga	0		隐藏
 100000628	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1021_P_L.prefab.tga	0	宇文画幼时，曾随宫傲一访纯阳，见到了天下闻名的紫虚子之真容。其时，冬雪正寒，宇文画携了一盏宫灯，烛暖微微。\n此后，宇文画常自思忆宫灯暖意，便命手下用同样的材质，置了一盏大大的吊灯，悬在屋中，名之曰“倒转亭台暖夜纱”，白帝水宫建成后，便将这灯置于其中。此灯光华陪伴宇文画长成，再后来，她每见纯阳白衣，心中便生出几分亲切之感。	白帝水宫
 100000629	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1022_P_L.prefab.tga	0	墨家义守宋城，墨子行十日十夜至郢，与公输盘见楚王。时墨子解带为城，以牒为械，公输盘九设攻城之机变，墨子九距之。此会之后，公输盘拜服，献此灯于墨子，隐退终南山。	墨家秘殿
 100000630	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1020_P.prefab.tga	0	兽皮筏子一只，海内外渔村皆有。	侠客岛声望尊敬
-100000631	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1021_P_e.prefab.tga	0	彼黍离离，彼稷之苗。行迈靡靡，中心摇摇。知我者，谓我心忧，不知我者，谓我何求。	宠物游历
+100000631	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1021_P_e.prefab.tga	0	彼黍离离，彼稷之苗。行迈靡靡，中心摇摇。知我者，谓我心忧，不知我者，谓我何求。\n产出地图：枫华谷·战乱	宠物游历
 100000632	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1004_P.prefab.tga	0	开元年间，唐玄宗改制河西节度使杨敬述所献的《婆罗门曲》，欲谱于太清宫祭献老子的法曲，苦思三月，未得其法。直至当年中秋，中夜入梦，玄宗见群羽仙起舞，散序和缓，中序别致，曲破舞遍清空，正突破了玄宗对曲破制改之困。梦醒后，玄宗将仙曲尽录，是为《霓裳羽衣曲》。华清宫中所塑降真羽仙群像，正是为纪念此番经历。	华清宫
 100000633	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1005_P_e.prefab.tga	0	红衣教于圣殿内外所常用的花架，妖异非常。	荻花宫后山
 100000634	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1006_P_e.prefab.tga	0	传言荻花洞窟深处，遍生迪多拉毒菇的地方，有一座幽冥神殿。唯有遍访洞窟每一处角落的人，方能通过溪水中一处极狭窄的夹缝进入神殿。\n后来，那些见过神殿的人再也没回到这片江湖。\n有缘人，你还记得他们吗？	荻花洞窟
 100000635	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1007_P_e.prefab.tga	0	与郭珠重逢次日，月华收到了这方供台。侍者请发呆的她为此台赐个名字。她杀掉了侍者，选定了名字。	狼牙堡·辉天堑
-100000636	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1020_P_e.prefab.tga	0	风尘澒动，恶犬啖月。	太原之战·夜守孤城
+100000636	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1020_P_e.prefab.tga	0	风尘澒动，恶犬啖月。	驱虎逐狼、夜守孤城
 100000637	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1023_P_e.prefab.tga	0	风雷刀谷中的石柱。	风雷刀谷·锻刀厅
-100000638	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1024_P_e.prefab.tga	0	风雷刀谷中的石柱，已经雷煅。	宠物游历
-100000639	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1021_P.prefab.tga	0		宠物游历
+100000638	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1024_P_e.prefab.tga	0	风雷刀谷中的石柱，已经雷煅。\n产出地图：太原	宠物游历
+100000639	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1021_P.prefab.tga	0	产出地图：马嵬驿	宠物游历
 100000640	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1022_P.prefab.tga	0	南诏之地多奉异神崇拜，此蟾形制诡异，下饰的饕餮纹宛如人面。	法王窟
 100000641	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1008_P.prefab.tga	0	越析乃南诏六诏之一，此象雕之形为六诏一统前越析人所制。	南诏皇宫
 100000642	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1009_P_e.prefab.tga	0	此武士像拟蒙细奴逻之样貌制成，蒙舍诏起于巍山，受观音七次教化，此像掌中法器，便以观音赠与细奴逻之物为本。	南诏皇宫
@@ -521,28 +521,28 @@ dwID	Path	Frame	szTip	szSource
 100000646	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1011_P_e.prefab.tga	0	本是高天原天孙迩迩艺命之像，后被躲避火山、仓皇逃去的神武流遗于宫中岛上。	宫中神武遗迹
 100000647	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1012_P_e.prefab.tga	0	此像拟蒙罗晟之样貌制成，蒙舍诏起于巍山，受观音七次教化，此像掌中所持法器，便源于观音赠与罗晟之物。	南诏皇宫
 100000648	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1013_P_e.prefab.tga	0	传言昔年方乾与剑圣在峰巅一战后，天子峰上便留下了这把巨剑。无人知它从何而来，被谁放置在此。又有人言，此剑本昔年天子封禅台上所用。	天子峰
-100000649	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1014_P_e.prefab.tga	0	原是华清宫中之物，乱后流入人间，女神衣摆已然斑驳生苔。	宠物游历
+100000649	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1014_P_e.prefab.tga	0	原是华清宫中之物，乱后流入人间，女神衣摆已然斑驳生苔。\n产出地图：长安·战乱	宠物游历
 100000650	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1015_P_e.prefab.tga	0	尹家置于列星岛上的白虎石象。	飞沙令
 100000651	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1016_P_e.prefab.tga	0	陇西深山中有一乡里，名唤绿桑。有一孩童，名唤想鱼，幼失双亲，每日只在水边玩耍。开元年间，绿桑大旱六月，乡人、族长窃定诡计，将想鱼捆缚，作为牺牲，活祭河神。想鱼方被投入黄河中片刻，忽然风起，地暗天昏。一条巨鲤背负想鱼现身。\n后大雨三月，怒涛吞噬整个绿桑里。	江湖贡献值
 100000652	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1017_P_e.prefab.tga	0	颅血热，涂地当朱；霜刀冷，怒海成冰。	名剑大会12段
-100000653	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1023_P.prefab.tga	0	长歌门中所习用的摆设之像。\n昔年，游方匠人赵氏于长歌门中作客一月，为长歌造了许多摆像，其中，这批鹿像因神态清雅，最得梅先生的喜爱，广为摆设门中。赵氏离开长歌七日后，突降暴雨。次日，各处鹿角之上俱展开琼华，雅送馨香。	宠物游历
+100000653	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1023_P.prefab.tga	0	长歌门中所习用的摆设之像。\n昔年，游方匠人赵氏于长歌门中作客一月，为长歌造了许多摆像，其中，这批鹿像因神态清雅，最得梅先生的喜爱，广为摆设门中。赵氏离开长歌七日后，突降暴雨。次日，各处鹿角之上俱展开琼华，雅送馨香。\n产出地图：长歌门	宠物游历
 100000654	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1024_P.prefab.tga	0	长歌门中常用的陈设之像，游方匠人赵氏所制。	微山书院
 100000655	ui\Image\Homeland\data\source\Home\furniture\censer\Censer1_1_1009_P_e.prefab.tga	0	班声动而北风起，剑气冲而南斗平。\n此炉原为凤息颜所常用，器型古朴，与长歌门中制式一般无二。至德二载，凤息颜得一未央宫博山炉，人言新炉鎏金鎏银，竹节柄，圈足，炉体下部雕饰蟠龙纹，此炉便被闲置于长歌门中。	园宅币
-100000656	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1023_P_L.prefab.tga	0	平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	宠物游历
-100000657	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1030_P.prefab.tga	0		宠物游历
-100000658	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1031_P_e.prefab.tga	0		宠物游历
+100000656	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1023_P_L.prefab.tga	0	平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。\n产出地图：纯阳	宠物游历
+100000657	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1030_P.prefab.tga	0	产出地图：藏剑山庄	宠物游历
+100000658	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1031_P_e.prefab.tga	0	产出地图：霸刀山庄	宠物游历
 100000659	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1025_P.prefab.tga	0	萨伦一家门前所常见的图腾木桩。	园宅币
 100000660	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1018_P.prefab.tga	0	曾用于蓬莱门中的一件廊柱，栌斗简洁，出于武长生的设计，颇有古风。	九辩馆
 100000661	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1033_P.prefab.tga	0	仙踪林中所生的蛮蕨。	仙踪林
 100000662	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2001.mesh.tga	0	苗石所雕的狼头。	九黎族声望钦佩
-100000663	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2002.mesh.tga	0		宠物游历
+100000663	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2002.mesh.tga	0	产出地图：无量山	宠物游历
 100000664	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2003.mesh.tga	0	苗石所雕的虎头。	霸刀·南离营声望钦佩
-100000665	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2004.mesh.tga	0		宠物游历
+100000665	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_2004.mesh.tga	0	产出地图：黑戈壁	宠物游历
 100000666	ui\Image\Homeland\data\source\Home\furniture\statue\statue1_1_1019_P.prefab.tga	0		园宅币
 100000667	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1034_P.prefab.tga	0	江湖侠客练武习用的木桩，亦为柳夕少时所常用。	夕颜阁
 100000668	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1035_P.prefab.tga	0	原为天工机关柱，后由司徒一一制为习武所用木桩。	天工坊
 100000669	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1013_P.prefab.tga	0	大唐摊贩常售的装饰，本为若兰之物，不知何故流落至此。	空雾峰
-100000670	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1014_P.prefab.tga	0		宠物游历
+100000670	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1014_P.prefab.tga	0	产出地图：龙泉府	宠物游历
 100000671	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1003_P.prefab.tga	0		园宅币
 100000672	ui\Image\Homeland\data\source\Home\furniture\plaque\Plaque1_3_1001_P.prefab.tga	0	上书“凌云堂”的匾额。	江湖贡献值
 100000673	ui\Image\Homeland\data\source\Home\furniture\plaque\Plaque1_3_1002_P.prefab.tga	0	上书“山海阁”的匾额。	江湖贡献值
@@ -633,7 +633,7 @@ dwID	Path	Frame	szTip	szSource
 100000758	ui\Image\Homeland\data\source\Home\furniture\jar\Jar1_1_1001_P.prefab.tga	0		园宅币
 100000759	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1003_P.prefab.tga	0		园宅币
 100000760	ui\Image\Homeland\data\source\Home\furniture\jar\Jar1_1_1002_P.prefab.tga	0	东海丐帮特制，郭珠姑娘最爱。	园宅币
-100000761	ui\Image\Homeland\data\source\Home\furniture\jar\Jar1_1_1003_P.prefab.tga	0	一坛老酒，已陈放得足够久，谁也不知滋味如何。只在那儿放着，便已是极好的摆设。	宠物游历
+100000761	ui\Image\Homeland\data\source\Home\furniture\jar\Jar1_1_1003_P.prefab.tga	0	一坛老酒，已陈放得足够久，谁也不知滋味如何。只在那儿放着，便已是极好的摆设。\n产出地图：丐帮	宠物游历
 100000762	ui\Image\Homeland\data\source\Home\furniture\bed\Bed1_1_1007_P.prefab.tga	0		园宅币
 100000763	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1004_P.prefab.tga	0		园宅币
 100000764	ui\Image\Homeland\data\source\Home\furniture\jar\Jar1_1_1004_P.prefab.tga	0	与猴儿蜜一道，是剑南道江家酒铺最畅销的佳酿。	园宅币
@@ -644,7 +644,7 @@ dwID	Path	Frame	szTip	szSource
 100000769	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth5_3_1021_P.prefab.tga	0	南野江湖客，陋室老帘栊。	生活技能
 100000770	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1006_P.prefab.tga	0	大石离家参军之际，王婆婆亲手为他穿戴的蓑衣。	园宅币
 100000771	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1007_P.prefab.tga	0	此物原主人是一名江湖客。十八岁时，他想做个大英雄。后来，最爱这顶斗笠。	园宅币
-100000772	ui\Image\Homeland\data\source\Home\furniture\paint\Paint11_3_1002_P.prefab.tga	0		宠物游历
+100000772	ui\Image\Homeland\data\source\Home\furniture\paint\Paint11_3_1002_P.prefab.tga	0	产出地图：马嵬驿	宠物游历
 100000773	ui\Image\Homeland\data\source\Home\furniture\paint\Paint11_3_1003_P.prefab.tga	0	不知何人所书，功力不怎么样。	园宅币
 100000774	ui\Image\Homeland\data\source\Home\furniture\paint\Paint11_3_1004_P.prefab.tga	0		园宅币
 100000775	ui\Image\Homeland\data\source\Home\furniture\paint\Paint1_1_1003_P.prefab.tga	0		园宅币
@@ -889,7 +889,7 @@ dwID	Path	Frame	szTip	szSource
 100001022	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1001_P.prefab.tga	0		
 100001023	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1002_P.prefab.tga	0	罗浮石与华严石，产自温州永嘉县郊的罗浮、华严二山。罗浮石理有横纹，微粗，稍润，扣之无声，世人多认为是略次于太湖石的置景石材。罗浮石一种色黄，一种黄而斑黑，一种色紫。黄而斑黑者，可以制良砚，紫者可堪制墨料。	园宅币
 100001024	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1026_P.prefab.tga	0		园宅币
-100001025	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1027_P.prefab.tga	0		宠物游历
+100001025	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1027_P.prefab.tga	0	产出地图：洞天福地岛	宠物游历
 100001026	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1056_P.prefab.tga	0		
 100001027	ui\Image\Homeland\data\source\Home\courtyard\railing\railing1_1_1001_P.prefab.tga	0		
 100001028	ui\Image\Homeland\data\source\Home\courtyard\railing\railing1_1_1002_P.prefab.tga	0		
@@ -925,7 +925,7 @@ dwID	Path	Frame	szTip	szSource
 100001058	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1060_P.prefab.tga	0		园宅币
 100001059	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1061_P.prefab.tga	0		园宅币
 100001060	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1005_P.prefab.tga	0		园宅币
-100001061	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1012_P.prefab.tga	0		宠物游历
+100001061	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1012_P.prefab.tga	0	产出地图：阴山大草原	宠物游历
 100001062	ui\Image\Homeland\data\source\Home\courtyard\plant\plant1_1_1017_P.prefab.tga	0		园宅币
 100001063	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1013_P.prefab.tga	0	乌程县西十五里，有卞山，所居产石奇巧，罗布山间，嵌石傀儡，色类灵璧，而清润尤胜叶。	园宅币
 100001064	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1014_P.prefab.tga	0	乌程县西十五里，有卞山，所居产石奇巧，罗布山间，嵌石傀儡，色类灵璧，而清润尤胜叶。	园宅币
@@ -945,8 +945,8 @@ dwID	Path	Frame	szTip	szSource
 100001078	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1015_P.prefab.tga	0		
 100001079	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1015_P.prefab.tga	0		园宅币
 100001080	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1082_P.prefab.tga	0		园宅币
-100001081	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1016_P.prefab.tga	0		宠物游历
-100001082	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1017_P.prefab.tga	0		宠物游历
+100001081	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1016_P.prefab.tga	0	产出地图：七秀	宠物游历
+100001082	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1017_P.prefab.tga	0	产出地图：金水镇	宠物游历
 100001083	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1016.mesh.tga	0	林虑石，相州所产，其质坚润，扣之有声。一种出土中。穴地见石，则寻坑坎处。石多倒生向下，垂如钟乳，融结皆天然。	园宅币
 100001084	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1017.mesh.tga	0	林虑石，相州所产，其质坚润，扣之有声。一种出土中。穴地见石，则寻坑坎处。石多倒生向下，垂如钟乳，融结皆天然。	园宅币
 100001085	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\roadsystem1_1_1018_P.prefab.tga	0		
@@ -1005,7 +1005,7 @@ dwID	Path	Frame	szTip	szSource
 100001138	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1140_P.prefab.tga	0		园宅币
 100001139	ui\Image\Homeland\data\source\Home\furniture\vase\Vase1_2_1013_P.prefab.tga	0		
 100001140	ui\Image\Homeland\data\source\Home\furniture\paint\Paint8_2_1005_P.prefab.tga	0		园宅币
-100001141	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1029_P.prefab.tga	0	蓼蓝的叶子，乃常见的蓝色染料。	宠物游历
+100001141	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1029_P.prefab.tga	0	蓼蓝的叶子，乃常见的蓝色染料。\n产出地图：枫华谷	宠物游历
 100001142	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1049_P.prefab.tga	0	罗浮石与华严石，产自温州永嘉县郊的罗浮、华严二山。罗浮石理有横纹，微粗，稍润，扣之无声，世人多认为是略次于太湖石的置景石材。罗浮石一种色黄，一种黄而斑黑，一种色紫。黄而斑黑者，可以制良砚，紫者可堪制墨料。	园宅币
 100001143	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1030_P.prefab.tga	0		园宅币
 100001144	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1031_P.prefab.tga	0		园宅币
@@ -1028,7 +1028,7 @@ dwID	Path	Frame	szTip	szSource
 100001161	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1026_P.prefab.tga	0		园宅币
 100001162	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1014_P.prefab.tga	0		园宅币
 100001163	ui\Image\Homeland\data\source\Home\courtyard\plant\plant1_1_1022_P.prefab.tga	0		园宅币
-100001164	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1166_P.prefab.tga	0		宠物游历
+100001164	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1166_P.prefab.tga	0	产出地图：长安城	宠物游历
 100001165	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1167_P.prefab.tga	0		园宅币
 100001166	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1168_P.prefab.tga	0		园宅币
 100001167	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1169_P.prefab.tga	0		园宅币
@@ -1044,7 +1044,7 @@ dwID	Path	Frame	szTip	szSource
 100001177	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1027_P.prefab.tga	0	一方铜平脱秫酒案。平脱，本朝独有之法，将髹漆、镶嵌结合。各类金、银、铜箔片裁成纹样，以生漆粘粘，后经几重髹漆，覆盖箔饰，再加研磨，使花样暴露；再经推光、揩清，方始完成。	园宅币
 100001178	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1017_P.prefab.tga	0	观乎局之为状也，下方广以法地，上圆高以象天；起而能伏，危而不悬。	园宅币
 100001179	ui\Image\Homeland\data\source\Home\courtyard\plant\plant1_1_1023_P.prefab.tga	0		园宅币
-100001180	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1182_P.prefab.tga	0		宠物游历
+100001180	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1182_P.prefab.tga	0	产出地图：南屏山	宠物游历
 100001181	ui\Image\Homeland\data\source\Home\furniture\chair\Chair2_1_1012_P.prefab.tga	0	赤漆涂，或曰罩朱单漆。素木地以赤红苏木汁染，罩涂揩清漆一层，尔后揩清、推光，成器则木纹与漆色相映，光华耀目。	生活技能
 100001182	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1184_P.prefab.tga	0		园宅币
 100001183	ui\Image\Homeland\data\source\Home\courtyard\Courtyard1_2_1185_P.prefab.tga	0		园宅币
@@ -1180,7 +1180,7 @@ dwID	Path	Frame	szTip	szSource
 100001321	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Yarrow01_02_HD.prefab.tga	0	古语云蓍草通天，上有紫气。蓍者，人言通“筮”。近人又谓蓍草即此白花也。未知其甚解。	园宅币
 100001322	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Polygonum01_01_HD.prefab.tga	0	射干，方多作夜乾字，今射亦作夜音，《英公本草》言其：“味苦，平，微温，有毒。一名乌扇，一名乌蒲一名草姜。生南阳川谷，生田野。”	生活技能
 100001323	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_H_Peony01_06_HD.prefab.tga	0	媚欺桃李秾叶引，孤瓣香夺绮罗风。	园宅币
-100001324	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_H_WildfLower02_05_HD.prefab.tga	0		生活技能
+100001324	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_H_WildfLower02_05_HD.prefab.tga	0	其叶似柳而微细，夏开紫花结角，平地生者起茎，沟壑边生者起蔓。	生活技能
 100001325	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Herb05_05_HD.prefab.tga	0	无名野花，常见于大唐四方。	生活技能
 100001326	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Grass12_07_HD.prefab.tga	0	举凡长竿而生白花者，俗皆谓白玉簪。传言为西王母宴请众仙之时，瑶台仙侍所遗玉簪堕落化成。	园宅币
 100001327	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Herb04_04_HD.prefab.tga	0	无名野花，常见于大唐四方。	园宅币
@@ -1291,7 +1291,7 @@ dwID	Path	Frame	szTip	szSource
 100001439	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth4_3_1021.mesh.tga	0	鱼牙纳、朝霞䌷，皆乃新罗贡物。本朝武安郡土布、天竺棉布中，亦有以朝霞为名者。	小区6级
 100001440	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth5_3_1018.mesh.tga	0	绫罗，柔软光滑，中华大地皆有出产。此帘以绫罗为基，采蓼蓝染成，薄而半透。透过此帘，似能窥见往日时光。	园宅币
 100001441	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1027_L.prefab.tga	0	广陵四月多雨，日光稀少。白六娘携来的秦岭崖兰不易养活，便常执烛火相映照，时常把自己累得手酸。李准见之，便制此饰盆兰二叠灯檠，以免六娘劳动。	园宅币
-100001442	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1005_L.prefab.tga	0		雀神点数
+100001442	ui\Image\Homeland\data\source\Home\furniture\light\Light2_2_1005_L.prefab.tga	0		成就
 100001443	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1046.mesh.tga	0	上一届“‘那位’意见收集行动”的奖品，当时裴草见其可爱就私自扣留了。如今裴草有了新欢，便重又把它当奖品送了。	奇遇
 100001445	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1020.mesh.tga	0	阎矩跟随李准离开阎家以后，曾慕裴家花枕的织染之法，访裴氏学艺。学艺时，他今日看蜡板，明日挑针线，后日描花样子，裴小莞不胜其烦，便赠了阎矩此枕，并为他收拾行装，将他退还李准。	园宅币
 100001446	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1021.mesh.tga	0	金陵有一寒士吴生，佣书为业。吴生对门住了一家绣户，绣户小女儿名唤方夕。后来，吴生年满十七，赴京赶考。离别金陵之时，正是将要落雨的一个黄昏。方夕执此绣饰相送。\n再后来，吴生没有回到金陵，此物亦流落江湖。	园宅币
@@ -1488,7 +1488,7 @@ dwID	Path	Frame	szTip	szSource
 100001637	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_L_kiosk01_N_02_04_04_01_HD.Group.tga	0		园宅币
 100001638	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_L_01_16_20_02_HD.Group.tga	0		园宅币
 100001639	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_L_01_16_24_02_HD.Group.tga	0		园宅币
-100001640	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_L_02_16_24_02_HD.Group.tga	0		园宅币
+100001640	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_L_02_16_24_02_HD.Group.tga	0		园宅币、仲夏风月活动登录领取
 100001641	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_N_01_12_20_01_HD.Group.tga	0		园宅币
 100001642	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_N_01_12_20_02_HD.Group.tga	0		园宅币
 100001643	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_house_M_house01_N_01_14_20_02_HD.Group.tga	0		园宅币
@@ -1550,14 +1550,14 @@ dwID	Path	Frame	szTip	szSource
 100001699	ui\Image\Homeland\data\source\Home\Prefab\effect\dust_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001700	ui\Image\Homeland\data\source\Home\Prefab\effect\dust_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001701	ui\Image\Homeland\data\source\Home\Prefab\effect\Feather_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
-100001702	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	宠物游历
+100001702	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。\n产出地图：恶人谷	宠物游历
 100001703	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
-100001704	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	宠物游历
+100001704	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。\n产出地图：浩气盟	宠物游历
 100001705	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001706	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001707	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
-100001708	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	宠物游历
-100001709	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	飞沙令、宠物游历
+100001708	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。\n产出地图：洛道	宠物游历
+100001709	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。\n产出地图：凌雪阁	飞沙令、宠物游历
 100001710	ui\Image\Homeland\data\source\Home\Prefab\effect\fire_ghost_005.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001711	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001712	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
@@ -1587,7 +1587,7 @@ dwID	Path	Frame	szTip	szSource
 100001736	ui\Image\Homeland\data\source\Home\Prefab\effect\Glowworm_small_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001737	ui\Image\Homeland\data\source\Home\Prefab\effect\Glowworm_small_003.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001738	ui\Image\Homeland\data\source\Home\Prefab\effect\Glowworm_small_004.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
-100001739	ui\Image\Homeland\data\source\Home\Prefab\effect\Glowworm_small_005.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	宠物游历
+100001739	ui\Image\Homeland\data\source\Home\Prefab\effect\Glowworm_small_005.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。\n产出地图：七秀	宠物游历
 100001740	ui\Image\Homeland\data\source\Home\Prefab\effect\Leaf_blue_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001741	ui\Image\Homeland\data\source\Home\Prefab\effect\Leaf_green_001.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
 100001742	ui\Image\Homeland\data\source\Home\Prefab\effect\Leaf_green_002.pss.tga	0	碧落银河，金风玉露。紫陌红尘，纷影万种。	园宅币
@@ -1651,30 +1651,30 @@ dwID	Path	Frame	szTip	szSource
 100001800	ui\Image\Homeland\data\source\Home\furniture\vase\Vase1_2_1014.mesh.tga	0		园宅币
 100001801	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1020.mesh.tga	0		园宅币
 100001802	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1021.mesh.tga	0		园宅币
-100001803	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1002.Mesh.tga	0		未知
-100001804	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1003.Mesh.tga	0		未知
-100001805	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1004.Mesh.tga	0		未知
-100001806	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1005.Mesh.tga	0		未知
-100001807	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1006.Mesh.tga	0		未知
-100001808	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1007.Mesh.tga	0		未知
-100001809	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1009.Mesh.tga	0		未知
-100001810	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1011.Mesh.tga	0		未知
-100001811	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1012.Mesh.tga	0		未知
-100001812	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1013.Mesh.tga	0		未知
-100001813	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1014.Mesh.tga	0		未知
-100001814	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1015.Mesh.tga	0		未知
-100001815	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1001.Mesh.tga	0		未知
-100001816	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1008.Mesh.tga	0		未知
-100001817	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1010.Mesh.tga	0		未知
-100001818	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1016.Mesh.tga	0		未知
-100001819	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1017.Mesh.tga	0		未知
+100001803	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1002.Mesh.tga	0		生活技能
+100001804	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1003.Mesh.tga	0		生活技能
+100001805	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1004.Mesh.tga	0		生活技能
+100001806	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1005.Mesh.tga	0		生活技能
+100001807	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1006.Mesh.tga	0		生活技能
+100001808	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1007.Mesh.tga	0		生活技能
+100001809	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1009.Mesh.tga	0		生活技能
+100001810	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1011.Mesh.tga	0		生活技能
+100001811	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1012.Mesh.tga	0		生活技能
+100001812	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1013.Mesh.tga	0		生活技能
+100001813	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1014.Mesh.tga	0		生活技能
+100001814	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1015.Mesh.tga	0		生活技能
+100001815	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1001.Mesh.tga	0		生活技能
+100001816	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1008.Mesh.tga	0		生活技能
+100001817	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1010.Mesh.tga	0		生活技能
+100001818	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1016.Mesh.tga	0		生活技能
+100001819	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1017.Mesh.tga	0		生活技能
 100001820	ui\Image\Homeland\default\default.tga	0		
 100001821	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_Corridor_M_corridor01_end_01_400_200_600_HD.mesh.tga	0		园宅币
 100001822	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_Corridor_M_corridor01_straight_01_400_200_600_HD.mesh.tga	0		园宅币
 100001823	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1018.mesh.tga	0	素髹桑木案配汾州龙须席一组。桑木案髹漆光润整洁，坐席柔软牢固。	园宅币
 100001824	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1019.mesh.tga	0	素髹桑木案配带扶手榧木绳床一组。桑木案髹漆光润整洁，绳床面宽阔，编制精细，极适用于闲坐。	园宅币
 100001825	ui\Image\Homeland\data\source\Home\building\TY\TY_Wall_M_fence02_AB200_A_HD.Mesh.tga	0		生活技能
-100001829	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1005.mesh.tga	0	未知	隐藏
+100001829	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1005.mesh.tga	0		园宅币
 100001830	ui\Image\Homeland\data\source\Home\courtyard\sundries\sundries1_1_1019.mesh.tga	0		园宅币
 100001831	ui\Image\Homeland\data\source\Home\building\TY\TY_Wall_M_fence01_AB200_A_HD.Mesh.tga	0		园宅币
 100001832	ui\Image\Homeland\data\source\Home\building\TY\TY_Wall_M_fence03_AB200_A_HD.Mesh.tga	0		园宅币
@@ -1736,10 +1736,10 @@ dwID	Path	Frame	szTip	szSource
 100001890	ui\Image\Homeland\default\default.tga	0		
 100001891	ui\Image\Homeland\default\default.tga	0		
 100001892	ui\Image\Homeland\default\default.tga	0		
-100001897	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1018_P.prefab.tga	0		未知
-100001898	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1019.Mesh.tga	0		未知
-100001899	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1020.Mesh.tga	0		未知
-100001900	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1021.Mesh.tga	0		未知
+100001897	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1018_P.prefab.tga	0		生活技能
+100001898	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1019.Mesh.tga	0		生活技能
+100001899	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1020.Mesh.tga	0		生活技能
+100001900	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1021.Mesh.tga	0		生活技能
 100001901	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1012.Mesh.tga	0	高阿清的剑风凌厉，人也嗓门大得很。长在瘦西湖二十年，吴侬小调半句也不会唱。\n高阿清有个心上人，她日日舞剑给那郎君看。郎君行走江湖，多是中夜离家。阿清却是个早起的姑娘，每日清晨便在郎君楼下唱着吴歌叫他看自己舞剑，被郎君老实不客气的砸了这个裴家花枕下来。再后来，阿清婚床上摆的，就是这方花枕。	隐藏
 100001902	ui\Image\Homeland\data\source\Home\vegetation\Other\O_H_Nymphaea01_01_HD.srt.tga	0		园宅币
 100001903	ui\Image\Homeland\data\source\Home\vegetation\Other\O_H_Nymphaea02_01_HD.srt.tga	0		园宅币
@@ -1782,32 +1782,32 @@ dwID	Path	Frame	szTip	szSource
 100001940	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2002.mesh.tga	0	小兔杀恶狼，狼无兔兔摇。	奇遇
 100001941	ui\Image\Homeland\default\default.tga	0		测试
 100001942	ui\Image\Homeland\default\default.tga	0		测试
-100001943	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1022.mesh.tga	0		测试
-100001944	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1023.mesh.tga	0		测试
-100001945	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1024.mesh.tga	0		测试
-100001946	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1025.mesh.tga	0		测试
-100001947	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1026.mesh.tga	0		测试
-100001948	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1027.mesh.tga	0		测试
-100001949	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1028.mesh.tga	0		测试
+100001943	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1022.mesh.tga	0		生活技能
+100001944	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1023.mesh.tga	0		生活技能
+100001945	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1024.mesh.tga	0		生活技能
+100001946	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1025.mesh.tga	0		生活技能
+100001947	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1026.mesh.tga	0		生活技能
+100001948	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1027.mesh.tga	0		生活技能
+100001949	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1028.mesh.tga	0		生活技能
 100001954	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1010.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中之椅。	商城
 100001956	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1017.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中几案。	商城
-100001985	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_50_200_12_HD.tga	0		未知
+100001985	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_50_200_12_HD.tga	0		商城
 100001986	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_hang_01_25_400_25_HD.tga	0		商城
-100001987	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_100_25_HD.tga	0		未知
+100001987	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_100_25_HD.tga	0		商城
 100001988	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_400_25_HD.tga	0		商城
 100001989	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_1000_25_HD.tga	0		商城
 100001990	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_50_1000_50_HD.tga	0		商城
 100001991	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_box01_normal_01_100_100_100_HD.tga	0		商城
 100001992	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_box01_normal_01_200_200_200_HD.tga	0		商城
 100001993	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_box01_normal_01_400_400_400_HD.tga	0		商城
-100001994	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_25_25_12_HD.tga	0		未知
-100001995	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_25_25_12_HD.tga	0		未知
-100001996	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_50_200_12_HD.tga	0		未知
+100001994	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_50_50_12_HD.Mesh.tga	0		商城
+100001995	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_50_50_12_HD.Mesh.tga	0		商城
+100001996	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_50_200_12_HD.tga	0		商城
 100001997	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_100_100_25_HD.tga	0		商城
 100001998	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_100_200_25_HD.tga	0		商城
 100001999	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_200_200_25_HD.tga	0		商城
 100002000	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_01_200_400_25_HD.tga	0		商城
-100002001	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_pillar01_normal_01_12_12_100_HD.tga	0		未知
+100002001	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_pillar01_normal_01_12_12_100_HD.tga	0		商城
 100002002	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_pillar01_normal_01_12_12_400_HD.tga	0		商城
 100002003	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_pillar01_normal_01_25_25_100_HD.tga	0		商城
 100002004	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_pillar01_normal_01_25_25_400_HD.tga	0		商城
@@ -1819,8 +1819,9 @@ dwID	Path	Frame	szTip	szSource
 100002010	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_triangle01_normal_01_100_400_200_HD.tga	0		商城
 100002011	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_triangle01_normal_02_100_100_100_HD.tga	0		商城
 100002012	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_100_200_HD.tga	0		商城
-100002013	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_200_100_HD.tga	0		未知
-100002014	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_200_200_HD.tga	0		未知
+100002013	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_200_100_HD.tga	0		商城
+100002014	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_200_200_HD.tga	0		商城
+100002015	ui\Image\Homeland\data\source\Home\building\TY\六边形水池1.tga	0		园宅币
 100002018	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam02_normal_01_50_1000_50_HD.tga	0		商城
 100002019	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam02_hang_01_25_400_25_HD.tga	0		商城
 100002020	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam02_normal_01_25_400_25_HD.tga	0		商城
@@ -1843,8 +1844,118 @@ dwID	Path	Frame	szTip	szSource
 100002037	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_triangle02_normal_01_100_400_200_HD.tga	0		商城
 100002038	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall02_normal_01_25_100_200_HD.tga	0		商城
 100002039	ui\Image\Homeland\data\source\Home\furniture\cook\Cook2_1_1005_P.prefab.tga	0	纷纷浮沉客，萋萋岸上芦。	端午节活动
+100002040	ui\Image\Homeland\data\source\Home\building\TY\地下室1.tga	0		生活技能
 100002041	ui\Image\Homeland\data\source\Home\Prefab\effect\fish_big_double_004.pss.tga	0	两章对秋月，一字偕华星。	斗鱼杯活动
 100002042	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth1_1_1028.Mesh.tga	0	长安西市水果商陈颜给高嫁的一智备下的嫁妆。陈颜从年少时便喜着粉红，每日总是一袭粉衣站在慈幼坊前，从少女站成了老妪。她膝下有三子，内心常盼再添个女儿，却一直未能遂愿。	商城
+100002045	ui\Image\Homeland\data\source\Home\vegetation\Tree\T_M_Cocos01_03_prefab.tga	0	此物常为安平村海滩占不到木床的侠士提供一方阴凉。	园宅币、仲夏风月活动登录领取
+100002046	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_A_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002047	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_A_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002048	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_A_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002049	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_B_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002050	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_C_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002051	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_D_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002052	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_E_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002053	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_AB200_F_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002054	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_special_01_400_400_5_0_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002055	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_special_02_400_400_5_0_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002056	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_special_03_400_400_5_0_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002057	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem5_special_04_400_400_5_0_HD.Mesh.tga	0	为问离愁何所似？堤下杨柳岸上石。	园宅币
+100002058	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_A_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002059	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_B_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002060	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_C_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002061	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_D_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002062	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_E_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002063	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_AB200_F_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002064	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_special_01_200_200_10_0_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002065	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_special_02_200_200_10_0_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002066	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_special_03_200_200_10_0_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002067	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem7_special_04_200_200_10_0_HD.Mesh.tga	0	采河中粗砾砂铺制而成，大唐四方随处可见。	园宅币
+100002069	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_W_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002070	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_R_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002071	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_V_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002072	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_Y_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002073	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_P_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002074	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_B_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002075	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_WB_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002076	ui\Image\Homeland\data\source\Home\vegetation\Flowers\F_M_Lupinus01_YP_01_HD.srt.tga	0	此物初非本朝原生种属，概为长安白氏引入培育。	生活技能
+100002077	ui\Image\Homeland\data\source\Home\building\TY\六边形水池2.tga	0		园宅币
+100002078	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_A_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002079	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_A_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002080	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_B_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002081	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_C_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002082	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_D_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002083	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_E_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002084	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem10_AB400_F_HD.Mesh.tga	0	密州之东，临海有二山。南曰大朱，北曰小朱。相传云仙人朱仲所居也。山上生石，与登州石色相类，绝佳者多为泥土苔藓所积。	园宅币
+100002085	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1022_P.prefab.tga	0	九朵错落杯，携而上蓬莱。	园宅币
+100002086	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1023_P.prefab.tga	0	九朵错落杯，携而上蓬莱。	园宅币
+100002087	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1024_P.prefab.tga	0	九朵错落杯，携而上蓬莱。	园宅币
+100002088	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1025_P.prefab.tga	0	九朵错落杯，携而上蓬莱。	园宅币
+100002089	ui\Image\Homeland\data\source\Home\courtyard\applique\applique1_1_1026_P.prefab.tga	0	九朵错落杯，携而上蓬莱。	园宅币
+100002093	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_A_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002094	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_A_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002095	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_B_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002096	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_C_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002097	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_D_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002098	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_E_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002099	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem8_AB600_F_HD.tga	0	天竺石，杭州天竺山所产，当世文人园中所常用。世人多以太湖石为甲，罗浮、天竺次焉。	园宅币
+100002100	ui\Image\Homeland\data\source\Home\vegetation\Tree\T_M_Bamboo02_02_HD.prefab.tga	0		园宅币
+100002101	ui\Image\Homeland\data\source\Home\furniture\Farmtools\Farmtools1_1_1041_P.prefab.tga	0		园宅币
+100002102	ui\Image\Homeland\data\source\Home\furniture\vase\Vase1_2_1019.Mesh.tga	0	采京兆府葵草制成的一方花器。	园宅币
+100002103	ui\Image\Homeland\data\source\Home\furniture\vase\Vase1_2_1020.Mesh.tga	0	采京兆府葵草制成的一方花器。	园宅币
+100002104	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1031_P_L.prefab.tga	0	金吾不禁夜，玉漏莫相催。	园宅币
+100002105	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1032_P_L.prefab.tga	0	金吾不禁夜，玉漏莫相催。	园宅币
+100002106	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1033_P_L.prefab.tga	0	金吾不禁夜，玉漏莫相催。	园宅币
+100002107	ui\Image\Homeland\data\source\Home\courtyard\stone\Stone1_1_1043_P.prefab.tga	0	桑田化为石，从此访遗珠。	园宅币
+100002108	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_path_M_bridge01_straight_01_400_200_400_HD.Mesh.tga	0		园宅币
+100002109	ui\Image\Homeland\data\source\Home\building\AREA\JN\JN_path_M_bridge01_end_01_400_100_400_HD.Mesh.tga	0		园宅币
+100002110	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_path_M_bridge01_end_01_400_100_400_HD.Mesh.tga	0		园宅币
+100002111	ui\Image\Homeland\data\source\Home\building\TY\MC\MC_path_M_bridge01_straight_01_400_200_400_HD.Mesh.tga	0		园宅币
+100002112	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_A_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002113	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_A_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002114	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_B_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002115	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_C_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002116	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_D_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002117	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_E_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002118	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_AB200_F_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002119	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_special_01_200_200_10_0_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002120	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_special_02_200_200_10_0_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002121	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_special_03_200_200_10_0_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002122	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem9_special_04_200_200_10_0_HD.Mesh.tga	0	寒风新雁浦，大浪淘成砂。烈火久锤炼，叠沓入千家。	园宅币
+100002123	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1001.Mesh.tga	0		园宅币
+100002124	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1002.Mesh.tga	0		园宅币
+100002125	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1003.Mesh.tga	0		园宅币
+100002126	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1004.Mesh.tga	0		园宅币
+100002127	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1005.Mesh.tga	0		园宅币
+100002128	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1006.Mesh.tga	0		园宅币
+100002129	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1007.Mesh.tga	0		园宅币
+100002130	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1008.Mesh.tga	0		园宅币
+100002131	ui\Image\Homeland\data\source\Home\courtyard\roadsystem\Roadsystem11_1_1009.Mesh.tga	0		园宅币
+100002132	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_02_100_100_25_HD.tga	0		商城
+100002133	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_normal_02_100_100_25_HD.tga	0		商城
+100002134	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wal01_normal_01_25_400_200_HD.tga	0		未知
+100002135	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_01_25_100_100_HD.tga	0		商城
+100002136	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_wall01_normal_02_25_100_100_HD.tga	0		商城
+100002137	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam02_normal_01_25_100_25_HD.tga	0		商城
+100002138	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor02_hang_01_50_50_12_HD.Mesh.tga	0		商城
+100002139	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_floor02_hang_01_50_200_12_hd.tga	0		商城
+100002140	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_floor02_hang_02_100_100_25_hd.tga	0		商城
+100002141	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor02_normal_01_50_50_12_HD.Mesh.tga	0		商城
+100002142	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_floor02_normal_01_50_200_12_hd.tga	0		商城
+100002143	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_floor02_normal_02_100_100_25_hd.tga	0		商城
+100002144	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_pillar02_normal_01_12_12_100_hd.tga	0		商城
+100002145	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_wall02_normal_01_25_100_100_hd.tga	0		商城
+100002146	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_wall02_normal_01_25_200_100_hd.tga	0		商城
+100002147	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_wall02_normal_01_25_200_200_hd.tga	0		商城
+100002148	ui\Image\Homeland\data\source\Home\furniture\Blocks\st_blocks_m_wall02_normal_02_25_100_100_hd.tga	0		商城
+100002149	ui\Image\Homeland\data\source\Home\building\TY\地下室2.tga	0		未知
+100002150	ui\Image\Homeland\data\source\Home\building\TY\地下室3.tga	0		未知
+100002151	ui\Image\Homeland\data\source\Home\building\TY\地下室4.tga	0		园宅币
+100002152	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1031.mesh.tga	0		生活技能
+100002153	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1032.mesh.tga	0		生活技能
+100002154	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1033.mesh.tga	0		生活技能
+100002155	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1034.mesh.tga	0		生活技能
+100002156	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1035.mesh.tga	0		生活技能
+100002157	ui\Image\Homeland\data\source\Home\courtyard\landscape\landscape1_1_1029.Mesh.tga	0		园宅币
 200000001	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小邪子的福娃娃.prefab.tga	0		收集
 200000002	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小悟空.prefab.tga	0		收集
 200000003	ui\Image\Homeland\data\source\Home\prefab\BackPendent\破损不堪的装备.prefab.tga	0		收集

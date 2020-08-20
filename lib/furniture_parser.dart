@@ -91,6 +91,7 @@ class FurnitureParser {
             || source.contains('生活技能')
             || source.contains('声望')
             || source.contains('奇遇')
+            || source.contains('成就')
             || source.contains('侠义值')
             || source.contains('飞沙令')
             || source.contains('名剑大会')
