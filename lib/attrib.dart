@@ -104,4 +104,5 @@ const attributeKeyMap = {
     'atTherapyPowerBase': ['heal', '41', '治疗量提高', 1], // 治疗
     'atToughnessBase': ['toughness', '55', '御劲等级提高', 1], // 御劲
     'atVitalityBase': ['vitality', '03', '体质提高', 1], // 体质
+    'atSurplusValueBase': ['surplus', '58', '破招等级提高', 1], // 破招
 };

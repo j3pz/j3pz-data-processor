@@ -64,6 +64,7 @@ const equipTitle = [
     'haste',
     'hit',
     'strain',
+    'surplus',
     'huajing',
     'threat',
     'effectId',
@@ -78,7 +79,7 @@ class EquipParser {
     List<List<String>> armors;
     List<List<String>> trinkets;
     List<List<String>> weapons;
-   
+
     List<List<String>> sourceList = []; // [equipId, sourceId]
 
     Map<String, Attribute> attributes; // { id: Attribute }
@@ -393,6 +394,8 @@ class EquipParser {
                     equip.threat = int.tryParse(attribute.param2Min) ?? 0; break;
                 case 'atToughnessBase': // 御劲
                     equip.toughness = int.tryParse(attribute.param1Min) ?? 0; break;
+                case 'atSurplusValueBase': // 破招
+                    equip.surplus = int.tryParse(attribute.param1Min) ?? 0; break;
                 case 'atSkillEventHandler': // 被动特效1
                     skillIds.add(['event', attribute.param1Min, '0']); break;
                 case 'atSetEquipmentRecipe': // 被动特效2

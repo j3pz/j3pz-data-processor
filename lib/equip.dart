@@ -275,6 +275,7 @@ class Equip {
     int haste = 0;
     int hit = 0;
     int strain = 0;
+    int surplus = 0;
     int huajing = 0;
     int threat = 0;
     Effect effect;
@@ -319,6 +320,7 @@ class Equip {
             '$haste',
             '$hit',
             '$strain',
+            '$surplus',
             '$huajing',
             '$threat',
             effect != null ? '${effect.id}' : 'NULL',
