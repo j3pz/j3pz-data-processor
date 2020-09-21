@@ -37926,3 +37926,7 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 37924	0	atSkillEventHandler	1850	1850	0	0	0	0	0	0	0	0	0	0	0	0
 37925	0	atSkillEventHandler	1851	1851	0	0	0	0	0	0	0	0	0	0	0	0
 37926	0	atSkillEventHandler	1852	1852	0	0	0	0	0	0	0	0	0	0	0	0
+37927		atParryValueBase	2616	2616												
+37928		atMagicOvercome	650	650												
+37929		atPhysicsOvercomeBase	650	650												
+37930		atAllTypeHitValue	309	309												
