@@ -19,7 +19,8 @@ const schoolMap = {
   22: '长歌',
   23: '霸刀',
   24: '蓬莱',
-  25: '凌雪'
+  25: '凌雪',
+  211: '衍天',
 };
 
 const kungfuMap = {
@@ -49,6 +50,7 @@ const kungfuMap = {
   24: '北傲诀',
   25: '凌海诀',
   26: '隐龙诀',
+  27: '太玄经',
 };
 
 function readCsvFile(file, isObj) {
@@ -137,6 +139,23 @@ async function init() {
             const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
             if (buff) {
               desc = desc.replace(/<BUFF (\d+) (\d) desc>/, buff.Desc);
+              while (/BUFF (\w+)>/.test(desc)) {
+                const match = desc.match(/<BUFF (\w+)>/);
+                const desiredBuff = buffSetting[`${buffId}-${buffLevel}`];
+                const fallbackBuff0 = buffSetting[`${buffId}-0`];
+                const fallbackBuff1 = buffSetting[`${buffId}-1`];
+                const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
+                if (buff) {
+                  const idx = [buff.ActiveAttrib1, buff.ActiveAttrib2].indexOf(match[1]);
+                  if (idx >= 0) {
+                    const value = buff[`ActiveValue${idx + 1}A`] || buff[`ActiveValue${idx + 1}B`] || 0;
+                    desc = desc.replace(/<BUFF (\w+)>/, value);
+                  }
+                } else {
+                  console.log(desc);
+                  console.log(`failed to read: ${buffId}-${buffLevel}`);
+                }
+              }
             } else {
               console.log(desc);
               console.log(`failed to read: ${buffId}-${buffLevel}`);
@@ -158,8 +177,13 @@ async function init() {
             }
           }
         }
+        desc = desc.replace('(+)', '');
+        desc = desc.replace(',', '，');
+        if (desc.indexOf('"') >= 0) {
+          console.log(skill.Desc);
+        }
         if (desc.indexOf('<') >= 0) {
-          console.log(desc);
+          console.log(skill.Desc);
         }
         // info.skills.push({
         //   name: skill.Name,
@@ -173,6 +197,8 @@ async function init() {
           kungfu,
           skillID : point[id],
           icon: skill.IconID,
+          version: '20200924',
+          effect: '',
         });
       }
     });
@@ -184,14 +210,16 @@ async function init() {
 
   const csvWriter = createCsvWriter({
     path: `./output/qixue.csv`,
-    header: [ 
-        { id: 'school', title: '门派' },
-        { id: 'kungfu', title: '心法' },
-        { id: 'position', title: '奇穴位置' },
-        { id: 'name', title: '奇穴名' },
-        { id: 'desc', title: '描述' },
-        { id: 'skillID', title: '技能ID' },
-        { id: 'icon', title: '图标ID' },
+    header: [
+        // { id: 'school', title: '门派' },
+        { id: 'kungfu', title: 'kungfu' },
+        { id: 'position', title: 'index' },
+        { id: 'name', title: 'name' },
+        { id: 'desc', title: 'description' },
+        // { id: 'skillID', title: '技能ID' },
+        { id: 'icon', title: 'icon' },
+        { id: 'version', title: 'version' },
+        { id: 'effect', title: 'effectId' },
     ],
   });
   csvWriter.writeRecords(result).then(() => {

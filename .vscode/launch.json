@@ -5,6 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Node Qixue",
+            "program": "${workspaceFolder}/qixue.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+
+        {
             "name": "Dart equip",
             "type": "dart",
             "request": "launch",
@@ -17,7 +27,7 @@
             "request": "launch",
             "program": "bin/main.dart",
             "args": ["enchant"]
-        }
+        },
         {
             "name": "Dart furniture",
             "type": "dart",
