@@ -197,7 +197,7 @@ async function init() {
           kungfu,
           skillID : point[id],
           icon: skill.IconID,
-          version: '20200924',
+          version: '1.0.0.3931',
           effect: '',
         });
       }
