@@ -287,7 +287,7 @@ dwID	Path	Frame	szTip	szSource
 100000304	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1002_L.prefab.tga	0	此三叠灯檠通体素髹，灯笼布选用单色臈缬布，上染幽兰纹样。	园宅会赛
 100000305	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1003_L.prefab.tga	0	灰缬山水文柏木灯一架。笼布以灰药饰山水纹样，投入染液，去除灰药，漏缬而成。	园宅币
 100000306	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1004.Mesh.tga	0	榧木灯檠，通体素髹。檠者，古时正弓之器。今者借为灯架具。	
-100000307	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1006_L.prefab.tga	0	花萼楼前雨露新，长安城里太平人。龙衔火树千重焰，鸡踏莲花万岁春。	隐藏
+100000307	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1006_L.prefab.tga	0	花萼楼前雨露新，长安城里太平人。龙衔火树千重焰，鸡踏莲花万岁春。	十一周年活动
 100000309	ui\Image\Homeland\default\default.tga	0		
 100000311	ui\Image\Homeland\default\default.tga	0		
 100000350	ui\Image\Homeland\data\source\Home\vegetation\Tree\S_JY_登录樱花01_01.srt.tga	0		
@@ -1736,6 +1736,7 @@ dwID	Path	Frame	szTip	szSource
 100001890	ui\Image\Homeland\default\default.tga	0		
 100001891	ui\Image\Homeland\default\default.tga	0		
 100001892	ui\Image\Homeland\default\default.tga	0		
+100001893	ui\Image\Homeland\default\default.tga	0		
 100001897	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1018_P.prefab.tga	0		生活技能
 100001898	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1019.Mesh.tga	0		生活技能
 100001899	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1020.Mesh.tga	0		生活技能
@@ -1791,6 +1792,7 @@ dwID	Path	Frame	szTip	szSource
 100001949	ui\Image\Homeland\data\source\Home\furniture\Blocks\Blocks1_1_1028.mesh.tga	0		生活技能
 100001954	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_1010.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中之椅。	商城
 100001956	ui\Image\Homeland\data\source\Home\furniture\table\Table2_1_1017.Mesh.tga	0	长安两市匠人传说，天宝年间，曾有一背负天工箧的僧人客居城中。路华容不爱梵、不事佛，却接连三日为前来化缘的僧人奉上槐叶冷淘。僧人离开长安时，便以一套桌椅相赠，此为其中几案。	商城
+100001973	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth4_3_1022.Mesh.tga	0	兰因会解幽人意，满目经霜倚画楼。	2020剑网3职业联赛赛事激活码
 100001985	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_floor01_hang_01_50_200_12_HD.tga	0		商城
 100001986	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_hang_01_25_400_25_HD.tga	0		商城
 100001987	ui\Image\Homeland\data\source\Home\furniture\Blocks\ST_blocks_M_beam01_normal_01_25_100_25_HD.tga	0		商城
@@ -1960,6 +1962,15 @@ dwID	Path	Frame	szTip	szSource
 100002159	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth2_2_1014.Mesh.tga	0	瘦西湖中有一对锦鲤，金鳞朱尾，浮光溢彩，煞是好看。住在湖边的小女明珠最爱观其嬉戏，原因幼时掉进水缸故而畏水的心病，也因这鱼儿肯常往水边去了。锦鲤有灵，亦常徘徊近前，听明珠说过许多悄悄话。待她及笄之年，便专寻匠人打了一套有那锦鲤纹样的家具，冀其祥瑞，可佑己一生平安顺遂，这莲叶田田枕便是其中之一。	商城
 100002160	ui\Image\Homeland\data\source\Home\furniture\byobu\Byobu2_1_1010.Mesh.tga	0	瘦西湖中有一对锦鲤，金鳞朱尾，浮光溢彩，煞是好看。住在湖边的小女明珠最爱观其嬉戏，原因幼时掉进水缸故而畏水的心病，也因这鱼儿肯常往水边去了。锦鲤有灵，亦常徘徊近前，听明珠说过许多悄悄话。待她及笄之年，便专寻匠人打了一套有那锦鲤纹样的家具，冀其祥瑞，可佑己一生平安顺遂，这游波潋滟四牒屏便是其中之一。	商城
 100002161	ui\Image\Homeland\data\source\Home\furniture\cloth\Cloth4_3_1008.Mesh.tga	0	瘦西湖中有一对锦鲤，金鳞朱尾，浮光溢彩，煞是好看。住在湖边的小女明珠最爱观其嬉戏，原因幼时掉进水缸故而畏水的心病，也因这鱼儿肯常往水边去了。锦鲤有灵，亦常徘徊近前，听明珠说过许多悄悄话。待她及笄之年，便专寻匠人打了一套有那锦鲤纹样的家具，冀其祥瑞，可佑己一生平安顺遂，这金麟垂幔便是其中之一。	商城
+100002162	ui\Image\Homeland\data\source\Home\vegetation\Tree\T_H_Bamboo04_01_HD.srt.tga	0	式神铃告诉多多，在东瀛人们相信将愿望写在许愿笺上挂于竹枝，愿望便可以实现……	七夕活动
+100002163	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1051.Mesh.tga	0	寄世长怀信，幽火照归程。	中元节活动
+100002164	ui\Image\Homeland\data\source\Home\other\plane\plan16x16.mesh.tga	0		园宅币
+100002165	ui\Image\Homeland\data\source\Home\furniture\bed\Bed3_1_1008_P.prefab.tga	0	一梦浮槎渡海，一帘云间列宿。	商城
+100002166	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1041_P.prefab.tga	0	渺渺河汉一带间，目下辰星尽览。	商城
+100002167	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1059_P.prefab.tga	0	登临照寰尘，未敢高声语。	商城
+100002168	ui\Image\Homeland\data\source\Home\furniture\shelf\Shelf2_1_1004_P.prefab.tga	0	对镜起严妆，临水观照影。	商城
+100002169	ui\Image\Homeland\data\source\Home\effect\effect_pss\qx_七夕星象家具01.pss.tga	0	星移斗转，四时天机。	商城
+100002170	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_2_1035.Mesh.tga	0	本是杜甫赠与杨小阮之物。	中秋节活动
 200000001	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小邪子的福娃娃.prefab.tga	0		收集
 200000002	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小悟空.prefab.tga	0		收集
 200000003	ui\Image\Homeland\data\source\Home\prefab\BackPendent\破损不堪的装备.prefab.tga	0		收集
