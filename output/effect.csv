@@ -151,7 +151,7 @@ id,attribute,decorator,value,trigger,description
 162,,,,Passive,“醉月”招式调息时间减少1秒
 163,,,,Passive,“乘龙戏水”招式调息时间减少2秒
 164,,,,Passive,“血怒”充能时间降低3秒
-165,,,,Passive,“孤影化双”招式调息时间减少30秒
+165,,,,Passive,“孤影化双”招式调息时间减少15秒
 166,,,,Passive,“楚河汉界”调息时间降低5秒
 167,,,,Passive,浮游天地调息时间降低2秒
 170,,,,Passive,“春泥护花”招式调息时间减少3秒
@@ -161,9 +161,9 @@ id,attribute,decorator,value,trigger,description
 174,,,,Passive,“天地低昂”招式调息时间减少7秒
 175,,,,Passive,“玄水蛊”招式调息时间减少5秒
 176,,,,Passive,“圣手织天”减伤效果持续时间延长1秒
-177,,,,Passive,“惊鸿游龙”招式调息时间减少10秒
+177,,,,Passive,“惊鸿游龙”招式调息时间减少7秒
 178,,,,Passive,“云栖松”招式调息时间减少8秒
-179,,,,Passive,“笑醉狂”招式调息时间减少6秒
+179,,,,Passive,“笑醉狂”招式调息时间减少9秒
 180,,,,Passive,“贪魔体”招式调息时间减少5秒
 181,,,,Passive,“无惧”调息时间降低2秒
 182,,,,Passive,“清绝影歌”招式调息时间减少15秒
@@ -272,3 +272,14 @@ id,attribute,decorator,value,trigger,description
 309,,,,Passive,装备：命中后有一定几率获得雷·灭气效果。不可与该类其他气劲并存。
 310,,,,Passive,装备：命中后有一定几率获得雷·海纳效果。不可与该类其他气劲并存。
 311,,,,Passive,装备：命中后有一定几率获得雷·鋭刃效果。不可与该类其他气劲并存。
+312,overcome,MAGIC,322,Passive,内功破防等级提高 322
+313,haste,NONE,322,Passive,加速等级提高 322
+314,overcome,PHYSICS,322,Passive,外功破防等级提高 322
+315,crit,ALL,353,Passive,全会心等级提高 353
+316,overcome,MAGIC,353,Passive,内功破防等级提高 353
+317,haste,NONE,353,Passive,加速等级提高 353
+318,overcome,PHYSICS,353,Passive,外功破防等级提高 353
+319,toughness,NONE,188,Passive,御劲等级提高 188
+320,huajing,NONE,188,Passive,化劲等级提高 188
+321,toughness,NONE,206,Passive,御劲等级提高 206
+322,huajing,NONE,206,Passive,化劲等级提高 206
