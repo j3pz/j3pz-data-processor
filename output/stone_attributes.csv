@@ -308,14 +308,14 @@ id,name,decorator,key,value,requiredQuantity,requiredLevel
 307,阴阳·会效,SOLAR_LUNAR,critEffect,195.0,11,40
 308,阴阳·会效,SOLAR_LUNAR,critEffect,244.0,13,45
 309,阴阳·会效,SOLAR_LUNAR,critEffect,293.0,14,50
-310,身法,NONE,vitality|spunk|spirit|strength|agility,55.0,12,60
+310,全属性,NONE,vitality|spunk|spirit|strength|agility,55.0,12,60
 311,抽血,NONE,stealHealth,51.0,14,72
-312,身法,NONE,vitality|spunk|spirit|strength|agility,69.0,14,75
+312,全属性,NONE,vitality|spunk|spirit|strength|agility,69.0,14,75
 313,抽血,NONE,stealHealth,61.0,16,90
 314,移动速度,NONE,moveSpeed,81.0,16,90
 315,威胁,NONE,threat,0.58,14,72
 316,威胁,NONE,threat,0.73,16,90
-317,身法,NONE,vitality|spunk|spirit|strength|agility,82.0,16,90
+317,全属性,NONE,vitality|spunk|spirit|strength|agility,82.0,16,90
 318,威胁,NONE,threat,0.87,18,108
 319,体质,NONE,vitality,0.06,14,72
 320,体质,NONE,vitality,0.07,16,90

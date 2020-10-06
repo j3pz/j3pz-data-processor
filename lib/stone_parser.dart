@@ -143,7 +143,7 @@ class StoneParser {
                 case 'atAgilityBasePercentAdd': // 身法
                     attribute = applyAttribute(attribute, 'agility', value2, 'NONE', '身法'); break;
                 case 'atBasePotentialAdd': // 全属性
-                    attribute = applyAttribute(attribute, 'vitality|spunk|spirit|strength|agility', value1, 'NONE', '身法'); break;
+                    attribute = applyAttribute(attribute, 'vitality|spunk|spirit|strength|agility', value1, 'NONE', '全属性'); break;
                 case 'atMagicAttackPowerBase': // 内功攻击
                     attribute = applyAttribute(attribute, 'attack', value1, 'MAGIC', '内功·攻击'); break;
                 case 'atPhysicsAttackPowerBase': // 外功攻击
