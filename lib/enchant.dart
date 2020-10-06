@@ -87,8 +87,8 @@ class RawOther {
     String uiId;
     String genre;
     String subType;
-    String detailType;
-    String quality;
+    int detailType;
+    int quality;
     String price;
     String bindType;
     String maxExistTime;
@@ -137,8 +137,8 @@ class RawOther {
         uiId = json['UiID'];
         genre = json['Genre'];
         subType = json['SubType'];
-        detailType = json['DetailType'];
-        quality = json['Quality'];
+        detailType = int.tryParse(json['DetailType']) ?? 0;
+        quality = int.tryParse(json['Quality']) ?? 0;
         price = json['Price'];
         bindType = json['BindType'];
         maxExistTime = json['MaxExistTime'];

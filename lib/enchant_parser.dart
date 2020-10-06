@@ -241,6 +241,8 @@ class EnchantParser {
             case 'atPhysicsShieldAdditional': // 外防
             case 'atPhysicsShieldBase': // 外防
                 enchant = applyAttribute(enchant, 'physicsShield', data.attribute1Value1, 'NONE'); break;
+            case 'atSurplusValueBase': // 破招
+                enchant = applyAttribute(enchant, 'surplus', data.attribute1Value1, 'NONE'); break;
             case 'atDecriticalDamagePowerBase': // 化劲
                 enchant = applyAttribute(enchant, 'huajing', data.attribute1Value1, 'NONE'); break;
             case 'atActiveThreatCoefficient': // 威胁

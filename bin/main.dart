@@ -7,5 +7,9 @@ void main(List<String> arguments) {
         enchant();
     } else if (arguments[0] == 'furniture') {
         furniture();
+    } else if (arguments[0] == 'stone') {
+        stone();
+    } else {
+        print('unsupported command');
     }
 }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/enchant_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
@@ -6,11 +8,9 @@ import 'package:j3pz_data_preprocessor/gamemap_parser.dart';
 import 'package:j3pz_data_preprocessor/represent_parser.dart';
 import 'package:j3pz_data_preprocessor/set_parser.dart';
 import 'package:j3pz_data_preprocessor/source_parser.dart';
+import 'package:j3pz_data_preprocessor/stone_parser.dart';
 
 import './read_file.dart';
-import 'read_file.dart';
-import 'read_file.dart';
-import 'read_file.dart';
 
 void equips() async {
     print('reading files');
@@ -114,5 +114,23 @@ void furniture() async {
     );
     print('generating');
     furnitureParser.export('./output');
+    print('done');
+}
+
+void stone() async {
+    print('reading files');
+    var other = await readFile(path: './raw/Other.tab');
+    var items = await readFile(path: './raw/item.txt', id: 'ItemID');
+    var enchants = await readFile(path: './raw/Enchant.tab');
+    var ids = await readFile(path: './output/stoneId.tab', delimiter: ',');
+    print('parsing');
+    var stoneParser = StoneParser(
+        ids: ids,
+        others: other,
+        items: items,
+        enchants: enchants,
+    );
+    print('generating');
+    stoneParser.export('./output');
     print('done');
 }
