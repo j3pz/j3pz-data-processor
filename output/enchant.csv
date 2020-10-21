@@ -8,8 +8,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 33,固·安戎·锻（仇恨）,hat,仇恨百分比提升5%,threat,51,NONE,0
 34,固·安戎·锻（外会）,hat,外功会心提升27,crit,27,PHYSICS,0
 35,固·安戎·锻（内会）,hat,内功会心提升27,crit,27,MAGIC,0
-36,固·安戎·锻（外命）,hat,破招提升27,null,null,null,0
-37,固·安戎·锻（内命）,hat,破招提升27,null,null,null,0
+36,固·安戎·锻（外命）,hat,破招提升27,surplus,27,NONE,0
+37,固·安戎·锻（内命）,hat,破招提升27,surplus,27,NONE,0
 38,固·安戎·锻（无双）,hat,无双提升27,strain,27,NONE,0
 39,固·安戎·锻（加速）,hat,加速提升27,haste,27,NONE,0
 40,雅·安戎·染（力道）,wrist,力道提升10,strength,10,NONE,0
@@ -50,10 +50,10 @@ id,name,category,description,attribute,value,decorator,deprecated
 102,雅·安戎·印（疗伤）,bottoms,疗伤成效提升22,heal,22,NONE,0
 103,固·安戎·铸（加速）,shoes,加速提升27,haste,27,NONE,0
 104,固·安戎·铸（身法）,shoes,身法提升15,agility,15,NONE,0
-106,固·安戎·铸（外命）,shoes,破招提升27,null,null,null,0
+106,固·安戎·铸（外命）,shoes,破招提升27,surplus,27,NONE,0
 107,固·安戎·铸（外破）,shoes,外功破防提升27,overcome,27,PHYSICS,0
 108,固·安戎·铸（外会）,shoes,外功会心提升27,crit,27,PHYSICS,0
-110,固·安戎·铸（内命）,shoes,破招提升27,null,null,null,0
+110,固·安戎·铸（内命）,shoes,破招提升27,surplus,27,NONE,0
 111,固·安戎·铸（内破）,shoes,内功破防提升27,overcome,27,MAGIC,0
 112,固·安戎·铸（内会）,shoes,内功会心提升27,crit,27,MAGIC,0
 113,固·安戎·铸（无双）,shoes,无双提升27,strain,27,NONE,0
@@ -171,8 +171,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 239,剑胆·锻（仇恨）,hat,仇恨百分比提升9%,threat,92,NONE,0
 240,剑胆·锻（外会）,hat,外功会心等级提升49点,crit,49,PHYSICS,0
 241,剑胆·锻（内会）,hat,内功会心等级提升49点,crit,49,MAGIC,0
-242,剑胆·锻（外命）,hat,破招等级提升49点,null,null,null,0
-243,剑胆·锻（内命）,hat,破招等级提升49点,null,null,null,0
+242,剑胆·锻（外命）,hat,破招等级提升49点,surplus,49,NONE,0
+243,剑胆·锻（内命）,hat,破招等级提升49点,surplus,49,NONE,0
 244,剑胆·锻（无双）,hat,无双等级提升49点,strain,49,NONE,0
 245,剑胆·锻（加速）,hat,加速等级提升49点,haste,49,NONE,0
 246,剑胆·铸（根骨）,shoes,根骨提升18点,spirit,18,NONE,0
@@ -182,8 +182,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 250,剑胆·铸（仇恨）,shoes,仇恨百分比提升9%,threat,92,NONE,0
 251,剑胆·铸（外会）,shoes,外功会心等级提升49点,crit,49,PHYSICS,0
 252,剑胆·铸（内会）,shoes,内功会心等级提升49点,crit,49,MAGIC,0
-253,剑胆·铸（外命）,shoes,破招等级提升49点,null,null,null,0
-254,剑胆·铸（内命）,shoes,破招等级提升49点,null,null,null,0
+253,剑胆·铸（外命）,shoes,破招等级提升49点,surplus,49,NONE,0
+254,剑胆·铸（内命）,shoes,破招等级提升49点,surplus,49,NONE,0
 255,剑胆·铸（无双）,shoes,无双等级提升49点,strain,49,NONE,0
 256,剑胆·铸（加速）,shoes,加速等级提升49点,haste,49,NONE,0
 257,剑胆·磨石（外伤）,primaryWeapon,外功攻击提升37点,attack,37,PHYSICS,0
@@ -201,8 +201,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 269,佳·剑胆·锻（仇恨）,hat,仇恨百分比提升10%,threat,102,NONE,0
 270,佳·剑胆·锻（外会）,hat,外功会心等级提升56点,crit,56,PHYSICS,0
 271,佳·剑胆·锻（内会）,hat,内功会心等级提升56点,crit,56,MAGIC,0
-272,佳·剑胆·锻（外命）,hat,破招等级提升56点,null,null,null,0
-273,佳·剑胆·锻（内命）,hat,破招等级提升56点,null,null,null,0
+272,佳·剑胆·锻（外命）,hat,破招等级提升56点,surplus,56,NONE,0
+273,佳·剑胆·锻（内命）,hat,破招等级提升56点,surplus,56,NONE,0
 274,佳·剑胆·锻（无双）,hat,无双等级提升56点,strain,56,NONE,0
 275,佳·剑胆·锻（加速）,hat,加速等级提升56点,haste,56,NONE,0
 276,佳·剑胆·铸（根骨）,shoes,根骨提升21点,spirit,21,NONE,0
@@ -212,8 +212,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 280,佳·剑胆·铸（仇恨）,shoes,仇恨百分比提升10%,threat,102,NONE,0
 281,佳·剑胆·铸（外会）,shoes,外功会心等级提升56点,crit,56,PHYSICS,0
 282,佳·剑胆·铸（内会）,shoes,内功会心等级提升56点,crit,56,MAGIC,0
-283,佳·剑胆·铸（外命）,shoes,破招等级提升56点,null,null,null,0
-284,佳·剑胆·铸（内命）,shoes,破招等级提升56点,null,null,null,0
+283,佳·剑胆·铸（外命）,shoes,破招等级提升56点,surplus,56,NONE,0
+284,佳·剑胆·铸（内命）,shoes,破招等级提升56点,surplus,56,NONE,0
 285,佳·剑胆·铸（无双）,shoes,无双等级提升56点,strain,56,NONE,0
 286,佳·剑胆·铸（加速）,shoes,加速等级提升56点,haste,56,NONE,0
 287,佳·剑胆·磨石（外伤）,primaryWeapon,外功攻击提升42点,attack,42,PHYSICS,0
@@ -305,8 +305,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 375,珍·重制·锻（外破）,hat,外功破防等级提升83点,overcome,83,PHYSICS,0
 376,珍·重制·锻（内破）,hat,内功破防等级提升83点,overcome,83,MAGIC,0
 377,珍·重制·锻（加速）,hat,加速提升83点,haste,83,NONE,0
-378,珍·重制·锻（外命）,hat,破招等级提升83点,null,null,null,0
-379,珍·重制·锻（内命）,hat,破招等级提升83点,null,null,null,0
+378,珍·重制·锻（外命）,hat,破招等级提升83点,surplus,83,NONE,0
+379,珍·重制·锻（内命）,hat,破招等级提升83点,surplus,83,NONE,0
 380,珍·重制·锻（无双）,hat,无双等级提升83点,strain,83,NONE,0
 381,珍·重制·锻（根骨）,hat,根骨提升31点,spirit,31,NONE,0
 382,珍·重制·锻（身法）,hat,身法提升31点,agility,31,NONE,0
@@ -315,8 +315,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 385,珍·重制·铸（外破）,shoes,外功破防等级提升83点,overcome,83,PHYSICS,0
 386,珍·重制·铸（内破）,shoes,内功破防等级提升83点,overcome,83,MAGIC,0
 387,珍·重制·铸（加速）,shoes,加速提升83点,haste,83,NONE,0
-388,珍·重制·铸（外命）,shoes,破招等级提升83点,null,null,null,0
-389,珍·重制·铸（内命）,shoes,破招等级提升83点,null,null,null,0
+388,珍·重制·铸（外命）,shoes,破招等级提升83点,surplus,83,NONE,0
+389,珍·重制·铸（内命）,shoes,破招等级提升83点,surplus,83,NONE,0
 390,珍·重制·铸（无双）,shoes,无双等级提升83点,strain,83,NONE,0
 391,珍·重制·铸（根骨）,shoes,根骨提升31点,spirit,31,NONE,0
 392,珍·重制·铸（身法）,shoes,身法提升31点,agility,31,NONE,0
@@ -336,8 +336,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 406,烨阳晶石·刻（身法）,ring,身法提升31点,agility,31,NONE,0
 407,烨阳晶石·刻（外伤）,ring,外功攻击提升62点,attack,62,PHYSICS,0
 408,烨阳晶石·刻（内伤）,ring,内功攻击提升75点,attack,75,MAGIC,0
-409,烨阳晶石·刻（外命）,ring,破招等级提升83点,null,null,null,0
-410,烨阳晶石·刻（内命）,ring,破招等级提升83点,null,null,null,0
+409,烨阳晶石·刻（外命）,ring,破招等级提升83点,surplus,83,NONE,0
+410,烨阳晶石·刻（内命）,ring,破招等级提升83点,surplus,83,NONE,0
 411,烨阳晶石·熔（根骨）,secondaryWeapon,根骨提升31点,spirit,31,NONE,0
 412,烨阳晶石·熔（力道）,secondaryWeapon,力道提升31点,strength,31,NONE,0
 413,烨阳晶石·熔（元气）,secondaryWeapon,元气提升31点,spunk,31,NONE,0
@@ -364,8 +364,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 687,烨阳晶石·戒指（身法）,ring,身法提升42点,agility,42,NONE,0
 688,烨阳晶石·戒指（外伤）,ring,外功攻击提升85点,attack,85,PHYSICS,0
 689,烨阳晶石·戒指（内伤）,ring,内功攻击提升101点,attack,101,MAGIC,0
-690,烨阳晶石·戒指（外命）,ring,破招等级提升188点,null,null,null,0
-691,烨阳晶石·戒指（内命）,ring,破招等级提升188点,null,null,null,0
+690,烨阳晶石·戒指（外命）,ring,破招等级提升188点,surplus,188,NONE,0
+691,烨阳晶石·戒指（内命）,ring,破招等级提升188点,surplus,188,NONE,0
 692,烨阳晶石·暗器（根骨）,secondaryWeapon,根骨提升42点,spirit,42,NONE,0
 693,烨阳晶石·暗器（力道）,secondaryWeapon,力道提升42点,strength,42,NONE,0
 694,烨阳晶石·暗器（元气）,secondaryWeapon,元气提升42点,spunk,42,NONE,0
@@ -390,7 +390,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 758,仙踪·头·铸（外功）,hat,外功攻击提升94点,attack,94,PHYSICS,0
 759,仙踪·头·铸（内功）,hat,内功攻击提升113点,attack,113,MAGIC,0
 760,仙踪·头·铸（治疗）,hat,疗伤成效提升102点,heal,102,NONE,0
-761,仙踪·头·铸（命中）,hat,破招提升209点,null,null,null,0
+761,仙踪·头·铸（命中）,hat,破招提升209点,surplus,209,NONE,0
 762,仙踪·头·铸（急速）,hat,加速提升209点,haste,209,NONE,0
 763,仙踪·腰·铸（体质）,belt,体质提升78点,vitality,78,NONE,0
 764,仙踪·腰·铸（气血）,belt,最大气血值提升1047点,health,1047,NONE,0
@@ -413,7 +413,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 781,仙踪·头·甲（外功）,hat,外功攻击提升47点,attack,47,PHYSICS,0
 782,仙踪·头·甲（内功）,hat,内功攻击提升57点,attack,57,MAGIC,0
 783,仙踪·头·甲（治疗）,hat,疗伤成效提升51点,heal,51,NONE,0
-784,仙踪·头·甲（命中）,hat,破招提升105点,null,null,null,0
+784,仙踪·头·甲（命中）,hat,破招提升105点,surplus,105,NONE,0
 785,仙踪·头·甲（急速）,hat,加速提升105点,haste,105,NONE,0
 786,仙踪·腰·甲（体质）,belt,体质提升39点,vitality,39,NONE,0
 787,仙踪·腰·甲（气血）,belt,最大气血值提升524点,health,524,NONE,0
@@ -441,7 +441,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 817,仙踪·鞋·绣（外功）,shoes,外功攻击提升94点,attack,94,PHYSICS,0
 818,仙踪·鞋·绣（内功）,shoes,内功攻击提升113点,attack,113,MAGIC,0
 819,仙踪·鞋·绣（治疗）,shoes,疗伤成效提升102点,heal,102,NONE,0
-820,仙踪·鞋·绣（命中）,shoes,破招提升209点,null,null,null,0
+820,仙踪·鞋·绣（命中）,shoes,破招提升209点,surplus,209,NONE,0
 821,仙踪·鞋·绣（急速）,shoes,加速提升209点,haste,209,NONE,0
 822,仙踪·衣·绣（体质）,jacket,体质提升78点,vitality,78,NONE,0
 823,仙踪·衣·绣（气血）,jacket,最大气血值提升1047点,health,1047,NONE,0
@@ -464,7 +464,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 840,仙踪·鞋·染（外功）,shoes,外功攻击提升47点,attack,47,PHYSICS,0
 841,仙踪·鞋·染（内功）,shoes,内功攻击提升57点,attack,57,MAGIC,0
 842,仙踪·鞋·染（治疗）,shoes,疗伤成效提升51点,heal,51,NONE,0
-843,仙踪·鞋·染（命中）,shoes,破招提升105点,null,null,null,0
+843,仙踪·鞋·染（命中）,shoes,破招提升105点,surplus,105,NONE,0
 844,仙踪·鞋·染（急速）,shoes,加速提升105点,haste,105,NONE,0
 845,仙踪·衣·染（体质）,jacket,体质提升39点,vitality,39,NONE,0
 846,仙踪·衣·染（气血）,jacket,最大气血值提升524点,health,524,NONE,0
@@ -485,8 +485,8 @@ id,name,category,description,attribute,value,decorator,deprecated
 861,烨阳晶石·戒指（身法）,ring,身法提升47点,agility,47,NONE,0
 862,烨阳晶石·戒指（外伤）,ring,外功攻击提升94点,attack,94,PHYSICS,0
 863,烨阳晶石·戒指（内伤）,ring,内功攻击提升113点,attack,113,MAGIC,0
-864,烨阳晶石·戒指（外命）,ring,破招等级提升209点,null,null,null,0
-865,烨阳晶石·戒指（内命）,ring,破招等级提升209点,null,null,null,0
+864,烨阳晶石·戒指（外命）,ring,破招等级提升209点,surplus,209,NONE,0
+865,烨阳晶石·戒指（内命）,ring,破招等级提升209点,surplus,209,NONE,0
 866,烨阳晶石·暗器（根骨）,secondaryWeapon,根骨提升47点,spirit,47,NONE,0
 867,烨阳晶石·暗器（力道）,secondaryWeapon,力道提升47点,strength,47,NONE,0
 868,烨阳晶石·暗器（元气）,secondaryWeapon,元气提升47点,spunk,47,NONE,0
@@ -515,7 +515,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 891,霁月·腰·外防,belt,外功防御提升47点,physicsShield,47,NONE,0
 892,霁月·腰·内防,belt,内功防御提升47点,magicShield,47,NONE,0
 893,霁月·鞋·急速,shoes,加速提升94点,haste,94,NONE,0
-894,霁月·鞋·命中,shoes,破招提升94点,null,null,null,0
+894,霁月·鞋·命中,shoes,破招提升94点,surplus,94,NONE,0
 895,霁月·鞋·外功,shoes,外功攻击提升42点,attack,42,PHYSICS,0
 896,霁月·鞋·内功,shoes,内功攻击提升50点,attack,50,MAGIC,0
 897,霁月·衣·无双,jacket,无双等级提升71点,strain,71,NONE,0
@@ -539,7 +539,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 919,侠影·头·铸（外攻）,hat,外功攻击提升146点,attack,146,PHYSICS,0
 920,侠影·头·铸（内攻）,hat,内功攻击提升175点,attack,175,MAGIC,0
 921,侠影·头·铸（治疗）,hat,疗伤成效提升158点,heal,158,NONE,0
-922,侠影·头·铸（破招）,hat,破招提升325点,null,null,null,0
+922,侠影·头·铸（破招）,hat,破招提升325点,surplus,325,NONE,0
 923,侠影·头·铸（急速）,hat,加速提升325点,haste,325,NONE,0
 924,侠影·腰·铸（体质）,belt,体质提升120点,vitality,120,NONE,0
 925,侠影·腰·铸（气血）,belt,最大气血值提升1625点,health,1625,NONE,0
@@ -562,7 +562,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 942,侠影·头·甲（外攻）,hat,外功攻击提升130点,attack,130,PHYSICS,0
 943,侠影·头·甲（内攻）,hat,内功攻击提升155点,attack,155,MAGIC,0
 944,侠影·头·甲（治疗）,hat,疗伤成效提升140点,heal,140,NONE,0
-945,侠影·头·甲（破招）,hat,破招提升289点,null,null,null,0
+945,侠影·头·甲（破招）,hat,破招提升289点,surplus,289,NONE,0
 946,侠影·头·甲（急速）,hat,加速提升289点,haste,289,NONE,0
 947,侠影·腰·甲（体质）,belt,体质提升107点,vitality,107,NONE,0
 948,侠影·腰·甲（气血）,belt,最大气血值提升1444点,health,1444,NONE,0
@@ -590,7 +590,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 974,侠影·鞋·绣（外攻）,shoes,外功攻击提升146点,attack,146,PHYSICS,0
 975,侠影·鞋·绣（内攻）,shoes,内功攻击提升175点,attack,175,MAGIC,0
 976,侠影·鞋·绣（治疗）,shoes,疗伤成效提升158点,heal,158,NONE,0
-977,侠影·鞋·绣（破招）,shoes,破招提升325点,null,null,null,0
+977,侠影·鞋·绣（破招）,shoes,破招提升325点,surplus,325,NONE,0
 978,侠影·鞋·绣（急速）,shoes,加速提升325点,haste,325,NONE,0
 979,侠影·衣·绣（体质）,jacket,体质提升120点,vitality,120,NONE,0
 980,侠影·衣·绣（气血）,jacket,最大气血值提升1625点,health,1625,NONE,0
@@ -613,7 +613,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 997,侠影·鞋·染（外攻）,shoes,外功攻击提升130点,attack,130,PHYSICS,0
 998,侠影·鞋·染（内攻）,shoes,内功攻击提升155点,attack,155,MAGIC,0
 999,侠影·鞋·染（治疗）,shoes,疗伤成效提升140点,heal,140,NONE,0
-1000,侠影·鞋·染（破招）,shoes,破招提升289点,null,null,null,0
+1000,侠影·鞋·染（破招）,shoes,破招提升289点,surplus,289,NONE,0
 1001,侠影·鞋·染（急速）,shoes,加速提升289点,haste,289,NONE,0
 1002,侠影·衣·染（体质）,jacket,体质提升107点,vitality,107,NONE,0
 1003,侠影·衣·染（气血）,jacket,最大气血值提升1444点,health,1444,NONE,0
@@ -635,7 +635,7 @@ id,name,category,description,attribute,value,decorator,deprecated
 1019,阴山鬼晶·戒指（身法）,ring,身法提升73点,agility,73,NONE,0
 1020,阴山鬼晶·戒指（外伤）,ring,外功攻击提升146点,attack,146,PHYSICS,0
 1021,阴山鬼晶·戒指（内伤）,ring,内功攻击提升175点,attack,175,MAGIC,0
-1022,阴山鬼晶·戒指（破招）,ring,破招等级提升325点,null,null,null,0
+1022,阴山鬼晶·戒指（破招）,ring,破招等级提升325点,surplus,325,NONE,0
 1023,阴山鬼晶·暗器（根骨）,secondaryWeapon,根骨提升73点,spirit,73,NONE,0
 1024,阴山鬼晶·暗器（力道）,secondaryWeapon,力道提升73点,strength,73,NONE,0
 1025,阴山鬼晶·暗器（元气）,secondaryWeapon,元气提升73点,spunk,73,NONE,0
