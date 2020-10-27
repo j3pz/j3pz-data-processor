@@ -7383,7 +7383,7 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11010	侠影·兵·铸（外攻）	武器	外功攻击提升146点	atPhysicsAttackPowerBase	146	146																										0				0	0
 11011	侠影·兵·铸（内攻）	武器	内功攻击提升175点	atMagicAttackPowerBase	175	175																										0				0	0
 11012	侠影·兵·铸（疗伤）	武器	疗伤成效提升158点	atTherapyPowerBase	158	158																										0				0	0
-11013	侠影·兵·铸（武伤）	武器	武器伤害提升142点	atMeleeWeaponDamageBase	142	142																										0				0	0
+11013	侠影·兵·铸（武伤）	武器	武器伤害提升142点	atMeleeWeaponDamageBase	220	220																										0				0	0
 11014	侠影·兵·铸（仇恨）	武器	仇恨百分比提升36%	atActiveThreatCoefficient	0	368																										0				0	0
 11015	侠影·裤·铸（身法）	下装	身法提升73点	atAgilityBase	73	73																										8				0	0
 11016	侠影·裤·铸（元气）	下装	元气提升73点	atSpunkBase	73	73																										8				0	0
@@ -7487,51 +7487,79 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11114	侠影·衣·染（化劲）	上装	化劲提升144点	atDecriticalDamagePowerBase	144	144																										2				0	0
 11115	侠影·衣·染（御劲）	上装	御劲提升144点	atToughnessBase	144	144																										2				0	0
 11116	侠影·鞋·染（跑速）	鞋子	跑步速度提升5%（鞋子）	atMoveSpeedPercent	56	56																										9				0	0
-11117	山市鬼楼·御·腰	腰带限时		atSkillEventHandler	1840																										60	6				3	0
-11118	山市鬼楼·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子结庐在江湖.lua																										60	9				3	0
-11119	山市鬼楼·御·腕	护手限时		atSkillEventHandler	1841																										60	10				3	0
-11120	山市鬼楼·御·衣	上装限时		atSkillEventHandler	1839																										60	2				3	0
-11121	山市鬼楼·御·头	帽子限时		atSkillEventHandler	1838																										60	3				3	0
+11117	山市鬼楼·御·腰	腰带限时		atSkillEventHandler	1904																										60	6				3	0
+11118	山市鬼楼·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11119	山市鬼楼·御·腕	护手限时		atSkillEventHandler	1905																										60	10				3	0
+11120	山市鬼楼·御·衣	上装限时		atSkillEventHandler	1906																										60	2				3	0
+11121	山市鬼楼·御·头	帽子限时		atSkillEventHandler	1907																										60	3				3	0
 11122	山市鬼楼·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
-11123	山市鬼楼·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效_结庐在江湖.lua																										60	9				3	0
+11123	山市鬼楼·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
 11124	山市鬼楼·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
 11125	山市鬼楼·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
 11126	山市鬼楼·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
 11127	山市鬼楼·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
-11128	山市鬼楼·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子结庐在江湖.lua																										60	9				3	0
+11128	山市鬼楼·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
 11129	山市鬼楼·伤·腕	护手限时		atSkillEventHandler	1843																										60	10				3	0
-11130	山市鬼楼·伤·衣	上装限时		atExecuteScript	skill/装备/结庐版本输出衣服附魔.lua																										60	2				3	0
-11131	山市鬼楼·伤·头	帽子限时		atExecuteScript	skill/装备/结庐版本输出帽子附魔.lua																										60	3				3	0
-11132	山市鬼冢·御·腰	腰带限时		atSkillEventHandler	1840																										60	6				3	0
-11133	山市鬼冢·御·鞋	鞋子限时		atExecuteScript	skill\装备\新附魔鞋子结庐在江湖.lua																										60	9				3	0
-11134	山市鬼冢·御·腕	护手限时		atSkillEventHandler	1841																										60	10				3	0
-11135	山市鬼冢·御·衣	上装限时		atSkillEventHandler	1839																										60	2				3	0
-11136	山市鬼冢·御·帽	帽子限时		atSkillEventHandler	1838																										60	3				3	0
+11130	山市鬼楼·伤·衣	上装限时		atExecuteScript	skill/装备/奉天证道输出衣服附魔.lua																										60	2				3	0
+11131	山市鬼楼·伤·头	帽子限时		atExecuteScript	skill/装备/奉天证道输出帽子附魔.lua																										60	3				3	0
+11132	山市鬼冢·御·腰	腰带限时		atSkillEventHandler	1904																										60	6				3	0
+11133	山市鬼冢·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11134	山市鬼冢·御·腕	护手限时		atSkillEventHandler	1905																										60	10				3	0
+11135	山市鬼冢·御·衣	上装限时		atSkillEventHandler	1906																										60	2				3	0
+11136	山市鬼冢·御·帽	帽子限时		atSkillEventHandler	1907																										60	3				3	0
 11137	山市鬼冢·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
-11138	山市鬼冢·疗·鞋	鞋子限时		atExecuteScript	skill/装备/鞋子_新附魔_治疗站立加疗效_结庐在江湖.lua																										60	9				3	0
+11138	山市鬼冢·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
 11139	山市鬼冢·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
 11140	山市鬼冢·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
 11141	山市鬼冢·疗·帽	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
 11142	山市鬼冢·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
-11143	山市鬼冢·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子结庐在江湖.lua																										60	9				3	0
+11143	山市鬼冢·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
 11144	山市鬼冢·伤·腕	护手限时		atSkillEventHandler	1843																										60	10				3	0
-11145	山市鬼冢·伤·衣	上装限时		atExecuteScript	skill/装备/结庐版本输出衣服附魔.lua																										60	2				3	0
-11146	山市鬼冢·伤·帽	帽子限时		atExecuteScript	skill/装备/结庐版本输出帽子附魔.lua																										60	3				3	0
-11147	烨阳晶石·项链（体质）	项链	体质提升120点	atVitalityBase	120	120																										4					
-11148	烨阳晶石·项链（御劲）	项链	御劲提升163点	atToughnessBase	163	163																										4					
-11149	烨阳晶石·腰坠（体质）	腰坠	体质提升120点	atVitalityBase	120	120																										7					
-11150	烨阳晶石·腰坠（化劲）	腰坠	化劲提升163点	atDecriticalDamagePowerBase	163	163																										7					
-11151	烨阳晶石·戒指（根骨）	戒指	根骨提升73点	atSpiritBase	73	73																										5					
-11152	烨阳晶石·戒指（力道）	戒指	力道提升73点	atStrengthBase	73	73																										5					
-11153	烨阳晶石·戒指（元气）	戒指	元气提升73点	atSpunkBase	73	73																										5					
-11154	烨阳晶石·戒指（身法）	戒指	身法提升73点	atAgilityBase	73	73																										5					
-11155	烨阳晶石·戒指（外伤）	戒指	外功攻击提升146点	atPhysicsAttackPowerBase	146	146																										5					
-11156	烨阳晶石·戒指（内伤）	戒指	内功攻击提升175点	atMagicAttackPowerBase	175	175																										5					
-11157	烨阳晶石·戒指（破招）	戒指	破招等级提升325点	atSurplusValueBase	325	325																										5					
-11158	烨阳晶石·暗器（根骨）	暗器	根骨提升73点	atSpiritBase	73	73																										1					
-11159	烨阳晶石·暗器（力道）	暗器	力道提升73点	atStrengthBase	73	73																										1					
-11160	烨阳晶石·暗器（元气）	暗器	元气提升73点	atSpunkBase	73	73																										1					
-11161	烨阳晶石·暗器（身法）	暗器	身法提升73点	atAgilityBase	73	73																										1					
-11162	烨阳晶石·暗器（外破）	暗器	外功破防等级提升325点	atPhysicsOvercomeBase	325	325																										1					
-11163	烨阳晶石·暗器（内破）	暗器	内功破防等级提升325点	atMagicOvercome	325	325																										1					
-11164	烨阳晶石·暗器（加速）	暗器	加速提升325点	atHasteBase	325	325																										1					
+11145	山市鬼冢·伤·衣	上装限时		atExecuteScript	skill/装备/奉天证道输出衣服附魔.lua																										60	2				3	0
+11146	山市鬼冢·伤·帽	帽子限时		atExecuteScript	skill/装备/奉天证道输出帽子附魔.lua																										60	3				3	0
+11147	阴山鬼晶·项链（体质）	项链	体质提升120点	atVitalityBase	120	120																										4					
+11148	阴山鬼晶·项链（御劲）	项链	御劲提升163点	atToughnessBase	163	163																										4					
+11149	阴山鬼晶·腰坠（体质）	腰坠	体质提升120点	atVitalityBase	120	120																										7					
+11150	阴山鬼晶·腰坠（化劲）	腰坠	化劲提升163点	atDecriticalDamagePowerBase	163	163																										7					
+11151	阴山鬼晶·戒指（根骨）	戒指	根骨提升73点	atSpiritBase	73	73																										5					
+11152	阴山鬼晶·戒指（力道）	戒指	力道提升73点	atStrengthBase	73	73																										5					
+11153	阴山鬼晶·戒指（元气）	戒指	元气提升73点	atSpunkBase	73	73																										5					
+11154	阴山鬼晶·戒指（身法）	戒指	身法提升73点	atAgilityBase	73	73																										5					
+11155	阴山鬼晶·戒指（外伤）	戒指	外功攻击提升146点	atPhysicsAttackPowerBase	146	146																										5					
+11156	阴山鬼晶·戒指（内伤）	戒指	内功攻击提升175点	atMagicAttackPowerBase	175	175																										5					
+11157	阴山鬼晶·戒指（破招）	戒指	破招等级提升325点	atSurplusValueBase	325	325																										5					
+11158	阴山鬼晶·暗器（根骨）	暗器	根骨提升73点	atSpiritBase	73	73																										1					
+11159	阴山鬼晶·暗器（力道）	暗器	力道提升73点	atStrengthBase	73	73																										1					
+11160	阴山鬼晶·暗器（元气）	暗器	元气提升73点	atSpunkBase	73	73																										1					
+11161	阴山鬼晶·暗器（身法）	暗器	身法提升73点	atAgilityBase	73	73																										1					
+11162	阴山鬼晶·暗器（外破）	暗器	外功破防等级提升325点	atPhysicsOvercomeBase	325	325																										1					
+11163	阴山鬼晶·暗器（内破）	暗器	内功破防等级提升325点	atMagicOvercome	325	325																										1					
+11164	阴山鬼晶·暗器（加速）	暗器	加速提升325点	atHasteBase	325	325																										1					
+11165	云扇·裤·会心	下装	全会心提升260点	atAllTypeCriticalStrike	260	260																										8				0	0
+11166	云扇·腕·会心	护手	全会心提升260点	atAllTypeCriticalStrike	260	260																										10				0	0
+11167	云扇·头·急速	帽子	加速提升260点	atHasteBase	260	260																										3				3	0
+11168	云扇·裤·外破	下装	外功破防等级提升260点	atPhysicsOvercomeBase	260	260																										8				0	0
+11169	云扇·裤·内破	下装	内功破防等级提升260点	atMagicOvercome	260	260																										8				0	0
+11170	云扇·裤·无双	下装	无双等级提升260点	atStrainBase	260	260																										8				0	0
+11171	云扇·头·外攻	帽子	外功攻击提升117点	atPhysicsAttackPowerBase	117	117																										3				0	0
+11172	云扇·头·内功	帽子	内功攻击提升139点	atMagicAttackPowerBase	139	139																										3				0	0
+11173	云扇·头·治疗	帽子	疗伤成效提升126点	atTherapyPowerBase	126	126																										3				0	0
+11174	云扇·腕·外破	护手	外功破防等级提升260点	atPhysicsOvercomeBase	260	260																										10				0	0
+11175	云扇·腕·内破	护手	内功破防等级提升260点	atMagicOvercome	260	260																										10				0	0
+11176	云扇·腕·无双	护手	无双等级提升260点	atStrainBase	260	260																										10				0	0
+11177	云扇·衣·化劲	上装	化劲提升129点	atDecriticalDamagePowerBase	129	129																										2					
+11178	云扇·衣·御劲	上装	御劲提升129点	atToughnessBase	129	129																										2					
+11179	云扇·衣·外防	上装	外功防御提升129点	atPhysicsShieldAdditional	129	129																										2					
+11180	云扇·衣·内防	上装	内功防御提升129点	atMagicShield	129	129																										2					
+11181	云扇·腰·化劲	腰带	化劲提升129点	atDecriticalDamagePowerBase	129	129																										6				0	0
+11182	云扇·腰·御劲	腰带	御劲提升129点	atToughnessBase	129	129																										6				0	0
+11183	云扇·腰·外防	腰带	外功防御提升129点	atPhysicsShieldAdditional	129	129																										6				0	0
+11184	云扇·腰·内防	腰带	内功防御提升129点	atMagicShield	129	129																										6				0	0
+11185	云扇·鞋·急速	鞋子	加速提升260点	atHasteBase	260	260																										9				0	0
+11186	云扇·鞋·破招	鞋子	破招提升260点	atSurplusValueBase	260	260																										9				0	0
+11187	云扇·鞋·外功	鞋子	外功攻击提升117点	atPhysicsAttackPowerBase	117	117																										9				0	0
+11188	云扇·鞋·内功	鞋子	内功攻击提升139点	atMagicAttackPowerBase	139	139																										9				0	0
+11189	云扇·衣·无双	上装	无双等级提升260点	atStrainBase	260	260																										2					
+11190	云扇·衣·减仇	上装	招式仇恨降低4%	atActiveThreatCoefficient	0	-42																										2					
+11191	云扇·腰·无双	腰带	无双等级提升260点	atStrainBase	260	260																										6				0	0
+11192	云扇·腰·减仇	腰带	招式仇恨降低4%	atActiveThreatCoefficient	0	-42																										6				0	0

@@ -30033,7 +30033,7 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 30031	0	atSkillEventHandler	1507	1507												
 30032	0	atSkillEventHandler	1508	1508												
 30033	0	atDamageToLifeForSelf	102	102												
-30034	0	atLifeReplenishExt	160	160												
+30034	0	atLifeReplenishExt	430	430												
 30035	0	atDecriticalDamagePowerBase	766	766	0	0	0	0	0	0	0	0	0	0	0	0
 30036	0	atPhysicsAttackPowerBase	1035	1035	0	0	0	0	0	0	0	0	0	0	0	0
 30037	0	atAllTypeCriticalStrike	1072	1072	0	0	0	0	0	0	0	0	0	0	0	0
@@ -43674,3 +43674,493 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 43672		atTherapyPowerBase	1081	1081												
 43673		atVitalityBase	1737	1737												
 43674		atPoisonAttackPowerBase	755	755												
+43675		atHasteBase	1041	1041												
+43676		atMagicCriticalStrike	1198	1198												
+43677		atAllTypeCriticalStrike	1198	1198												
+43678		atPhysicsCriticalStrike	1198	1198												
+43679		atDodge	832	832												
+43680		atDodge	404	404												
+43681		atStrainBase	670	670												
+43682		atSurplusValueBase	1619	1619												
+43683		atSurplusValueBase	1776	1776												
+43684		atStrainBase	1086	1086												
+43685		atStrainBase	1345	1345												
+43686		atStrainBase	1233	1233												
+43687		atSolarOvercomeBase	1598	1598												
+43688		atNeutralOvercomeBase	1598	1598												
+43689		atLunarOvercomeBase	1598	1598												
+43690		atPoisonOvercomeBase	1598	1598												
+43691		atSolarAndLunarOvercomeBase	1598	1598												
+43692		atStrainBase	533	533												
+43693		atStrainBase	554	554												
+43694		atStrainBase	575	575												
+43695		atMagicOvercome	956	956												
+43696	0	atSkillEventHandler	1911	1911	0	0										
+43697	0	atSkillEventHandler	542	542	0	0										
+43698	0	atSkillEventHandler	1912	1912	0	0										
+43699	0	atSkillEventHandler	1910	1910	0	0										
+43700	0	atSkillEventHandler	1913	1913	0	0										
+43701	0	atSkillEventHandler	311	311	0	0										
+43702	0	atSkillEventHandler	1914	1914	0	0										
+43703	0	atSkillEventHandler	1915	1915	0	0										
+43704	0	atSkillEventHandler	1916	1916	0	0										
+43705	0	atSkillEventHandler	1910	1910	0	0										
+43706	0	atSkillEventHandler	1917	1917	0	0										
+43707	0	atSkillEventHandler	1910	1910	0	0										
+43708	0	atSkillEventHandler	1918	1918	0	0										
+43709	0	atSkillEventHandler	1919	1919	0	0										
+43710	0	atSkillEventHandler	1920	1920	0	0										
+43711	0	atSkillEventHandler	1921	1921	0	0										
+43712	0	atSkillEventHandler	1922	1922	0	0										
+43713	0	atSkillEventHandler	801	801	0	0										
+43714	0	atSkillEventHandler	1923	1923	0	0										
+43715	0	atSkillEventHandler	1222	1222	0	0										
+43716	0	atSkillEventHandler	1924	1924	0	0										
+43717	0	atSkillEventHandler	1910	1910	0	0										
+43718	0	atSkillEventHandler	1925	1925	0	0										
+43719	0	atSkillEventHandler	1926	1926	0	0										
+43720	0	atSkillEventHandler	1927	1927	0	0										
+43721	0	atSkillEventHandler	1956	1956	0	0										
+43722		atNeutralCriticalStrike	666	666												
+43723		atLunarCriticalStrike	666	666												
+43724		atPoisonCriticalStrike	666	666												
+43725		atSolarAndLunarCriticalStrike	666	666												
+43726		atParryValueBase	3208	3208												
+43727		atMagicShield	1510	1510												
+43728		atStrainBase	1812	1812												
+43729		atTherapyPowerBase	2794	2794												
+43730		atDodge	906	906												
+43731		atParryBase	906	906												
+43732		atSolarOvercomeBase	799	799												
+43733		atHasteBase	799	799												
+43734		atNeutralOvercomeBase	799	799												
+43735		atPoisonOvercomeBase	799	799												
+43736		atSolarAndLunarOvercomeBase	799	799												
+43737		atSolarCriticalStrike	1598	1598												
+43738		atDecriticalDamagePowerBase	710	710												
+43739		atNeutralCriticalStrike	1598	1598												
+43740		atPhysicsCriticalStrike	1598	1598												
+43741		atLunarCriticalStrike	1598	1598												
+43742		atPoisonCriticalStrike	1598	1598												
+43743		atSolarAndLunarCriticalStrike	1598	1598												
+43744		atMagicCriticalStrike	1331	1331												
+43745		atAllTypeCriticalStrike	1331	1331												
+43746		atDodge	925	925												
+43747		atSolarCriticalStrike	932	932												
+43748		atDecriticalDamagePowerBase	414	414												
+43749		atNeutralCriticalStrike	932	932												
+43750		atLunarCriticalStrike	932	932												
+43751		atLunarCriticalStrike	777	777												
+43752		atPoisonCriticalStrike	932	932												
+43753		atPoisonCriticalStrike	777	777												
+43754		atSolarAndLunarCriticalStrike	932	932												
+43755		atSolarOvercomeBase	932	932												
+43756		atNeutralOvercomeBase	932	932												
+43757		atLunarOvercomeBase	932	932												
+43758		atPoisonOvercomeBase	932	932												
+43759		atSolarAndLunarOvercomeBase	932	932												
+43760		atVitalityBase	1087	1087												
+43761		atVitalityBase	1553	1553												
+43762		atDecriticalDamagePowerBase	592	592												
+43763		atSolarCriticalStrike	1198	1198												
+43764		atDecriticalDamagePowerBase	533	533												
+43765		atHasteBase	999	999												
+43766		atNeutralCriticalStrike	1198	1198												
+43767		atSolarAndLunarCriticalStrike	1198	1198												
+43768		atPhysicsShieldBase	4671	4671												
+43769		atMagicShield	4671	4671												
+43770		atPhysicsShieldBase	3153	3153												
+43771		atMagicShield	3153	3153												
+43772		atPhysicsAttackPowerBase	976	976												
+43773		atMagicAttackPowerBase	1171	1171												
+43774		atPhysicsShieldBase	3270	3270												
+43775		atMagicShield	3270	3270												
+43776		atHasteBase	1744	1744												
+43777		atMagicShield	883	883												
+43778		atPhysicsShieldBase	6949	6949												
+43779		atMagicShield	6949	6949												
+43780		atAllTypeCriticalStrike	2316	2316												
+43781		atPhysicsOvercomeBase	2316	2316												
+43782		atMagicOvercome	2316	2316												
+43783		atVitalityBase	2085	2085												
+43784		atPhysicsShieldBase	2780	2780												
+43785		atMagicShield	2780	2780												
+43786		atVitalityBase	3474	3474												
+43787		atAllTypeCriticalStrike	2978	2978												
+43788		atPhysicsShieldBase	3350	3350												
+43789		atMagicShield	3350	3350												
+43790		atPhysicsShieldBase	6701	6701												
+43791		atMagicShield	6701	6701												
+43792		atVitalityBase	4467	4467												
+43793		atPhysicsOvercomeBase	3243	3243												
+43794		atMagicOvercome	3243	3243												
+43795		atVitalityBase	1621	1621												
+43796		atPhysicsShieldBase	5559	5559												
+43797		atMagicShield	5559	5559												
+43798		atHasteBase	3706	3706												
+43799		atPhysicsAttackPowerBase	1244	1244												
+43800		atMagicAttackPowerBase	1493	1493												
+43801		atPhysicsShieldBase	14193	14193												
+43802		atVitalityBase	3041	3041												
+43803		atMagicShield	14193	14193												
+43804		atPhysicsAttackPowerBase	2118	2118												
+43805		atMagicAttackPowerBase	2541	2541												
+43806		atAllTypeCriticalStrike	4731	4731												
+43807		atPhysicsOvercomeBase	4731	4731												
+43808		atMagicOvercome	4731	4731												
+43809		atVitalityBase	3548	3548												
+43810		atPhysicsShieldBase	7096	7096												
+43811		atMagicShield	7096	7096												
+43812		atVitalityBase	6623	6623												
+43813		atVitalityBase	5677	5677												
+43814		atPhysicsAttackPowerBase	2723	2723												
+43815		atMagicAttackPowerBase	3268	3268												
+43816		atAllTypeCriticalStrike	6083	6083												
+43817		atPhysicsAttackPowerBase	2178	2178												
+43818		atMagicAttackPowerBase	2614	2614												
+43819		atPhysicsShieldBase	6843	6843												
+43820		atMagicShield	6843	6843												
+43821		atPhysicsShieldBase	15511	15511												
+43822		atMagicShield	15511	15511												
+43823		atVitalityBase	8516	8516												
+43824		atPhysicsOvercomeBase	6623	6623												
+43825		atMagicOvercome	6623	6623												
+43826		atPhysicsShieldBase	11354	11354												
+43827		atMagicShield	11354	11354												
+43828		atHasteBase	7570	7570												
+43829		atPhysicsAttackPowerBase	2541	2541												
+43830		atMagicAttackPowerBase	3050	3050												
+43831		atPhysicsShieldBase	3832	3832												
+43832		atMagicShield	3832	3832												
+43833		atAllTypeCriticalStrike	2780	2780												
+43834		atMagicAttackPowerBase	2033	2033												
+43835		atAllTypeCriticalStrike	5677	5677												
+43836		atMagicAttackPowerBase	1673	1673												
+43837		atAllTypeCriticalStrike	3309	3309												
+43838		atPhysicsAttackPowerBase	3026	3026												
+43839		atMagicAttackPowerBase	3631	3631												
+43840		atAllTypeCriticalStrike	6759	6759												
+43841		atPhysicsOvercomeBase	3309	3309												
+43842		atMagicOvercome	3309	3309												
+43843		atPhysicsOvercomeBase	6759	6759												
+43844		atMagicOvercome	6759	6759												
+43845		atPhysicsShieldBase	4963	4963												
+43846		atMagicShield	4963	4963												
+43847		atPhysicsShieldBase	10138	10138												
+43848		atMagicShield	10138	10138												
+43849		atPhysicsAttackPowerBase	1824	1824												
+43850		atPhysicsAttackPowerBase	2098	2098												
+43851		atMagicAttackPowerBase	2518	2518												
+43852		atAllTypeCriticalStrike	3971	3971												
+43853		atPhysicsAttackPowerBase	4285	4285												
+43854		atMagicAttackPowerBase	5142	5142												
+43855		atAllTypeCriticalStrike	8110	8110												
+43856		atAllTypeCriticalDamagePowerBase	4461	4461												
+43857		atPhysicsOvercomeBase	3971	3971												
+43858		atMagicOvercome	3971	3971												
+43859		atPhysicsOvercomeBase	8110	8110												
+43860		atMagicOvercome	8110	8110												
+43861		atPhysicsAttackPowerBase	1657	1657												
+43862		atMagicAttackPowerBase	1988	1988												
+43863		atPhysicsAttackPowerBase	2631	2631												
+43864		atMagicAttackPowerBase	3158	3158												
+43865		atPhysicsAttackPowerBase	5375	5375												
+43866		atMagicAttackPowerBase	6449	6449												
+43867		atPhysicsAttackPowerBase	1920	1920												
+43868		atMagicAttackPowerBase	2304	2304												
+43869		atPhysicsOvercomeBase	2382	2382												
+43870		atMagicOvercome	2382	2382												
+43871		atPhysicsAttackPowerBase	2833	2833												
+43872		atMagicAttackPowerBase	3400	3400												
+43873		atVitalityBase	1787	1787												
+43874		atPhysicsAttackPowerBase	2809	2809												
+43875		atMagicAttackPowerBase	3371	3371												
+43876		atVitalityBase	3650	3650												
+43877		atPhysicsAttackPowerBase	5738	5738												
+43878		atMagicAttackPowerBase	6885	6885												
+43879		atMagicCriticalStrike	752	752												
+43880		atAllTypeCriticalStrike	752	752												
+43881		atPhysicsCriticalStrike	752	752												
+43882		atMagicCriticalStrike	1074	1074												
+43883		atMagicOvercome	1189	1189												
+43884		atPhysicsOvercomeBase	1189	1189												
+43885		atMagicCriticalStrike	1522	1522												
+43886		atPhysicsCriticalStrike	1522	1522												
+43887		atMagicCriticalStrike	1128	1128												
+43888		atAllTypeCriticalStrike	1128	1128												
+43889		atPhysicsCriticalStrike	1128	1128												
+43890		atMagicOvercome	1128	1128												
+43891		atPhysicsOvercomeBase	1128	1128												
+43892		atMagicOvercome	1612	1612												
+43893		atPhysicsOvercomeBase	1612	1612												
+43894		atMagicCriticalStrike	761	761												
+43895		atPhysicsCriticalStrike	761	761												
+43896		atSolarCriticalStrike	1289	1289												
+43897		atNeutralCriticalStrike	1289	1289												
+43898		atPhysicsCriticalStrike	1289	1289												
+43899		atLunarCriticalStrike	1289	1289												
+43900		atPoisonCriticalStrike	1289	1289												
+43901		atSolarAndLunarCriticalStrike	1289	1289												
+43902		atAllTypeCriticalStrike	792	792												
+43903		atSpunkBase	309	309												
+43904		atSolarAttackPowerBase	1408	1408												
+43905		atSolarCriticalStrike	1585	1585												
+43906		atNeutralAttackPowerBase	1408	1408												
+43907		atNeutralCriticalStrike	1585	1585												
+43908		atStrengthBase	309	309												
+43909		atPhysicsAttackPowerBase	1173	1173												
+43910		atPhysicsCriticalStrike	1585	1585												
+43911		atAgilityBase	309	309												
+43912		atLunarAttackPowerBase	1408	1408												
+43913		atLunarCriticalStrike	1585	1585												
+43914		atPoisonAttackPowerBase	1408	1408												
+43915		atPoisonCriticalStrike	1585	1585												
+43916		atSolarAndLunarAttackPowerBase	1408	1408												
+43917		atSolarAndLunarCriticalStrike	1585	1585												
+43918		atSolarAttackPowerBase	1623	1623												
+43919		atSolarCriticalStrike	1827	1827												
+43920		atNeutralAttackPowerBase	1623	1623												
+43921		atNeutralCriticalStrike	1827	1827												
+43922		atPhysicsCriticalStrike	1827	1827												
+43923		atLunarCriticalStrike	1827	1827												
+43924		atPoisonAttackPowerBase	1623	1623												
+43925		atPoisonCriticalStrike	1827	1827												
+43926		atSolarAndLunarAttackPowerBase	1623	1623												
+43927		atSolarAndLunarCriticalStrike	1827	1827												
+43928		atSolarAttackPowerBase	1718	1718												
+43929		atSolarOvercomeBase	1934	1934												
+43930		atNeutralAttackPowerBase	1718	1718												
+43931		atNeutralOvercomeBase	1934	1934												
+43932		atPhysicsOvercomeBase	1934	1934												
+43933		atLunarAttackPowerBase	1718	1718												
+43934		atLunarOvercomeBase	1934	1934												
+43935		atPoisonAttackPowerBase	1718	1718												
+43936		atPoisonOvercomeBase	1934	1934												
+43937		atSolarAndLunarAttackPowerBase	1718	1718												
+43938		atSolarAndLunarOvercomeBase	1934	1934												
+43939		atVitalityBase	1685	1685												
+43940		atSolarAttackPowerBase	1519	1519												
+43941		atSolarOvercomeBase	1640	1640												
+43942		atStrainBase	1458	1458												
+43943		atVitalityBase	2277	2277												
+43944		atToughnessBase	620	620												
+43945		atStrainBase	1859	1859												
+43946		atNeutralAttackPowerBase	1519	1519												
+43947		atNeutralOvercomeBase	1640	1640												
+43948		atTherapyPowerBase	2867	2867												
+43949		atPhysicsAttackPowerBase	1266	1266												
+43950		atPhysicsOvercomeBase	1640	1640												
+43951		atPhysicsShieldBase	1549	1549												
+43952		atStrainBase	1487	1487												
+43953		atLunarAttackPowerBase	1519	1519												
+43954		atLunarOvercomeBase	1640	1640												
+43955		atPoisonAttackPowerBase	1519	1519												
+43956		atPoisonOvercomeBase	1640	1640												
+43957		atSolarAndLunarAttackPowerBase	1519	1519												
+43958		atSolarAndLunarOvercomeBase	1640	1640												
+43959		atDodge	930	930												
+43960		atParryBase	930	930												
+43961		atParryValueBase	8959	8959												
+43962		atDodge	426	426												
+43963		atSurplusValueBase	375	375												
+43964		atParryBase	426	426												
+43965		atParryValueBase	2462	2462												
+43966		atVitalityBase	1056	1056												
+43967		atParryValueBase	3053	3053												
+43968		atHasteBase	338	338												
+43969		atMagicCriticalStrike	795	795												
+43970		atStrainBase	706	706												
+43971		atAllTypeCriticalStrike	795	795												
+43972		atPhysicsCriticalStrike	795	795												
+43973		atVitalityBase	877	877												
+43974		atVitalityBase	938	938												
+43975		atMagicCriticalStrike	912	912												
+43976		atStrainBase	811	811												
+43977		atAllTypeCriticalStrike	912	912												
+43978		atVitalityBase	1267	1267												
+43979		atStrainBase	608	608												
+43980		atAllTypeCriticalStrike	858	858												
+43981		atPhysicsCriticalStrike	858	858												
+43982		atVitalityBase	1192	1192												
+43983		atParryBase	596	596												
+43984		atParryValueBase	3447	3447												
+43985		atMagicOvercome	858	858												
+43986		atPhysicsOvercomeBase	858	858												
+43987		atMagicOvercome	1104	1104												
+43988		atPhysicsOvercomeBase	1104	1104												
+43989		atVitalityBase	1533	1533												
+43990		atPhysicsShieldBase	1073	1073												
+43991		atParryValueBase	3723	3723												
+43992		atActiveThreatCoefficient			726	726										
+43993		atStrainBase	618	618												
+43994		atMagicShield	773	773												
+43995		atMagicOvercome	1192	1192												
+43996		atPhysicsOvercomeBase	1192	1192												
+43997		atHasteBase	1192	1192												
+43998		atVitalityBase	1655	1655												
+43999		atPhysicsShieldBase	1159	1159												
+44000		atMagicCriticalStrike	996	996												
+44001		atSurplusValueBase	885	885												
+44002		atAllTypeCriticalStrike	996	996												
+44003		atHasteBase	996	996												
+44004		atParryValueBase	3998	3998												
+44005		atActiveThreatCoefficient			780	780										
+44006		atMagicOvercome	996	996												
+44007		atStrainBase	885	885												
+44008		atPhysicsOvercomeBase	996	996												
+44009		atVitalityBase	1316	1316												
+44010		atStrainBase	1138	1138												
+44011		atVitalityBase	1778	1778												
+44012		atPhysicsShieldBase	1245	1245												
+44013		atVitalityBase	1478	1478												
+44014		atParryValueBase	4274	4274												
+44015		atActiveThreatCoefficient			834	834										
+44016		atStrainBase	946	946												
+44017		atMagicShield	887	887												
+44018		atSurplusValueBase	591	591												
+44019		atVitalityBase	1407	1407												
+44020		atMagicOvercome	1369	1369												
+44021		atStrainBase	1216	1216												
+44022		atPhysicsOvercomeBase	1369	1369												
+44023		atVitalityBase	1901	1901												
+44024		atPhysicsShieldBase	1331	1331												
+44025		atSurplusValueBase	608	608												
+44026	0	atSkillEventHandler	1928	1928	0	0	0	0	0	0	0	0	0	0	0	0
+44027	0	atSkillEventHandler	1950	1950	0	0	0	0	0	0	0	0	0	0	0	0
+44028	0	atSkillEventHandler	1929	1929	0	0	0	0	0	0	0	0	0	0	0	0
+44029	0	atSkillEventHandler	1946	1946	0	0	0	0	0	0	0	0	0	0	0	0
+44030	0	atSkillEventHandler	1933	1933	0	0	0	0	0	0	0	0	0	0	0	0
+44031	0	atSkillEventHandler	1951	1951	0	0	0	0	0	0	0	0	0	0	0	0
+44032	0	atSkillEventHandler	1931	1931	0	0	0	0	0	0	0	0	0	0	0	0
+44033	0	atSkillEventHandler	1932	1932	0	0	0	0	0	0	0	0	0	0	0	0
+44034	0	atSkillEventHandler	1930	1930	0	0	0	0	0	0	0	0	0	0	0	0
+44035	0	atSkillEventHandler	1947	1947	0	0	0	0	0	0	0	0	0	0	0	0
+44036	0	atSkillEventHandler	1934	1934	0	0	0	0	0	0	0	0	0	0	0	0
+44037	0	atSkillEventHandler	1948	1948	0	0	0	0	0	0	0	0	0	0	0	0
+44038	0	atSkillEventHandler	1935	1935	0	0	0	0	0	0	0	0	0	0	0	0
+44039	0	atSkillEventHandler	1936	1936	0	0	0	0	0	0	0	0	0	0	0	0
+44040	0	atSkillEventHandler	1945	1945	0	0	0	0	0	0	0	0	0	0	0	0
+44041	0	atSkillEventHandler	1937	1937	0	0	0	0	0	0	0	0	0	0	0	0
+44042	0	atSkillEventHandler	1939	1939	0	0	0	0	0	0	0	0	0	0	0	0
+44043	0	atSkillEventHandler	1938	1938	0	0	0	0	0	0	0	0	0	0	0	0
+44044	0	atSkillEventHandler	1952	1952	0	0	0	0	0	0	0	0	0	0	0	0
+44045	0	atSkillEventHandler	1940	1940	0	0	0	0	0	0	0	0	0	0	0	0
+44046	0	atSkillEventHandler	1953	1953	0	0	0	0	0	0	0	0	0	0	0	0
+44047	0	atSkillEventHandler	1941	1941	0	0	0	0	0	0	0	0	0	0	0	0
+44048	0	atSkillEventHandler	1949	1949	0	0	0	0	0	0	0	0	0	0	0	0
+44049	0	atSkillEventHandler	1942	1942	0	0	0	0	0	0	0	0	0	0	0	0
+44050	0	atSkillEventHandler	1943	1943	0	0	0	0	0	0	0	0	0	0	0	0
+44051	0	atSkillEventHandler	1944	1944	0	0	0	0	0	0	0	0	0	0	0	0
+44052	0	atSkillEventHandler	1962	1962	0	0	0	0	0	0	0	0	0	0	0	0
+44053		atPhysicsShieldBase	1076	1076												
+44054		atMagicShield	1721	1721												
+44055		atMagicShield	1801	1801												
+44056		atMagicShield	1880	1880												
+44057		atPhysicsShieldBase	1410	1410												
+44058		atMagicShield	1978	1978												
+44059		atPhysicsShieldBase	1483	1483												
+44060		atPhysicsShieldBase	1297	1297												
+44061		atMagicShield	2075	2075												
+44062		atMagicShield	2181	2181												
+44063		atPhysicsShieldBase	1429	1429												
+44064		atMagicShield	2287	2287												
+44065		atPhysicsShieldBase	1715	1715												
+44066		atMagicShield	318	318												
+44067		atMagicShield	909	909												
+44068		atMagicShield	936	936												
+44069		atMagicShield	971	971												
+44070		atMagicShield	742	742												
+44071		atMagicShield	1006	1006												
+44072		atPhysicsShieldBase	755	755												
+44073		atMagicShield	1051	1051												
+44074		atPhysicsShieldBase	788	788												
+44075		atMagicShield	1624	1624												
+44076		atMagicShield	1717	1717												
+44077		atPhysicsShieldBase	1288	1288												
+44078		atPhysicsShieldBase	1131	1131												
+44079		atPhysicsShieldBase	1357	1357												
+44080		atMagicShield	1902	1902												
+44081		atMagicShield	1995	1995												
+44082		atPhysicsShieldBase	1496	1496												
+44083		atMagicShield	2128	2128												
+44084		atPhysicsShieldBase	1596	1596												
+44085	0	atSetEquipmentRecipe	5323	5323	1	1	0	0	0	0	0	0	0	0	0	0
+44086	0	atSetEquipmentRecipe	5324	5324	1	1	0	0	0	0	0	0	0	0	0	0
+44087	0	atSetEquipmentRecipe	5321	5321	1	1	0	0	0	0	0	0	0	0	0	0
+44088	0	atSetEquipmentRecipe	5322	5322	1	1	0	0	0	0	0	0	0	0	0	0
+44089	0	atSkillEventHandler	1955	1955	0	0										
+44090	0	atSkillEventHandler	1963	1963	0	0	0	0	0	0	0	0	0	0	0	0
+44091	0	atSkillEventHandler	1964	1964	0	0	0	0	0	0	0	0	0	0	0	0
+44092	0	atSkillEventHandler	1965	1965	0	0	0	0	0	0	0	0	0	0	0	0
+44093	0	atSkillEventHandler	1966	1966	0	0	0	0	0	0	0	0	0	0	0	0
+44094	0	atSkillEventHandler	1967	1967	0	0	0	0	0	0	0	0	0	0	0	0
+44095	0	atSkillEventHandler	1968	1968	0	0	0	0	0	0	0	0	0	0	0	0
+44096	0	atSkillEventHandler	1969	1969	0	0	0	0	0	0	0	0	0	0	0	0
+44097	0	atSkillEventHandler	1970	1970	0	0	0	0	0	0	0	0	0	0	0	0
+44098	0	atSkillEventHandler	1971	1971	0	0	0	0	0	0	0	0	0	0	0	0
+44099	0	atSkillEventHandler	1972	1972	0	0	0	0	0	0	0	0	0	0	0	0
+44100	0	atSkillEventHandler	1973	1973	0	0	0	0	0	0	0	0	0	0	0	0
+44101	0	atSkillEventHandler	1974	1974	0	0	0	0	0	0	0	0	0	0	0	0
+44102	0	atSkillEventHandler	1975	1975	0	0	0	0	0	0	0	0	0	0	0	0
+44103	0	atSkillEventHandler	1976	1976	0	0	0	0	0	0	0	0	0	0	0	0
+44104	0	atSkillEventHandler	1977	1977	0	0	0	0	0	0	0	0	0	0	0	0
+44105	0	atSkillEventHandler	1978	1978	0	0	0	0	0	0	0	0	0	0	0	0
+44106	0	atSkillEventHandler	1979	1979	0	0	0	0	0	0	0	0	0	0	0	0
+44107	0	atSkillEventHandler	1980	1980	0	0	0	0	0	0	0	0	0	0	0	0
+44108	0	atSkillEventHandler	1981	1981	0	0	0	0	0	0	0	0	0	0	0	0
+44109	0	atSkillEventHandler	1982	1982	0	0	0	0	0	0	0	0	0	0	0	0
+44110	0	atSkillEventHandler	1983	1983	0	0	0	0	0	0	0	0	0	0	0	0
+44111	0	atSkillEventHandler	1984	1984	0	0	0	0	0	0	0	0	0	0	0	0
+44112	0	atSkillEventHandler	1985	1985	0	0	0	0	0	0	0	0	0	0	0	0
+44113	0	atSkillEventHandler	1986	1986	0	0	0	0	0	0	0	0	0	0	0	0
+44114	0	atSkillEventHandler	1987	1987	0	0	0	0	0	0	0	0	0	0	0	0
+44115	0	atSkillEventHandler	1988	1988	0	0	0	0	0	0	0	0	0	0	0	0
+44116	0	atSkillEventHandler	1961	1961	0	0	0	0	0	0	0	0	0	0	0	0
+44117	0	atSetEquipmentRecipe	5325	5325	1	1	0	0	0	0	0	0	0	0	0	0
+44118	0	atSetEquipmentRecipe	5326	5326	1	1	0	0	0	0	0	0	0	0	0	0
+44119	0	atSkillEventHandler	1957	1957	0	0	0	0	0	0	0	0	0	0	0	0
+44120	0	atSkillEventHandler	1958	1958	0	0	0	0	0	0	0	0	0	0	0	0
+44121	0	atSkillEventHandler	1959	1959	0	0	0	0	0	0	0	0	0	0	0	0
+44122	0	atSkillEventHandler	1960	1960	0	0	0	0	0	0	0	0	0	0	0	0
+44123	0	atSkillEventHandler	1961	1961	0	0	0	0	0	0	0	0	0	0	0	0
+44124	0	atSetEquipmentRecipe	5327	5327	1	1	0	0	0	0	0	0	0	0	0	0
+44125		atPhysicsShieldBase	2345	2345												
+44126		atMagicShield	3752	3752												
+44127		atPhysicsShieldBase	2814	2814												
+44128	0	atSkillEventHandler	1989	1989	0	0	0	0	0	0	0	0	0	0	0	0
+44129	0	atSkillEventHandler	1990	1990	0	0	0	0	0	0	0	0	0	0	0	0
+44130	0	atSkillEventHandler	1991	1991	0	0	0	0	0	0	0	0	0	0	0	0
+44131	0	atSkillEventHandler	1992	1992	0	0	0	0	0	0	0	0	0	0	0	0
+44132	0	atSkillEventHandler	1993	1993	0	0	0	0	0	0	0	0	0	0	0	0
+44133	0	atSkillEventHandler	1994	1994	0	0	0	0	0	0	0	0	0	0	0	0
+44134	0	atSkillEventHandler	1995	1995	0	0	0	0	0	0	0	0	0	0	0	0
+44135	0	atSkillEventHandler	1996	1996	0	0	0	0	0	0	0	0	0	0	0	0
+44136		atStrainBase	635	635												
+44137		atSolarOvercomeBase	1429	1429												
+44138		atNeutralOvercomeBase	1429	1429												
+44139		atPhysicsOvercomeBase	1429	1429												
+44140		atLunarOvercomeBase	1429	1429												
+44141		atPoisonOvercomeBase	1429	1429												
+44142		atSolarAndLunarOvercomeBase	1429	1429												
+44143		atDecriticalDamagePowerBase	635	635												
+44144		atSurplusValueBase	510	510												
+44145		atStrainBase	741	741												
+44146		atParryValueBase	3348	3348												
+44147		atDodge	745	745												
+44148		atSolarCriticalStrike	834	834												
+44149		atNeutralCriticalStrike	834	834												
+44150		atLunarCriticalStrike	834	834												
+44151		atPoisonCriticalStrike	834	834												
+44152		atSolarAndLunarCriticalStrike	834	834												
+44153		atSolarOvercomeBase	834	834												
+44154		atNeutralOvercomeBase	834	834												
+44155		atLunarOvercomeBase	834	834												
+44156		atPoisonOvercomeBase	834	834												
+44157		atSolarAndLunarOvercomeBase	834	834												
+44158		atVitalityBase	1390	1390												
+44159		atDecriticalDamagePowerBase	529	529												
+44160		atSolarCriticalStrike	1072	1072												
+44161		atDecriticalDamagePowerBase	476	476												
+44162		atHasteBase	1072	1072												
+44163		atNeutralCriticalStrike	1072	1072												
+44164		atSolarAndLunarCriticalStrike	1072	1072												

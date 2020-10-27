@@ -165,3 +165,10 @@ ID	Level	Desc
 5091	1	<text>text="“星垂平野”伤害提高5%" font=101 </text>
 5092	1	<text>text="“寂洪荒”伤害提高5%" font=101 </text>
 5093	1	<text>text="“寂洪荒”会心提高5%" font=101 </text>
+5321	1	<text>text="“兵主逆”伤害和疗伤成效提高10%" font=101 </text>
+5322	1	<text>text="“天斗旋”伤害和疗伤成效提高10%" font=101 </text>
+5323	1	<text>text="“变卦”调息时间降低2秒" font=101 </text>
+5324	1	<text>text="“巨门北落”调息时间降低4秒" font=101 </text>
+5325	1	<text>text="“三星临”伤害和疗伤成效提高5%" font=101 </text>
+5326	1	<text>text="“兵主逆”伤害和疗伤成效提高5%" font=101 </text>
+5327	1	<text>text="“兵主逆”会心提高5%" font=101 </text>
