@@ -47,7 +47,7 @@ class RepresentParser {
         var represent = Represent(id: setId, name: exteriorSet.setName);
         if (represents[setId] == null) {
             represents[setId] = represent;
-        } 
+        }
         return represent;
     }
 

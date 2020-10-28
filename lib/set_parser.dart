@@ -228,6 +228,8 @@ class SetParser {
                         case 'atSolarOvercomeBase': // 阳性破防
                             addAttribute('overcome', int.tryParse(attribute.param1Min) ?? 0, 'SOLAR', '阳性破防等级'); break;
 
+                        case 'atSurplusValueBase': // 破招
+                            addAttribute('overcome', int.tryParse(attribute.param1Min) ?? 0, 'NONE', '破招等级'); break;
                         case 'atDodge': // 闪避
                             addAttribute('dodge', int.tryParse(attribute.param1Min) ?? 0, 'NONE', '闪避等级'); break;
                         case 'atStrainBase': // 无双

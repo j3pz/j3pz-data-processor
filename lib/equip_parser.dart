@@ -180,6 +180,7 @@ class EquipParser {
             || raw.require1Value < 95 // 低等级
             || raw.magicKind == '通用' // 纯通用装备，无用
             || raw.id < minId // 老装备
+            || raw.maxDurability == '' // 无属性
         );
     }
 
@@ -315,8 +316,9 @@ class EquipParser {
             raw.magic12Type,
         ].forEach((String attributeId) {
             var attribute = attributes[attributeId];
-            var key = attribute.modifyType;
+            var key = attribute?.modifyType ?? '';
             switch (key) {
+                case '': break;
                 // 基础属性
                 case 'atVitalityBase': // 体质
                     equip.vitality = int.tryParse(attribute.param1Min) ?? 0; break;
