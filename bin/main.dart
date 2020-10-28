@@ -9,6 +9,8 @@ void main(List<String> arguments) {
         furniture();
     } else if (arguments[0] == 'stone') {
         stone();
+    } else if (arguments[0] == 'buff') {
+        buff();
     } else {
         print('unsupported command');
     }

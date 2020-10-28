@@ -134,3 +134,15 @@ void stone() async {
     stoneParser.export('./output');
     print('done');
 }
+
+void buff() async {
+    print('reading files');
+    var formations = await readFile(path: './raw/formations.tab', id: 'skillId', delimiter: ',');
+    var ids = await readFile(path: './output/buffId.tab', delimiter: ',');
+    var savedEffectId = await readFile(path: './output/effectId.tab', delimiter: ',');
+    var skill = await readFile(path: './raw/skill.txt', ids: ['SkillID', 'Level']);
+    var buff = await readFile(path: './raw/Buff.tab', ids: ['ID', 'Level']);
+    print('parsing');
+    print('generating');
+    print('done');
+}
