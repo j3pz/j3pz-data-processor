@@ -16,7 +16,7 @@ class StoneParser {
 
     int stoneNext = 0;
     int attributeNext = 0;
-    
+
     StoneParser({
         Map others,
         Map<String, dynamic> items,
@@ -95,7 +95,7 @@ class StoneParser {
     void parseAttributeStone(RawOther raw) {
         var identifier = 'stone-${raw.id}';
         var stone = AttributeStone(
-            id: stoneIds[identifier] ?? getNewId(identifier), 
+            id: stoneIds[identifier] ?? getNewId(identifier),
             name: raw.name,
             level: raw.detailType,
         );
@@ -119,29 +119,29 @@ class StoneParser {
             var info = identifier.split('-');
             var key = info[0];
             var value1 = double.tryParse(info[1]) ?? 0;
-            var value2 = double.parse(((double.tryParse(info[2]) ?? 0) / 1024).toStringAsFixed(2));
+            var value2 = double.tryParse(info[2]) ?? 0;
             switch (key) {
                 // 基础属性
                 case 'atVitalityBase': // 体质
                     attribute = applyAttribute(attribute, 'vitality', value1, 'NONE', '体质'); break;
                 case 'atVitalityBasePercentAdd': // 体质
-                    attribute = applyAttribute(attribute, 'vitality', value2, 'NONE', '体质'); break;
+                    attribute = applyAttribute(attribute, 'vitalityPercent', value2, 'NONE', '体质'); break;
                 case 'atSpunkBase': // 元气
                     attribute = applyAttribute(attribute, 'spunk', value1, 'NONE', '元气'); break;
                 case 'atSpunkBasePercentAdd': // 元气
-                    attribute = applyAttribute(attribute, 'spunk', value2, 'NONE', '元气'); break;
+                    attribute = applyAttribute(attribute, 'spunkPercent', value2, 'NONE', '元气'); break;
                 case 'atSpiritBase': // 根骨
                     attribute = applyAttribute(attribute, 'spirit', value1, 'NONE', '根骨'); break;
                 case 'atSpiritBasePercentAdd': // 根骨
-                    attribute = applyAttribute(attribute, 'spirit', value2, 'NONE', '根骨'); break;
+                    attribute = applyAttribute(attribute, 'spiritPercent', value2, 'NONE', '根骨'); break;
                 case 'atStrengthBase': // 力道
                     attribute = applyAttribute(attribute, 'strength', value1, 'NONE', '力道'); break;
                 case 'atStrengthBasePercentAdd': // 力道
-                    attribute = applyAttribute(attribute, 'strength', value2, 'NONE', '力道'); break;
+                    attribute = applyAttribute(attribute, 'strengthPercent', value2, 'NONE', '力道'); break;
                 case 'atAgilityBase': // 身法
                     attribute = applyAttribute(attribute, 'agility', value1, 'NONE', '身法'); break;
                 case 'atAgilityBasePercentAdd': // 身法
-                    attribute = applyAttribute(attribute, 'agility', value2, 'NONE', '身法'); break;
+                    attribute = applyAttribute(attribute, 'agilityPercent', value2, 'NONE', '身法'); break;
                 case 'atBasePotentialAdd': // 全属性
                     attribute = applyAttribute(attribute, 'vitality|spunk|spirit|strength|agility', value1, 'NONE', '全属性'); break;
                 case 'atMagicAttackPowerBase': // 内功攻击
@@ -158,10 +158,10 @@ class StoneParser {
                     attribute = applyAttribute(attribute, 'attack', value1, 'SOLAR', '阳性·攻击'); break;
                 case 'atSolarAndLunarAttackPowerBase': // 阴阳攻击
                     attribute = applyAttribute(attribute, 'attack', value1, 'SOLAR_LUNAR', '阴阳·攻击'); break;
-                case 'atTherapyPowerBase': // 治疗
-                    attribute = applyAttribute(attribute, 'heal', value1, 'NONE', '治疗成效'); break;
-                case 'atTherapyCoefficient': // 治疗
-                    attribute = applyAttribute(attribute, 'heal', value2, 'NONE', '治疗成效'); break;
+                case 'atTherapyPowerBase': // 治疗量
+                    attribute = applyAttribute(attribute, 'heal', value1, 'NONE', '治疗量'); break;
+                case 'atTherapyCoefficient': // 治疗成效
+                    attribute = applyAttribute(attribute, 'healCoefficient', value2, 'NONE', '治疗成效'); break;
                 case 'atAllTypeCriticalStrike': // 会心
                     attribute = applyAttribute(attribute, 'crit', value1, 'ALL', '全会心'); break;
                 case 'atLunarCriticalStrike': // 会心
@@ -269,7 +269,7 @@ class StoneParser {
                     attribute = applyAttribute(attribute, 'beTherapy', value2, 'NONE', '被疗成效'); break;
                 case 'atModifyCostManaPercent': // 减蓝耗
                     attribute = applyAttribute(attribute, 'manaCost', value2, 'NONE', '减蓝耗'); break;
-                default: 
+                default:
                     return;
             }
             attribute.requiredQuantity = int.tryParse(info[3]) ?? 0;
