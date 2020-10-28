@@ -1,5 +1,4 @@
-import 'dart:convert';
-
+import 'package:j3pz_data_preprocessor/buff_parser.dart';
 import 'package:j3pz_data_preprocessor/effect_parser.dart';
 import 'package:j3pz_data_preprocessor/enchant_parser.dart';
 import 'package:j3pz_data_preprocessor/equip_parser.dart';
@@ -142,7 +141,26 @@ void buff() async {
     var savedEffectId = await readFile(path: './output/effectId.tab', delimiter: ',');
     var skill = await readFile(path: './raw/skill.txt', ids: ['SkillID', 'Level']);
     var buff = await readFile(path: './raw/Buff.tab', ids: ['ID', 'Level']);
+    var event = await readFile(path: './raw/skillevent.txt');
+    var recipe = await readFile(path: './raw/equipmentrecipe.txt', ids: ['ID', 'Level']);
+
     print('parsing');
+
+    var effectParser = EffectParser(
+        effectId: savedEffectId,
+        event: event,
+        recipe: recipe,
+    );
+
+    var buffParser = BuffParser(
+        formations: formations,
+        ids: ids,
+        skills: skill,
+        buffs: buff,
+        effectParser: effectParser,
+    );
     print('generating');
+    buffParser.export('./output');
+    effectParser.export('./output');
     print('done');
 }

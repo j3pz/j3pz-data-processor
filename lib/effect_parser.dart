@@ -178,4 +178,21 @@ class EffectParser {
         }
         return effect;
     }
+
+    Effect getBuffEffect({ String id, List<String>keys, List<num> values, List<String> decorators, List<String> description }) {
+        var identifier = 'buff-$id';
+        var databaseId = effectIds[identifier] ?? getNewId(identifier);
+        var effect = Effect(
+            id: databaseId,
+            trigger: 'Passive',
+            description: description.join(';'),
+        );
+        effect.attribute = keys;
+        effect.value = values;
+        effect.decorator = decorators;
+        if (effects['${effect.id}'] == null) {
+            effects['${effect.id}'] = effect;
+        }
+        return effect;
+    }
 }
