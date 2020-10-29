@@ -370,3 +370,16 @@ id,attribute,decorator,value,trigger,description
 433,,,,Passive,装备：击杀非侠士单位后获得1层激奋效果，提升自身外功攻击和内功攻击，最多叠加2层。
 434,,,,Passive,装备：击杀非侠士单位后获得1层激奋效果，提升自身外功攻击和内功攻击，最多叠加2层。
 435,,,,Passive,“三星临”伤害和疗伤成效提高5%;“兵主逆”伤害和疗伤成效提高5%;装备：施展内功招式命中后，一定几率触发6秒内“兵主逆”“天斗旋”无调息时间；施展“天斗旋”无需运功;装备：施展“三星临”有几率造成一次额外伤害效果
+436,"strengthPercent,vitalityPercent",NONE,102,Passive,力道、体质提高10%。
+437,"physicsShieldPercent,magicShieldPercent",NONE,204,Passive,外功防御和内功防御等级提高20%。
+438,healthPercent,NONE,102,Passive,基础气血和内力上限提高10%。
+439,healthPercent,NONE,204,Passive,基础气血和内力上限提高20%。
+440,"physicsShieldPercent,magicShieldPercent",NONE,204,Passive,外功防御和内功防御等级提高20%。
+441,healthPercent,NONE,204,Passive,基础气血上限提高20%
+442,healthPercent,NONE,102,Passive,基础气血最大值提高10%，被疗伤成效提高10%。
+443,"spiritPercent,vitalityPercent",NONE,102,Passive,基础根骨、体质提高10%，被疗伤成效提高10%。
+444,"strengthPercent,vitalityPercent",NONE,102,Passive,力道、体质提高10%。
+445,vitalityPercent,NONE,102,Passive,体质和被疗伤效果提高10%。
+446,"agilityPercent,vitalityPercent",NONE,102,Passive,体质和身法提高10%。
+447,agilityPercent,NONE,102,Passive,身法和移动速度提高10%。
+448,"spunkPercent,vitalityPercent",NONE,102,Passive,体质和元气提高10%。
