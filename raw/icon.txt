@@ -14375,3 +14375,8 @@ ID	FileName	Frame	Kind	SubKind	Tag1	Tag2
 14509	item_20_10_29_47.UITex	0	防具	披风		
 14510	item_20_10_29_48.UITex	0	防具	宠物		
 14511	item_20_10_29_49.UITex	0	防具	宠物		
+14512	Skill_YTZ_20_10_28_1.UITex	0	技能	门派轻功		
+14513	Skill_YTZ_20_10_28_2.UITex	0	技能	门派轻功		
+14514	Skill_YTZ_20_10_28_3.UITex	0	技能	门派轻功		
+14515	Skill_YTZ_20_10_28_4.UITex	0	技能	门派轻功		
+14516	daoj_20_10_28_1.UITex	0	表情动作	宠物表情		
