@@ -219,7 +219,7 @@ class SourceParser {
             var bosses = bossGroups[i].replaceAll(RegExp(r'\[|\]'), '').split(',');
             var map = mapParser.gameMaps[mapId];
             bosses.forEach((name) {
-                var bossIdentifier = '$map-${name.trim()}';
+                var bossIdentifier = '$mapId-${name.trim()}';
                 var bossId = bossIds[bossIdentifier] ?? getNewBossId(bossIdentifier);
                 var boss = Boss(id: bossId, name: name, map: map);
                 var identifier = 'raid-$bossId';
