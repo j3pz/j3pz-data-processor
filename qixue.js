@@ -53,6 +53,36 @@ const kungfuMap = {
   27: '太玄经',
 };
 
+const kungfuMapReal = {
+  10026: '傲血战意',
+  10062: '铁牢律',
+  10003: '易筋经',
+  10002: '洗髓经',
+  10021: '花间游',
+  10028: '离经易道',
+  10175: '毒经',
+  10176: '补天诀',
+  10015: '太虚剑意',
+  10014: '紫霞功',
+  10081: '冰心诀',
+  10080: '云裳心经',
+  10224: '惊羽诀',
+  10225: '天罗诡道',
+  10242: '焚影圣诀',
+  10243: '明尊琉璃体',
+  10268: '笑尘决',
+  10144: '问水诀',
+  10145: '山居剑意',
+  10390: '分山劲',
+  10389: '铁骨衣',
+  10447: '莫问',
+  10448: '相知',
+  10464: '霸刀',
+  10533: '蓬莱',
+  10585: '凌雪阁',
+  10615: '太玄经',
+}
+
 function readCsvFile(file, isObj) {
   console.time(`reading ${file}`);
   return new Promise((resolve, reject) => {
@@ -93,8 +123,13 @@ async function init() {
   const points = await readCsvFile('./raw/TenExtraPoint.tab');
   const buffUi = await readCsvFile('./raw/buff.txt', true);
   const buffSetting = await readCsvFile('./raw/Buff.tab', true);
+  const pveList = await readCsvFile('./raw/skill_teach.tab', false);
+  const pvpList = await readCsvFile('./raw/skill_teach_recommend.tab', false);
+
+  const pointMap = {};
   // const result = {};
   const result = [];
+  let i = 1;
   for (const point of points) {
     const school = schoolMap[point.ForceID];
     const kungfu = kungfuMap[point.KungFuID];
@@ -189,7 +224,9 @@ async function init() {
         //   name: skill.Name,
         //   desc: skill.Desc,
         // });
+        pointMap[`${point.PointID}-${point[id]}`] = i;
         result.push({
+          id: i++,
           name: skill.Name,
           desc: desc,
           position: (point.PointID - 1) % 12 + 1,
@@ -204,14 +241,49 @@ async function init() {
     });
     // result[school][kungfu].push(info);
   }
-  // fs.writeFile('./output/qixue.json', JSON.stringify(result, null, 2), 'utf8', () => {
-  //   console.log('done');
-  // });
+
+  // console.log(pointMap);
+
+  const recommends = [];
+  const recomendIdMap = [];
+  let j = 1;
+
+  pveList.filter(row => row.Level.endsWith('~110')).forEach((row) => {
+    const kungfu = kungfuMapReal[row.KungfuID];
+    const recommend = {
+      id: j++,
+      name: row.Solution,
+      kungfu,
+    };
+    row.QixueList.split(';').forEach(qixue => {
+      const [point, , skillId] = qixue.split(',');
+      recomendIdMap.push({ talentRecommendId: recommend.id, talentId: pointMap[`${point}-${skillId}`] });
+    });
+    recommends.push(recommend);
+  });
+  pvpList.forEach((row) => {
+    const kungfu = kungfuMapReal[row.KungfuID];
+
+    [1, 2, 3, 4, 5, 6].map(v => [`Qixue${v}`, `QixueList${v}`]).forEach(([name, list]) => {
+      if (row[name] !== '') {
+        const recommend = {
+          id: j++,
+          name: row[name],
+          kungfu,
+        };
+        row[list].split(';').filter(q => q !== '').forEach(qixue => {
+          const [point, , skillId] = qixue.split(',');
+          recomendIdMap.push({ talentRecommendId: recommend.id, talentId: pointMap[`${point}-${skillId}`] });
+        });
+        recommends.push(recommend);
+      }
+    });
+  });
 
   const csvWriter = createCsvWriter({
     path: `./output/qixue.csv`,
     header: [
-        // { id: 'school', title: '门派' },
+        { id: 'id', title: 'id' },
         { id: 'kungfu', title: 'kungfu' },
         { id: 'position', title: 'index' },
         { id: 'name', title: 'name' },
@@ -223,7 +295,26 @@ async function init() {
     ],
   });
   csvWriter.writeRecords(result).then(() => {
-    console.log(`done`);
+    const recommendWriter = createCsvWriter({
+      path: `./output/talent_recommend.csv`,
+      header: [
+        { id: 'id', title: 'id' },
+        { id: 'kungfu', title: 'kungfu' },
+        { id: 'name', title: 'name' },
+      ],
+    });
+    recommendWriter.writeRecords(recommends).then(() => {
+      const recommendIdsWriter = createCsvWriter({
+        path: `./output/talent_recommend_talents.csv`,
+        header: [
+          { id: 'talentRecommendId', title: 'talentRecommendId' },
+          { id: 'talentId', title: 'talentId' },
+        ],
+      });
+      recommendIdsWriter.writeRecords(recomendIdMap).then(() => {
+        console.log(`done`);
+      });
+    });
   });
 }
 
