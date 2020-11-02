@@ -69,7 +69,7 @@ class EffectParser {
         effectIds = {};
         effectId.forEach((key, value) {
             String originalId = value['ID'];
-            if (originalId.contains('skill') || originalId.contains('event') || originalId.contains('attribute')) {
+            if (originalId.contains('skill') || originalId.contains('event') || originalId.contains('attribute') || originalId.contains('talent')) {
                 var databaseId = int.tryParse(value['databaseId']) ?? 0;
                 effectIds[originalId] = databaseId;
                 effectNext = max(effectNext, databaseId);
@@ -117,7 +117,11 @@ class EffectParser {
             } else if (type == 'recipe' && recipes['$id-$level'] != null) {
                 var desc = reg.stringMatch(recipes['$id-$level'].replaceAll('\n', ''))
                     .replaceAll('\\', '').replaceAll('"', '');
-                skillIds.add(id);
+                var identifier = id;
+                if (level != '1') {
+                    identifier = '$id|$level';
+                }
+                skillIds.add(identifier);
                 skillDescs.add(desc);
             } else {
                 exception = true;

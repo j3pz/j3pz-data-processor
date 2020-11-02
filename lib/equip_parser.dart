@@ -12,7 +12,7 @@ import 'package:j3pz_data_preprocessor/source_parser.dart';
 
 import 'source.dart';
 
-const spunkKungfu = ['万花', '少林', '唐门', '明教'];
+const spunkKungfu = ['万花', '少林', '唐门', '明教', '衍天'];
 const spiritKungfu = ['七秀', '五毒', '纯阳', '长歌'];
 const strengthKungfu = ['唐门', '天策', '丐帮', '霸刀'];
 const agilityKungfu = ['纯阳', '藏剑', '苍云', '蓬莱', '凌雪'];
