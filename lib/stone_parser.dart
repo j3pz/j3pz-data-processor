@@ -175,9 +175,9 @@ class StoneParser {
                 case 'atPoisonCriticalStrike': // 会心
                     attribute = applyAttribute(attribute, 'crit', value1, 'POISON', '毒性·会心'); break;
                 case 'atSolarAndLunarCriticalStrike': // 会心
-                    attribute = applyAttribute(attribute, 'crit', value1, 'SOLAR', '阳性·会心'); break;
-                case 'atSolarCriticalStrike': // 会心
                     attribute = applyAttribute(attribute, 'crit', value1, 'SOLAR_LUNAR', '阴阳·会心'); break;
+                case 'atSolarCriticalStrike': // 会心
+                    attribute = applyAttribute(attribute, 'crit', value1, 'SOLAR', '阳性·会心'); break;
                 case 'atAllTypeCriticalDamagePowerBase': // 会效
                     attribute = applyAttribute(attribute, 'critEffect', value1, 'ALL', '全会效'); break;
                 case 'atLunarCriticalDamagePowerBase': // 会效

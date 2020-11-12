@@ -182,9 +182,9 @@ id,name,decorator,key,value,requiredQuantity,requiredLevel
 181,内功·破防,MAGIC,overcome,195.0,11,40
 182,内功·破防,MAGIC,overcome,244.0,13,45
 183,内功·破防,MAGIC,overcome,293.0,14,50
-184,阴阳·会心,SOLAR_LUNAR,crit,195.0,11,40
-185,阴阳·会心,SOLAR_LUNAR,crit,244.0,13,45
-186,阴阳·会心,SOLAR_LUNAR,crit,293.0,14,50
+184,阳性·会心,SOLAR,crit,195.0,11,40
+185,阳性·会心,SOLAR,crit,244.0,13,45
+186,阳性·会心,SOLAR,crit,293.0,14,50
 187,混元·会心,NEUTRAL,crit,195.0,11,40
 188,混元·会心,NEUTRAL,crit,244.0,13,45
 189,混元·会心,NEUTRAL,crit,293.0,14,50
@@ -302,9 +302,9 @@ id,name,decorator,key,value,requiredQuantity,requiredLevel
 301,阴阳·破防,SOLAR_LUNAR,overcome,195.0,11,40
 302,阴阳·破防,SOLAR_LUNAR,overcome,244.0,13,45
 303,阴阳·破防,SOLAR_LUNAR,overcome,293.0,14,50
-304,阳性·会心,SOLAR,crit,195.0,11,40
-305,阳性·会心,SOLAR,crit,244.0,13,45
-306,阳性·会心,SOLAR,crit,293.0,14,50
+304,阴阳·会心,SOLAR_LUNAR,crit,195.0,11,40
+305,阴阳·会心,SOLAR_LUNAR,crit,244.0,13,45
+306,阴阳·会心,SOLAR_LUNAR,crit,293.0,14,50
 307,阴阳·会效,SOLAR_LUNAR,critEffect,195.0,11,40
 308,阴阳·会效,SOLAR_LUNAR,critEffect,244.0,13,45
 309,阴阳·会效,SOLAR_LUNAR,critEffect,293.0,14,50
