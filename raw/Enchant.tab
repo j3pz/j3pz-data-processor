@@ -7488,12 +7488,12 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11115	奉天·衣·染（御劲）	上装	御劲提升144点	atToughnessBase	144	144																										2				0	0
 11116	奉天·鞋·染（跑速）	鞋子	跑步速度提升5%（鞋子）	atMoveSpeedPercent	56	56																										9				0	0
 11117	山市鬼楼·御·腰	腰带限时		atSkillEventHandler	1904																										60	6				3	0
-11118	山市鬼楼·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11118	山市鬼楼·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道T.lua																										60	9				3	0
 11119	山市鬼楼·御·腕	护手限时		atSkillEventHandler	1905																										60	10				3	0
 11120	山市鬼楼·御·衣	上装限时		atSkillEventHandler	1906																										60	2				3	0
 11121	山市鬼楼·御·头	帽子限时		atSkillEventHandler	1907																										60	3				3	0
 11122	山市鬼楼·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
-11123	山市鬼楼·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11123	山市鬼楼·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道奶.lua																										60	9				3	0
 11124	山市鬼楼·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
 11125	山市鬼楼·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
 11126	山市鬼楼·疗·头	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
@@ -7503,12 +7503,12 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11130	山市鬼楼·伤·衣	上装限时		atExecuteScript	skill/装备/奉天证道输出衣服附魔.lua																										60	2				3	0
 11131	山市鬼楼·伤·头	帽子限时		atExecuteScript	skill/装备/奉天证道输出帽子附魔.lua																										60	3				3	0
 11132	山市鬼冢·御·腰	腰带限时		atSkillEventHandler	1904																										60	6				3	0
-11133	山市鬼冢·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11133	山市鬼冢·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道T.lua																										60	9				3	0
 11134	山市鬼冢·御·腕	护手限时		atSkillEventHandler	1905																										60	10				3	0
 11135	山市鬼冢·御·衣	上装限时		atSkillEventHandler	1906																										60	2				3	0
 11136	山市鬼冢·御·帽	帽子限时		atSkillEventHandler	1907																										60	3				3	0
 11137	山市鬼冢·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
-11138	山市鬼冢·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道.lua																										60	9				3	0
+11138	山市鬼冢·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子奉天证道奶.lua																										60	9				3	0
 11139	山市鬼冢·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
 11140	山市鬼冢·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
 11141	山市鬼冢·疗·帽	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
@@ -7549,11 +7549,11 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11176	云扇·腕·无双	护手	护腕无双等级提高231	atStrainBase	231	231																										10				0	0
 11177	云扇·衣·化劲	上装	上衣化劲等级提高116	atDecriticalDamagePowerBase	116	116																										2					
 11178	云扇·衣·御劲	上装	上衣御劲等级提高116	atToughnessBase	116	116																										2					
-11179	云扇·衣·外防	上装	上衣外功防御等级提高116	atPhysicsShieldAdditional	116	116																										2					
+11179	云扇·衣·外防	上装	上衣外功防御等级提高116	atPhysicsShieldBase	116	116																										2					
 11180	云扇·衣·内防	上装	上衣内功防御等级提高116	atMagicShield	116	116																										2					
 11181	云扇·腰·化劲	腰带	腰带化劲等级提高116	atDecriticalDamagePowerBase	116	116																										6				0	0
 11182	云扇·腰·御劲	腰带	腰带御劲等级提高116	atToughnessBase	116	116																										6				0	0
-11183	云扇·腰·外防	腰带	腰带外功防御等级提高116	atPhysicsShieldAdditional	116	116																										6				0	0
+11183	云扇·腰·外防	腰带	腰带外功防御等级提高116	atPhysicsShieldBase	116	116																										6				0	0
 11184	云扇·腰·内防	腰带	腰带内功防御等级提高116	atMagicShield	116	116																										6				0	0
 11185	云扇·鞋·急速	鞋子	鞋子加速等级提高231	atHasteBase	231	231																										9				0	0
 11186	云扇·鞋·破招	鞋子	鞋子破招等级提高231	atSurplusValueBase	231	231																										9				0	0

@@ -44832,3 +44832,31 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 44830		atSolarAndLunarCriticalStrike	788	788												
 44831		atParryValueBase	3165	3165												
 44832		atMagicCriticalStrike	788	788												
+44833	0	atSkillEventHandler	1999	1999												
+44834	0	atSkillEventHandler	2001	2001												
+44835	0	atSkillEventHandler	2002	2002												
+44836		atVitalityBase	2096	2096												
+44837		atSolarAttackPowerBase	1889	1889												
+44838		atSolarOvercomeBase	2039	2039												
+44839		atSurplusValueBase	1813	1813												
+44840		atVitalityBase	2832	2832												
+44841		atMagicShield	1927	1927												
+44842		atToughnessBase	771	771												
+44843		atStrainBase	2312	2312												
+44844		atNeutralAttackPowerBase	1889	1889												
+44845		atNeutralOvercomeBase	2039	2039												
+44846		atTherapyPowerBase	2579	2579												
+44847		atMagicCriticalStrike	2039	2039												
+44848		atPhysicsAttackPowerBase	1574	1574												
+44849		atPhysicsOvercomeBase	2039	2039												
+44850		atStrainBase	1850	1850												
+44851		atLunarAttackPowerBase	1889	1889												
+44852		atLunarOvercomeBase	2039	2039												
+44853		atPoisonAttackPowerBase	1889	1889												
+44854		atPoisonOvercomeBase	2039	2039												
+44855		atSolarAndLunarAttackPowerBase	1889	1889												
+44856		atSolarAndLunarOvercomeBase	2039	2039												
+44857		atPhysicsShieldBase	771	771												
+44858		atDodge	1156	1156												
+44859		atParryBase	1156	1156												
+44860		atParryValueBase	11141	11141												
