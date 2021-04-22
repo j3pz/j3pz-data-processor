@@ -17,7 +17,7 @@ ID	Level	Desc
 818	7	<text>text="“蝎心”伤害提高10%" font=105 </text>
 946	1	<text>text="“夺魄箭”伤害提高10%" font=105 </text>
 947	1	<text>text="“蚀肌弹”伤害提高10%" font=105 </text>
-948	1	<text>text="“雷震子”招式调息时间减少5秒" font=105 </text>
+948	1	<text>text="“鸟翔碧空”招式调息时间减少2秒" font=105 </text>
 948	2	<text>text="“净世破魔击”伤害提高10%" font=105 </text>
 948	3	<text>text="“怖畏暗刑”招式调息时间减少4秒" font=105 </text>
 948	4	<text>text="“龙战于野”伤害提高10%" font=105 </text>

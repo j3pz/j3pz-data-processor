@@ -6729,9 +6729,9 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10356	仙踪·头·甲（外攻）	帽子	外功攻击提升34点	atPhysicsAttackPowerBase	34	34																										3				0	0
 10357	仙踪·头·甲（内功）	帽子	内功攻击提升41点	atMagicAttackPowerBase	41	41																										3				0	0
 10358	仙踪·头·甲（治疗）	帽子	疗伤成效提升37点	atTherapyPowerBase	37	37																										3				0	0
-10359	仙踪·头·甲（破招）	帽子	破招提升76点	atSurplusValueBase	76	76																										3				3	0
-10360	仙踪·头·甲（急速）	帽子	加速提升76点	atHasteBase	76	76																										3				3	0
-10361	仙踪·腰·甲（体质）	腰带	体质提升28点	atVitalityBase	28	28																										6				3	0
+10359	仙踪·头·甲（破招）	帽子	破招提升76点	atSurplusValueBase	76	76																										3				0	0
+10360	仙踪·头·甲（急速）	帽子	加速提升76点	atHasteBase	76	76																										3				0	0
+10361	仙踪·腰·甲（体质）	腰带	体质提升28点	atVitalityBase	28	28																										6				0	0
 10362	仙踪·腰·甲（气血）	腰带	最大气血值提升379点	atMaxLifeBase	379	379																										6				0	0
 10363	仙踪·腰·甲（格挡）	腰带	拆招提升471点	atParryValueBase	471	471																										6				0	0
 10364	仙踪·腰·甲（闪避）	腰带	闪避提升38点	atDodge	38	38																										6				0	0
@@ -6847,7 +6847,7 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10474	烨阳晶石·暗器（加速）	暗器	加速提升152点	atHasteBase	152	152																										1					
 10475	霁月·裤·甲（会心）	下装	全会心提升72点	atAllTypeCriticalStrike	72	72																										8				0	0
 10476	霁月·腕·染（会心）	护手	全会心提升72点	atAllTypeCriticalStrike	72	72																										10				0	0
-10477	霁月·头·甲（急速）	帽子	加速提升72点	atHasteBase	72	72																										3				3	0
+10477	霁月·头·甲（急速）	帽子	加速提升72点	atHasteBase	72	72																										3				0	0
 10478	霁月·裤·甲（外破）	下装	外功破防等级提升72点	atPhysicsOvercomeBase	72	72																										8				0	0
 10479	霁月·裤·甲（内破）	下装	内功破防等级提升72点	atMagicOvercome	72	72																										8				0	0
 10480	霁月·裤·甲（无双）	下装	无双等级提升72点	atStrainBase	72	72																										8				0	0
@@ -6981,9 +6981,9 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10608	仙踪·头·甲（外攻）	帽子	外功攻击提升37点	atPhysicsAttackPowerBase	37	37																										3				0	0
 10609	仙踪·头·甲（内功）	帽子	内功攻击提升44点	atMagicAttackPowerBase	44	44																										3				0	0
 10610	仙踪·头·甲（治疗）	帽子	疗伤成效提升40点	atTherapyPowerBase	40	40																										3				0	0
-10611	仙踪·头·甲（破招）	帽子	破招提升83点	atSurplusValueBase	83	83																										3				3	0
-10612	仙踪·头·甲（急速）	帽子	加速提升83点	atHasteBase	83	83																										3				3	0
-10613	仙踪·腰·甲（体质）	腰带	体质提升31点	atVitalityBase	31	31																										6				3	0
+10611	仙踪·头·甲（破招）	帽子	破招提升83点	atSurplusValueBase	83	83																										3				0	0
+10612	仙踪·头·甲（急速）	帽子	加速提升83点	atHasteBase	83	83																										3				0	0
+10613	仙踪·腰·甲（体质）	腰带	体质提升31点	atVitalityBase	31	31																										6				0	0
 10614	仙踪·腰·甲（气血）	腰带	最大气血值提升415点	atMaxLifeBase	415	415																										6				0	0
 10615	仙踪·腰·甲（格挡）	腰带	拆招提升516点	atParryValueBase	516	516																										6				0	0
 10616	仙踪·腰·甲（闪避）	腰带	闪避提升41点	atDodge	41	41																										6				0	0
@@ -7118,9 +7118,9 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10745	仙踪·头·甲（外攻）	帽子	外功攻击提升43点	atPhysicsAttackPowerBase	43	43																										3				0	0
 10746	仙踪·头·甲（内功）	帽子	内功攻击提升51点	atMagicAttackPowerBase	51	51																										3				0	0
 10747	仙踪·头·甲（治疗）	帽子	疗伤成效提升46点	atTherapyPowerBase	46	46																										3				0	0
-10748	仙踪·头·甲（破招）	帽子	破招提升94点	atSurplusValueBase	94	94																										3				3	0
-10749	仙踪·头·甲（急速）	帽子	加速提升94点	atHasteBase	94	94																										3				3	0
-10750	仙踪·腰·甲（体质）	腰带	体质提升35点	atVitalityBase	35	35																										6				3	0
+10748	仙踪·头·甲（破招）	帽子	破招提升94点	atSurplusValueBase	94	94																										3				0	0
+10749	仙踪·头·甲（急速）	帽子	加速提升94点	atHasteBase	94	94																										3				0	0
+10750	仙踪·腰·甲（体质）	腰带	体质提升35点	atVitalityBase	35	35																										6				0	0
 10751	仙踪·腰·甲（气血）	腰带	最大气血值提升470点	atMaxLifeBase	470	470																										6				0	0
 10752	仙踪·腰·甲（格挡）	腰带	拆招提升583点	atParryValueBase	583	583																										6				0	0
 10753	仙踪·腰·甲（闪避）	腰带	闪避提升47点	atDodge	47	47																										6				0	0
@@ -7178,7 +7178,7 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10805	昆吾焰珀·伤·头	帽子限时		atExecuteScript	skill/装备/凌雪藏风输出帽子附魔.lua																										60	3				3	0
 10806	霁月·裤·甲（会心）	下装	全会心提升80点	atAllTypeCriticalStrike	80	80																										8				0	0
 10807	霁月·腕·染（会心）	护手	全会心提升80点	atAllTypeCriticalStrike	80	80																										10				0	0
-10808	霁月·头·甲（急速）	帽子	加速提升80点	atHasteBase	80	80																										3				3	0
+10808	霁月·头·甲（急速）	帽子	加速提升80点	atHasteBase	80	80																										3				0	0
 10809	霁月·裤·甲（外破）	下装	外功破防等级提升80点	atPhysicsOvercomeBase	80	80																										8				0	0
 10810	霁月·裤·甲（内破）	下装	内功破防等级提升80点	atMagicOvercome	80	80																										8				0	0
 10811	霁月·裤·甲（无双）	下装	无双等级提升80点	atStrainBase	80	80																										8				0	0
@@ -7290,9 +7290,9 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10917	仙踪·头·甲（外攻）	帽子	外功攻击提升47点	atPhysicsAttackPowerBase	47	47																										3				0	0
 10918	仙踪·头·甲（内功）	帽子	内功攻击提升57点	atMagicAttackPowerBase	57	57																										3				0	0
 10919	仙踪·头·甲（治疗）	帽子	疗伤成效提升51点	atTherapyPowerBase	51	51																										3				0	0
-10920	仙踪·头·甲（破招）	帽子	破招提升105点	atSurplusValueBase	105	105																										3				3	0
-10921	仙踪·头·甲（急速）	帽子	加速提升105点	atHasteBase	105	105																										3				3	0
-10922	仙踪·腰·甲（体质）	腰带	体质提升39点	atVitalityBase	39	39																										6				3	0
+10920	仙踪·头·甲（破招）	帽子	破招提升105点	atSurplusValueBase	105	105																										3				0	0
+10921	仙踪·头·甲（急速）	帽子	加速提升105点	atHasteBase	105	105																										3				0	0
+10922	仙踪·腰·甲（体质）	腰带	体质提升39点	atVitalityBase	39	39																										6				0	0
 10923	仙踪·腰·甲（气血）	腰带	最大气血值提升524点	atMaxLifeBase	524	524																										6				0	0
 10924	仙踪·腰·甲（格挡）	腰带	拆招提升651点	atParryValueBase	651	651																										6				0	0
 10925	仙踪·腰·甲（闪避）	腰带	闪避提升53点	atDodge	53	53																										6				0	0
@@ -7350,7 +7350,7 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 10977	昆吾焰珩·伤·头	帽子限时		atExecuteScript	skill/装备/结庐版本输出帽子附魔.lua																										60	3				3	0
 10978	霁月·裤·甲（会心）	下装	全会心提升94点	atAllTypeCriticalStrike	94	94																										8				0	0
 10979	霁月·腕·染（会心）	护手	全会心提升94点	atAllTypeCriticalStrike	94	94																										10				0	0
-10980	霁月·头·甲（急速）	帽子	加速提升94点	atHasteBase	94	94																										3				3	0
+10980	霁月·头·甲（急速）	帽子	加速提升94点	atHasteBase	94	94																										3				0	0
 10981	霁月·裤·甲（外破）	下装	外功破防等级提升94点	atPhysicsOvercomeBase	94	94																										8				0	0
 10982	霁月·裤·甲（内破）	下装	内功破防等级提升94点	atMagicOvercome	94	94																										8				0	0
 10983	霁月·裤·甲（无双）	下装	无双等级提升94点	atStrainBase	94	94																										8				0	0
@@ -7537,7 +7537,7 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11164	阴山鬼晶·暗器（加速）	暗器	加速提升325点	atHasteBase	325	325																										1					
 11165	云扇·裤·会心	下装	下装全会心等级提高231	atAllTypeCriticalStrike	231	231																										8				0	0
 11166	云扇·腕·会心	护手	护腕全会心等级提高231	atAllTypeCriticalStrike	231	231																										10				0	0
-11167	云扇·头·急速	帽子	帽子加速等级提高231	atHasteBase	231	231																										3				3	0
+11167	云扇·头·急速	帽子	帽子加速等级提高231	atHasteBase	231	231																										3				0	0
 11168	云扇·裤·外破	下装	下装外功破防等级提高231	atPhysicsOvercomeBase	231	231																										8				0	0
 11169	云扇·裤·内破	下装	下装内功破防等级提高231	atMagicOvercome	231	231																										8				0	0
 11170	云扇·裤·无双	下装	下装无双等级提高231	atStrainBase	231	231																										8				0	0
@@ -7563,3 +7563,91 @@ ID	Name	UIID	AttriName	Attribute1ID	Attribute1Value1	Attribute1Value2	DiamondTyp
 11190	云扇·衣·减仇	上装	上衣招式产生威胁降低5%	atActiveThreatCoefficient	0	-42																										2					
 11191	云扇·腰·无双	腰带	腰带无双等级提高174	atStrainBase	174	174																										6				0	0
 11192	云扇·腰·减仇	腰带	腰带招式产生威胁降低5%	atActiveThreatCoefficient	0	-42																										6				0	0
+11193	奉天·瀑沙熔锭（外攻）	武器限时	外功攻击提升268点	atPhysicsAttackPowerBase	268	268																									1800	0				3	0
+11194	奉天·坠宵熔锭（内攻）	武器限时	内功攻击提升320点	atMagicAttackPowerBase	320	320																									1800	0				3	0
+11195	奉天·絮泊熔锭（疗伤）	武器限时	疗伤成效提升289点	atTherapyPowerBase	289	289																									1800	0				3	0
+11196	奉天·巨灵熔锭（仇恨）	武器限时	仇恨百分比提升67%	atActiveThreatCoefficient	0	688																									1800	0				3	0
+11197	奉天·兵·铸（外攻）	武器	外功攻击提升179点	atPhysicsAttackPowerBase	179	179																										0				0	0
+11198	奉天·兵·铸（内攻）	武器	内功攻击提升214点	atMagicAttackPowerBase	214	214																										0				0	0
+11199	奉天·兵·铸（疗伤）	武器	疗伤成效提升193点	atTherapyPowerBase	193	193																										0				0	0
+11200	奉天·兵·铸（武伤）	武器	武器伤害提升268点	atMeleeWeaponDamageBase	268	268																										0				0	0
+11201	奉天·兵·铸（仇恨）	武器	仇恨百分比提升44%	atActiveThreatCoefficient	0	450																										0				0	0
+11202	奉天·裤·铸（身法）	下装	身法提升89点	atAgilityBase	89	89																										8				0	0
+11203	奉天·裤·铸（元气）	下装	元气提升89点	atSpunkBase	89	89																										8				0	0
+11204	奉天·裤·铸（力道）	下装	力道提升89点	atStrengthBase	89	89																										8				0	0
+11205	奉天·裤·铸（根骨）	下装	根骨提升89点	atSpiritBase	89	89																										8				0	0
+11206	奉天·裤·铸（仇恨）	下装	仇恨百分比提升44%	atActiveThreatCoefficient	0	450																										8				0	0
+11207	奉天·裤·铸（外破）	下装	外功破防等级提升397点	atPhysicsOvercomeBase	397	397																										8				0	0
+11208	奉天·裤·铸（内破）	下装	内功破防等级提升397点	atMagicOvercome	397	397																										8				0	0
+11209	奉天·裤·铸（会心）	下装	全会心提升397点	atAllTypeCriticalStrike	397	397																										8				0	0
+11210	奉天·裤·铸（无双）	下装	无双等级提升397点	atStrainBase	397	397																										8				0	0
+11211	奉天·头·铸（外攻）	帽子	外功攻击提升179点	atPhysicsAttackPowerBase	179	179																										3				0	0
+11212	奉天·头·铸（内攻）	帽子	内功攻击提升214点	atMagicAttackPowerBase	214	214																										3				0	0
+11213	奉天·头·铸（治疗）	帽子	疗伤成效提升193点	atTherapyPowerBase	193	193																										3				0	0
+11214	奉天·头·铸（破招）	帽子	破招提升397点	atSurplusValueBase	397	397																										3				0	0
+11215	奉天·头·铸（急速）	帽子	加速提升397点	atHasteBase	397	397																										3				0	0
+11216	奉天·腰·铸（体质）	腰带	体质提升147点	atVitalityBase	147	147																										6				0	0
+11217	奉天·腰·铸（气血）	腰带	最大气血值提升1986点	atMaxLifeBase	1986	1986																										6				0	0
+11218	奉天·腰·铸（格挡）	腰带	拆招提升2467点	atParryValueBase	2467	2467																										6				0	0
+11219	奉天·腰·铸（闪避）	腰带	闪避提升199点	atDodge	199	199																										6				0	0
+11220	奉天·腰·铸（外防）	腰带	外功防御提升199点	atPhysicsShieldAdditional	199	199																										6				0	0
+11221	奉天·腰·铸（内防）	腰带	内功防御提升199点	atMagicShield	199	199																										6				0	0
+11222	奉天·腰·铸（招架）	腰带	招架提升199点	atParryBase	199	199																										6				0	0
+11223	奉天·腰·铸（御劲）	腰带	御劲提升199点	atToughnessBase	199	199																										6				0	0
+11224	奉天·腰·铸（化劲）	腰带	化劲提升199点	atDecriticalDamagePowerBase	199	199																										6				0	0
+11225	奉天·腕·绣（身法）	护手	身法提升89点	atAgilityBase	89	89																										10				0	0
+11226	奉天·腕·绣（元气）	护手	元气提升89点	atSpunkBase	89	89																										10				0	0
+11227	奉天·腕·绣（力道）	护手	力道提升89点	atStrengthBase	89	89																										10				0	0
+11228	奉天·腕·绣（根骨）	护手	根骨提升89点	atSpiritBase	89	89																										10				0	0
+11229	奉天·腕·绣（仇恨）	护手	仇恨百分比提升44%	atActiveThreatCoefficient	0	450																										10				0	0
+11230	奉天·腕·绣（外破）	护手	外功破防等级提升397点	atPhysicsOvercomeBase	397	397																										10				0	0
+11231	奉天·腕·绣（内破）	护手	内功破防等级提升397点	atMagicOvercome	397	397																										10				0	0
+11232	奉天·腕·绣（会心）	护手	全会心提升397点	atAllTypeCriticalStrike	397	397																										10				0	0
+11233	奉天·腕·绣（无双）	护手	无双等级提升397点	atStrainBase	397	397																										10				0	0
+11234	奉天·鞋·绣（外攻）	鞋子	外功攻击提升179点	atPhysicsAttackPowerBase	179	179																										9				0	0
+11235	奉天·鞋·绣（内攻）	鞋子	内功攻击提升214点	atMagicAttackPowerBase	214	214																										9				0	0
+11236	奉天·鞋·绣（治疗）	鞋子	疗伤成效提升193点	atTherapyPowerBase	193	193																										9				0	0
+11237	奉天·鞋·绣（破招）	鞋子	破招提升397点	atSurplusValueBase	397	397																										9				0	0
+11238	奉天·鞋·绣（急速）	鞋子	加速提升397点	atHasteBase	397	397																										9				0	0
+11239	奉天·衣·绣（体质）	上装	体质提升147点	atVitalityBase	147	147																										2				0	0
+11240	奉天·衣·绣（气血）	上装	最大气血值提升1986点	atMaxLifeBase	1986	1986																										2				0	0
+11241	奉天·衣·绣（格挡）	上装	拆招提升2467点	atParryValueBase	2467	2467																										2				0	0
+11242	奉天·衣·绣（闪避）	上装	闪避提升199点	atDodge	199	199																										2				0	0
+11243	奉天·衣·绣（外防）	上装	外功防御提升199点	atPhysicsShieldAdditional	199	199																										2				0	0
+11244	奉天·衣·绣（内防）	上装	内功防御提升199点	atMagicShield	199	199																										2				0	0
+11245	奉天·衣·绣（招架）	上装	招架提升199点	atParryBase	199	199																										2				0	0
+11246	奉天·衣·绣（化劲）	上装	化劲提升199点	atDecriticalDamagePowerBase	199	199																										2				0	0
+11247	奉天·衣·绣（御劲）	上装	御劲提升199点	atToughnessBase	199	199																										2				0	0
+11248	阴山鬼晶·项链（体质）	项链	体质提升147点	atVitalityBase	147	147																										4					
+11249	阴山鬼晶·项链（御劲）	项链	御劲提升199点	atToughnessBase	199	199																										4					
+11250	阴山鬼晶·腰坠（体质）	腰坠	体质提升147点	atVitalityBase	147	147																										7					
+11251	阴山鬼晶·腰坠（化劲）	腰坠	化劲提升199点	atDecriticalDamagePowerBase	199	199																										7					
+11252	阴山鬼晶·戒指（根骨）	戒指	根骨提升89点	atSpiritBase	89	89																										5					
+11253	阴山鬼晶·戒指（力道）	戒指	力道提升89点	atStrengthBase	89	89																										5					
+11254	阴山鬼晶·戒指（元气）	戒指	元气提升89点	atSpunkBase	89	89																										5					
+11255	阴山鬼晶·戒指（身法）	戒指	身法提升89点	atAgilityBase	89	89																										5					
+11256	阴山鬼晶·戒指（外伤）	戒指	外功攻击提升179点	atPhysicsAttackPowerBase	179	179																										5					
+11257	阴山鬼晶·戒指（内伤）	戒指	内功攻击提升214点	atMagicAttackPowerBase	214	214																										5					
+11258	阴山鬼晶·戒指（破招）	戒指	破招等级提升397点	atSurplusValueBase	397	397																										5					
+11259	阴山鬼晶·暗器（根骨）	暗器	根骨提升89点	atSpiritBase	89	89																										1					
+11260	阴山鬼晶·暗器（力道）	暗器	力道提升89点	atStrengthBase	89	89																										1					
+11261	阴山鬼晶·暗器（元气）	暗器	元气提升89点	atSpunkBase	89	89																										1					
+11262	阴山鬼晶·暗器（身法）	暗器	身法提升89点	atAgilityBase	89	89																										1					
+11263	阴山鬼晶·暗器（外破）	暗器	外功破防等级提升397点	atPhysicsOvercomeBase	397	397																										1					
+11264	阴山鬼晶·暗器（内破）	暗器	内功破防等级提升397点	atMagicOvercome	397	397																										1					
+11265	阴山鬼晶·暗器（加速）	暗器	加速提升397点	atHasteBase	397	397																										1					
+11266	山市鬼船·御·腰	腰带限时		atSkillEventHandler	2017																										60	6				3	0
+11267	山市鬼船·御·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子白帝风云T.lua																										60	9				3	0
+11268	山市鬼船·御·腕	护手限时		atSkillEventHandler	2018																										60	10				3	0
+11269	山市鬼船·御·衣	上装限时		atSkillEventHandler	2019																										60	2				3	0
+11270	山市鬼船·御·帽	帽子限时		atSkillEventHandler	2020																										60	3				3	0
+11271	山市鬼船·疗·腰	腰带限时		atExecuteScript	skill/装备/腰带_新附魔_治疗满血群体AOE.lua																										60	6				3	0
+11272	山市鬼船·疗·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子白帝风云奶.lua																										60	9				3	0
+11273	山市鬼船·疗·腕	护手限时		atSkillEventHandler	1706																										60	10				3	0
+11274	山市鬼船·疗·衣	上装限时		atSkillEventHandler	1709																										60	2				3	0
+11275	山市鬼船·疗·帽	帽子限时		atExecuteScript	skill/装备/帽子_新附魔_治疗非战斗附魔减读条.lua																										60	3				3	0
+11276	山市鬼船·伤·腰	腰带限时		atSkillEventHandler	1705																										60	6				3	0
+11277	山市鬼船·伤·鞋	鞋子限时		atExecuteScript	skill/装备/新附魔鞋子白帝风云.lua																										60	9				3	0
+11278	山市鬼船·伤·腕	护手限时		atSkillEventHandler	1843																										60	10				3	0
+11279	山市鬼船·伤·衣	上装限时		atExecuteScript	skill/装备/白帝风云输出衣服附魔.lua																										60	2				3	0
+11280	山市鬼船·伤·帽	帽子限时		atExecuteScript	skill/装备/白帝风云输出帽子附魔.lua																										60	3				3	0
