@@ -3224,7 +3224,7 @@ dwID	Path	Frame	szTip	szSource
 100003531	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1095_P.prefab.tga	0		园宅币
 100003532	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1096_P.prefab.tga	0		园宅币
 100003533	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1097_P.prefab.tga	0		园宅币
-100003534	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1055_P.prefab.tga	0		园宅币
+100003534	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1055_P.prefab.tga	0	秋寝独前兴，天梭星落织。	园宅币
 100003535	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1099_P.prefab.tga	0		园宅币
 100003536	ui\Image\Homeland\data\source\Home\furniture\light\Light1_1_1098_P.prefab.tga	0		生活技能
 100003537	ui\Image\Homeland\data\source\Home\furniture\light\Light4_4_1069_P.prefab.tga	0		园宅币
@@ -3319,7 +3319,7 @@ dwID	Path	Frame	szTip	szSource
 100003626	ui\Image\Homeland\data\source\Home\furniture\Blocks\MC_Hblocks_M_roof03_straight_01_100_200_80_HD.mesh.tga	0		生活技能
 100003627	ui\Image\Homeland\data\source\Home\furniture\Blocks\MC_Hblocks_M_roof03_straight_01_200_200_80_HD.mesh.tga	0		生活技能
 100003628	ui\Image\Homeland\data\source\Home\furniture\table\Table1_1_1025.Mesh.tga	0		生活技能
-100003629	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1054_P.prefab.tga	0		园宅币
+100003629	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1054_P.prefab.tga	0	秋寝独前兴，天梭星落织。	园宅币
 100003630	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1056_P.prefab.tga	0		园宅币
 100003631	ui\Image\Homeland\data\source\Home\furniture\cabinet\Cabinet2_1_1057_P.prefab.tga	0		战阶10阶
 100003632	ui\Image\Homeland\data\source\Home\furniture\chair\Chair1_1_2005.Mesh.tga	0		战阶5阶
@@ -3336,7 +3336,7 @@ dwID	Path	Frame	szTip	szSource
 100003643	ui\Image\Homeland\data\source\Home\effect\effect_pss\Jellyfish_B03.pss.tga	0		园宅币
 100003644	ui\Image\Homeland\data\source\Home\furniture\petbed\petbed1_1_1010.Mesh.tga	0	叶麟要随叶镜池出远门了，他的小薮猫交给叶寻、叶雪照顾，两个小家伙费了好大劲儿做了个小窝——决不能辜负哥哥的信任。	园宅会赛
 100003645	ui\Image\Homeland\data\source\Home\furniture\bonsai\Bonsai1_1_1019.Mesh.tga	0		园宅币
-100003646	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1092_P.prefab.tga	0		白帝江关
+100003646	ui\Image\Homeland\data\source\Home\furniture\ornament\Ornament1_1_1092_P.prefab.tga	0	此侍女像是宫傲囚禁长于雕刻的匠师耗费一年修修改改最终雕刻而成，意给于睿雕像当侍女。	白帝江关
 100003647	ui\Image\Homeland\data\source\Home\other\Plane001_1X1_P.prefab.tga	0		园宅币
 100003648	ui\Image\Homeland\data\source\Home\other\plane\Plane001_1X2_P.prefab.tga	0		园宅币
 200000001	ui\Image\Homeland\data\source\Home\prefab\BackPendent\小邪子的福娃娃.prefab.tga	0		收集
