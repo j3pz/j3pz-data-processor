@@ -26405,7 +26405,7 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 26403	0	atSetEquipmentRecipe	645	645	1	1										
 26404	0	atSetEquipmentRecipe	639	639	1	1										
 26405	0	atSetEquipmentRecipe	640	640	1	1										
-26406	0	atSetEquipmentRecipe	641	641	1	1										
+26406	0	atSetEquipmentRecipe	2518	2518	1	1										
 26407	0	atSetEquipmentRecipe	642	642	1	1										
 26408	0	atSetEquipmentRecipe	646	646	1	1										
 26409	0	atSolarAttackPowerBase	21	21	0	0										
@@ -33812,7 +33812,7 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 33810	0	atSetEquipmentRecipe	4816	4816	1	1	0	0	0	0	0	0	0	0	0	0
 33811	0	atSetEquipmentRecipe	4817	4817	1	1	0	0	0	0	0	0	0	0	0	0
 33812	0	atSkillEventHandler	1576	1576	0	0	0	0	0	0	0	0	0	0	0	0
-33813	0	atSetEquipmentRecipe	4815	4815	1	1	0	0	0	0	0	0	0	0	0	0
+33813	0	atSetEquipmentRecipe	2519	2519	1	1	0	0	0	0	0	0	0	0	0	0
 33814	0	atSetEquipmentRecipe	4814	4814	1	1	0	0	0	0	0	0	0	0	0	0
 33815	0	atSolarHitValue	246	246	0	0	0	0	0	0	0	0	0	0	0	0
 33816	0	atNeutralHitValue	246	246	0	0	0	0	0	0	0	0	0	0	0	0
@@ -46307,3 +46307,9 @@ ID	Value	ModifyType	Param1Min	Param1Max	Param2Min	Param2Max	Group1	Group2	Group3
 46305		atStrainBase	775	775												
 46306		atAllTypeCriticalStrike	872	872												
 46307		atPhysicsCriticalStrike	872	872												
+46308		atMagicOvercome	2468	2468												
+46309		atPhysicsOvercomeBase	2468	2468												
+46310		atMagicOvercome	3348	3348												
+46311		atPhysicsOvercomeBase	3348	3348												
+46312		atMagicOvercome	1860	1860												
+46313		atPhysicsOvercomeBase	1860	1860												

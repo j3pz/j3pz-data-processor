@@ -138,6 +138,8 @@ ID	Level	Desc
 2406	1	<text>text="“羽”会心几率提高5%" font=101 </text>
 2407	1	<text>text="“宫”会心几率提高5%" font=101 </text>
 2417	1	<text>text="“杯水留影”招式调息时间减少30秒" font=101 </text>
+2518	1	<text>text="“突”招式调息时间减少3秒" font=105 </text>
+2519	1	<text>text="浮游天地调息时间降低2秒" font=101 </text>
 4120	1	<text>text="“暴雨梨花针”伤害提高10%" font=105 </text>
 4290	1	<text>text="“刀啸风吟”伤害提高10%" font=105 </text>
 4291	1	<text>text="“项王击鼎”伤害提高10%" font=105 </text>
