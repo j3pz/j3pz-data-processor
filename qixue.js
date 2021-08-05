@@ -19,7 +19,8 @@ const schoolMap = {
   22: '长歌',
   23: '霸刀',
   24: '蓬莱',
-  25: '凌雪'
+  25: '凌雪',
+  211: '衍天',
 };
 
 const kungfuMap = {
@@ -32,7 +33,7 @@ const kungfuMap = {
   7: '离经易道',
   8: '铁牢律',
   9: '云裳心经',
-  10: ' 冰心诀',
+  10: '冰心诀',
   11: '问水诀',
   12: '山居剑意',
   13: '毒经',
@@ -49,7 +50,38 @@ const kungfuMap = {
   24: '北傲诀',
   25: '凌海诀',
   26: '隐龙诀',
+  27: '太玄经',
 };
+
+const kungfuMapReal = {
+  10026: '傲血战意',
+  10062: '铁牢律',
+  10003: '易筋经',
+  10002: '洗髓经',
+  10021: '花间游',
+  10028: '离经易道',
+  10175: '毒经',
+  10176: '补天诀',
+  10015: '太虚剑意',
+  10014: '紫霞功',
+  10081: '冰心诀',
+  10080: '云裳心经',
+  10224: '惊羽诀',
+  10225: '天罗诡道',
+  10242: '焚影圣诀',
+  10243: '明尊琉璃体',
+  10268: '笑尘诀',
+  10144: '问水诀',
+  10145: '山居剑意',
+  10390: '分山劲',
+  10389: '铁骨衣',
+  10447: '莫问',
+  10448: '相知',
+  10464: '北傲诀',
+  10533: '凌海诀',
+  10585: '隐龙诀',
+  10615: '太玄经',
+}
 
 function readCsvFile(file, isObj) {
   console.time(`reading ${file}`);
@@ -91,8 +123,13 @@ async function init() {
   const points = await readCsvFile('./raw/TenExtraPoint.tab');
   const buffUi = await readCsvFile('./raw/buff.txt', true);
   const buffSetting = await readCsvFile('./raw/Buff.tab', true);
+  const pveList = await readCsvFile('./raw/skill_teach.tab', false);
+  const pvpList = await readCsvFile('./raw/skill_teach_recommend.tab', false);
+
+  const pointMap = {};
   // const result = {};
   const result = [];
+  let i = 1;
   for (const point of points) {
     const school = schoolMap[point.ForceID];
     const kungfu = kungfuMap[point.KungFuID];
@@ -137,6 +174,23 @@ async function init() {
             const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
             if (buff) {
               desc = desc.replace(/<BUFF (\d+) (\d) desc>/, buff.Desc);
+              while (/BUFF (\w+)>/.test(desc)) {
+                const match = desc.match(/<BUFF (\w+)>/);
+                const desiredBuff = buffSetting[`${buffId}-${buffLevel}`];
+                const fallbackBuff0 = buffSetting[`${buffId}-0`];
+                const fallbackBuff1 = buffSetting[`${buffId}-1`];
+                const buff = desiredBuff || fallbackBuff0 || fallbackBuff1;
+                if (buff) {
+                  const idx = [buff.ActiveAttrib1, buff.ActiveAttrib2].indexOf(match[1]);
+                  if (idx >= 0) {
+                    const value = buff[`ActiveValue${idx + 1}A`] || buff[`ActiveValue${idx + 1}B`] || 0;
+                    desc = desc.replace(/<BUFF (\w+)>/, value);
+                  }
+                } else {
+                  console.log(desc);
+                  console.log(`failed to read: ${buffId}-${buffLevel}`);
+                }
+              }
             } else {
               console.log(desc);
               console.log(`failed to read: ${buffId}-${buffLevel}`);
@@ -158,14 +212,21 @@ async function init() {
             }
           }
         }
+        desc = desc.replace('(+)', '');
+        desc = desc.replace(',', '，');
+        if (desc.indexOf('"') >= 0) {
+          console.log(skill.Desc);
+        }
         if (desc.indexOf('<') >= 0) {
-          console.log(desc);
+          console.log(skill.Desc);
         }
         // info.skills.push({
         //   name: skill.Name,
         //   desc: skill.Desc,
         // });
+        pointMap[`${point.PointID}-${point[id]}`] = i;
         result.push({
+          id: i++,
           name: skill.Name,
           desc: desc,
           position: (point.PointID - 1) % 12 + 1,
@@ -173,29 +234,87 @@ async function init() {
           kungfu,
           skillID : point[id],
           icon: skill.IconID,
+          version: '1.0.0.3931',
+          effect: '',
         });
       }
     });
     // result[school][kungfu].push(info);
   }
-  // fs.writeFile('./output/qixue.json', JSON.stringify(result, null, 2), 'utf8', () => {
-  //   console.log('done');
-  // });
+
+  // console.log(pointMap);
+
+  const recommends = [];
+  const recomendIdMap = [];
+  let j = 1;
+
+  pveList.filter(row => row.Level.endsWith('~110')).forEach((row) => {
+    const kungfu = kungfuMapReal[row.KungfuID];
+    const recommend = {
+      id: j++,
+      name: row.Solution,
+      kungfu,
+    };
+    row.QixueList.split(';').forEach(qixue => {
+      const [point, , skillId] = qixue.split(',');
+      recomendIdMap.push({ talentRecommendId: recommend.id, talentId: pointMap[`${point}-${skillId}`] });
+    });
+    recommends.push(recommend);
+  });
+  pvpList.forEach((row) => {
+    const kungfu = kungfuMapReal[row.KungfuID];
+
+    [1, 2, 3, 4, 5, 6].map(v => [`Qixue${v}`, `QixueList${v}`]).forEach(([name, list]) => {
+      if (row[name] !== '') {
+        const recommend = {
+          id: j++,
+          name: row[name],
+          kungfu,
+        };
+        row[list].split(';').filter(q => q !== '').forEach(qixue => {
+          const [point, , skillId] = qixue.split(',');
+          recomendIdMap.push({ talentRecommendId: recommend.id, talentId: pointMap[`${point}-${skillId}`] });
+        });
+        recommends.push(recommend);
+      }
+    });
+  });
 
   const csvWriter = createCsvWriter({
     path: `./output/qixue.csv`,
-    header: [ 
-        { id: 'school', title: '门派' },
-        { id: 'kungfu', title: '心法' },
-        { id: 'position', title: '奇穴位置' },
-        { id: 'name', title: '奇穴名' },
-        { id: 'desc', title: '描述' },
-        { id: 'skillID', title: '技能ID' },
-        { id: 'icon', title: '图标ID' },
+    header: [
+        { id: 'id', title: 'id' },
+        { id: 'kungfu', title: 'kungfu' },
+        { id: 'position', title: 'index' },
+        { id: 'name', title: 'name' },
+        { id: 'desc', title: 'description' },
+        // { id: 'skillID', title: '技能ID' },
+        { id: 'icon', title: 'icon' },
+        { id: 'version', title: 'version' },
+        { id: 'effect', title: 'effectId' },
     ],
   });
   csvWriter.writeRecords(result).then(() => {
-    console.log(`done`);
+    const recommendWriter = createCsvWriter({
+      path: `./output/talent_recommend.csv`,
+      header: [
+        { id: 'id', title: 'id' },
+        { id: 'kungfu', title: 'kungfu' },
+        { id: 'name', title: 'name' },
+      ],
+    });
+    recommendWriter.writeRecords(recommends).then(() => {
+      const recommendIdsWriter = createCsvWriter({
+        path: `./output/talent_recommend_talents.csv`,
+        header: [
+          { id: 'talentRecommendId', title: 'talentRecommendId' },
+          { id: 'talentId', title: 'talentId' },
+        ],
+      });
+      recommendIdsWriter.writeRecords(recomendIdMap).then(() => {
+        console.log(`done`);
+      });
+    });
   });
 }
 

@@ -1,3 +1,7 @@
 {
-    "files.autoGuessEncoding": true
+    "files.autoGuessEncoding": true,
+    "editor.tabSize": 4,
+    "[dart]": {
+        "editor.tabSize": 4
+    }
 }
